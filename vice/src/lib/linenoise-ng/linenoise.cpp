@@ -165,10 +165,12 @@ static char *ln_strdup(const char *s)
 
 #else /* _WIN32 */
 #include <signal.h>
-#ifndef GEKKO
+
+#ifndef GEKKO 
 #include <termios.h>
 #include <sys/ioctl.h>
 #endif
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>

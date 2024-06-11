@@ -83,7 +83,7 @@ int main(int argc, char **argv)
     //     "-autostart",
     //     "sd:/apps/Vice/share/vice/C64/brucelee.d64"
     // };   
-    const char* newArgv[] = {"x64.elf"};
+    const char* newArgv[] = {"Vice.elf"};
     int newArgc = 1;
   
     return main_program(newArgc, (char **)newArgv);

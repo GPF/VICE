@@ -456,7 +456,11 @@ int monitor_is_remote(void)
 
 ui_jam_action_t monitor_network_ui_jam_dialog(const char *format, ...)
 {
+#ifdef GEKKO
+    return SYS_ResetButtonDown();
+#else
     return UI_JAM_HARD_RESET;
+#endif    
 }
 
 #endif

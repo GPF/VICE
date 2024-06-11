@@ -62,6 +62,10 @@
 
 #ifdef HAVE_NETWORK
 
+#ifdef GEKKO
+#include <system.h>
+#endif
+
 #define ADDR_LIMIT(x) ((uint16_t)(addr_mask(x)))
 
 static vice_network_socket_t * listen_socket = NULL;
@@ -1942,7 +1946,11 @@ void monitor_binary_event_closed(void) {
 
 ui_jam_action_t monitor_binary_ui_jam_dialog(const char *format, ...)
 {
+#ifdef GEKKO
+    return SYS_ResetButtonDown();
+#else
     return UI_JAM_HARD_RESET;
+#endif    
 }
 
 void monitor_binary_response_checkpoint_info(uint32_t request_id, mon_checkpoint_t *checkpt, bool hit) {

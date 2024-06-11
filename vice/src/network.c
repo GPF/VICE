@@ -29,7 +29,7 @@
 
 #include "vice.h"
 
-#ifdef HAVE_NETWORK
+#if defined HAVE_NETWORK || defined(GEKKO)
 
 #include <assert.h>
 #include <stdio.h>

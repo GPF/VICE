@@ -11,7 +11,7 @@
 /* #undef BSD_COMPILE */
 
 /* Flags passed to configure */
-#define CONFIGURE_FLAGS "--prefix=/apps/Vice/ --host=ppc --enable-sdlui2 --enable-x64 --with-sdlsound --with-fastsid --disable-realdevice --without-resid --disable-portaudio --disable-ahi --disable-midi --disable-lame --disable-hardsid --disable-catweasel --disable-ssi2001 --disable-parsid --disable-ethernet --disable-ipv6 --disable-html-docs --disable-pdf-docs --disable-debug --disable-debug-gtk3ui --disable-cpuhistory --disable-native-gtk3ui --disable-headlessui --disable-hidmgr --disable-hidutils --without-readline --without-pulse --without-alsa --without-oss --without-sun --without-jpeg --without-png --without-gif --without-zlib --without-glew --disable-gtk3ui --without-libcurl --disable-new8580filter --cache-file=config.cache"
+#define CONFIGURE_FLAGS "--program-prefix=/apps/Vice/ --host=ppc --enable-sdlui2 --enable-x64 --with-sdlsound --with-fastsid --disable-realdevice --without-resid --disable-portaudio --disable-ahi --disable-midi --disable-lame --disable-hardsid --disable-catweasel --disable-ssi2001 --disable-parsid --disable-ethernet --disable-ipv6 --disable-html-docs --disable-pdf-docs --disable-debug --disable-debug-gtk3ui --disable-cpuhistory --disable-native-gtk3ui --disable-headlessui --disable-hidmgr --disable-hidutils --disable-rs232 --without-readline --without-pulse --without-alsa --without-oss --without-sun --without-jpeg --without-png --without-gif --without-zlib --without-glew --disable-gtk3ui --without-libcurl --disable-new8580filter --cache-file=config.cache"
 
 /* Enable plain darwin compilation */
 /* #undef DARWIN_COMPILE */
@@ -373,7 +373,7 @@
 /* #undef HAVE_NETINET_TCP_H */
 
 /* Enable netplay support */
-#define HAVE_NETWORK 1
+/* #undef HAVE_NETWORK */
 
 /* Use the new 8580 filter */
 /* #undef HAVE_NEW_8580_FILTER */
@@ -448,7 +448,7 @@
 #define HAVE_REWINDDIR 1
 
 /* Enable RS232 device emulation. */
-#define HAVE_RS232DEV /**/
+/* #undef HAVE_RS232DEV */
 
 /* Enable RS232 network support */
 /* #undef HAVE_RS232NET */
@@ -702,7 +702,7 @@
 #define PACKAGE_VERSION "3.8"
 
 /* Where do we want to install the executable? */
-#define PREFIX "/apps/Vice"
+#define PREFIX "/usr/local"
 
 /* Define as the return type of signal handlers ('int' or 'void'). */
 #define RETSIGTYPE void

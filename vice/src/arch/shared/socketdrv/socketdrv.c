@@ -31,6 +31,10 @@
 #include "archdep.h"
 
 
+#ifdef GEKKO
+#define HAVE_NETWORK 1
+#endif
+
 #ifndef HAVE_NETWORK
 #error No HAVE_NETWORK
 #endif

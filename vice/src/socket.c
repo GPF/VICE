@@ -33,7 +33,7 @@
 
 #include "vice.h"
 
-#ifdef HAVE_NETWORK
+#if defined(HAVE_NETWORK) || defined(GEKKO)
 
 #include <assert.h>
 #include <errno.h>
@@ -52,6 +52,10 @@
 
 #ifdef GEKKO
 #include <network.h>
+#define SOCKET int
+#define INVALID_SOCKET	(~0)
+#define INADDR_NONE 0xffffffff
+typedef struct timeval TIMEVAL;
 #endif
 
 #ifdef HAVE_STRINGS_H
@@ -1102,6 +1106,7 @@ vice_network_socket_t *vice_network_accept(vice_network_socket_t *sockfd)
   \return
      0 on success, else an error occurred.
 */
+#ifndef GEKKO
 int vice_network_socket_close(vice_network_socket_t * sockfd)
 {
     SOCKET localsockfd = INVALID_SOCKET;
@@ -1121,7 +1126,27 @@ int vice_network_socket_close(vice_network_socket_t * sockfd)
 
     return error;
 }
+#else
+int vice_network_socket_close(vice_network_socket_t * sockfd)
+{
+    SOCKET localsockfd = INVALID_SOCKET;
+    int error = -1;
 
+    if (sockfd) {
+        localsockfd = sockfd->sockfd;
+
+        assert(sockfd->used == 1);
+        assert(((socket_pool_usage & (1u << (sockfd - socket_pool))) != 0));
+
+        sockfd->used = 0;
+        socket_pool_usage &= ~(1u << (sockfd - socket_pool));
+
+        error = net_close(localsockfd);
+    }
+
+    return error;
+}
+#endif
 /*! \brief Send data on a connected socket
 
   This function sends outgoing data to a connected socket.
