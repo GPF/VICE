@@ -10,7 +10,7 @@ For news, documentation, developer information, [visit the VICE website](https:/
 
 ## Nintendo Wii Vice port branch @ nintendo-wii-vice-port
 
-Quick port of Vice to the nintendo Wii using the devkitPPC and libogc with the SDL portlibs
+Quick port of Vice to the nintendo Wii using the devkitPPC and libogc with the SDL2 portlibs
 
 only ran a test in Dolphin, needs to have controls added, and some kind of way to open the menu and virtual keyboard stil and sound etc.
 
