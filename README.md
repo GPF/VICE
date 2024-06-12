@@ -8,19 +8,12 @@ For news, documentation, developer information, [visit the VICE website](https:/
 * [Snapshot builds of the latest code](https://github.com/VICE-Team/svn-mirror/releases)
 
 
-## Nintendo Wii Vice port branch @ nintendo-wii-vice-port
+## Dreamcast Vice port branch @ dreamcast-port
 
-Quick port of Vice to the nintendo Wii using the devkitPPC and libogc with the SDL2 portlibs
+Quick port of Vice to the dreamcast using the latest sh-elf gcc 13.2 toolchain/Kos/KOS-PORTS/SDL
 
-only ran a test in Dolphin, needs to have controls added, and some kind of way to open the menu and virtual keyboard still.
+The DCSetup.sh script runs the autogen.sh and then the dreamcast cmdline to the configure script that works.
+I made a copy of the config.h and configure script that were generated and hacked. wrote some fake pkg-config and sdl-config scripts to feed the configure scripts :)
 
 Thanks,
 GPF (troy davis)
-
-![ID-x64_2024-06-10_17-10-28](https://github.com/GPF/VICE/assets/1866144/fc70e1be-a419-45e0-b681-1ba50bac1f13)
-
-![ID-x64_2024-06-10_18-52-20](https://github.com/GPF/VICE/assets/1866144/96b302a3-de86-4618-b4c7-a4e52dde6ed2)
-
-![ID-x64dtv_2024-06-10_16-29-01](https://github.com/GPF/VICE/assets/1866144/1a994e8c-4e1a-4e98-9517-b6e875e762c2)
-
-![ID-x128_2024-06-10_19-18-24](https://github.com/GPF/VICE/assets/1866144/1d02b777-9a4c-4c1e-b112-df36fe1857c4)
