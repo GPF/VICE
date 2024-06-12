@@ -1,0 +1,54 @@
+#!/bin/sh
+
+prefix=/opt/toolchains/dc/kos-ports
+exec_prefix=${prefix}
+exec_prefix_set=no
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+cflags="-D_arch_dreamcast -I${includedir}/ -I${includedir}/SDL"
+libs="-L${libdir} -lSDL"
+
+usage="\
+Usage: sdl-config [OPTIONS]
+Options:
+  --prefix[=DIR]        change the prefix to DIR
+  --exec-prefix[=DIR]   change the exec-prefix to DIR
+  --version             return the version of SDL
+  --cflags              return the C compiler flags
+  --libs                return the linker flags"
+
+while test $# -gt 0; do
+    case "$1" in
+        --prefix=*)
+            prefix=${1#*=}
+            if test $exec_prefix_set = no; then
+                exec_prefix=${prefix}
+            fi
+            ;;
+        --exec-prefix=*)
+            exec_prefix=${1#*=}
+            exec_prefix_set=yes
+            ;;
+        --prefix)
+            echo $prefix
+            ;;
+        --exec-prefix)
+            echo $exec_prefix
+            ;;
+        --version)
+            echo "1.2.15" # or whatever version you're using
+            ;;
+        --cflags)
+            echo $cflags
+            ;;
+        --libs)
+            echo $libs
+            ;;
+        *)
+            echo "$usage"
+            exit 1
+            ;;
+    esac
+    shift
+done
