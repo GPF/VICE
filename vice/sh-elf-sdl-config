@@ -6,8 +6,8 @@ exec_prefix_set=no
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-cflags="-D_arch_dreamcast -I${includedir}/ -I${includedir}/SDL"
-libs="-L${libdir} -lSDL"
+cflags="-D_arch_dreamcast -I${includedir}/ -I${includedir}/SDL $KOS_CFLAGS"
+libs="$KOS_LIBS -L${libdir} -lSDL"
 
 usage="\
 Usage: sdl-config [OPTIONS]

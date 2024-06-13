@@ -11,23 +11,23 @@ KOS_PORT_INCLUDE_DIR="/opt/toolchains/dc/kos-ports/include/"
 case "$1" in
     --cflags)
         if [[ "$2" == "SDL_image >= 1.2.0" ]]; then
-            echo "-D_arch_dreamcast -I$KOS_PORT_INCLUDE_DIR -IKOS_PORT_INCLUDE_DIR/SDL"
+            echo "-D_arch_dreamcast $KOS_CFLAGS"
         else
             echo "-D_arch_dreamcast $KOS_CFLAGS"
         fi
         ;;
     --libs)
         if [[ "$2" == "SDL_image >= 1.2.0" ]]; then
-            echo "-L/opt/toolchains/dc/kos-ports/lib -lSDL -lSDL_image"
+            echo "$KOS_LIBS -L/opt/toolchains/dc/kos-ports/lib -lSDL -lSDL_image"
         else
             echo "$KOS_LIBS"
         fi
         ;;
     --sdlcflags)
-        echo "-D_arch_dreamcast -I$KOS_PORT_INCLUDE_DIR -IKOS_PORT_INCLUDE_DIR/SDL"
+        echo "-D_arch_dreamcast $KOS_CFLAGS"
         ;;
     --sdllibs)
-        echo "-L/opt/toolchains/dc/kos-ports/lib -lSDL"
+        echo "$KOS_LIBS -L/opt/toolchains/dc/kos-ports/lib -lSDL"
         ;;
     --exists)
         if [[ "$2" == "SDL_image >= 1.2.0" ]]; then
