@@ -1,3 +1,0 @@
-mainlock.o: mainlock.c vice.h config.h
-vice.h:
-config.h:

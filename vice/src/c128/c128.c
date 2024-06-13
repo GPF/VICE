@@ -1315,7 +1315,7 @@ int machine_specific_init(void)
 
     cartridge_init();
 
-    mmu_init();
+    c128_mmu_init();
 
     machine_drive_stub();
 

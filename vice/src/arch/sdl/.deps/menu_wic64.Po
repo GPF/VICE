@@ -1,3 +1,0 @@
-menu_wic64.o: menu_wic64.c ../../../src/vice.h ../../../src/config.h
-../../../src/vice.h:
-../../../src/config.h:
