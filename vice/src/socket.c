@@ -120,6 +120,7 @@ typedef size_t socklen_t;
  */
 
 #include <network.h>
+#if !defined(__DREAMCAST__)
 #define SOCK_STREAM     1
 #define AF_INET				2
 #define PF_INET				AF_INET
@@ -151,7 +152,7 @@ struct hostent {
   char    **h_addr_list;    /* list of addresses from name server */
 };
 
-
+#endif
 
 union socket_addresses_u {
     struct sockaddr generic;     /*!< the generic type needed for calling the socket API */

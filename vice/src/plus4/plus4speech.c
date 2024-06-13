@@ -135,20 +135,20 @@ static uint8_t regs[4];
   irq 1 - ($fd21 bit7) EOS
 */
 
-int irq_enable = 0; /* FIXME: guessed */
+int plus4irq_enable = 0; /* FIXME: guessed */
 int irq_latch = 0; /* FIXME: guessed */
 
 static int last = 0;
 
 static void latch_trigger(void)
 {
-    int this = (irq_latch & irq_enable) ? 1 : 0;
+    int this = (irq_latch & plus4irq_enable) ? 1 : 0;
 
     if (last != this) {
         if (this) {
             DBGIRQ(("SPEECH: irq assert latch cause: "));
-            DBGIRQ(("%s", (((irq_latch & irq_enable) >> IRQNUM_EOS)) & 1 ? "eos " : ""));
-            DBGIRQ(("%s", (((irq_latch & irq_enable) >> IRQNUM_DTRD)) & 1 ? "dtrd " : ""));
+            DBGIRQ(("%s", (((irq_latch & plus4irq_enable) >> IRQNUM_EOS)) & 1 ? "eos " : ""));
+            DBGIRQ(("%s", (((irq_latch & plus4irq_enable) >> IRQNUM_DTRD)) & 1 ? "dtrd " : ""));
             DBGIRQ(("\n"));
             maincpu_set_irq(0, 1);
         } else {
@@ -167,7 +167,7 @@ static void latch_trigger(void)
 static void latch_set_mask(int mask)
 {
     DBG(("SPEECH: latch clear/set mask %x\n", mask));
-    irq_enable = mask & 3;
+    plus4irq_enable = mask & 3;
     irq_latch = 0;
     latch_trigger();
 }

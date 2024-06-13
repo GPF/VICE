@@ -261,7 +261,7 @@ m4_foreach([flag],
             [-Wunreachable-code],
             [-Wmacro-redefined],
             [],
-            [-Wfatal-errors],
+            [],
             [-fdiagnostics-absolute-paths],
             [-Wshorten-64-to-32],
             [-Wdiscarded-qualifiers],
@@ -297,7 +297,7 @@ m4_foreach([flag],
             [-Wno-unused-parameter],
             [-Wmissing-prototypes],
             [],
-            [-Wfatal-errors],
+            [],
             [-fdiagnostics-absolute-paths],
             [-Wshorten-64-to-32]],
            [TEST_FLAG=flag
@@ -3478,7 +3478,7 @@ AC_DEFINE_UNQUOTED(PREFIX, "$PREFIX", [Where do we want to install the executabl
 dnl Exceptions for Windows and perhaps MacOS need to be made in the code since
 dnl those are 'portable' (meaning any data is relative to the binary)
 
-dnl VICEDIR="$datadir/$PACKAGE"
+dnl /cd/Vice/="$datadir/$PACKAGE"
 dnl VICE_ROOTDIR="$PREFIX"
 dnl VICE_BINDIR="$bindir"
 dnl VICE_DATADIR="$datadir/$PACKAGE"
@@ -3496,7 +3496,7 @@ dnl MacOS when doing the 'Unix thing'.
 dnl
 dnl -- compyx, 2020-02-08
 dnl
-dnl AC_SUBST(VICEDIR, [$datadir/$PACKAGE])
+dnl AC_SUBST(/cd/Vice/, [$datadir/$PACKAGE])
 dnl AC_SUBST(VICE_ROOTDIR, [$PREFIX])
 dnl AC_SUBST(VICE_BINDIR, [$bindir])
 AC_SUBST(VICE_DATADIR, [$datadir/$PACKAGE])

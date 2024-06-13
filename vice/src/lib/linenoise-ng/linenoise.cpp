@@ -166,7 +166,7 @@ static char *ln_strdup(const char *s)
 #else /* _WIN32 */
 #include <signal.h>
 
-#ifndef GEKKO 
+#if !defined(__DREAMCAST__) && !defined(GEKKO)
 #include <termios.h>
 #include <sys/ioctl.h>
 #endif
@@ -181,7 +181,33 @@ static char *ln_strdup(const char *s)
 #include <wctype.h>
 #endif /* _WIN32 */
 
-#ifdef GEKKO
+#if defined(GEKKO) || defined(__DREAMCAST__)
+#include <stdlib.h>
+#include <string.h>
+
+char *strdup(const char *src) {
+    size_t len = strlen(src) + 1; // +1 for null terminator
+    char *dest = (char *)malloc(len);
+    if (dest != NULL) {
+        memcpy(dest, src, len);
+    }
+    return dest;
+}
+
+#include <ctype.h>
+
+int strcasecmp(const char *s1, const char *s2) {
+    while (*s1 && *s2) {
+        int diff = tolower(*s1) - tolower(*s2);
+        if (diff != 0) {
+            return diff;
+        }
+        s1++;
+        s2++;
+    }
+    return tolower(*s1) - tolower(*s2);
+}
+
 #include <errno.h>
 typedef unsigned int speed_t;
 #define CS8 0x00000030
@@ -3493,7 +3519,7 @@ char* linenoiseHistoryLine(int index) {
 /* Save the history in the specified file. On success 0 is returned
  * otherwise -1 is returned. */
 int linenoiseHistorySave(const char* filename) {
-#if _WIN32
+#if defined(_WIN32) || defined(__DREAMCAST__)
   FILE* fp = fopen(filename, "wt");
 #else
   int fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR);
@@ -3599,7 +3625,7 @@ int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact)
 #endif
 
 int linenoiseInstallWindowChangeHandler(void) {
-#ifndef _WIN32
+#if !defined(_WIN32) && !defined(__DREAMCAST__)
   struct sigaction sa;
   sigemptyset(&sa.sa_mask);
   sa.sa_flags = 0;

@@ -1,0 +1,136 @@
+iec128dcr-resources.o: iec128dcr-resources.c ../../../src/vice.h \
+ ../../../src/config.h /opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/kos/include/sys/_types.h \
+ /opt/toolchains/dc/kos/include/kos/cdefs.h \
+ /opt/toolchains/dc/kos/include/sys/lock.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h \
+ /opt/toolchains/dc/kos/include/sys/_pthread.h \
+ /opt/toolchains/dc/kos/include/sys/stdio.h \
+ /opt/toolchains/dc/kos/include/kos/dbglog.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h \
+ /opt/toolchains/dc/kos/include/sys/select.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h \
+ /opt/toolchains/dc/kos/include/sys/sched.h \
+ /opt/toolchains/dc/kos/include/kos/thread.h \
+ /opt/toolchains/dc/kos/include/kos/tls.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h \
+ /opt/toolchains/dc/kos/include/kos/sem.h \
+ /opt/toolchains/dc/kos/include/kos/cond.h \
+ /opt/toolchains/dc/kos/include/kos/mutex.h \
+ /opt/toolchains/dc/kos/include/kos/once.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h \
+ /opt/toolchains/dc/kos/include/kos/fs.h \
+ /opt/toolchains/dc/kos/include/kos/limits.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h \
+ /opt/toolchains/dc/kos/include/kos/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h \
+ /opt/toolchains/dc/kos/include/kos/nmmgr.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h \
+ ../../../src/drive/driverom.h ../../../src/types.h ../../../src/vice.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h \
+ iec128dcr-resources.h iec128dcrrom.h ../../../src/lib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h ../../../src/debug.h \
+ ../../../src/types.h ../../../src/resources.h ../../../src/util.h
+../../../src/vice.h:
+../../../src/config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/kos/include/sys/_types.h:
+/opt/toolchains/dc/kos/include/kos/cdefs.h:
+/opt/toolchains/dc/kos/include/sys/lock.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h:
+/opt/toolchains/dc/kos/include/sys/_pthread.h:
+/opt/toolchains/dc/kos/include/sys/stdio.h:
+/opt/toolchains/dc/kos/include/kos/dbglog.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h:
+/opt/toolchains/dc/kos/include/sys/select.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h:
+/opt/toolchains/dc/kos/include/sys/sched.h:
+/opt/toolchains/dc/kos/include/kos/thread.h:
+/opt/toolchains/dc/kos/include/kos/tls.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h:
+/opt/toolchains/dc/kos/include/kos/sem.h:
+/opt/toolchains/dc/kos/include/kos/cond.h:
+/opt/toolchains/dc/kos/include/kos/mutex.h:
+/opt/toolchains/dc/kos/include/kos/once.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h:
+/opt/toolchains/dc/kos/include/kos/fs.h:
+/opt/toolchains/dc/kos/include/kos/limits.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h:
+/opt/toolchains/dc/kos/include/kos/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h:
+/opt/toolchains/dc/kos/include/kos/nmmgr.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h:
+../../../src/drive/driverom.h:
+../../../src/types.h:
+../../../src/vice.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h:
+iec128dcr-resources.h:
+iec128dcrrom.h:
+../../../src/lib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h:
+../../../src/debug.h:
+../../../src/types.h:
+../../../src/resources.h:
+../../../src/util.h:

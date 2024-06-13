@@ -1,0 +1,321 @@
+scpu64.o: scpu64.c ../../src/vice.h ../../src/config.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/kos/include/sys/_types.h \
+ /opt/toolchains/dc/kos/include/kos/cdefs.h \
+ /opt/toolchains/dc/kos/include/sys/lock.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h \
+ /opt/toolchains/dc/kos/include/sys/_pthread.h \
+ /opt/toolchains/dc/kos/include/sys/stdio.h \
+ /opt/toolchains/dc/kos/include/kos/dbglog.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h \
+ /opt/toolchains/dc/kos/include/sys/select.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h \
+ /opt/toolchains/dc/kos/include/sys/sched.h \
+ /opt/toolchains/dc/kos/include/kos/thread.h \
+ /opt/toolchains/dc/kos/include/kos/tls.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h \
+ /opt/toolchains/dc/kos/include/kos/sem.h \
+ /opt/toolchains/dc/kos/include/kos/cond.h \
+ /opt/toolchains/dc/kos/include/kos/mutex.h \
+ /opt/toolchains/dc/kos/include/kos/once.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h \
+ /opt/toolchains/dc/kos/include/kos/fs.h \
+ /opt/toolchains/dc/kos/include/kos/limits.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h \
+ /opt/toolchains/dc/kos/include/kos/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h \
+ /opt/toolchains/dc/kos/include/kos/nmmgr.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h ../../src/attach.h \
+ ../../src/types.h ../../src/vice.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h \
+ ../../src/autostart.h ../../src/joyport/bbrtc.h ../../src/types.h \
+ ../../src/c64/c64cart.h ../../src/c64/cart/expert.h \
+ ../../src/c64/cart/retroreplay.h ../../src/c64/cart/mmc64.h \
+ ../../src/c64/cart/mmcreplay.h ../../src/cartridge.h ../../src/sound.h \
+ ../../src/snapshot.h ../../src/c64/cart/c64cartsystem.h \
+ ../../src/c64/c64cia.h ../../src/c64/c64fastiec.h scpu64gluelogic.h \
+ ../../src/c64/c64iec.h ../../src/c64/c64keyboard.h scpu64mem.h \
+ ../../src/mem.h ../../src/c64/c64parallel.h ../../src/c64/c64rsuser.h \
+ ../../src/joyport/cardkey.h ../../src/cartio.h ../../src/cia.h \
+ ../../src/joyport/coplin_keypad.h ../../src/joyport/cx21.h \
+ ../../src/joyport/cx85.h ../../src/debug.h ../../src/diskimage.h \
+ ../../src/drive/drive-cmdline-options.h \
+ ../../src/drive/drive-resources.h ../../src/drive/drive-sound.h \
+ ../../src/drive/drive.h ../../src/core/rtc/ds1216e.h \
+ ../../src/lib/p64/p64.h ../../src/lib/p64/p64config.h ../../src/lib.h \
+ ../../src/debug.h /opt/toolchains/dc/sh-elf/sh-elf/include/string.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/strings.h \
+ /opt/toolchains/dc/kos/include/kos/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/string.h \
+ ../../src/drive/drivetypes.h ../../src/drive/drive.h ../../src/mos6510.h \
+ ../../src/r65c02.h ../../src/export.h ../../src/cartio.h \
+ ../../src/fliplist.h ../../src/fsdevice.h ../../src/gfxoutput.h \
+ ../../src/imagecontents.h ../../src/joyport/inception.h ../../src/init.h \
+ ../../src/joyport/joyport.h ../../src/joyport/joyport_io_sim.h \
+ ../../src/joyport/joystick.h ../../src/joyport/joyport.h \
+ ../../src/kbdbuf.h ../../src/keyboard.h ../../src/log.h \
+ ../../src/machine-drive.h ../../src/machine-printer.h \
+ ../../src/machine-video.h ../../src/machine.h ../../src/main65816cpu.h \
+ ../../src/monitor.h ../../src/monitor/asm.h ../../src/joyport/multijoy.h \
+ ../../src/network.h ../../src/joyport/ninja_snespad.h \
+ ../../src/joyport/paperclip64.h ../../src/joyport/paperclip64e.h \
+ ../../src/joyport/paperclip64sc.h ../../src/joyport/paperclip2.h \
+ ../../src/parallel.h ../../src/printerdrv/printer.h \
+ ../../src/joyport/protopad.h ../../src/resources.h \
+ ../../src/rs232drv/rs232drv.h ../../src/rs232drv/rsuser.h \
+ ../../src/joyport/rushware_keypad.h ../../src/samplerdrv/sampler.h \
+ ../../src/joyport/sampler2bit.h ../../src/joyport/sampler4bit.h \
+ scpu64-cmdline-options.h scpu64-resources.h scpu64-snapshot.h scpu64.h \
+ scpu64cpu.h ../../src/scpu64ui.h ../../src/screenshot.h \
+ ../../src/viewport.h ../../src/joyport/script64_dongle.h \
+ ../../src/serial.h ../../src/sid/sid-cmdline-options.h \
+ ../../src/sid/sid-resources.h ../../src/sid/sid.h ../../src/sound.h \
+ ../../src/joyport/spaceballs.h ../../src/tapeport/tapecart.h \
+ ../../src/traps.h ../../src/mem.h ../../src/joyport/trapthem_snespad.h \
+ ../../src/userport/userport.h ../../src/userport/userport_4bit_sampler.h \
+ ../../src/userport/userport_8bss.h ../../src/userport/userport_dac.h \
+ ../../src/userport/userport_digimax.h \
+ ../../src/userport/userport_hks_joystick.h \
+ ../../src/userport/userport_hummer_joystick.h \
+ ../../src/userport/userport_io_sim.h \
+ ../../src/userport/userport_joystick.h \
+ ../../src/userport/userport_petscii_snespad.h \
+ ../../src/userport/userport_rtc_58321a.h \
+ ../../src/userport/userport_rtc_ds1307.h \
+ ../../src/userport/userport_spt_joystick.h \
+ ../../src/userport/userport_superpad64.h \
+ ../../src/userport/userport_synergy_joystick.h \
+ ../../src/userport/userport_wic64.h \
+ ../../src/userport/userport_woj_joystick.h ../../src/vice-event.h \
+ ../../src/vicii.h ../../src/viciisc/vicii-mem.h ../../src/video.h \
+ ../../src/video/video-sound.h ../../src/viewport.h \
+ ../../src/joyport/vizawrite64_dongle.h ../../src/vsync.h \
+ ../../src/joyport/lightpen.h ../../src/joyport/mouse.h
+../../src/vice.h:
+../../src/config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/kos/include/sys/_types.h:
+/opt/toolchains/dc/kos/include/kos/cdefs.h:
+/opt/toolchains/dc/kos/include/sys/lock.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h:
+/opt/toolchains/dc/kos/include/sys/_pthread.h:
+/opt/toolchains/dc/kos/include/sys/stdio.h:
+/opt/toolchains/dc/kos/include/kos/dbglog.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h:
+/opt/toolchains/dc/kos/include/sys/select.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h:
+/opt/toolchains/dc/kos/include/sys/sched.h:
+/opt/toolchains/dc/kos/include/kos/thread.h:
+/opt/toolchains/dc/kos/include/kos/tls.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h:
+/opt/toolchains/dc/kos/include/kos/sem.h:
+/opt/toolchains/dc/kos/include/kos/cond.h:
+/opt/toolchains/dc/kos/include/kos/mutex.h:
+/opt/toolchains/dc/kos/include/kos/once.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h:
+/opt/toolchains/dc/kos/include/kos/fs.h:
+/opt/toolchains/dc/kos/include/kos/limits.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h:
+/opt/toolchains/dc/kos/include/kos/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h:
+/opt/toolchains/dc/kos/include/kos/nmmgr.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h:
+../../src/attach.h:
+../../src/types.h:
+../../src/vice.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h:
+../../src/autostart.h:
+../../src/joyport/bbrtc.h:
+../../src/types.h:
+../../src/c64/c64cart.h:
+../../src/c64/cart/expert.h:
+../../src/c64/cart/retroreplay.h:
+../../src/c64/cart/mmc64.h:
+../../src/c64/cart/mmcreplay.h:
+../../src/cartridge.h:
+../../src/sound.h:
+../../src/snapshot.h:
+../../src/c64/cart/c64cartsystem.h:
+../../src/c64/c64cia.h:
+../../src/c64/c64fastiec.h:
+scpu64gluelogic.h:
+../../src/c64/c64iec.h:
+../../src/c64/c64keyboard.h:
+scpu64mem.h:
+../../src/mem.h:
+../../src/c64/c64parallel.h:
+../../src/c64/c64rsuser.h:
+../../src/joyport/cardkey.h:
+../../src/cartio.h:
+../../src/cia.h:
+../../src/joyport/coplin_keypad.h:
+../../src/joyport/cx21.h:
+../../src/joyport/cx85.h:
+../../src/debug.h:
+../../src/diskimage.h:
+../../src/drive/drive-cmdline-options.h:
+../../src/drive/drive-resources.h:
+../../src/drive/drive-sound.h:
+../../src/drive/drive.h:
+../../src/core/rtc/ds1216e.h:
+../../src/lib/p64/p64.h:
+../../src/lib/p64/p64config.h:
+../../src/lib.h:
+../../src/debug.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/string.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/strings.h:
+/opt/toolchains/dc/kos/include/kos/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/string.h:
+../../src/drive/drivetypes.h:
+../../src/drive/drive.h:
+../../src/mos6510.h:
+../../src/r65c02.h:
+../../src/export.h:
+../../src/cartio.h:
+../../src/fliplist.h:
+../../src/fsdevice.h:
+../../src/gfxoutput.h:
+../../src/imagecontents.h:
+../../src/joyport/inception.h:
+../../src/init.h:
+../../src/joyport/joyport.h:
+../../src/joyport/joyport_io_sim.h:
+../../src/joyport/joystick.h:
+../../src/joyport/joyport.h:
+../../src/kbdbuf.h:
+../../src/keyboard.h:
+../../src/log.h:
+../../src/machine-drive.h:
+../../src/machine-printer.h:
+../../src/machine-video.h:
+../../src/machine.h:
+../../src/main65816cpu.h:
+../../src/monitor.h:
+../../src/monitor/asm.h:
+../../src/joyport/multijoy.h:
+../../src/network.h:
+../../src/joyport/ninja_snespad.h:
+../../src/joyport/paperclip64.h:
+../../src/joyport/paperclip64e.h:
+../../src/joyport/paperclip64sc.h:
+../../src/joyport/paperclip2.h:
+../../src/parallel.h:
+../../src/printerdrv/printer.h:
+../../src/joyport/protopad.h:
+../../src/resources.h:
+../../src/rs232drv/rs232drv.h:
+../../src/rs232drv/rsuser.h:
+../../src/joyport/rushware_keypad.h:
+../../src/samplerdrv/sampler.h:
+../../src/joyport/sampler2bit.h:
+../../src/joyport/sampler4bit.h:
+scpu64-cmdline-options.h:
+scpu64-resources.h:
+scpu64-snapshot.h:
+scpu64.h:
+scpu64cpu.h:
+../../src/scpu64ui.h:
+../../src/screenshot.h:
+../../src/viewport.h:
+../../src/joyport/script64_dongle.h:
+../../src/serial.h:
+../../src/sid/sid-cmdline-options.h:
+../../src/sid/sid-resources.h:
+../../src/sid/sid.h:
+../../src/sound.h:
+../../src/joyport/spaceballs.h:
+../../src/tapeport/tapecart.h:
+../../src/traps.h:
+../../src/mem.h:
+../../src/joyport/trapthem_snespad.h:
+../../src/userport/userport.h:
+../../src/userport/userport_4bit_sampler.h:
+../../src/userport/userport_8bss.h:
+../../src/userport/userport_dac.h:
+../../src/userport/userport_digimax.h:
+../../src/userport/userport_hks_joystick.h:
+../../src/userport/userport_hummer_joystick.h:
+../../src/userport/userport_io_sim.h:
+../../src/userport/userport_joystick.h:
+../../src/userport/userport_petscii_snespad.h:
+../../src/userport/userport_rtc_58321a.h:
+../../src/userport/userport_rtc_ds1307.h:
+../../src/userport/userport_spt_joystick.h:
+../../src/userport/userport_superpad64.h:
+../../src/userport/userport_synergy_joystick.h:
+../../src/userport/userport_wic64.h:
+../../src/userport/userport_woj_joystick.h:
+../../src/vice-event.h:
+../../src/vicii.h:
+../../src/viciisc/vicii-mem.h:
+../../src/video.h:
+../../src/video/video-sound.h:
+../../src/viewport.h:
+../../src/joyport/vizawrite64_dongle.h:
+../../src/vsync.h:
+../../src/joyport/lightpen.h:
+../../src/joyport/mouse.h:

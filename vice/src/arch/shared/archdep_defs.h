@@ -91,7 +91,7 @@
 #ifdef WINDOWS_COMPILE
 # include <stdlib.h>
 # define ARCHDEP_PATH_MAX   _MAX_PATH
-#elif defined(UNIX_COMPILE) || defined(HAIKU_COMPILE)
+#elif defined(UNIX_COMPILE) || defined(HAIKU_COMPILE) 
 # include <limits.h>
 /* Not sure we need this fallback: on FreeBSD, NetBSD and OpenBSD using
  * `#include <limits.h>` worked even with -pedantic -ansi passed to the compiler.

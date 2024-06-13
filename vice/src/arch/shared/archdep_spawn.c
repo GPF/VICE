@@ -72,7 +72,7 @@
 
 #ifdef UNIX_COMPILE
 
-#ifdef GEKKO
+#if defined(GEKKO) || defined(__DREAMCAST__)
 int execvp(const char *file, char *const argv[]) {
     // Stub function, returns -1 indicating failure
     return -1;

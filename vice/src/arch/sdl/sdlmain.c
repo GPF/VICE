@@ -41,6 +41,11 @@
 /* FIXME: Ugly hack for preventing SDL crash using -help */
 int sdl_help_shutdown = 0;
 
+#ifdef __DREAMCAST__
+KOS_INIT_FLAGS(INIT_DEFAULT);
+#include <kos.h>
+#endif
+
 #ifdef GEKKO
 #define __wii__ 1 //needed for libfar ??? I defined it in Makefile so not sure if still needed
 #include <debug.h>
@@ -58,7 +63,26 @@ int sdl_help_shutdown = 0;
 
 int main(int argc, char **argv)
 {
+#ifdef __DREAMCAST__    
+    printf("VICE DREAMCAST is starting");
 
+//   Allocate space for new arguments
+    // const char* newArgv[] = {
+    //     "x64", // program name
+    //     "--config",
+    //     "sd:/apps/Vice/share/sdl-vicerc"
+    // };
+    //  
+    // const char* newArgv[] = {
+    //     "x64", // program name
+    //     "-autostart",
+    //     "sd:/apps/Vice/share/vice/C64/brucelee.d64"
+    // };   
+    const char* newArgv[] = {"Vice.elf"};
+    int newArgc = 1;
+  
+    return main_program(newArgc, (char **)newArgv);
+#endif 
 #ifdef GEKKO    
 
     printf("VICE WII is starting");

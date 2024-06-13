@@ -45,7 +45,7 @@ int mmu_is_c64config(void);
 
 void mmu_set_ram_bank(uint8_t value);
 
-void mmu_init(void);
+void c128_mmu_init(void);
 int mmu_resources_init(void);
 int mmu_cmdline_options_init(void);
 

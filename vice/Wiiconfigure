@@ -8272,7 +8272,7 @@ ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $
 ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
-           TEST_FLAG=-Wfatal-errors
+           TEST_FLAG=
 
         flags_var_name=VICE_CFLAGS
     eval old_var_CFLAGS=\$$flags_var_name
@@ -9191,7 +9191,7 @@ ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $
 ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
-           TEST_FLAG=-Wfatal-errors
+           TEST_FLAG=
 
         flags_var_name=VICE_CXXFLAGS
     eval old_var_CXXFLAGS=\$$flags_var_name

@@ -33,7 +33,9 @@
 #include "archdep.h"
 #include "archdep_defs.h"
 #include "vice_sdl.h"
+#if !defined(__DREAMCAST__)
 #include <SDL_image.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -99,12 +101,14 @@ void sdl_ui_set_window_icon(void *window)
         return;
     }
 
+#if !defined(__DREAMCAST__)
     IMG_Init(IMG_INIT_PNG);
     surface = IMG_Load(path);
     lib_free(path);
 
     SDL_WM_SetIcon(surface, NULL);
     SDL_FreeSurface(surface);
+#endif    
 }
 
 #endif

@@ -11,7 +11,7 @@ endif
 syn match vhkKeyword    "\c!\(clear\|debug\|else\|endif\|if\|include\|undef\|warning\)"
 syn keyword vhkTodo     TODO FIXME XXX
 syn match vhkModifier   "\c<\(alt\|command\|control\|hyper\|option\|shift\|super\)>"
-syn match vhkVariable   "\$\(USERDIR\|VICEDIR\)"
+syn match vhkVariable   "\$\(USERDIR\|/cd/Vice/\)"
 syn match vhkDebugArg   "\c\<\(enable\|disable\|on\|off\)\>"
 
 " Action names

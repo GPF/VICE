@@ -116,8 +116,6 @@ int c64rom_get_kernal_chksum_id(uint16_t *sumout, int *idout, char *hash)
     }
 
     SHA1String(sha1hash, c64memrom_kernal64_rom, C64_KERNAL_ROM_SIZE);
-    // SHA_Input(sha1hash, c64memrom_kernal64_rom, C64_KERNAL_ROM_SIZE);
-
     LOG(("c64rom_get_kernal_chksum_id sha1: %s", sha1hash));
 
 #ifdef GEKKO

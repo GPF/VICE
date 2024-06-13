@@ -1841,7 +1841,7 @@ static void cwai(struct interrupt_cpu_status_s *maincpu_intstatus, alarm_context
 #undef TIME
 
 /* FIXME: cycle count */
-static void sync(void)
+static void sync6809(void)
 {
     CLK += 4;
     /*
@@ -5813,7 +5813,7 @@ void h6809_mainloop (struct interrupt_cpu_status_s *maincpu_intstatus, alarm_con
             case 0x1013:        /* SYNC (UNDOC) */
             case 0x1113:        /* SYNC (UNDOC) */
 #endif
-                sync();
+                sync6809();
                 break;
 
 #ifdef H6309

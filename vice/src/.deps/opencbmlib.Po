@@ -1,0 +1,3 @@
+opencbmlib.o: opencbmlib.c vice.h config.h
+vice.h:
+config.h:

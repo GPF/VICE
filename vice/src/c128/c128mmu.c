@@ -670,7 +670,7 @@ int mmu_dump(void *context, uint16_t addr)
 
 /* ------------------------------------------------------------------------- */
 
-void mmu_init(void)
+void c128_mmu_init(void)
 {
     mmu_log = log_open("MMU");
     DBGKEY(("mmu_init mmu_column4080_key:%d", mmu_column4080_key));

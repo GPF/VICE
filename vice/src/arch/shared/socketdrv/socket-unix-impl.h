@@ -45,8 +45,10 @@
 #include <sys/socket.h>
 #endif
 
-#ifdef GEKKO
+#if defined(GEKKO) 
 #include <network.h>
+#elif defined (__DREAMCAST__)
+;
 #else
 #include <sys/un.h>
 #endif

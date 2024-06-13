@@ -27,11 +27,16 @@
 #include "vice.h"
 #include "archdep_defs.h"
 
-#ifndef WINDOWS_COMPILE
+#if !defined(WINDOWS_COMPILE) || !defined(__DREAMCAST__)
 #include <limits.h>
 #else
 #include <windows.h>
 #endif
+
+#if defined(__DREAMCAST__)
+#include <kos.h>
+#endif
+
 #include <stdlib.h>
 #include <string.h>
 

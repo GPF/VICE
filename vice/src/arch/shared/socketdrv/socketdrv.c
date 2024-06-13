@@ -31,7 +31,7 @@
 #include "archdep.h"
 
 
-#ifdef GEKKO
+#if defined(GEKKO) || defined (__DREAMCAST__)
 #define HAVE_NETWORK 1
 #endif
 

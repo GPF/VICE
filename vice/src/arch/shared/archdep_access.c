@@ -32,6 +32,13 @@
 
 #include "archdep_access.h"
 
+#ifdef __DREAMCAST__
+#include <unistd.h>
+int access(const char *pathname, int mode) {
+    // Define a stub function that always returns success
+    return 0;
+}
+#endif
 
 /** \brief  Test access of \a pathname against \a mode
  *

@@ -1,0 +1,8 @@
+info.o: info.c vice.h config.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h info.h \
+ infocontrib.h
+vice.h:
+config.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h:
+info.h:
+infocontrib.h:

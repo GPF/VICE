@@ -60,12 +60,12 @@
 
 /* TODO: Perhaps implement fork_coproc() on Haiku using Haiku-specific code
  *       instead of relying on the POSIX compatibility layer? */
-#ifdef GEKKO
+#if defined(GEKKO) || defined(__DREAMCAST__)
 #include <sys/types.h>
 typedef pid_t vice_pid_t;
 #endif
 
-#if (defined(UNIX_COMPILE) || defined(HAIKU_COMPILE)) && !defined(GEKKO)
+#if (defined(UNIX_COMPILE) || defined(HAIKU_COMPILE)) && !defined(GEKKO) && !defined(__DREAMCAST__)
 
 #include <sys/types.h>
 #include <stdio.h>

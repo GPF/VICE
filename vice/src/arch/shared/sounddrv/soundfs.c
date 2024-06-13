@@ -33,7 +33,7 @@
 
 static FILE *fs_fd = NULL;
 
-static int fs_init(const char *param, int *speed, int *fragsize, int *fragnr, int *channels)
+static int sound_fs_init(const char *param, int *speed, int *fragsize, int *fragnr, int *channels)
 {
     /* No stereo capability. */
     *channels = 1;
@@ -42,12 +42,12 @@ static int fs_init(const char *param, int *speed, int *fragsize, int *fragnr, in
     return !fs_fd;
 }
 
-static int fs_write(int16_t *pbuf, size_t nr)
+static int sound_fs_write(int16_t *pbuf, size_t nr)
 {
     return fwrite(pbuf, sizeof(int16_t), nr, fs_fd) != nr;
 }
 
-static void fs_close(void)
+static void sound_fs_close(void)
 {
     fclose(fs_fd);
     fs_fd = NULL;
@@ -56,12 +56,12 @@ static void fs_close(void)
 static const sound_device_t fs_device =
 {
     "fs",
-    fs_init,
-    fs_write,
+    sound_fs_init,
+    sound_fs_write,
     NULL,
     NULL,
     NULL,
-    fs_close,
+    sound_fs_close,
     NULL,
     NULL,
     0,

@@ -96,11 +96,12 @@ const char *archdep_home_path(void)
     if (home == NULL) {
         struct passwd *pwd;
 
-#ifndef GEKKO
-        pwd = getpwuid(getuid());
+#if !defined(__DREAMCAST__) && !defined(GEKKO)
+    pwd = getpwuid(getuid());
 #else  
-        pwd=NULL;
-#endif        
+    pwd = NULL;
+#endif
+
         if (pwd == NULL) {
             home = ".";
         } else {

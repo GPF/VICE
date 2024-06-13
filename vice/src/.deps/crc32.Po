@@ -1,0 +1,375 @@
+crc32.o: crc32.c vice.h config.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h \
+ /opt/toolchains/dc/kos/include/sys/_types.h \
+ /opt/toolchains/dc/kos/include/kos/cdefs.h \
+ /opt/toolchains/dc/kos/include/sys/lock.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h \
+ /opt/toolchains/dc/kos/include/sys/_pthread.h \
+ /opt/toolchains/dc/kos/include/sys/stdio.h \
+ /opt/toolchains/dc/kos/include/kos/dbglog.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h \
+ /opt/toolchains/dc/kos/include/sys/select.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h \
+ /opt/toolchains/dc/kos/include/sys/sched.h \
+ /opt/toolchains/dc/kos/include/kos/thread.h \
+ /opt/toolchains/dc/kos/include/kos/tls.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h \
+ /opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h \
+ /opt/toolchains/dc/kos/include/kos/sem.h \
+ /opt/toolchains/dc/kos/include/kos/cond.h \
+ /opt/toolchains/dc/kos/include/kos/mutex.h \
+ /opt/toolchains/dc/kos/include/kos/once.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h \
+ /opt/toolchains/dc/kos/include/kos/fs.h \
+ /opt/toolchains/dc/kos/include/kos/limits.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h \
+ /opt/toolchains/dc/kos/include/kos/time.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h \
+ /opt/toolchains/dc/kos/include/kos/nmmgr.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h \
+ ../src/arch/sdl/archdep.h vice.h ../src/arch/sdl/vice_sdl.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_main.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_stdinc.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_config.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_platform.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_config_dreamcast.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/string.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/strings.h \
+ /opt/toolchains/dc/kos/include/kos/stdlib.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/sys/string.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/ctype.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/begin_code.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/close_code.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_audio.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_error.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_endian.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_mutex.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_thread.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_rwops.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_cdrom.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_cpuinfo.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_events.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_active.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_keyboard.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_keysym.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_mouse.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_video.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_joystick.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_quit.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_loadso.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_timer.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_version.h \
+ /opt/toolchains/dc/kos-ports/include/SDL/SDL_opengl.h \
+ /opt/toolchains/dc/kos-ports/include/GL/gl.h \
+ /opt/toolchains/dc/sh-elf/sh-elf/include/math.h \
+ /opt/toolchains/dc/kos-ports/include/GL/glu.h \
+ /opt/toolchains/dc/kos-ports/include/GL/gl.h sound.h vice.h types.h \
+ ../src/arch/shared/archdep_unix.h ../src/arch/shared/archapi.h \
+ ../src/arch/shared/archdep_defs.h \
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/limits.h \
+ ../src/arch/shared/archdep_access.h \
+ ../src/arch/shared/archdep_boot_path.h \
+ ../src/arch/shared/archdep_cbmfont.h ../src/arch/shared/archdep_chdir.h \
+ ../src/arch/shared/archdep_close.h \
+ ../src/arch/shared/archdep_create_user_cache_dir.h \
+ ../src/arch/shared/archdep_create_user_config_dir.h \
+ ../src/arch/shared/archdep_create_user_state_dir.h \
+ ../src/arch/shared/archdep_current_dir.h \
+ ../src/arch/shared/archdep_default_autostart_disk_image_file_name.h \
+ ../src/arch/shared/archdep_default_fliplist_file_name.h \
+ ../src/arch/shared/archdep_default_joymap_file_name.h \
+ ../src/arch/shared/archdep_default_logfile.h \
+ ../src/arch/shared/archdep_default_logger.h \
+ ../src/arch/shared/archdep_default_portable_resource_file_name.h \
+ ../src/arch/shared/archdep_default_resource_file_name.h \
+ ../src/arch/shared/archdep_default_rtc_file_name.h \
+ ../src/arch/shared/archdep_default_sysfile_pathlist.h \
+ ../src/arch/shared/archdep_dir.h \
+ ../src/arch/shared/archdep_ethernet_available.h \
+ ../src/arch/shared/archdep_exit.h \
+ ../src/arch/shared/archdep_expand_path.h \
+ ../src/arch/shared/archdep_extra_title_text.h \
+ ../src/arch/shared/archdep_fdopen.h \
+ ../src/arch/shared/archdep_file_exists.h \
+ ../src/arch/shared/archdep_file_is_blockdev.h \
+ ../src/arch/shared/archdep_file_is_chardev.h \
+ ../src/arch/shared/archdep_file_size.h \
+ ../src/arch/shared/archdep_filename_parameter.h \
+ ../src/arch/shared/archdep_fix_permissions.h \
+ ../src/arch/shared/archdep_fix_streams.h \
+ ../src/arch/shared/archdep_fseeko.h types.h \
+ ../src/arch/shared/archdep_ftello.h \
+ ../src/arch/shared/archdep_get_current_drive.h \
+ ../src/arch/shared/archdep_get_runtime_info.h \
+ ../src/arch/shared/archdep_get_vice_datadir.h \
+ ../src/arch/shared/archdep_get_vice_docsdir.h \
+ ../src/arch/shared/archdep_get_vice_drivesdir.h \
+ ../src/arch/shared/archdep_get_vice_hotkeysdir.h \
+ ../src/arch/shared/archdep_get_vice_machinedir.h \
+ ../src/arch/shared/archdep_getcwd.h \
+ ../src/arch/shared/archdep_home_path.h \
+ ../src/arch/shared/archdep_icon_path.h \
+ ../src/arch/shared/archdep_is_haiku.h \
+ ../src/arch/shared/archdep_is_macos_bindist.h \
+ ../src/arch/shared/archdep_is_windows_nt.h \
+ ../src/arch/shared/archdep_kbd_get_host_mapping.h \
+ ../src/arch/shared/archdep_list_drives.h \
+ ../src/arch/shared/archdep_make_backup_filename.h \
+ ../src/arch/shared/archdep_mkdir.h \
+ ../src/arch/shared/archdep_mkstemp_fd.h \
+ ../src/arch/shared/archdep_network.h \
+ ../src/arch/shared/archdep_open_default_log_file.h \
+ ../src/arch/shared/archdep_path_is_relative.h \
+ ../src/arch/shared/archdep_program_name.h \
+ ../src/arch/shared/archdep_program_path.h \
+ ../src/arch/shared/archdep_quote_parameter.h \
+ ../src/arch/shared/archdep_quote_unzip.h \
+ ../src/arch/shared/archdep_rawnet_capability.h \
+ ../src/arch/shared/archdep_real_path.h \
+ ../src/arch/shared/archdep_remove.h ../src/arch/shared/archdep_rename.h \
+ ../src/arch/shared/archdep_require_vkbd.h \
+ ../src/arch/shared/archdep_rmdir.h \
+ ../src/arch/shared/archdep_rtc_get_centisecond.h \
+ ../src/arch/shared/archdep_sanitize_filename.h \
+ ../src/arch/shared/archdep_set_current_drive.h \
+ ../src/arch/shared/archdep_set_openmp_wait_policy.h \
+ ../src/arch/shared/archdep_signals.h \
+ ../src/arch/shared/archdep_socketpeek.h \
+ ../src/arch/shared/archdep_sound.h ../src/arch/shared/archdep_spawn.h \
+ ../src/arch/shared/archdep_startup_log_error.h \
+ ../src/arch/shared/archdep_stat.h ../src/arch/shared/archdep_tick.h \
+ ../src/arch/shared/archdep_tmpnam.h \
+ ../src/arch/shared/archdep_user_cache_path.h \
+ ../src/arch/shared/archdep_user_config_path.h \
+ ../src/arch/shared/archdep_user_state_path.h \
+ ../src/arch/shared/archdep_usleep.h ../src/arch/shared/archdep_xdg.h \
+ crc32.h types.h lib.h debug.h util.h
+vice.h:
+config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdio.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/newlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_newlib_version.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/config.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/ieeefp.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/features.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/cdefs.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_default_types.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stddef.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdarg.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/reent.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/_ansi.h:
+/opt/toolchains/dc/kos/include/sys/_types.h:
+/opt/toolchains/dc/kos/include/kos/cdefs.h:
+/opt/toolchains/dc/kos/include/sys/lock.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/types.h:
+/opt/toolchains/dc/kos/include/sys/_pthread.h:
+/opt/toolchains/dc/kos/include/sys/stdio.h:
+/opt/toolchains/dc/kos/include/kos/dbglog.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/unistd.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_types.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/endian.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/_endian.h:
+/opt/toolchains/dc/kos/include/sys/select.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timeval.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_pthreadtypes.h:
+/opt/toolchains/dc/kos/include/sys/sched.h:
+/opt/toolchains/dc/kos/include/kos/thread.h:
+/opt/toolchains/dc/kos/include/kos/tls.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/queue.h:
+/opt/toolchains/dc/kos/kernel/arch/dreamcast/include/arch/irq.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdint.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_intsup.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/stdbool.h:
+/opt/toolchains/dc/kos/include/kos/sem.h:
+/opt/toolchains/dc/kos/include/kos/cond.h:
+/opt/toolchains/dc/kos/include/kos/mutex.h:
+/opt/toolchains/dc/kos/include/kos/once.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/types.h:
+/opt/toolchains/dc/kos/include/kos/fs.h:
+/opt/toolchains/dc/kos/include/kos/limits.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/timespec.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_timespec.h:
+/opt/toolchains/dc/kos/include/kos/time.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_locale.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/stat.h:
+/opt/toolchains/dc/kos/include/kos/nmmgr.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/fcntl.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/_default_fcntl.h:
+../src/arch/sdl/archdep.h:
+vice.h:
+../src/arch/sdl/vice_sdl.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_main.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_stdinc.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_config.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_platform.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_config_dreamcast.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/machine/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/alloca.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/string.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/strings.h:
+/opt/toolchains/dc/kos/include/kos/stdlib.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/sys/string.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/inttypes.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/ctype.h:
+/opt/toolchains/dc/kos-ports/include/SDL/begin_code.h:
+/opt/toolchains/dc/kos-ports/include/SDL/close_code.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_audio.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_error.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_endian.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_mutex.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_thread.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_rwops.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_cdrom.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_cpuinfo.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_events.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_active.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_keyboard.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_keysym.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_mouse.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_video.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_joystick.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_quit.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_loadso.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_timer.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_version.h:
+/opt/toolchains/dc/kos-ports/include/SDL/SDL_opengl.h:
+/opt/toolchains/dc/kos-ports/include/GL/gl.h:
+/opt/toolchains/dc/sh-elf/sh-elf/include/math.h:
+/opt/toolchains/dc/kos-ports/include/GL/glu.h:
+/opt/toolchains/dc/kos-ports/include/GL/gl.h:
+sound.h:
+vice.h:
+types.h:
+../src/arch/shared/archdep_unix.h:
+../src/arch/shared/archapi.h:
+../src/arch/shared/archdep_defs.h:
+/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include/limits.h:
+../src/arch/shared/archdep_access.h:
+../src/arch/shared/archdep_boot_path.h:
+../src/arch/shared/archdep_cbmfont.h:
+../src/arch/shared/archdep_chdir.h:
+../src/arch/shared/archdep_close.h:
+../src/arch/shared/archdep_create_user_cache_dir.h:
+../src/arch/shared/archdep_create_user_config_dir.h:
+../src/arch/shared/archdep_create_user_state_dir.h:
+../src/arch/shared/archdep_current_dir.h:
+../src/arch/shared/archdep_default_autostart_disk_image_file_name.h:
+../src/arch/shared/archdep_default_fliplist_file_name.h:
+../src/arch/shared/archdep_default_joymap_file_name.h:
+../src/arch/shared/archdep_default_logfile.h:
+../src/arch/shared/archdep_default_logger.h:
+../src/arch/shared/archdep_default_portable_resource_file_name.h:
+../src/arch/shared/archdep_default_resource_file_name.h:
+../src/arch/shared/archdep_default_rtc_file_name.h:
+../src/arch/shared/archdep_default_sysfile_pathlist.h:
+../src/arch/shared/archdep_dir.h:
+../src/arch/shared/archdep_ethernet_available.h:
+../src/arch/shared/archdep_exit.h:
+../src/arch/shared/archdep_expand_path.h:
+../src/arch/shared/archdep_extra_title_text.h:
+../src/arch/shared/archdep_fdopen.h:
+../src/arch/shared/archdep_file_exists.h:
+../src/arch/shared/archdep_file_is_blockdev.h:
+../src/arch/shared/archdep_file_is_chardev.h:
+../src/arch/shared/archdep_file_size.h:
+../src/arch/shared/archdep_filename_parameter.h:
+../src/arch/shared/archdep_fix_permissions.h:
+../src/arch/shared/archdep_fix_streams.h:
+../src/arch/shared/archdep_fseeko.h:
+types.h:
+../src/arch/shared/archdep_ftello.h:
+../src/arch/shared/archdep_get_current_drive.h:
+../src/arch/shared/archdep_get_runtime_info.h:
+../src/arch/shared/archdep_get_vice_datadir.h:
+../src/arch/shared/archdep_get_vice_docsdir.h:
+../src/arch/shared/archdep_get_vice_drivesdir.h:
+../src/arch/shared/archdep_get_vice_hotkeysdir.h:
+../src/arch/shared/archdep_get_vice_machinedir.h:
+../src/arch/shared/archdep_getcwd.h:
+../src/arch/shared/archdep_home_path.h:
+../src/arch/shared/archdep_icon_path.h:
+../src/arch/shared/archdep_is_haiku.h:
+../src/arch/shared/archdep_is_macos_bindist.h:
+../src/arch/shared/archdep_is_windows_nt.h:
+../src/arch/shared/archdep_kbd_get_host_mapping.h:
+../src/arch/shared/archdep_list_drives.h:
+../src/arch/shared/archdep_make_backup_filename.h:
+../src/arch/shared/archdep_mkdir.h:
+../src/arch/shared/archdep_mkstemp_fd.h:
+../src/arch/shared/archdep_network.h:
+../src/arch/shared/archdep_open_default_log_file.h:
+../src/arch/shared/archdep_path_is_relative.h:
+../src/arch/shared/archdep_program_name.h:
+../src/arch/shared/archdep_program_path.h:
+../src/arch/shared/archdep_quote_parameter.h:
+../src/arch/shared/archdep_quote_unzip.h:
+../src/arch/shared/archdep_rawnet_capability.h:
+../src/arch/shared/archdep_real_path.h:
+../src/arch/shared/archdep_remove.h:
+../src/arch/shared/archdep_rename.h:
+../src/arch/shared/archdep_require_vkbd.h:
+../src/arch/shared/archdep_rmdir.h:
+../src/arch/shared/archdep_rtc_get_centisecond.h:
+../src/arch/shared/archdep_sanitize_filename.h:
+../src/arch/shared/archdep_set_current_drive.h:
+../src/arch/shared/archdep_set_openmp_wait_policy.h:
+../src/arch/shared/archdep_signals.h:
+../src/arch/shared/archdep_socketpeek.h:
+../src/arch/shared/archdep_sound.h:
+../src/arch/shared/archdep_spawn.h:
+../src/arch/shared/archdep_startup_log_error.h:
+../src/arch/shared/archdep_stat.h:
+../src/arch/shared/archdep_tick.h:
+../src/arch/shared/archdep_tmpnam.h:
+../src/arch/shared/archdep_user_cache_path.h:
+../src/arch/shared/archdep_user_config_path.h:
+../src/arch/shared/archdep_user_state_path.h:
+../src/arch/shared/archdep_usleep.h:
+../src/arch/shared/archdep_xdg.h:
+crc32.h:
+types.h:
+lib.h:
+debug.h:
+util.h:
