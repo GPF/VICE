@@ -17,3 +17,7 @@ I made a copy of the config.h and configure script that were generated and hacke
 
 Thanks,
 GPF (troy davis)
+
+![image](https://github.com/GPF/VICE/assets/1866144/535dc3aa-f3de-4ea4-b7a8-854a598e589d)
+![image](https://github.com/GPF/VICE/assets/1866144/134ae2a2-1649-435e-9c70-9d3d0a2782dd)
+
