@@ -11,7 +11,7 @@
 /* #undef BSD_COMPILE */
 
 /* Flags passed to configure */
-#define CONFIGURE_FLAGS "--program-prefix=/cd/Vice/ --host=sh-elf --enable-sdl1ui --enable-x64 --without-sdlsound --with-fastsid --disable-realdevice --without-resid --disable-portaudio --disable-ahi --disable-midi --disable-lame --disable-hardsid --disable-catweasel --disable-ssi2001 --disable-parsid --disable-ethernet --disable-ipv6 --disable-html-docs --disable-pdf-docs --disable-debug --disable-debug-gtk3ui --disable-cpuhistory --disable-native-gtk3ui --disable-headlessui --disable-hidmgr --disable-hidutils --disable-rs232 --without-readline --without-pulse --without-alsa --without-oss --without-sun --without-jpeg --without-png --without-gif --without-glew --disable-gtk3ui --without-libcurl --disable-new8580filter --cache-file=config.cache"
+#define CONFIGURE_FLAGS "--program-prefix=/cd/Vice/ --host=sh-elf --enable-sdl1ui --enable-x64 --without-sdlsound --disable-hwscale --with-fastsid --disable-realdevice --without-resid --disable-portaudio --disable-ahi --disable-midi --disable-lame --disable-hardsid --disable-catweasel --disable-ssi2001 --disable-parsid --disable-ethernet --disable-ipv6 --disable-html-docs --disable-pdf-docs --disable-debug --disable-debug-gtk3ui --disable-cpuhistory --disable-native-gtk3ui --disable-headlessui --disable-hidmgr --disable-hidutils --disable-rs232 --without-readline --without-pulse --without-alsa --without-oss --without-sun --without-jpeg --without-png --without-gif --without-glew --disable-gtk3ui --without-libcurl --disable-new8580filter --enable-cmake --cache-file=config.cache"
 
 /* Enable plain darwin compilation */
 /* #undef DARWIN_COMPILE */
@@ -34,8 +34,8 @@
 /* Enable emulation for USB joysticks. */
 /* #undef HAS_USB_JOYSTICK */
 
-/* Define to 1 if you have the 'accept' function. */
-/* #undef HAVE_ACCEPT */
+/* Define to 1 if you have the `accept' function. */
+#define HAVE_ACCEPT 1
 
 /* Define to 1 if you have the <alloca.h> header file. */
 #define HAVE_ALLOCA_H 1
@@ -44,16 +44,16 @@
 /* #undef HAVE_ALSA_ASOUNDLIB_H */
 
 /* Define to 1 if you have the <arpa/inet.h> header file. */
-/* #undef HAVE_ARPA_INET_H */
+#define HAVE_ARPA_INET_H 1
 
-/* Define to 1 if you have the 'atexit' function. */
+/* Define to 1 if you have the `atexit' function. */
 #define HAVE_ATEXIT 1
 
 /* Enable AudioUnit support. */
 /* #undef HAVE_AUDIO_UNIT */
 
-/* Define to 1 if you have the 'bind' function. */
-/* #undef HAVE_BIND */
+/* Define to 1 if you have the `bind' function. */
+#define HAVE_BIND 1
 
 /* Use backtrace facility of libC or libexecinfo */
 /* #undef HAVE_BT_SYMBOLS */
@@ -70,8 +70,8 @@
 /* Define to 1 if you have the <commctrl.h> header file. */
 /* #undef HAVE_COMMCTRL_H */
 
-/* Define to 1 if you have the 'connect' function. */
-/* #undef HAVE_CONNECT */
+/* Define to 1 if you have the `connect' function. */
+#define HAVE_CONNECT 1
 
 /* Define to 1 if you have the <CoreServices/CoreServices.h> header file. */
 /* #undef HAVE_CORESERVICES_CORESERVICES_H */
@@ -91,7 +91,7 @@
 /* Enable threading debug support */
 /* #undef HAVE_DEBUG_THREADS */
 
-/* Define to 1 if you have the declaration of 'sys_siglist', and to 0 if you
+/* Define to 1 if you have the declaration of `sys_siglist', and to 0 if you
    don't. */
 #define HAVE_DECL_SYS_SIGLIST 0
 
@@ -110,11 +110,11 @@
 /* Define to 1 if you have the <direct.h> header file. */
 /* #undef HAVE_DIRECT_H */
 
-/* Define to 1 if you have the <dirent.h> header file, and it defines 'DIR'.
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
-/* #undef HAVE_DIRENT_H */
+#define HAVE_DIRENT_H 1
 
-/* Define to 1 if you have the 'dirname' function. */
+/* Define to 1 if you have the `dirname' function. */
 #define HAVE_DIRNAME 1
 
 /* Define to 1 if you have the <dir.h> header file. */
@@ -165,26 +165,26 @@
 /* Use fontconfig for custom fonts. */
 /* #undef HAVE_FONTCONFIG */
 
-/* Define to 1 if you have the 'fork' function. */
+/* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
 
 /* Support for FreeBSD par port device file. */
 /* #undef HAVE_FREEBSD_PARPORT_HEADERS */
 
-/* Define to 1 if you have the 'fseeko' function. */
+/* Define to 1 if you have the `fseeko' function. */
 #define HAVE_FSEEKO 1
 
-/* Define to 1 if you have the 'ftello' function. */
+/* Define to 1 if you have the `ftello' function. */
 #define HAVE_FTELLO 1
 
-/* Define to 1 if you have the 'getcwd' function. */
+/* Define to 1 if you have the `getcwd' function. */
 #define HAVE_GETCWD 1
 
-/* Define to 1 if you have the 'getdtablesize' function. */
+/* Define to 1 if you have the `getdtablesize' function. */
 /* #undef HAVE_GETDTABLESIZE */
 
-/* Define to 1 if you have the 'gethostbyname' function. */
-/* #undef HAVE_GETHOSTBYNAME */
+/* Define to 1 if you have the `gethostbyname' function. */
+#define HAVE_GETHOSTBYNAME 1
 
 /* Define if gethostbyname2 can be used */
 /* #undef HAVE_GETHOSTBYNAME2 */
@@ -192,13 +192,13 @@
 /* Define if getipnodebyname can be used */
 /* #undef HAVE_GETIPNODEBYNAME */
 
-/* Define to 1 if you have the 'getpwuid' function. */
+/* Define to 1 if you have the `getpwuid' function. */
 /* #undef HAVE_GETPWUID */
 
-/* Define to 1 if you have the 'getrlimit' function. */
+/* Define to 1 if you have the `getrlimit' function. */
 /* #undef HAVE_GETRLIMIT */
 
-/* Define to 1 if you have the 'gettimeofday' function. */
+/* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
 
 /* Can we use the GIF or UNGIF library? */
@@ -207,37 +207,37 @@
 /* Support for HardSID. */
 /* #undef HAVE_HARDSID */
 
-/* Define to 1 if you have the 'htonl' function. */
-/* #undef HAVE_HTONL */
+/* Define to 1 if you have the `htonl' function. */
+#define HAVE_HTONL 1
 
-/* Define to 1 if you have the 'htons' function. */
-/* #undef HAVE_HTONS */
+/* Define to 1 if you have the `htons' function. */
+#define HAVE_HTONS 1
 
 /* Enable arbitrary window scaling */
-#define HAVE_HWSCALE /**/
+/* #undef HAVE_HWSCALE */
 
-/* Define to 1 if you have the 'i386_set_ioperm' function. */
+/* Define to 1 if you have the `i386_set_ioperm' function. */
 /* #undef HAVE_I386_SET_IOPERM */
 
 /* Define to 1 if you have the <ieee1284.h> header file. */
 /* #undef HAVE_IEEE1284_H */
 
-/* Define to 1 if you have the 'inb' function. */
+/* Define to 1 if you have the `inb' function. */
 /* #undef HAVE_INB */
 
-/* Define to 1 if you have the 'inbv' function. */
+/* Define to 1 if you have the `inbv' function. */
 /* #undef HAVE_INBV */
 
-/* Define to 1 if you have the 'inb_p' function. */
+/* Define to 1 if you have the `inb_p' function. */
 /* #undef HAVE_INB_P */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
 /* Define if the in_addr_t type is present. */
-/* #undef HAVE_IN_ADDR_T */
+#define HAVE_IN_ADDR_T /**/
 
-/* Define to 1 if you have the 'ioperm' function. */
+/* Define to 1 if you have the `ioperm' function. */
 /* #undef HAVE_IOPERM */
 
 /* Define to 1 if you have the <io.h> header file. */
@@ -249,37 +249,37 @@
 /* Define to 1 if you have the 'amd64' library (-lamd64). */
 /* #undef HAVE_LIBAMD64 */
 
-/* Define to 1 if you have the 'bsd' library (-lbsd). */
+/* Define to 1 if you have the `bsd' library (-lbsd). */
 /* #undef HAVE_LIBBSD */
 
 /* libcurl support */
 /* #undef HAVE_LIBCURL */
 
-/* Define to 1 if you have the 'FLAC' library (-lFLAC). */
+/* Define to 1 if you have the `FLAC' library (-lFLAC). */
 /* #undef HAVE_LIBFLAC */
 
 /* Define to 1 if you have the <libgen.h> header file. */
 #define HAVE_LIBGEN_H 1
 
-/* Define to 1 if you have the 'iconv' library (-liconv). */
+/* Define to 1 if you have the `iconv' library (-liconv). */
 /* #undef HAVE_LIBICONV */
 
 /* Define to 1 if you have the 'ieee1284' library (-lieee1284). */
 /* #undef HAVE_LIBIEEE1284 */
 
-/* Define to 1 if you have the 'm' library (-lm). */
+/* Define to 1 if you have the `m' library (-lm). */
 #define HAVE_LIBM 1
 
-/* Define to 1 if you have the 'ogg' library (-logg). */
+/* Define to 1 if you have the `ogg' library (-logg). */
 /* #undef HAVE_LIBOGG */
 
-/* Define to 1 if you have the 'ossaudio' library (-lossaudio). */
+/* Define to 1 if you have the `ossaudio' library (-lossaudio). */
 /* #undef HAVE_LIBOSSAUDIO */
 
 /* Define to 1 if you have the 'pciutils' library. */
 /* #undef HAVE_LIBPCI */
 
-/* Define to 1 if you have the 'posix' library (-lposix). */
+/* Define to 1 if you have the `posix' library (-lposix). */
 /* #undef HAVE_LIBPOSIX */
 
 /* Define to 1 if you have the <libusbhid.h> header file. */
@@ -288,13 +288,13 @@
 /* Define to 1 if you have the <libusb.h> header file. */
 /* #undef HAVE_LIBUSB_H */
 
-/* Define to 1 if you have the 'vorbis' library (-lvorbis). */
+/* Define to 1 if you have the `vorbis' library (-lvorbis). */
 /* #undef HAVE_LIBVORBIS */
 
-/* Define to 1 if you have the 'vorbisenc' library (-lvorbisenc). */
+/* Define to 1 if you have the `vorbisenc' library (-lvorbisenc). */
 /* #undef HAVE_LIBVORBISENC */
 
-/* Define to 1 if you have the 'vorbisfile' library (-lvorbisfile). */
+/* Define to 1 if you have the `vorbisfile' library (-lvorbisfile). */
 /* #undef HAVE_LIBVORBISFILE */
 
 /* Enable lightpen support */
@@ -321,10 +321,10 @@
 /* Define to 1 if you have the <linux/soundcard.h> header file. */
 /* #undef HAVE_LINUX_SOUNDCARD_H */
 
-/* Define to 1 if you have the 'listen' function. */
-/* #undef HAVE_LISTEN */
+/* Define to 1 if you have the `listen' function. */
+#define HAVE_LISTEN 1
 
-/* Define to 1 if you have the 'ltoa' function. */
+/* Define to 1 if you have the `ltoa' function. */
 /* #undef HAVE_LTOA */
 
 /* Define to 1 if you have the <machine/cpufunc.h> header file. */
@@ -342,13 +342,13 @@
 /* Define to 1 if you have the <math.h> header file. */
 #define HAVE_MATH_H 1
 
-/* Define to 1 if you have the 'memmove' function. */
+/* Define to 1 if you have the `memmove' function. */
 #define HAVE_MEMMOVE 1
 
 /* Enable MIDI emulation. */
 /* #undef HAVE_MIDI */
 
-/* Define to 1 if you have the 'mkstemp' function. */
+/* Define to 1 if you have the `mkstemp' function. */
 #define HAVE_MKSTEMP 1
 
 /* Enable 1351 mouse support */
@@ -360,37 +360,37 @@
 /* Use nanosleep instead of usleep */
 #define HAVE_NANOSLEEP /**/
 
-/* Define to 1 if you have the <ndir.h> header file, and it defines 'DIR'. */
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
 /* #undef HAVE_NDIR_H */
 
 /* Define to 1 if you have the <netdb.h> header file. */
-/* #undef HAVE_NETDB_H */
+#define HAVE_NETDB_H 1
 
 /* Define to 1 if you have the <netinet/in.h> header file. */
-/* #undef HAVE_NETINET_IN_H */
+#define HAVE_NETINET_IN_H 1
 
 /* Define to 1 if you have the <netinet/tcp.h> header file. */
-/* #undef HAVE_NETINET_TCP_H */
+#define HAVE_NETINET_TCP_H 1
 
 /* Enable netplay support */
-/* #undef HAVE_NETWORK */
+#define HAVE_NETWORK /**/
 
 /* Use the new 8580 filter */
 /* #undef HAVE_NEW_8580_FILTER */
 
-/* Define to 1 if the system has the type 'off_t'. */
+/* Define to 1 if the system has the type `off_t'. */
 #define HAVE_OFF_T 1
 
 /* Include sys/types.h for off_t */
 #define HAVE_OFF_T_IN_SYS_TYPES /**/
 
-/* Define to 1 if you have the 'outb' function. */
+/* Define to 1 if you have the `outb' function. */
 /* #undef HAVE_OUTB */
 
-/* Define to 1 if you have the 'outbv' function. */
+/* Define to 1 if you have the `outbv' function. */
 /* #undef HAVE_OUTBV */
 
-/* Define to 1 if you have the 'outb_p' function. */
+/* Define to 1 if you have the `outb_p' function. */
 /* #undef HAVE_OUTB_P */
 
 /* Support for ParSID. */
@@ -423,7 +423,7 @@
 /* Define to 1 if you have the <pulse/simple.h> header file. */
 /* #undef HAVE_PULSE_SIMPLE_H */
 
-/* Define to 1 if you have the 'random' function. */
+/* Define to 1 if you have the `random' function. */
 #define HAVE_RANDOM 1
 
 /* Support for CS8900A ethernet controller. */
@@ -432,8 +432,8 @@
 /* Support for OpenCBM (former CBM4Linux). */
 /* #undef HAVE_REALDEVICE */
 
-/* Define to 1 if you have the 'recv' function. */
-/* #undef HAVE_RECV */
+/* Define to 1 if you have the `recv' function. */
+#define HAVE_RECV 1
 
 /* Define to 1 if you have the <regex.h> header file. */
 #define HAVE_REGEX_H 1
@@ -444,14 +444,14 @@
 /* This version provides ReSID-DTV support. */
 /* #undef HAVE_RESID_DTV */
 
-/* Define to 1 if you have the 'rewinddir' function. */
+/* Define to 1 if you have the `rewinddir' function. */
 #define HAVE_REWINDDIR 1
 
 /* Enable RS232 device emulation. */
 /* #undef HAVE_RS232DEV */
 
 /* Enable RS232 network support */
-/* #undef HAVE_RS232NET */
+#define HAVE_RS232NET /**/
 
 /* Enable SDLmain replacement */
 /* #undef HAVE_SDLMAIN */
@@ -465,7 +465,7 @@
 /* Define to 1 if you have the <SDL_main.h> header file. */
 /* #undef HAVE_SDL_MAIN_H */
 
-/* Define to 1 if you have the 'SDL_NumJoysticks' function. */
+/* Define to 1 if you have the `SDL_NumJoysticks' function. */
 #define HAVE_SDL_NUMJOYSTICKS 1
 
 /* Define to 1 if you have the <SDL/SDL_audio.h> header file. */
@@ -477,8 +477,8 @@
 /* Define to 1 if you have the <SDL/SDL_main.h> header file. */
 #define HAVE_SDL_SDL_MAIN_H 1
 
-/* Define to 1 if you have the 'send' function. */
-/* #undef HAVE_SEND */
+/* Define to 1 if you have the `send' function. */
+#define HAVE_SEND 1
 
 /* Define to 1 if you have the <shlobj.h> header file. */
 /* #undef HAVE_SHLOBJ_H */
@@ -489,14 +489,14 @@
 /* Use more accurate buffer fill reporting */
 /* #undef HAVE_SND_PCM_AVAIL */
 
-/* Define to 1 if you have the 'snprintf' function. */
+/* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
 
-/* Define to 1 if you have the 'socket' function. */
-/* #undef HAVE_SOCKET */
+/* Define to 1 if you have the `socket' function. */
+#define HAVE_SOCKET 1
 
-/* Define to 1 if the system has the type 'socklen_t'. */
-/* #undef HAVE_SOCKLEN_T */
+/* Define to 1 if the system has the type `socklen_t'. */
+#define HAVE_SOCKLEN_T 1
 
 /* Define to 1 if you have the <soundcard.h> header file. */
 /* #undef HAVE_SOUNDCARD_H */
@@ -513,16 +513,16 @@
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
 
-/* Define to 1 if you have the 'stpcpy' function. */
+/* Define to 1 if you have the `stpcpy' function. */
 #define HAVE_STPCPY 1
 
-/* Define to 1 if you have the 'strcasecmp' function. */
+/* Define to 1 if you have the `strcasecmp' function. */
 #define HAVE_STRCASECMP 1
 
 /* Define to 1 if you have the 'strdup' function. */
 #define HAVE_STRDUP 1
 
-/* Define to 1 if you have the 'strerror' function. */
+/* Define to 1 if you have the `strerror' function. */
 #define HAVE_STRERROR 1
 
 /* Define to 1 if you have the <strings.h> header file. */
@@ -531,37 +531,37 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
-/* Define to 1 if you have the 'strlcpy' function. */
+/* Define to 1 if you have the `strlcpy' function. */
 #define HAVE_STRLCPY 1
 
-/* Define to 1 if you have the 'strlwr' function. */
+/* Define to 1 if you have the `strlwr' function. */
 #define HAVE_STRLWR 1
 
-/* Define to 1 if you have the 'strncasecmp' function. */
+/* Define to 1 if you have the `strncasecmp' function. */
 #define HAVE_STRNCASECMP 1
 
-/* Define to 1 if you have the 'strrev' function. */
+/* Define to 1 if you have the `strrev' function. */
 /* #undef HAVE_STRREV */
 
-/* Define to 1 if you have the 'strtok' function. */
+/* Define to 1 if you have the `strtok' function. */
 #define HAVE_STRTOK 1
 
-/* Define to 1 if you have the 'strtok_r' function. */
+/* Define to 1 if you have the `strtok_r' function. */
 #define HAVE_STRTOK_R 1
 
-/* Define to 1 if you have the 'strtoul' function. */
+/* Define to 1 if you have the `strtoul' function. */
 #define HAVE_STRTOUL 1
 
-/* Define to 1 if you have the 'swab' function. */
+/* Define to 1 if you have the `swab' function. */
 #define HAVE_SWAB 1
 
 /* Define to 1 if you have the <sys/audioio.h> header file. */
 /* #undef HAVE_SYS_AUDIOIO_H */
 
 /* Define to 1 if you have the <sys/dirent.h> header file. */
-/* #undef HAVE_SYS_DIRENT_H */
+#define HAVE_SYS_DIRENT_H 1
 
-/* Define to 1 if you have the <sys/dir.h> header file, and it defines 'DIR'.
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
    */
 /* #undef HAVE_SYS_DIR_H */
 
@@ -571,7 +571,7 @@
 /* Define to 1 if you have the <sys/io.h> header file. */
 /* #undef HAVE_SYS_IO_H */
 
-/* Define to 1 if you have the <sys/ndir.h> header file, and it defines 'DIR'.
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
    */
 /* #undef HAVE_SYS_NDIR_H */
 
@@ -579,7 +579,7 @@
 #define HAVE_SYS_SELECT_H 1
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
-/* #undef HAVE_SYS_SOCKET_H */
+#define HAVE_SYS_SOCKET_H 1
 
 /* Define to 1 if you have the <sys/soundcard.h> header file. */
 /* #undef HAVE_SYS_SOUNDCARD_H */
@@ -602,7 +602,7 @@
 /* TUN/TAP support using <linux/if_tun.h> */
 /* #undef HAVE_TUNTAP */
 
-/* Define to 1 if you have the 'ultoa' function. */
+/* Define to 1 if you have the `ultoa' function. */
 /* #undef HAVE_ULTOA */
 
 /* Define to 1 if you have the <unistd.h> header file. */
@@ -617,10 +617,10 @@
 /* Define to 1 if you have the <usb.h> header file. */
 /* #undef HAVE_USB_H */
 
-/* Define to 1 if the system has the type 'u_short'. */
+/* Define to 1 if the system has the type `u_short'. */
 #define HAVE_U_SHORT 1
 
-/* Define to 1 if you have the 'vfork' function. */
+/* Define to 1 if you have the `vfork' function. */
 /* #undef HAVE_VFORK */
 
 /* Define to 1 if you have the <vfork.h> header file. */
@@ -629,7 +629,7 @@
 /* Define to 1 if you have the <vorbis/vorbisfile.h> header file. */
 /* #undef HAVE_VORBIS_VORBISFILE_H */
 
-/* Define to 1 if you have the 'vsnprintf' function. */
+/* Define to 1 if you have the `vsnprintf' function. */
 #define HAVE_VSNPRINTF 1
 
 /* Define to 1 if you have the <wchar.h> header file. */
@@ -641,10 +641,10 @@
 /* Define to 1 if you have the <winsock.h> header file. */
 /* #undef HAVE_WINSOCK_H */
 
-/* Define to 1 if 'fork' works. */
+/* Define to 1 if `fork' works. */
 #define HAVE_WORKING_FORK 1
 
-/* Define to 1 if 'vfork' works. */
+/* Define to 1 if `vfork' works. */
 /* #undef HAVE_WORKING_VFORK */
 
 /* Support X64 images */
@@ -653,10 +653,10 @@
 /* Can we use the ZLIB compression library? */
 /* #undef HAVE_ZLIB */
 
-/* Define to 1 if you have the '_fseeki64' function. */
+/* Define to 1 if you have the `_fseeki64' function. */
 /* #undef HAVE__FSEEKI64 */
 
-/* Define to 1 if you have the '_ftelli64' function. */
+/* Define to 1 if you have the `_ftelli64' function. */
 /* #undef HAVE__FTELLI64 */
 
 /* Are we compiling for Linux? */
@@ -704,22 +704,22 @@
 /* Where do we want to install the executable? */
 #define PREFIX "/usr/local"
 
-/* Define as the return type of signal handlers ('int' or 'void'). */
+/* Define as the return type of signal handlers (`int' or `void'). */
 #define RETSIGTYPE void
 
-/* The size of 'time_t', as computed by sizeof. */
+/* The size of `time_t', as computed by sizeof. */
 #define SIZEOF_TIME_T 8
 
-/* The size of 'unsigned int', as computed by sizeof. */
+/* The size of `unsigned int', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_INT 4
 
-/* The size of 'unsigned long', as computed by sizeof. */
+/* The size of `unsigned long', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_LONG 4
 
-/* The size of 'unsigned short', as computed by sizeof. */
+/* The size of `unsigned short', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_SHORT 2
 
-/* Define to 1 if all of the C89 standard headers exist (not just the ones
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
    required in a freestanding environment). This macro is provided for
    backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
@@ -815,36 +815,30 @@
 # endif
 #endif
 
-/* Define to 1 if 'lex' declares 'yytext' as a 'char *' by default, not a
-   'char[]'. */
+/* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
+   `char[]'. */
 #define YYTEXT_POINTER 1
 
 /* Number of bits in a file offset, on hosts where this is settable. */
 /* #undef _FILE_OFFSET_BITS */
 
-/* Define to 1 on platforms where this makes off_t a 64-bit type. */
+/* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-/* Number of bits in time_t, on hosts where this is settable. */
-/* #undef _TIME_BITS */
-
-/* Define to 1 on platforms where this makes time_t a 64-bit type. */
-/* #undef __MINGW_USE_VC2005_COMPAT */
-
-/* Define to 'long int' if <sys/types.h> does not define. */
+/* Define to `long int' if <sys/types.h> does not define. */
 /* #undef off_t */
 
 /* Define as a signed integer type capable of holding a process identifier. */
 /* #undef pid_t */
 
-/* Define as 'unsigned int' if <stddef.h> doesn't define. */
+/* Define to `unsigned int' if <sys/types.h> does not define. */
 /* #undef size_t */
 
 /* ss_family is not defined here, use __ss_family instead */
 /* #undef ss_family */
 
-/* Define to 'int' if <sys/types.h> does not define. */
+/* Define to `int' if <sys/types.h> does not define. */
 /* #undef ssize_t */
 
-/* Define as 'fork' if 'vfork' does not work. */
+/* Define as `fork' if `vfork' does not work. */
 #define vfork fork
