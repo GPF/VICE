@@ -1,8 +1,4 @@
 automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'
 configure.in:13: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
 configure.in:13: https://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
-Makefile.am: installing './INSTALL'
-Makefile.am: installing './COPYING' using GNU General Public License v3 file
-Makefile.am:     Consider adding the COPYING file to the version control system
-Makefile.am:     for your code, to avoid questions about which license your project uses
 automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'

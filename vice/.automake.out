@@ -1,4 +1,3 @@
-configure.ac:195: installing './compile'
 src/Makefile.am:681: warning: vsid_LDFLAGS was already defined in condition TRUE, which includes condition HAVE_DEBUG and MACOS_COMPILE ...
 configure.ac:3263: ... 'vsid_LDFLAGS' previously defined here
 src/Makefile.am:683: warning: vsid_LDFLAGS was already defined in condition TRUE, which includes condition HAVE_DEBUG and !MACOS_COMPILE ...
@@ -31,4 +30,3 @@ src/Makefile.am:1198: warning: xcbm2_LDFLAGS was already defined in condition TR
 configure.ac:3270: ... 'xcbm2_LDFLAGS' previously defined here
 src/Makefile.am:1200: warning: xcbm2_LDFLAGS was already defined in condition TRUE, which includes condition HAVE_DEBUG and !MACOS_COMPILE ...
 src/Makefile.am:1198: ... 'xcbm2_LDFLAGS' previously defined here
-configure.ac: installing './ylwrap'
