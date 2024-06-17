@@ -1,0 +1,100 @@
+add_library(libjoyport)
+
+target_compile_definitions(
+    libjoyport
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:CXX>:>
+        $<$<COMPILE_LANGUAGE:OBJC>:>
+    )
+
+target_include_directories(
+    libjoyport
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/
+        ${CMAKE_SOURCE_DIR}/src/arch/systemheaderoverride
+        ${CMAKE_SOURCE_DIR}/src/arch/sdl
+        ${CMAKE_SOURCE_DIR}/src/arch/shared
+        ${CMAKE_SOURCE_DIR}/src/arch/shared/
+        ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src/samplerdrv
+        ${CMAKE_SOURCE_DIR}/src/core/rtc
+        ${CMAKE_SOURCE_DIR}/src/userport
+    )
+
+target_compile_options(
+    libjoyport
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
+    )
+
+target_sources(
+    libjoyport
+    PRIVATE
+        bbrtc.c
+        cardkey.c
+        coplin_keypad.c
+        cx21.c
+        cx85.c
+        inception.c
+        joyport.c
+        joyport_io_sim.c
+        joystick.c
+        lightpen.c
+        mouse.c
+        mouse_1351.c
+        mouse_neos.c
+        mouse_paddle.c
+        mouse_quadrature.c
+        multijoy.c
+        ninja_snespad.c
+        paperclip64.c
+        paperclip64e.c
+        paperclip64sc.c
+        paperclip2.c
+        powerpad.c
+        protopad.c
+        rushware_keypad.c
+        sampler2bit.c
+        sampler4bit.c
+        script64_dongle.c
+        spaceballs.c
+        trapthem_snespad.c
+        vizawrite64_dongle.c
+        waasoft_dongle.c
+        bbrtc.h
+        cardkey.h
+        coplin_keypad.h
+        cx21.h
+        cx85.h
+        inception.h
+        joyport.h
+        joyport_io_sim.h
+        joystick.h
+        lightpen.h
+        mouse.h
+        mouse_1351.h
+        mouse_neos.h
+        mouse_paddle.h
+        mouse_quadrature.h
+        multijoy.h
+        ninja_snespad.h
+        paperclip64.h
+        paperclip64e.h
+        paperclip64sc.h
+        paperclip2.h
+        powerpad.h
+        protopad.h
+        rushware_keypad.h
+        sampler2bit.h
+        sampler4bit.h
+        script64_dongle.h
+        spaceballs.h
+        trapthem_snespad.h
+        vizawrite64_dongle.h
+        waasoft_dongle.h
+    )
+

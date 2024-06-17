@@ -1,0 +1,339 @@
+add_library(libc64cartsystem)
+
+target_compile_definitions(
+    libc64cartsystem
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:CXX>:>
+        $<$<COMPILE_LANGUAGE:OBJC>:>
+    )
+
+target_include_directories(
+    libc64cartsystem
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/
+        ${CMAKE_SOURCE_DIR}/src/arch/systemheaderoverride
+        ${CMAKE_SOURCE_DIR}/src/arch/sdl
+        ${CMAKE_SOURCE_DIR}/src/arch/shared
+        ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src/core
+        ${CMAKE_SOURCE_DIR}/src/drive
+        ${CMAKE_SOURCE_DIR}/src/core/rtc
+        ${CMAKE_SOURCE_DIR}/src/c64
+        ${CMAKE_SOURCE_DIR}/src/sid
+        ${CMAKE_SOURCE_DIR}/src/lib/p64
+        ${CMAKE_SOURCE_DIR}/src/vicii
+        ${CMAKE_SOURCE_DIR}/src/rtc
+        ${CMAKE_SOURCE_DIR}/src/samplerdrv
+        ${CMAKE_SOURCE_DIR}/src/rs232drv
+    )
+
+target_compile_options(
+    libc64cartsystem
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
+    )
+
+target_sources(
+    libc64cartsystem
+    PRIVATE
+        c64cart.c
+        c64carthooks.c
+        c64cartmem.c
+        c64cartmem.h
+        c64cartsystem.h
+    )
+
+add_library(libc64cart)
+
+target_compile_definitions(
+    libc64cart
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:CXX>:>
+        $<$<COMPILE_LANGUAGE:OBJC>:>
+    )
+
+target_include_directories(
+    libc64cart
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/
+        ${CMAKE_SOURCE_DIR}/src/arch/systemheaderoverride
+        ${CMAKE_SOURCE_DIR}/src/arch/sdl
+        ${CMAKE_SOURCE_DIR}/src/arch/shared
+        ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src/core
+        ${CMAKE_SOURCE_DIR}/src/drive
+        ${CMAKE_SOURCE_DIR}/src/core/rtc
+        ${CMAKE_SOURCE_DIR}/src/c64
+        ${CMAKE_SOURCE_DIR}/src/sid
+        ${CMAKE_SOURCE_DIR}/src/lib/p64
+        ${CMAKE_SOURCE_DIR}/src/vicii
+        ${CMAKE_SOURCE_DIR}/src/rtc
+        ${CMAKE_SOURCE_DIR}/src/samplerdrv
+        ${CMAKE_SOURCE_DIR}/src/rs232drv
+    )
+
+target_compile_options(
+    libc64cart
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
+    )
+
+target_sources(
+    libc64cart
+    PRIVATE
+        actionreplay2.c
+        actionreplay3.c
+        actionreplay4.c
+        actionreplay.c
+        atomicpower.c
+        blackbox3.c
+        blackbox4.c
+        blackbox8.c
+        blackbox9.c
+        bisplus.c
+        c64-generic.c
+        c64-midi.c
+        c64tpi.c
+        capture.c
+        clockport.c
+        clockport-mp3at64.c
+        clockport-rrnet.c
+        comal80.c
+        cpmcart.c
+        daa.c
+        debugcart.c
+        delaep256.c
+        delaep64.c
+        delaep7x8.c
+        diashowmaker.c
+        dinamic.c
+        dqbb.c
+        drean.c
+        easycalc.c
+        easyflash.c
+        epyxfastload.c
+        exos.c
+        expert.c
+        final.c
+        final3.c
+        finalplus.c
+        formel64.c
+        freezeframe.c
+        freezeframe2.c
+        freezemachine.c
+        funplay.c
+        gamekiller.c
+        gmod2.c
+        gmod3.c
+        gs.c
+        hyperbasic.c
+        ide64.c
+        ieeeflash64.c
+        isepic.c
+        kcs.c
+        kingsoft.c
+        ltkernal.c
+        mach5.c
+        magicdesk.c
+        magicformel.c
+        magicvoice.c
+        maxbasic.c
+        mikroass.c
+        mmcreplay.c
+        mmc64.c
+        multimax.c
+        ocean.c
+        pagefox.c
+        partner64.c
+        prophet64.c
+        ramcart.c
+        ramlink.c
+        retroreplay.c
+        reu.c
+        rexep256.c
+        rexramfloppy.c
+        rexutility.c
+        rgcd.c
+        ross.c
+        rrnetmk3.c
+        sdbox.c
+        shortbus.c
+        shortbus_digimax.c
+        shortbus_etfe.c
+        silverrock128.c
+        simonsbasic.c
+        snapshot64.c
+        stardos.c
+        stb.c
+        superexplode5.c
+        supergames.c
+        supersnapshot.c
+        supersnapshot4.c
+        turtlegraphics.c
+        warpspeed.c
+        westermann.c
+        zaxxon.c
+        zippcode48.c
+        actionreplay2.h
+        actionreplay3.h
+        actionreplay4.h
+        actionreplay.h
+        atomicpower.h
+        blackbox3.h
+        blackbox4.h
+        blackbox8.h
+        blackbox9.h
+        bisplus.h
+        c64-generic.h
+        c64-midi.h
+        c64tpi.h
+        capture.h
+        clockport.h
+        clockport-mp3at64.h
+        clockport-rrnet.h
+        comal80.h
+        cpmcart.h
+        daa.h
+        debugcart.h
+        delaep256.h
+        delaep64.h
+        delaep7x8.h
+        diashowmaker.h
+        dinamic.h
+        dqbb.h
+        drean.h
+        easycalc.h
+        easyflash.h
+        epyxfastload.h
+        exos.h
+        expert.h
+        final.h
+        final3.h
+        finalplus.h
+        formel64.h
+        freezeframe.h
+        freezeframe2.h
+        freezemachine.h
+        funplay.h
+        gamekiller.h
+        gmod2.h
+        gmod3.h
+        gs.h
+        hyperbasic.h
+        ide64.h
+        ieeeflash64.h
+        isepic.h
+        kcs.h
+        kingsoft.h
+        ltkernal.h
+        mach5.h
+        magicdesk.h
+        magicformel.h
+        magicvoice.h
+        maxbasic.h
+        mikroass.h
+        mmcreplay.h
+        mmc64.h
+        multimax.h
+        ocean.h
+        pagefox.h
+        partner64.h
+        prophet64.h
+        ramcart.h
+        ramlink.h
+        retroreplay.h
+        reu.h
+        rexep256.h
+        rexramfloppy.h
+        rexutility.h
+        rgcd.h
+        ross.h
+        rrnetmk3.h
+        sdbox.h
+        shortbus.h
+        shortbus_digimax.h
+        shortbus_etfe.h
+        silverrock128.h
+        simonsbasic.h
+        snapshot64.h
+        stardos.h
+        stb.h
+        superexplode5.h
+        supergames.h
+        supersnapshot.h
+        supersnapshot4.h
+        turtlegraphics.h
+        warpspeed.h
+        westermann.h
+        zaxxon.h
+        zippcode48.h
+    )
+
+add_library(libc64commoncart)
+
+target_compile_definitions(
+    libc64commoncart
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:CXX>:>
+        $<$<COMPILE_LANGUAGE:OBJC>:>
+    )
+
+target_include_directories(
+    libc64commoncart
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/
+        ${CMAKE_SOURCE_DIR}/src/arch/systemheaderoverride
+        ${CMAKE_SOURCE_DIR}/src/arch/sdl
+        ${CMAKE_SOURCE_DIR}/src/arch/shared
+        ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src/core
+        ${CMAKE_SOURCE_DIR}/src/drive
+        ${CMAKE_SOURCE_DIR}/src/core/rtc
+        ${CMAKE_SOURCE_DIR}/src/c64
+        ${CMAKE_SOURCE_DIR}/src/sid
+        ${CMAKE_SOURCE_DIR}/src/lib/p64
+        ${CMAKE_SOURCE_DIR}/src/vicii
+        ${CMAKE_SOURCE_DIR}/src/rtc
+        ${CMAKE_SOURCE_DIR}/src/samplerdrv
+        ${CMAKE_SOURCE_DIR}/src/rs232drv
+    )
+
+target_compile_options(
+    libc64commoncart
+    PRIVATE
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
+    )
+
+target_sources(
+    libc64commoncart
+    PRIVATE
+        c64acia1.c
+        cs8900io.c
+        digimax.c
+        ds12c887rtc.c
+        ethernetcart.c
+        georam.c
+        sfx_soundexpander.c
+        sfx_soundsampler.c
+        c64acia.h
+        cs8900io.h
+        digimax.h
+        ds12c887rtc.h
+        ethernetcart.h
+        georam.h
+        sfx_soundexpander.h
+        sfx_soundsampler.h
+    )
+
