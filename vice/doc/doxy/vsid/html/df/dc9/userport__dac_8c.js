@@ -1,0 +1,26 @@
+var userport__dac_8c =
+[
+    [ "userport_dac_sound_s", "d1/d6b/structuserport__dac__sound__s.html", "d1/d6b/structuserport__dac__sound__s" ],
+    [ "SNAP_MAJOR", "df/dc9/userport__dac_8c.html#ac7b800029ed52568ed4cbb68e5ed6b06", null ],
+    [ "SNAP_MINOR", "df/dc9/userport__dac_8c.html#a8ba83ebc6ed8afc1b57c26d1c2fd2a7c", null ],
+    [ "userport_dac_read_snapshot_module", "df/dc9/userport__dac_8c.html#a5f4a3545fa5625aab6a6e7a628ca5bb7", null ],
+    [ "userport_dac_resources_init", "df/dc9/userport__dac_8c.html#a7d4a64dae3c9cbf0711f0a5e112f7f1e", null ],
+    [ "userport_dac_set_enabled", "df/dc9/userport__dac_8c.html#aff0b0508e2e6fd4964416a2bd2cafc3a", null ],
+    [ "userport_dac_sound_chip_init", "df/dc9/userport__dac_8c.html#ae692e8e8cda926b8c34c8dcc45096037", null ],
+    [ "userport_dac_sound_machine_calculate_samples", "df/dc9/userport__dac_8c.html#a403d0aa61a48eb3eee93670e0754d98b", null ],
+    [ "userport_dac_sound_machine_channels", "df/dc9/userport__dac_8c.html#a958a643e66da5459db2971f017b39e02", null ],
+    [ "userport_dac_sound_machine_cycle_based", "df/dc9/userport__dac_8c.html#a757dadc2797dac39d9cf621a2aea1515", null ],
+    [ "userport_dac_sound_machine_init", "df/dc9/userport__dac_8c.html#af48fe9e8183c937b96c152066e7d753c", null ],
+    [ "userport_dac_sound_machine_read", "df/dc9/userport__dac_8c.html#ad7e8c2cb5b07dd325c70433c97764dff", null ],
+    [ "userport_dac_sound_machine_store", "df/dc9/userport__dac_8c.html#ad887deb2f9a81dad13bdddcd3d21272b", null ],
+    [ "userport_dac_sound_reset", "df/dc9/userport__dac_8c.html#ab48c8b39ffae670b67dcd9ca79849abe", null ],
+    [ "userport_dac_store_pbx", "df/dc9/userport__dac_8c.html#af216b8a5a5b92f10d917ad27cd87fb41", null ],
+    [ "userport_dac_write_snapshot_module", "df/dc9/userport__dac_8c.html#afd3082d98f7d445fc26a8d2f0de451a8", null ],
+    [ "dac_device", "df/dc9/userport__dac_8c.html#a3160ac9aded15e95ab147d6e41d78316", null ],
+    [ "snap_module_name", "df/dc9/userport__dac_8c.html#a6865c3e9e4bf545e272cb9ead645527e", null ],
+    [ "snd", "df/dc9/userport__dac_8c.html#a873a9c1a8bbcfed3749bceb02d7aa2bb", null ],
+    [ "userport_dac_dac", "df/dc9/userport__dac_8c.html#a1b80749cc37bead6e07cf8ee714c5389", null ],
+    [ "userport_dac_sound_chip", "df/dc9/userport__dac_8c.html#a8d82b2d9f6f486c28878fe995e5e4464", null ],
+    [ "userport_dac_sound_chip_offset", "df/dc9/userport__dac_8c.html#a17dbdebdc1434a280a15b91c125e0ebb", null ],
+    [ "userport_dac_sound_data", "df/dc9/userport__dac_8c.html#a0d3bfcf15fb8268a19c3ac8d5ba822b9", null ]
+];

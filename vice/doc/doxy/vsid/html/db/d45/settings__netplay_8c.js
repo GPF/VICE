@@ -1,0 +1,26 @@
+var settings__netplay_8c =
+[
+    [ "netctrl_s", "dd/d2b/structnetctrl__s.html", "dd/d2b/structnetctrl__s" ],
+    [ "NUM_COLS", "db/d45/settings__netplay_8c.html#a3aa3d4b4988bb6a5cfad5aefe92c207d", null ],
+    [ "netctrl_t", "db/d45/settings__netplay_8c.html#a532d048eac9a222c488fc8d1d625c251", null ],
+    [ "create_combo_box", "db/d45/settings__netplay_8c.html#a84e80efe683d23e93116d13f2bcde5dd", null ],
+    [ "create_controls_layout", "db/d45/settings__netplay_8c.html#a67f34d7b23690d4b7a044b2e1c29a896", null ],
+    [ "create_netplay_enable_widget", "db/d45/settings__netplay_8c.html#af948c1dfb3b12d5bbe241e47854f5bb9", null ],
+    [ "label_helper", "db/d45/settings__netplay_8c.html#a157698f1aed127f8691c53d2f318fb89", null ],
+    [ "netplay_update_status", "db/d45/settings__netplay_8c.html#a57863515c23e61b8b72cd8f370c06e60", null ],
+    [ "on_combo_changed", "db/d45/settings__netplay_8c.html#af3e8721f4c297dfe06e9a7a8eaf39d4e", null ],
+    [ "on_netplay_notify_active", "db/d45/settings__netplay_8c.html#a704a6267635d25cf3bb3151227231e1e", null ],
+    [ "on_server_mask_toggled", "db/d45/settings__netplay_8c.html#ac3a4cc18ce3454e925e420e17af5c0bc", null ],
+    [ "settings_netplay_widget_create", "db/d45/settings__netplay_8c.html#a6e229a8dc02ec6e9f66f25321c7792cd", null ],
+    [ "client_address", "db/d45/settings__netplay_8c.html#a61c737cc4625721f077683b29c973545", null ],
+    [ "combo_netplay", "db/d45/settings__netplay_8c.html#a4a763bf271ce3555ed1ce3be9b477cd9", null ],
+    [ "control_list", "db/d45/settings__netplay_8c.html#aac1fbbb08c116e5fbc1c44b638fd02b8", null ],
+    [ "net_modes", "db/d45/settings__netplay_8c.html#aec85d3b05359ed19c05d38d25e875bec", null ],
+    [ "netctrl_headers", "db/d45/settings__netplay_8c.html#afdc77ef456d7e64590a41e0a0257e4d5", null ],
+    [ "netplay_enable", "db/d45/settings__netplay_8c.html#a072894b558fffe48cb09eebb54ce909b", null ],
+    [ "netplay_handler", "db/d45/settings__netplay_8c.html#ab959cf8b5d5ee4147f6b955dcaf03b1c", null ],
+    [ "netplay_mode", "db/d45/settings__netplay_8c.html#a9532bf18f1c95e8ab3d78db1ea5af5cf", null ],
+    [ "netplay_status", "db/d45/settings__netplay_8c.html#aebc85f710f1db9508fd0a7b08003e4f0", null ],
+    [ "port_number", "db/d45/settings__netplay_8c.html#afa240afbe22fb3bc3e3f5f2b108dee50", null ],
+    [ "server_address", "db/d45/settings__netplay_8c.html#a2ac5b236a97f7d94fd190a3829a3e299", null ]
+];

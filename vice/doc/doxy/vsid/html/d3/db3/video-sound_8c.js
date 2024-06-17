@@ -1,0 +1,26 @@
+var video_sound_8c =
+[
+    [ "videosound_t", "d5/d9d/structvideosound__t.html", "d5/d9d/structvideosound__t" ],
+    [ "DBG", "d3/db3/video-sound_8c.html#a32adf79142f0a426b5e782fb7cd4cad3", null ],
+    [ "LUMALINES_RATE", "d3/db3/video-sound_8c.html#a46c127c941f0661433c951e4cbaca1a3", null ],
+    [ "LUMALINES_VOLUME", "d3/db3/video-sound_8c.html#ae6d99ed0ab195c06b238fb85c97b01ba", null ],
+    [ "MAX_LUMALINES", "d3/db3/video-sound_8c.html#a47e85c42b02518095fce2963f2d268e0", null ],
+    [ "NOISE_RATE", "d3/db3/video-sound_8c.html#a10a9d981813b6a83145bb22984dcffee", null ],
+    [ "NOISE_VOLUME", "d3/db3/video-sound_8c.html#ac85541cc334ed702780c9bee6386340b", null ],
+    [ "TOTAL_VOLUME", "d3/db3/video-sound_8c.html#a363646ffe7f90d473528ed7987bb68a4", null ],
+    [ "check_enabled", "d3/db3/video-sound_8c.html#acae472c5d327d23b838b6130deac0018", null ],
+    [ "get_chip_num", "d3/db3/video-sound_8c.html#ad215aa8dcbd5be766be4cde34ff852e2", null ],
+    [ "video_sound_init", "d3/db3/video-sound_8c.html#a72099838c7f7231019b4f77756741061", null ],
+    [ "video_sound_machine_calculate_samples", "d3/db3/video-sound_8c.html#a4947a7933c07b3fe3b16c24aea9fbb24", null ],
+    [ "video_sound_machine_channels", "d3/db3/video-sound_8c.html#a942779a4d212780d090d41494062f0ae", null ],
+    [ "video_sound_machine_cycle_based", "d3/db3/video-sound_8c.html#ab5694f61f69aef76b1247177f7dea9f6", null ],
+    [ "video_sound_machine_init", "d3/db3/video-sound_8c.html#a5a2210207baeebcebac43fd18dae3b77", null ],
+    [ "video_sound_update", "d3/db3/video-sound_8c.html#a693a9b9d4d59efb5b5362dd7129b201d", null ],
+    [ "chip", "d3/db3/video-sound_8c.html#a76a4ba759f02fb9238425f65d543c46a", null ],
+    [ "cycles_per_sec", "d3/db3/video-sound_8c.html#a2920ebf1ddf17be9e290b733abd37347", null ],
+    [ "noise_sample", "d3/db3/video-sound_8c.html#aa041e94212f7da8b422e8bad68c8c276", null ],
+    [ "numchips", "d3/db3/video-sound_8c.html#abdb6c8517954e5c1014fdb84de025ce3", null ],
+    [ "sample_rate", "d3/db3/video-sound_8c.html#a527325650d66abd9626499785b3bafd2", null ],
+    [ "video_sound", "d3/db3/video-sound_8c.html#a61bd906d3225f82188c95a32a442ec38", null ],
+    [ "video_sound_offset", "d3/db3/video-sound_8c.html#a2c29d16184a86bb354dc575151307a12", null ]
+];

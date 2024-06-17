@@ -1,0 +1,26 @@
+var lamelib_8h =
+[
+    [ "lamelib_s", "d5/d0b/structlamelib__s.html", "d5/d0b/structlamelib__s" ],
+    [ "vice_lame_close", "d5/d9f/lamelib_8h.html#ab49d478bf562368e25eb37154c6942bc", null ],
+    [ "vice_lame_encode_buffer_interleaved", "d5/d9f/lamelib_8h.html#a53951f5169319d05b3ec511baa26280d", null ],
+    [ "vice_lame_encode_flush", "d5/d9f/lamelib_8h.html#ac0d9677db7ecc1a49d63f5aae521a60b", null ],
+    [ "vice_lame_init", "d5/d9f/lamelib_8h.html#a0a042fd5feb6a3740f47e7e5db8761cb", null ],
+    [ "vice_lame_init_params", "d5/d9f/lamelib_8h.html#a5e0cda6bf6364aab6dad25b46f888f4e", null ],
+    [ "vice_lame_set_brate", "d5/d9f/lamelib_8h.html#ad72953b9db878a5f674b8b8a4f90d149", null ],
+    [ "vice_lame_set_in_samplerate", "d5/d9f/lamelib_8h.html#a95ca220fb5684c1bdd130be774cffbf2", null ],
+    [ "vice_lame_set_num_channels", "d5/d9f/lamelib_8h.html#a22174d1305760d7e7bf6031735580de6", null ],
+    [ "vice_lame_set_quality", "d5/d9f/lamelib_8h.html#a63bc58b824896e1f7b6ce120f43cd577", null ],
+    [ "lame_close_t", "d5/d9f/lamelib_8h.html#ada1ebda8cd396563c42e3d5a10649c09", null ],
+    [ "lame_encode_buffer_interleaved_t", "d5/d9f/lamelib_8h.html#a33f64eee79e2df86580efdc49310f6c4", null ],
+    [ "lame_encode_flush_t", "d5/d9f/lamelib_8h.html#aa535e2a12ad134c59750a4e7763184fa", null ],
+    [ "lame_init_params_t", "d5/d9f/lamelib_8h.html#a7a26f9f786a8eb118de0424a8c16b9bd", null ],
+    [ "lame_init_t", "d5/d9f/lamelib_8h.html#a79eab27b074f4a6d3723dc630518ff1c", null ],
+    [ "lame_set_brate_t", "d5/d9f/lamelib_8h.html#a69a20cd922566718af2e8eeb5b23d5b8", null ],
+    [ "lame_set_in_samplerate_t", "d5/d9f/lamelib_8h.html#ab548edaabc7bc90cbf227406fa6ddff0", null ],
+    [ "lame_set_num_channels_t", "d5/d9f/lamelib_8h.html#ae95bb60d79171a147ea04bb38738a12a", null ],
+    [ "lame_set_quality_t", "d5/d9f/lamelib_8h.html#af29991a82aae5d56822fece20fe5fda8", null ],
+    [ "lamelib_t", "d5/d9f/lamelib_8h.html#a4e39f4f627d7a008b5d2dc5dca5364a4", null ],
+    [ "lamelib_close", "d5/d9f/lamelib_8h.html#afff1c7d8d44de2541a7451ee0cefeb22", null ],
+    [ "lamelib_open", "d5/d9f/lamelib_8h.html#a27abeaeb3e228a98958cf442a52700ca", null ],
+    [ "lamelib", "d5/d9f/lamelib_8h.html#a92c0bb53050df85fcd5fd2bc4e950dec", null ]
+];

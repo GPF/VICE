@@ -1,0 +1,28 @@
+var imagecontents_8h =
+[
+    [ "image_contents_file_list_s", "db/d4e/structimage__contents__file__list__s.html", "db/d4e/structimage__contents__file__list__s" ],
+    [ "image_contents_s", "dd/d13/structimage__contents__s.html", "dd/d13/structimage__contents__s" ],
+    [ "image_contents_screencode_s", "d0/dbd/structimage__contents__screencode__s.html", "d0/dbd/structimage__contents__screencode__s" ],
+    [ "IMAGE_CONTENTS_FILE_NAME_LEN", "dd/d61/imagecontents_8h.html#a894dc49edd7a4c409fe4c513e06816ba", null ],
+    [ "IMAGE_CONTENTS_ID_LEN", "dd/d61/imagecontents_8h.html#ad0787414674a0bf2c00e09abb7848152", null ],
+    [ "IMAGE_CONTENTS_NAME_LEN", "dd/d61/imagecontents_8h.html#a0e4acd93ce1d8198b8017799054f7c66", null ],
+    [ "IMAGE_CONTENTS_NAME_T64_LEN", "dd/d61/imagecontents_8h.html#a28a01cb8a1e12ae6ff042cf8b1ecb750", null ],
+    [ "IMAGE_CONTENTS_STRING_ASCII", "dd/d61/imagecontents_8h.html#aae3fa12c86025ded7d82e09d0fc27e1e", null ],
+    [ "IMAGE_CONTENTS_STRING_PETSCII", "dd/d61/imagecontents_8h.html#ac62986157157bf1e991cf758754a1fa8", null ],
+    [ "IMAGE_CONTENTS_STRING_UTF8", "dd/d61/imagecontents_8h.html#a9e561124c22f1cb7d9287a7ef3361826", null ],
+    [ "IMAGE_CONTENTS_TYPE_LEN", "dd/d61/imagecontents_8h.html#a835b1bf74cf53b18a38eaeba3125ec7f", null ],
+    [ "image_contents_file_list_t", "dd/d61/imagecontents_8h.html#a560fa949def906fc227b634d4ef8ab74", null ],
+    [ "image_contents_screencode_t", "dd/d61/imagecontents_8h.html#a8c2b27734008b50e6f29b84e89f54613", null ],
+    [ "image_contents_t", "dd/d61/imagecontents_8h.html#a3a81bc65af8c08108ff8d56f71c26848", null ],
+    [ "read_contents_func_type", "dd/d61/imagecontents_8h.html#a0f813713fe22252be1b12e5d94bb03ae", null ],
+    [ "diskcontents_iec_read", "dd/d61/imagecontents_8h.html#ab61c5a677bf5fff2090b65b82907f071", null ],
+    [ "image_contents_destroy", "dd/d61/imagecontents_8h.html#a397b8e6a2c0459db0258b14fe97cb55e", null ],
+    [ "image_contents_file_to_string", "dd/d61/imagecontents_8h.html#a6b0c2acfa9add316a5565cd315720863", null ],
+    [ "image_contents_filename_by_number", "dd/d61/imagecontents_8h.html#a8a2a193c062ce1421b634dc92e9c4850", null ],
+    [ "image_contents_filename_to_string", "dd/d61/imagecontents_8h.html#a9352192d0a5a8855bd414be9efb0e55d", null ],
+    [ "image_contents_filetype_to_string", "dd/d61/imagecontents_8h.html#a9780a86744c1a7314c44ee5188e396f3", null ],
+    [ "image_contents_new", "dd/d61/imagecontents_8h.html#aa0a956c1ff14a97e77b5442ea77e3e56", null ],
+    [ "image_contents_screencode_destroy", "dd/d61/imagecontents_8h.html#a78ad284a952660d3d85ce1ac294acd10", null ],
+    [ "image_contents_to_screencode", "dd/d61/imagecontents_8h.html#a429469957bd976e5a8a44f759657612e", null ],
+    [ "image_contents_to_string", "dd/d61/imagecontents_8h.html#a472826fa5474fa5660bc83bd8d692869", null ]
+];

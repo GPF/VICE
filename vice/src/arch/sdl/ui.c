@@ -28,7 +28,7 @@
  *
  */
 
-/* #define SDL_DEBUG */
+#define SDL_DEBUG 1
 
 #include "vice.h"
 
@@ -782,10 +782,10 @@ int ui_init(void)
 int ui_init_finalize(void)
 {
     DBG(("%s", __func__));
-
+ log_warning(LOG_DEFAULT,"11111111111111**************: ui_init_finalize");
     if (!console_mode) {
         sdl_ui_init_finalize();
-
+ log_warning(LOG_DEFAULT,"222222222222222**************: ui_init_finalize");
         /* Iterate menu structure and store pointers to items with action IDs.
          * Not sure if this is the correct place to call it, might be too late.
          */

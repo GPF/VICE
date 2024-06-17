@@ -24,7 +24,7 @@
  *
  */
 
-/* #define DEBUG_VIDEO */
+#define DEBUG_VIDEO 1
 
 #ifdef DEBUG_VIDEO
 #define DBG(_x_) log_debug _x_

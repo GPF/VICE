@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['jam_0',['JAM',['../db/de9/mainc64cpu_8c.html#a896f30d4d86e300b79a94deb56a7c765',1,'JAM():&#160;mainc64cpu.c'],['../d8/d81/maincpu_8c.html#a896f30d4d86e300b79a94deb56a7c765',1,'JAM():&#160;maincpu.c'],['../dc/d9a/drivecpu_8c.html#a896f30d4d86e300b79a94deb56a7c765',1,'JAM():&#160;drivecpu.c'],['../de/db4/main65816cpu_8c.html#a896f30d4d86e300b79a94deb56a7c765',1,'JAM():&#160;main65816cpu.c']]],
+  ['jam_5f02_1',['JAM_02',['../de/dc7/6510core_8c.html#a09ca0e45fd6504e2e349e8cf5d9a02f7',1,'JAM_02():&#160;6510core.c'],['../dc/dab/6510dtvcore_8c.html#a09ca0e45fd6504e2e349e8cf5d9a02f7',1,'JAM_02():&#160;6510dtvcore.c']]],
+  ['jam_5fmonitor_2',['JAM_MONITOR',['../da/d8f/machine_8h.html#a5208ff1cf5577329a4ca43c8fd7f3f1c',1,'machine.h']]],
+  ['jam_5fnone_3',['JAM_NONE',['../da/d8f/machine_8h.html#a716c17f8ad05351748277e0ede25c3ae',1,'machine.h']]],
+  ['jam_5fpower_5fcycle_4',['JAM_POWER_CYCLE',['../da/d8f/machine_8h.html#abfde34ba229da30e48cd3168a52c4a51',1,'machine.h']]],
+  ['jam_5freset_5fcpu_5',['JAM_RESET_CPU',['../da/d8f/machine_8h.html#a6a3aa16ccf131fb33904473a1caaf245',1,'machine.h']]],
+  ['jmp_6',['JMP',['../de/dc7/6510core_8c.html#a66fb29e35482b40260a1515f73b39a9b',1,'JMP():&#160;6510core.c'],['../dc/dab/6510dtvcore_8c.html#a66fb29e35482b40260a1515f73b39a9b',1,'JMP():&#160;6510dtvcore.c'],['../d7/dc5/65816core_8c.html#a45eb7f466c207cd7866e7da0c03e7e8a',1,'JMP():&#160;65816core.c'],['../d5/d7c/65c02core_8c.html#a66fb29e35482b40260a1515f73b39a9b',1,'JMP():&#160;65c02core.c'],['../d4/dce/z80core_8c.html#a297c08a076909ba80177cd42743dc45c',1,'JMP():&#160;z80core.c']]],
+  ['jmp_5fcond_7',['JMP_COND',['../d4/dce/z80core_8c.html#a0735572264bc18eecbe58079ecda959e',1,'z80core.c']]],
+  ['jmp_5find_8',['JMP_IND',['../d5/d7c/65c02core_8c.html#a24ba236a1df9cb6447eec1884a6de34d',1,'JMP_IND():&#160;65c02core.c'],['../d7/dc5/65816core_8c.html#a24ba236a1df9cb6447eec1884a6de34d',1,'JMP_IND():&#160;65816core.c'],['../de/dc7/6510core_8c.html#a24ba236a1df9cb6447eec1884a6de34d',1,'JMP_IND():&#160;6510core.c'],['../dc/dab/6510dtvcore_8c.html#a24ba236a1df9cb6447eec1884a6de34d',1,'JMP_IND():&#160;6510dtvcore.c']]],
+  ['jmp_5find_5flong_9',['JMP_IND_LONG',['../d7/dc5/65816core_8c.html#acd209d38925314a03890e6a53dcfb16a',1,'65816core.c']]],
+  ['jmp_5find_5fx_10',['JMP_IND_X',['../d7/dc5/65816core_8c.html#a13fd65878054fc91d35c4bc6904639fc',1,'JMP_IND_X():&#160;65816core.c'],['../d5/d7c/65c02core_8c.html#a13fd65878054fc91d35c4bc6904639fc',1,'JMP_IND_X():&#160;65c02core.c']]],
+  ['jmp_5flong_11',['JMP_LONG',['../d7/dc5/65816core_8c.html#afff956d69df3179b4afe249f20da6c22',1,'65816core.c']]],
+  ['joystick_5fcol_5flabel_12',['JOYSTICK_COL_LABEL',['../d6/da8/uistatusbar_8c.html#a6c68ed0678f2b793d7314c2e396c3c83',1,'uistatusbar.c']]],
+  ['joystick_5fcol_5fstatus_13',['JOYSTICK_COL_STATUS',['../d6/da8/uistatusbar_8c.html#a3cc6e5a86559c018d2c4c44abcebf713',1,'uistatusbar.c']]],
+  ['jsr_14',['JSR',['../d7/dc5/65816core_8c.html#ab9e0277f7643135851b3f3adfb6e3e82',1,'JSR():&#160;65816core.c'],['../d5/d7c/65c02core_8c.html#ab9e0277f7643135851b3f3adfb6e3e82',1,'JSR():&#160;65c02core.c'],['../dc/dab/6510dtvcore_8c.html#ab9e0277f7643135851b3f3adfb6e3e82',1,'JSR():&#160;6510dtvcore.c'],['../de/dc7/6510core_8c.html#ab9e0277f7643135851b3f3adfb6e3e82',1,'JSR():&#160;6510core.c']]],
+  ['jsr_5ffixup_5fmsb_15',['JSR_FIXUP_MSB',['../de/dc7/6510core_8c.html#a768ab89864381fae7e27502361077a43',1,'JSR_FIXUP_MSB():&#160;6510core.c'],['../dc/dab/6510dtvcore_8c.html#a768ab89864381fae7e27502361077a43',1,'JSR_FIXUP_MSB():&#160;6510dtvcore.c']]],
+  ['jsr_5find_5fx_16',['JSR_IND_X',['../d7/dc5/65816core_8c.html#a2ac577e93316092dc4ed10015013b08e',1,'65816core.c']]],
+  ['jsr_5flong_17',['JSR_LONG',['../d7/dc5/65816core_8c.html#a3234c517d4bd6cf785fe1921334e61f4',1,'65816core.c']]],
+  ['jump_18',['JUMP',['../de/db4/main65816cpu_8c.html#aaf30322f59aa465eb1161227f8986838',1,'JUMP():&#160;main65816cpu.c'],['../db/de9/mainc64cpu_8c.html#aaf30322f59aa465eb1161227f8986838',1,'JUMP():&#160;mainc64cpu.c'],['../d8/d81/maincpu_8c.html#aaf30322f59aa465eb1161227f8986838',1,'JUMP():&#160;maincpu.c'],['../dc/d9a/drivecpu_8c.html#aaf30322f59aa465eb1161227f8986838',1,'JUMP():&#160;drivecpu.c'],['../d2/d5f/drivecpu65c02_8c.html#aaf30322f59aa465eb1161227f8986838',1,'JUMP():&#160;drivecpu65c02.c']]]
+];

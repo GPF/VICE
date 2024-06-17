@@ -1,0 +1,25 @@
+var uistatusbar_8h =
+[
+    [ "capslock_led_set_active", "dd/d02/uistatusbar_8h.html#a34dc48959270557df448db2ba4ba26a6", null ],
+    [ "diagnosticpin_led_set_active", "dd/d02/uistatusbar_8h.html#abe8b8b51fb4b9a9426342f71f1cd6fa4", null ],
+    [ "mode4080_led_set_active", "dd/d02/uistatusbar_8h.html#a05e48be57cd93d761727c7a15e8592ea", null ],
+    [ "pause_led_set_active", "dd/d02/uistatusbar_8h.html#ac3203b55c9f5f1c66a7352c85e1d66f8", null ],
+    [ "shiftlock_led_set_active", "dd/d02/uistatusbar_8h.html#aca7aee76dc86f81ba69d0deff526b915", null ],
+    [ "supercpu_jiffy_led_set_active", "dd/d02/uistatusbar_8h.html#a1d31883322e2a50c020d339efd33ccef", null ],
+    [ "supercpu_turbo_led_set_active", "dd/d02/uistatusbar_8h.html#a05aa40a56d4837ff98c6c69e12ba9e16", null ],
+    [ "ui_statusbar_create", "dd/d02/uistatusbar_8h.html#a66033c93e348e4fce878790482a54f2f", null ],
+    [ "ui_statusbar_crt_controls_enabled", "dd/d02/uistatusbar_8h.html#a31052771abff354a3ff921836d66f917", null ],
+    [ "ui_statusbar_get_recording_widget", "dd/d02/uistatusbar_8h.html#acdd906e34e71f53bb7768cd37a660e20", null ],
+    [ "ui_statusbar_index_for_window", "dd/d02/uistatusbar_8h.html#a81dceb0552e1bcd92de434bd43fee93d", null ],
+    [ "ui_statusbar_init", "dd/d02/uistatusbar_8h.html#a0c1cb367c81bfae644c33513b25fc405", null ],
+    [ "ui_statusbar_mixer_controls_enabled", "dd/d02/uistatusbar_8h.html#ada45c95ad889e50cd7c0bc334612e353", null ],
+    [ "ui_statusbar_recreate_crt_controls", "dd/d02/uistatusbar_8h.html#afaef3d8249ab6b18e4d3a8b85aa36550", null ],
+    [ "ui_statusbar_set_kbd_debug", "dd/d02/uistatusbar_8h.html#afa6c61d0e91de6d53da5bbd4b6e5eafc", null ],
+    [ "ui_statusbar_set_kbd_debug_for_window", "dd/d02/uistatusbar_8h.html#a65f2230fde865e59ff22a5ef51487826", null ],
+    [ "ui_statusbar_set_visible_for_window", "dd/d02/uistatusbar_8h.html#a3d4b3a8ad82cc5cbee4c24b028ef27e0", null ],
+    [ "ui_statusbar_shutdown", "dd/d02/uistatusbar_8h.html#a6d90b1cdc646f599546115573733a0cf", null ],
+    [ "ui_statusbar_update_kbd_debug", "dd/d02/uistatusbar_8h.html#af31cc496bd80f0a45862360f1a440c21", null ],
+    [ "ui_update_statusbars", "dd/d02/uistatusbar_8h.html#a390152e4c70c40306feaefdf6f1a0cdd", null ],
+    [ "ui_update_vsid_statusbar", "dd/d02/uistatusbar_8h.html#a3aeb3ac399e0f5a150c7c687c19853ba", null ],
+    [ "warp_led_set_active", "dd/d02/uistatusbar_8h.html#a0246e3bf9ccb028eb31ef20b6b042dff", null ]
+];

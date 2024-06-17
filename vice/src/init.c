@@ -255,7 +255,7 @@ static int main_init_hack(void)
     if (machine_class != VICE_MACHINE_VSID) {
         int n;
         int dev;
-
+        
         /* When initializing FileSystemDeviceX resources, vdrive is not properly
            initialized. Switching forth and back seems to solve the following:
            - real device does not work when saved into vicerc
@@ -313,7 +313,7 @@ int init_main(void)
     ui_init_finalize();
 
     main_init_hack();
-
+ log_warning(LOG_DEFAULT,"444444444444**************: main_init_hack");
     init_done = 1;
 
     return 0;

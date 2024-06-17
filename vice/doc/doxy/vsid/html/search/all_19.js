@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['x_0',['x',['../d6/d81/structmos6510__regs__s.html#a1eb34e220ec1a89b9daa17b4f25f4f05',1,'mos6510_regs_s::x()'],['../d0/dec/mon__disassemble_8c.html#a6c4b361d72eb3767ba424ac9a6ecf52b',1,'x():&#160;mon_disassemble.c'],['../d0/d16/namespacereSID.html#a0ebfbb56836febacddd7b7ce73022de7',1,'reSID::x()'],['../d7/df2/structvicii__light__pen__s.html#a2dba1a8624ee7ad6b957b19e1f7651ae',1,'vicii_light_pen_s::x()'],['../df/dad/structraster__sprite__s.html#af088b5994a8cff9c3694fc7eb51555e4',1,'raster_sprite_s::x()'],['../db/d1d/structraster__sprite__cache__s.html#a3c77f364011a7f9b4cdb0aeb78595a33',1,'raster_sprite_cache_s::x()'],['../d3/d62/structposition__s.html#a0ec9e87452965c97e1f6e6b076333627',1,'position_s::x()'],['../da/dfe/structcanvas__refresh__s.html#a39687c43d7ec7014e270e6e54fd8eeda',1,'canvas_refresh_s::x()'],['../d6/d09/structR65C02__regs__s.html#a1dc4e640375cae9f4e5587cbb61b99ca',1,'R65C02_regs_s::x()'],['../de/d8b/structmos6510dtv__regs__s.html#ab65b3d8204b6912c846168bd074893ea',1,'mos6510dtv_regs_s::x()'],['../df/d52/structWDC65816__regs__s.html#af66c673c67bedef4546e7d86cb23c50a',1,'WDC65816_regs_s::x()']]],
+  ['x64_2eh_1',['x64.h',['../d9/de3/x64_8h.html',1,'']]],
+  ['x_5fdisplay_2',['x_display',['../d1/dde/structvice__opengl__renderer__context__s.html#a6b1b541c31f03e4b99288f3e712addc4',1,'vice_opengl_renderer_context_s']]],
+  ['x_5fexpanded_3',['x_expanded',['../db/d1d/structraster__sprite__cache__s.html#a0c57a70f26dc789b216a9ae6e4cba826',1,'raster_sprite_cache_s::x_expanded()'],['../df/dad/structraster__sprite__s.html#a53cc487c8c88bc2fbcee7e721cd91279',1,'raster_sprite_s::x_expanded()']]],
+  ['x_5fextra_5fbits_4',['x_extra_bits',['../d7/df2/structvicii__light__pen__s.html#ad6beac18e1183dfcfb15d06ef66f0715',1,'vicii_light_pen_s']]],
+  ['x_5foffset_5',['x_offset',['../d7/dd8/structviewport__s.html#aa692a504e48d0b38b91b831b9fea1608',1,'viewport_s']]],
+  ['x_5foffset_6',['X_OFFSET',['../d1/dce/vicii-sprites_8c.html#aaf6b22b89bb364988f4882030a309a99',1,'vicii-sprites.c']]],
+  ['x_5foffset_7',['x_offset',['../de/ded/structscreenshot__s.html#a31ff100eaa8cdb1103b8e00b7bff835b',1,'screenshot_s']]],
+  ['x_5foverlay_5fgraphics_5fcontext_8',['x_overlay_graphics_context',['../d1/dde/structvice__opengl__renderer__context__s.html#a4d0944da1b36e14bb50aedb6fcede7df',1,'vice_opengl_renderer_context_s']]],
+  ['x_5foverlay_5fwindow_9',['x_overlay_window',['../d1/dde/structvice__opengl__renderer__context__s.html#ab862ed7fd60cc95e5c7e8d990c8ac94c',1,'vice_opengl_renderer_context_s']]],
+  ['x_5fpixels_10',['X_PIXELS',['../d3/d4d/drv-1520_8c.html#a87f0d0eb0bf791d8b352900da38f091f',1,'drv-1520.c']]],
+  ['x_5fseen_11',['x_seen',['../d3/d4d/drv-1520_8c.html#aea24b10c1d49290633a1309e05d176f4a8cee50336ef0b8676fc48675ecb8b03a',1,'drv-1520.c']]],
+  ['x_5fshift_12',['x_shift',['../df/dad/structraster__sprite__s.html#a2e4172cd6404ff9fca7349c7dd3c2973',1,'raster_sprite_s']]],
+  ['x_5fshift_5fsum_13',['x_shift_sum',['../df/dad/structraster__sprite__s.html#ad325a2877d3ba83e43979f13c54e42f8',1,'raster_sprite_s']]],
+  ['xba_14',['XBA',['../d7/dc5/65816core_8c.html#acb6a27329dcbec36bb58daf2cb5a7e34',1,'65816core.c']]],
+  ['xce_15',['XCE',['../d7/dc5/65816core_8c.html#abba541b3e9623427cf2d74118d3ab933',1,'65816core.c']]],
+  ['xe_16',['xe',['../de/d4c/structraster__canvas__area__s.html#afe50c2e65c64651632b96d3769d696f8',1,'raster_canvas_area_s']]],
+  ['xor_17',['XOR',['../d4/dce/z80core_8c.html#ab9913d88d45551e0ed7301a3013b0b8d',1,'z80core.c']]],
+  ['xorshift32_18',['xorShift32',['../d1/d7e/structrotation__s.html#a0eb1fa0834280ff1e440908e973857e5',1,'rotation_s']]],
+  ['xs_19',['xs',['../de/d4c/structraster__canvas__area__s.html#a57ad953efc88ec0a5b72e42bd6a504c8',1,'raster_canvas_area_s']]],
+  ['xsize_20',['xsize',['../d5/da9/structnative__data__s.html#a4c710aac213db7619ed311f28babd770',1,'native_data_s']]],
+  ['xsmooth_21',['xsmooth',['../d0/de1/structraster__s.html#ac85bb8a7274ec51b9309aade91ec3967',1,'raster_s::xsmooth()'],['../d8/dd8/structraster__cache__s.html#a6988408c150cd71731bc82bfc5f8623e',1,'raster_cache_s::xsmooth()']]],
+  ['xsmooth_5fcolor_22',['xsmooth_color',['../d8/dd8/structraster__cache__s.html#a04cf23cb54021e617a6ded47e6911491',1,'raster_cache_s::xsmooth_color()'],['../d0/de1/structraster__s.html#a0c5f115133c901f0fde07dc2f3ffed5e',1,'raster_s::xsmooth_color()']]],
+  ['xsmooth_5fshift_5fleft_23',['xsmooth_shift_left',['../d0/de1/structraster__s.html#a7d91d1be39e0ff9e3a703e59cb550ace',1,'raster_s']]],
+  ['xsmooth_5fshift_5fright_24',['xsmooth_shift_right',['../d0/de1/structraster__s.html#acd11164a7e21e52a2008114f7e706cee',1,'raster_s']]]
+];

@@ -348,7 +348,7 @@ int video_cmdline_options_chip_init(const char *chipname,
                                     video_chip_cap_t *video_chip_cap)
 {
     unsigned int i;
-
+    printf("VIDEO_CHIP_CAP = %s",chipname);
     if (machine_class == VICE_MACHINE_VSID) {
         return 0;
     }

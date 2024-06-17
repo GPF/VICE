@@ -27,7 +27,7 @@
  *
  */
 
-/* #define DEBUG_VIDEO */
+#define DEBUG_VIDEO 1
 
 #ifdef DEBUG_VIDEO
 #define DBG(_x_)        log_debug _x_
@@ -82,7 +82,7 @@ typedef struct video_resource_chip_mode_s video_resource_chip_mode_t;
  *
  * \return  0 on success, -1 on failure
  */
-static int set_double_size_enabled(int double_size, void *canvas)
+static int set_double_size_enabled(int double_size, video_canvas_t *canvas)
 {
     cap_render_t *cap_render;
     video_canvas_t *cv = canvas;
@@ -335,8 +335,8 @@ static const char * const vname_chip_fullscreen_size[] = {
     "FullscreenCustomHeight",
     NULL };
 
-#define FULLSCREENCUSTOMWIDTH_DEFAULT   800
-#define FULLSCREENCUSTOMHEIGHT_DEFAULT  600
+#define FULLSCREENCUSTOMWIDTH_DEFAULT   640
+#define FULLSCREENCUSTOMHEIGHT_DEFAULT  480
 
 static resource_int_t resources_chip_fullscreen_size[] =
 {

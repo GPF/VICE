@@ -1,0 +1,28 @@
+var vsid_resources_8c =
+[
+    [ "kernal_s", "da/d98/structkernal__s.html", "da/d98/structkernal__s" ],
+    [ "KBD_INDEX_C64_POS", "d9/d2c/vsid-resources_8c.html#a41bbed9e83339df6e0dead01df088b99", null ],
+    [ "KBD_INDEX_C64_SYM", "d9/d2c/vsid-resources_8c.html#ad294a508dca2804888dcab358efec9fb", null ],
+    [ "KBD_INDEX_C64_SYMDE", "d9/d2c/vsid-resources_8c.html#a6be6b46eca9c5c3ed426cc9e90c93027", null ],
+    [ "c64_resources_init", "d9/d2c/vsid-resources_8c.html#a148c4fdac03eb2bb4db963cbf507062f", null ],
+    [ "c64_resources_shutdown", "d9/d2c/vsid-resources_8c.html#a2ca032abd2fd104605914b1e7947b414", null ],
+    [ "set_basic_rom_name", "d9/d2c/vsid-resources_8c.html#ae45375606c22bee131d3e82ec9323f13", null ],
+    [ "set_chargen_rom_name", "d9/d2c/vsid-resources_8c.html#a733a198e84ee18eee3b1f374abe053fd", null ],
+    [ "set_hvsc_root", "d9/d2c/vsid-resources_8c.html#a2429becbab80ea2acb1d2bb6f385cdd5", null ],
+    [ "set_kernal_revision", "d9/d2c/vsid-resources_8c.html#a09a33c5ca9bc14a961fc47c79ffb8944", null ],
+    [ "set_kernal_rom_name", "d9/d2c/vsid-resources_8c.html#ad07605d0641ad6e10b5d9b8c05d3db08", null ],
+    [ "set_power_freq", "d9/d2c/vsid-resources_8c.html#a02413dda21403f13a5ba8309c5de4225", null ],
+    [ "set_sync_factor", "d9/d2c/vsid-resources_8c.html#afa4b293d2f10b512bbf186bc43f27200", null ],
+    [ "basic_rom_name", "d9/d2c/vsid-resources_8c.html#a4b9cb2239c0c6fe60f6f2cb123606d38", null ],
+    [ "chargen_rom_name", "d9/d2c/vsid-resources_8c.html#a8d7f45a820501f46a17d534379bc5e90", null ],
+    [ "cia1_model", "d9/d2c/vsid-resources_8c.html#ac1bc87a641cbcf1951e2367076251ba4", null ],
+    [ "cia2_model", "d9/d2c/vsid-resources_8c.html#af95ea03b0571d642aa902068208cb8d0", null ],
+    [ "hvsc_root", "d9/d2c/vsid-resources_8c.html#ac843effbbfdfd6121667012bea82482c", null ],
+    [ "kernal_match", "d9/d2c/vsid-resources_8c.html#a66ce772eefc74ef26c3a0a216be72b39", null ],
+    [ "kernal_revision", "d9/d2c/vsid-resources_8c.html#a88a8160a61ba0405f25836be0e757d97", null ],
+    [ "kernal_rom_name", "d9/d2c/vsid-resources_8c.html#ab31a05de23fc10a51500589d32526d39", null ],
+    [ "power_freq", "d9/d2c/vsid-resources_8c.html#a3b2e16db3258cf41d742d8ddabbb8994", null ],
+    [ "resources_int", "d9/d2c/vsid-resources_8c.html#a6c4f47d22bf26d4f052f20b35ce7c1dc", null ],
+    [ "resources_string", "d9/d2c/vsid-resources_8c.html#a33dfcda7222c9ef008817fbc9e6f760c", null ],
+    [ "sync_factor", "d9/d2c/vsid-resources_8c.html#a0856de62ffc5b34f6c04139a5305d76e", null ]
+];

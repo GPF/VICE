@@ -93,7 +93,7 @@ static void archdep_shutdown_extra(void)
 }
 
 /******************************************************************************/
-
+   
 int archdep_init(int *argc, char **argv)
 {
     archdep_program_path_set_argv0(argv[0]);
@@ -101,10 +101,32 @@ int archdep_init(int *argc, char **argv)
     archdep_create_user_cache_dir();
     archdep_create_user_config_dir();
 
-    if (SDL_REALINIT(SDL_INIT_VIDEO | SDL_INIT_TIMER) < 0) {
+    if (SDL_REALINIT(SDL_INIT_VIDEO | SDL_INIT_TIMER| SDL_INIT_JOYSTICK) < 0) {
         fprintf(stderr, "SDL error: %s\n", SDL_GetError());
         return 1;
     }
+    // int bpp = 0;
+    // SDL_PixelFormat format;
+    // SDL_VideoInfo *video_info = SDL_GetVideoInfo();
+    
+    // if (!video_info) {
+    //     fprintf(stderr, "SDL_GetVideoInfo failed: %s\n", SDL_GetError());
+    //     return;
+    // }
+
+    // format.BitsPerPixel = bpp;
+    // SDL_Rect **modes = SDL_ListModes(&format, SDL_FULLSCREEN);
+
+    // if (modes == (SDL_Rect **)0) {
+    //     printf("No modes available!\n");
+    // } else if (modes == (SDL_Rect **)-1) {
+    //     printf("All resolutions available.\n");
+    // } else {
+    //     printf("Available modes:\n");
+    //     for (int i = 0; modes[i]; ++i) {
+    //         printf("  %d x %d\n", modes[i]->w, modes[i]->h);
+    //     }
+    // }
 
     /*
      * Call SDL_Quit() via atexit() to avoid segfaults on exit.

@@ -92,7 +92,11 @@ const char *archdep_home_path(void)
     }
 
 #ifdef UNIX_COMPILE
+#ifndef __DREAMCAST__
     home = getenv("HOME");
+#else
+    home = lib_strdup("/cd/Vice");
+#endif
     if (home == NULL) {
         struct passwd *pwd;
 
@@ -126,7 +130,7 @@ const char *archdep_home_path(void)
     /* all others: */
     home_dir = lib_strdup(".");
 #endif
-    // printf("homedir = %s ", home_dir);
+    printf("homedir = %s ", home_dir);
     return home_dir;
 }
 

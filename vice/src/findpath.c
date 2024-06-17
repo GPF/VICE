@@ -59,9 +59,14 @@ char *findpath(const char *cmd, const char *syspath, const char *subpath, int mo
 
     buf[0] = '\0'; /* this will (and needs to) stay '\0' */
 
-    /* printf("findpath: cmd:'%s' syspath:'%s' subpath:'%s' mode:%d\n",
-           cmd, syspath, subpath, mode); */
+    printf("findpath: cmd:'%s' syspath:'%s' subpath:'%s' mode:%d\n",
+           cmd, syspath, subpath, mode); 
 
+#ifdef __DREAMCAST__
+    int result = snprintf(buf,ARCHDEP_PATH_MAX, "/cd/Vice/%s/%s", subpath, cmd);
+    // printf("Resulting path: %s\n", buf);
+    return lib_strdup(buf); 
+#endif
     if (strchr(cmd, ARCHDEP_DIR_SEP_CHR)) {
         size_t l;
         int state;

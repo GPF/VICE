@@ -592,7 +592,7 @@ static int set_sample_rate(int val, void *param)
         return -1;
     }
 
-    sample_rate = val;
+    sample_rate = 22050;
     sound_state_changed = TRUE;
     return 0;
 }

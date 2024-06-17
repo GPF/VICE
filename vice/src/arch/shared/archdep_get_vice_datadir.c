@@ -66,7 +66,7 @@ char *archdep_get_vice_datadir(void)
 #elif defined(GEKKO)
     path = lib_strdup("/apps/Vice/share/vice");   
 #elif defined(__DREAMCAST__)
-    path = lib_strdup("VICEDIRshare/vice");       
+    path = lib_strdup("/cd/Vice/");       
 #else
     /* TODO: Add proper implementation for Haiku using /boot/[system|home]/packages/vice */
     path = lib_strdup(VICE_DATADIR);

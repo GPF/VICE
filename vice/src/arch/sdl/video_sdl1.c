@@ -30,7 +30,7 @@
  *
  */
 
-/* #define SDL_DEBUG */
+#define SDL_DEBUG 1
 
 #include "vice.h"
 
@@ -76,13 +76,24 @@ static int sdl_limit_mode;
 static int sdl_ui_finalized;
 
 /* window size, used for free scaling */
-static int sdl_window_width = 0;
-static int sdl_window_height = 0;
+static int sdl_window_width = 640;
+static int sdl_window_height = 480;
 
 int sdl_active_canvas_num = 0;
 static int sdl_num_screens = 0;
 static video_canvas_t *sdl_canvaslist[MAX_CANVAS_NUM];
 video_canvas_t *sdl_active_canvas = NULL;
+
+#ifdef __DREAMCAST__
+// #undef HAVE_HWSCALE 
+int ui_set_aspect_ratio(double aspect_ratio, void *canvas){ return 0;}
+int ui_set_vsync(int val, void *canvas){ return 0;}
+int ui_set_flipy(int val, void *canvas){ return 0;}
+int ui_set_flipx(int val, void *canvas){ return 0;}
+int ui_set_glfilter(int val, void *canvas){ return 0;}
+int ui_set_aspect_mode(int newmode, void *canvas){ return -1;}
+int ui_set_rotate(int val, void *canvas){ return 0;}
+#endif
 
 #if defined(HAVE_HWSCALE)
 static int sdl_gl_mode;
@@ -310,7 +321,7 @@ int ui_set_rotate(int val, void *canvas)
     return 0;
 }
 
-int ui_set_vsync(int val, void *canvas)
+int ui_set_vsync(int val, void *canvas) 
 {
     video_canvas_t *cv = canvas;
     if (val < 0) {
@@ -325,9 +336,9 @@ int ui_set_vsync(int val, void *canvas)
 
 #endif /* HAVE_HWSCALE */
 
-#define VICE_DEFAULT_BITDEPTH 0
+#define VICE_DEFAULT_BITDEPTH 32
 
-#define SDLLIMITMODE_DEFAULT     SDL_LIMIT_MODE_OFF
+#define SDLLIMITMODE_DEFAULT     SDL_LIMIT_MODE_FIXED
 
 /* FIXME: more resources should have the same name as their GTK counterparts,
           and the SDL prefix removed */
@@ -393,7 +404,7 @@ static const cmdline_option_t cmdline_options[] =
 
 int video_arch_cmdline_options_init(void)
 {
-    DBG(("%s", __func__));
+    DBG(("%s - %s", __func__, cmdline_options[0]));
 
     if (machine_class == VICE_MACHINE_VSID) {
         if (joystick_cmdline_options_init() < 0) {
@@ -513,6 +524,44 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
 #endif
 #endif
 
+// #ifdef __DREAMCAST__
+// #include "SDL_dreamcast.h"
+//     SDL_DC_ShowAskHz(SDL_FALSE);
+//     SDL_DC_Default60Hz(SDL_FALSE);
+//     SDL_DC_VerticalWait(SDL_FALSE);
+//     SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
+//     // SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
+//     // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
+
+//     SDL_DC_SetWindow(width,height);
+//   new_screen = SDL_SetVideoMode(640,480,16,SDL_DOUBLEBUF | SDL_SWSURFACE | SDL_OPENGL);
+//   hwscale = 1;
+//               new_width =640;
+//             new_height =480;
+//             actual_width = 640;
+//             actual_height =480;
+//     canvas->real_width = new_width;
+//     canvas->real_height = new_height;
+//     canvas->actual_width = actual_width;
+//     canvas->actual_height = actual_height;
+//     limit = SDL_LIMIT_MODE_FIXED;
+
+//     canvas->hwscale_screen = new_screen;
+//     new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, 640, 480, 16, rmask, gmask, bmask, amask);
+//     // sdl_gl_set_viewport(640, 480, 384, 272);
+
+//     lightpen_updated = 1;
+//   	glDisable(GL_DEPTH_TEST);
+//     glMatrixMode(GL_MODELVIEW);
+//     glLoadIdentity();
+//     glOrtho(0, 640, 0, 480, -100, 100);
+//     glMatrixMode(GL_PROJECTION);
+//     glLoadIdentity();
+//     glViewport(0, 0, 640, 480);  // Set viewport to cover entire window size
+// //   sdl_active_canvas = canvas;
+//       canvas->hwscale_screen = new_screen;
+// #endif   
+
     DBG(("%s: %i,%i (%i)", __func__, *width, *height, canvas->index));
 
     flags = SDL_SWSURFACE | SDL_RESIZABLE;
@@ -520,11 +569,17 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     new_width = *width;
     new_height = *height;
 
+#ifndef a__DREAMCAST__
     new_width *= canvas->videoconfig->scalex;
     new_height *= canvas->videoconfig->scaley;
+#else
+    new_width  = 640;
+    new_height = 480;        
+#endif
 
+#ifndef __DREAMCAST__
     sdl_ui_set_window_icon(NULL);
-
+#endif
     if ((canvas == sdl_active_canvas) && (canvas->fullscreenconfig->enable)) {
         fullscreen = 1;
     }
@@ -644,6 +699,7 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     if (canvas == sdl_active_canvas) {
         SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE);
 #ifndef HAVE_HWSCALE
+        log_message(sdlvideo_log, "SDL_SetVideoMode: actual_width:%i , actual_height:%i, sdl_bitdepth:%i", actual_width, actual_height, sdl_bitdepth);
         new_screen = SDL_SetVideoMode(actual_width, actual_height, sdl_bitdepth, flags);
         new_width = new_screen->w;
         new_height = new_screen->h;
@@ -653,8 +709,10 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
                desired fullscreen resolution. If it is called with a smaller resolution,
                it will display the undesirable black borders around the emulator display. */
             if ((fullscreen) && (canvas->fullscreenconfig->mode == FULLSCREEN_MODE_CUSTOM)) {
+                log_message(sdlvideo_log, "SDL_SetVideoMode1 %ix%i, %ix%i", limit_w, limit_h, sdl_bitdepth, flags);
                 new_screen = SDL_SetVideoMode(limit_w, limit_h, sdl_bitdepth, flags);
             } else {
+                log_message(sdlvideo_log, "SDL_SetVideoMode2 %ix%i, %ix%i", actual_width, actual_height, sdl_bitdepth, flags);
                 new_screen = SDL_SetVideoMode(actual_width, actual_height, sdl_bitdepth, flags);
             }
             if (!new_screen) { /* Did not work out quite well. Let's try without hwscale */
@@ -704,6 +762,7 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
         if (canvas->screen) {
             SDL_FreeSurface(canvas->screen);
         }
+        log_message(sdlvideo_log, "SDL_CreateRGBSurface: SDL_SWSURFACE , width:%i , height:%i, sdl_bitdepth:%i , 0, 0, 0, 0", new_width, new_height, sdl_bitdepth);
         new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, 0, 0, 0, 0);
     }
 
@@ -829,7 +888,7 @@ void video_canvas_refresh(struct video_canvas_s *canvas, unsigned int xs, unsign
         SDL_UnlockSurface(canvas->screen);
     }
 
-#if defined(HAVE_HWSCALE)
+#if defined(HAVE_HWSCALE) //&& !defined(__DREAMCAST__)
     {
         int sdl_gl_vertex_base = (canvas->videoconfig->flipx << 0) |
                                  (canvas->videoconfig->flipy << 1) |
@@ -896,9 +955,105 @@ void video_canvas_refresh(struct video_canvas_s *canvas, unsigned int xs, unsign
         SDL_GL_SwapBuffers();
     }
 #else
-    SDL_UpdateRect(canvas->screen, xi, yi, w, h);
+#ifdef A__DR_EAMCAST__
+{
+    printf("Debug: Entering Dreamcast-specific rendering block\n");
+
+    int width = canvas->width;
+    int height = canvas->height;
+
+    printf("Debug: Original texture dimensions: width = %d, height = %d\n", width, height);
+
+    // Check if the dimensions are within the supported range
+    if (width > 1024 || height > 1024) {
+        printf("GL ERROR: Texture dimensions exceed the supported range (1024x1024)\n");
+        return;
+    }
+
+    // Ensure width and height are powers of two, reducing to max 512 for testing
+    width = (width > 512) ? 512 : (1 << (int)ceil(log2(width)));
+    height = (height > 512) ? 512 : (1 << (int)ceil(log2(height)));
+
+    printf("Debug: Adjusted texture dimensions to nearest power of two: width = %d, height = %d\n", width, height);
+
+    // Clear buffers
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    printf("Debug: glClear completed\n");
+
+    // Disable depth testing
+    glDisable(GL_DEPTH_TEST);
+    printf("Debug: glDisable(GL_DEPTH_TEST) completed\n");
+
+    // Enable 2D textures
+    glEnable(GL_TEXTURE_2D);
+    GLenum error = glGetError();
+    if (error != GL_NO_ERROR) {
+        printf("GL ERROR: glEnable(GL_TEXTURE_2D) failed with error code %d\n", error);
+        return;
+    }
+    printf("Debug: glEnable(GL_TEXTURE_2D) completed\n");
+
+    // Bind the texture
+    glBindTexture(GL_TEXTURE_2D, screen_texture);
+    error = glGetError();
+    if (error != GL_NO_ERROR) {
+        printf("GL ERROR: glBindTexture(GL_TEXTURE_2D, screen_texture) failed with error code %d\n", error);
+        return;
+    }
+    printf("Debug: glBindTexture(GL_TEXTURE_2D) completed\n");
+
+    // Set texture parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    printf("Debug: glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR) completed\n");
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    printf("Debug: glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR) completed\n");
+
+    // Upload texture data
+    printf("Debug: Calling glTexImage2D with width = %d, height = %d\n", width, height);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, canvas->screen->pixels);
+    error = glGetError();
+    if (error != GL_NO_ERROR) {
+        printf("GL ERROR: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, canvas->screen->pixels) failed with error code %d\n", error);
+        return;
+    }
+    printf("Debug: glTexImage2D(GL_TEXTURE_2D) completed\n");
+
+    // Begin drawing quads
+    glBegin(GL_QUADS);
+    error = glGetError();
+    if (error != GL_NO_ERROR) {
+        printf("GL ERROR: glBegin(GL_QUADS) failed with error code %d\n", error);
+        return;
+    }
+    printf("Debug: glBegin(GL_QUADS) completed\n");
+
+    // Define texture coordinates and vertices
+    glTexCoord2f(0.0f, 0.0f); glVertex3f(-1.0f, -1.0f, 0.0f);
+    glTexCoord2f(1.0f, 0.0f); glVertex3f( 1.0f, -1.0f, 0.0f);
+    glTexCoord2f(1.0f, 1.0f); glVertex3f( 1.0f,  1.0f, 0.0f);
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(-1.0f,  1.0f, 0.0f);
+
+    // End drawing quads
+    glEnd();
+    printf("Debug: glEnd(GL_QUADS) completed\n");
+
+    // Swap buffers
+    SDL_GL_SwapBuffers();
+    error = glGetError();
+    if (error != GL_NO_ERROR) {
+        printf("GL ERROR: SDL_GL_SwapBuffers() failed with error code %d\n", error);
+        return;
+    }
+    printf("Debug: SDL_GL_SwapBuffers() completed\n");
+
+    printf("Debug: Exiting Dreamcast-specific rendering block\n");
+}
+#else
+SDL_UpdateRect(canvas->screen, xi, yi, w, h);
 #endif
-    ui_autohide_mouse_cursor();
+#endif
+ui_autohide_mouse_cursor();
 }
 
 int video_canvas_set_palette(struct video_canvas_s *canvas, struct palette_s *palette)
@@ -939,10 +1094,12 @@ int video_canvas_set_palette(struct video_canvas_s *canvas, struct palette_s *pa
     if (canvas->depth == 8) {
         SDL_SetColors(canvas->screen, colors, 0, palette->num_entries);
     } else {
+         DBG(("video_canvas_set_palette canvas:  video_render_setrawrgb"));
         for (i = 0; i < 256; i++) {
             video_render_setrawrgb(color_tables, i, SDL_MapRGB(fmt, (Uint8)i, 0, 0), SDL_MapRGB(fmt, 0, (Uint8)i, 0), SDL_MapRGB(fmt, 0, 0, (Uint8)i));
         }
         video_render_initraw(canvas->videoconfig);
+        DBG(("video_canvas_set_palette canvas:  video_render_initraw"));
     }
 
     return 0;
@@ -1146,16 +1303,18 @@ void sdl_ui_init_finalize(void)
     unsigned int width = sdl_active_canvas->draw_buffer->canvas_width;
     unsigned int height = sdl_active_canvas->draw_buffer->canvas_height;
     int minimized = 0;
-
+ log_warning(LOG_DEFAULT,"66666666666666**************: ui_init_finalize");
     /* unfortunately we cant create the window minimized in SDL1 */
     resources_get_int("StartMinimized", &minimized);
-
+ log_warning(LOG_DEFAULT,"77777777777777**************: resources_get_int");
+ printf("99999999999999999999 width:%d , height %d\n",width,height);
     sdl_canvas_create(sdl_active_canvas, &width, &height); /* set the real canvas size */
     /* minimize window after it was created */
+ log_warning(LOG_DEFAULT,"8888888888888**************: sdl_canvas_create");    
     if (minimized) {
         SDL_WM_IconifyWindow();
     }
-
+ log_warning(LOG_DEFAULT,"99999999999999**************: sdl_ui_finalized");
     sdl_ui_finalized = 1;
 
     mousedrv_mouse_changed();
@@ -1172,7 +1331,7 @@ int sdl_ui_get_mouse_state(int *px, int *py, unsigned int *pbuttons)
     local_buttons = SDL_GetMouseState(&local_x, &local_y);
 
 #ifdef SDL_DEBUG
-    fprintf(stderr, "%s pre : x = %i, y = %i, buttons = %02x, on_screen = %i\n", __func__, px, py, buttons, on_screen);
+    fprintf(stderr, "%s pre : x = %i, y = %i, buttons = %02x, on_screen = %i\n", __func__, px, py, pbuttons);//, on_screen);
 #endif
 
     local_x -= sdl_lightpen_adjust.offset_x;
@@ -1186,7 +1345,7 @@ int sdl_ui_get_mouse_state(int *px, int *py, unsigned int *pbuttons)
     }
 
 #ifdef SDL_DEBUG
-    fprintf(stderr, "%s post: x = %i, y = %i\n", __func__, x, y);
+    fprintf(stderr, "%s post: x = %i, y = %i\n", __func__, px, py);
 #endif
     if (px) {
         *px = local_x;

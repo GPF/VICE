@@ -54,6 +54,7 @@ char *archdep_current_dir(void)
     static size_t len = 256;    /* buffer size on first call of function */
 
     p = lib_malloc(len);
+#ifndef __DREAMCAST__
     while (archdep_getcwd(p, len) == NULL) {
         if (errno == ERANGE) {
             /* double buffer size and try again */
@@ -63,6 +64,9 @@ char *archdep_current_dir(void)
             return NULL;
         }
     }
-    // printf("CWD = %s",p);
+#else
+    p = lib_strdup("/cd/Vice");
+#endif    
+    printf("CWD = %s\n",p);
     return p;
 }

@@ -194,12 +194,15 @@ FILE *sysfile_open(const char *name, const char *subpath, char **complete_path_r
     // // strcat(p, name);
 
     //     printf("Vice file opened (%s) with mode %s",p,open_mode );
+#ifndef __DREAMCAST__    
     if (p == NULL) {
         if (complete_path_return != NULL) {
             *complete_path_return = NULL;
         }
         return NULL;
-    } else {
+    }
+
+     else {
         unsigned int isdir = 0;
 
         /* make sure we're not opening a directory */
@@ -211,7 +214,9 @@ FILE *sysfile_open(const char *name, const char *subpath, char **complete_path_r
             }
             return NULL;
         }
-
+ #else
+ {
+#endif
         f = fopen(p, open_mode);
 
         if (f == NULL || complete_path_return == NULL) {

@@ -1,0 +1,26 @@
+var uihotkeys_8h =
+[
+    [ "ui_hotkeys_cmdline_options_init", "d9/d88/uihotkeys_8h.html#a7df1c98cc4714b3b203b106c10100fbe", null ],
+    [ "ui_hotkeys_init", "d9/d88/uihotkeys_8h.html#a1292e923fc8d1e0b98f72a55bfc15217", null ],
+    [ "ui_hotkeys_install_by_map", "d9/d88/uihotkeys_8h.html#a7e01afb3e873228e8daf295b9b2dcee7", null ],
+    [ "ui_hotkeys_load", "d9/d88/uihotkeys_8h.html#a4b62e14de251c83c1782dfc9ee5d9b19", null ],
+    [ "ui_hotkeys_load_user_default", "d9/d88/uihotkeys_8h.html#a2a608e4fa4ce548b53b0430f72ae4bd7", null ],
+    [ "ui_hotkeys_load_vice_default", "d9/d88/uihotkeys_8h.html#a963d18f9c980e9dd8527a3f753b2233a", null ],
+    [ "ui_hotkeys_reload", "d9/d88/uihotkeys_8h.html#a9afbe63ac8a46b6bac299458c3ea65d3", null ],
+    [ "ui_hotkeys_remove_all", "d9/d88/uihotkeys_8h.html#af2aa732f2ce5a6f348e9542f167de6c6", null ],
+    [ "ui_hotkeys_remove_by_action", "d9/d88/uihotkeys_8h.html#a0498ad439851919fe36722acc80fde0f", null ],
+    [ "ui_hotkeys_remove_by_map", "d9/d88/uihotkeys_8h.html#a4cb667eecafe4306235251f46d5d616e", null ],
+    [ "ui_hotkeys_resources_init", "d9/d88/uihotkeys_8h.html#a8be64d92778b80c88d880b0ecb11adc7", null ],
+    [ "ui_hotkeys_save", "d9/d88/uihotkeys_8h.html#a774763deb7d814736f41750d9ab11737", null ],
+    [ "ui_hotkeys_save_as", "d9/d88/uihotkeys_8h.html#a38a8c6a7fffeb136fa7b1a6aed26940a", null ],
+    [ "ui_hotkeys_set_default_requested", "d9/d88/uihotkeys_8h.html#ae5e81112c38393d90bc0730f4daaa6c4", null ],
+    [ "ui_hotkeys_shutdown", "d9/d88/uihotkeys_8h.html#af60e6e89482c6aedef39d8c5485bb343", null ],
+    [ "ui_hotkeys_update_by_action", "d9/d88/uihotkeys_8h.html#a83300b6c929317117dc1e5041524b546", null ],
+    [ "ui_hotkeys_update_by_map", "d9/d88/uihotkeys_8h.html#a78d1b16fe3f93474dd042a52e0f359e9", null ],
+    [ "ui_hotkeys_vhk_filename_user", "d9/d88/uihotkeys_8h.html#a294e36a427590e788107af1308a8cb9e", null ],
+    [ "ui_hotkeys_vhk_filename_vice", "d9/d88/uihotkeys_8h.html#af49046cc817402f755dcd2655b9253e8", null ],
+    [ "ui_hotkeys_vhk_full_path_user", "d9/d88/uihotkeys_8h.html#a8a8d93278b2e7bbfd7da6aaf3f2f4f27", null ],
+    [ "ui_hotkeys_vhk_full_path_vice", "d9/d88/uihotkeys_8h.html#aa31c6cd8d8f739a246cb7bc85dfad123", null ],
+    [ "ui_hotkeys_vhk_source_path", "d9/d88/uihotkeys_8h.html#a70fe3adcb4c8f85e7885b73d78fb7d71", null ],
+    [ "ui_hotkeys_vhk_source_type", "d9/d88/uihotkeys_8h.html#aa932dadb07f0b3f52491c555d0302870", null ]
+];

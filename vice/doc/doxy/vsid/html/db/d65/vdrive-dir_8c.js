@@ -1,0 +1,25 @@
+var vdrive_dir_8c =
+[
+    [ "asciidate_to_int", "db/d65/vdrive-dir_8c.html#affa87cbb3d72937712fc907ecd1ea20c", null ],
+    [ "date_to_int", "db/d65/vdrive-dir_8c.html#a4c795c42b890eae1af53849d83c20ebb", null ],
+    [ "find_next_directory_sector", "db/d65/vdrive-dir_8c.html#a4b61454d659451d71d80e6e6b566c395", null ],
+    [ "vdrive_dir_create_slot", "db/d65/vdrive-dir_8c.html#ab38d04ab17cb955abc643ff0262adf56", null ],
+    [ "vdrive_dir_filetype", "db/d65/vdrive-dir_8c.html#a2deb493a4ac4c532b5640abb38cbfb54", null ],
+    [ "vdrive_dir_find_first_slot", "db/d65/vdrive-dir_8c.html#a2a3586154ce48d00a71b30ec6f715603", null ],
+    [ "vdrive_dir_find_next_slot", "db/d65/vdrive-dir_8c.html#ac93c9e49c43be5e772c5ad95caf3e669", null ],
+    [ "vdrive_dir_first_directory", "db/d65/vdrive-dir_8c.html#ad4a5a819f12136cd39d84571116ab94c", null ],
+    [ "vdrive_dir_free_chain", "db/d65/vdrive-dir_8c.html#af366f659367a2cffa3cd5192c0134807", null ],
+    [ "vdrive_dir_get_interleave", "db/d65/vdrive-dir_8c.html#a052426cfd969c8b61c14409aaa2407f7", null ],
+    [ "vdrive_dir_init", "db/d65/vdrive-dir_8c.html#a36f0159c0424eb74a4a1111b0fe58748", null ],
+    [ "vdrive_dir_name_match", "db/d65/vdrive-dir_8c.html#a6760c3e14d50479364cc83e828fa4b79", null ],
+    [ "vdrive_dir_next_directory", "db/d65/vdrive-dir_8c.html#a5ea0231d90261b4c8b4cbb61af468cd0", null ],
+    [ "vdrive_dir_no_a0_pads", "db/d65/vdrive-dir_8c.html#ac9f55e6c4bcd93a55adc990c02cfcbb2", null ],
+    [ "vdrive_dir_part_find_first_slot", "db/d65/vdrive-dir_8c.html#a37a0296bf6a44a941c91da32ae9df9dd", null ],
+    [ "vdrive_dir_part_find_next_slot", "db/d65/vdrive-dir_8c.html#a643a50e5fe3047107922bc48c4bfdb0a", null ],
+    [ "vdrive_dir_part_first_directory", "db/d65/vdrive-dir_8c.html#a6e47663a265a2b00d8b2a9a1c72503d5", null ],
+    [ "vdrive_dir_part_name_match", "db/d65/vdrive-dir_8c.html#a82e642989e6a65477797a4d25c69a74a", null ],
+    [ "vdrive_dir_part_next_directory", "db/d65/vdrive-dir_8c.html#a01144b8d6bd2f596242c4d12932c462d", null ],
+    [ "vdrive_dir_remove_slot", "db/d65/vdrive-dir_8c.html#a5ba595f136e8786889072c1dc6dd3591", null ],
+    [ "vdrive_dir_updatetime", "db/d65/vdrive-dir_8c.html#abd368ab07a26887a0edf12b5d8ecdddc", null ],
+    [ "vdrive_dir_log", "db/d65/vdrive-dir_8c.html#a0aacd7ef8e225489b201fcd34e31330c", null ]
+];

@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "archdep.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "cstdlib": "c"
     }
 }

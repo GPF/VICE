@@ -1,0 +1,25 @@
+var vdc_8h =
+[
+    [ "VDC_16KB", "d7/d9e/vdc_8h.html#a40875b04918d7a747a2a82d8c3570ad3", null ],
+    [ "VDC_64KB", "d7/d9e/vdc_8h.html#afb282da7031216ba1df93f0749957719", null ],
+    [ "VDC_NUM_REVISIONS", "d7/d9e/vdc_8h.html#a0cbd82c07be9c087d1a9a64e542a3295", null ],
+    [ "VDC_REVISION_0", "d7/d9e/vdc_8h.html#afa064dc77c496b22780ae0ef78afc40a", null ],
+    [ "VDC_REVISION_1", "d7/d9e/vdc_8h.html#a51f2abd2bbbfd130d19d5cc8b8150c78", null ],
+    [ "VDC_REVISION_2", "d7/d9e/vdc_8h.html#aa9d5303a6d2b039ce784c6d4a4a5a624", null ],
+    [ "vdc_async_refresh", "d7/d9e/vdc_8h.html#a1df5580aa6919d8851724062a8b18f44", null ],
+    [ "vdc_cmdline_options_init", "d7/d9e/vdc_8h.html#a348a205016fb0ca53613057c66c1bb2b", null ],
+    [ "vdc_get_canvas", "d7/d9e/vdc_8h.html#a6d9e17b5711e8a3bc2c3283e3d77cae3", null ],
+    [ "vdc_init", "d7/d9e/vdc_8h.html#af59735cd558e0b48c7b6506ba38ea650", null ],
+    [ "vdc_lightpen_timing", "d7/d9e/vdc_8h.html#aba29c1316c99259a278ad7940c5ec31f", null ],
+    [ "vdc_powerup", "d7/d9e/vdc_8h.html#a27d5741c6503a41dc25a0f8bd84b8124", null ],
+    [ "vdc_prepare_for_snapshot", "d7/d9e/vdc_8h.html#a086995e7c30dc066232e5d9376c6f758", null ],
+    [ "vdc_read_snapshot_module", "d7/d9e/vdc_8h.html#a67bcc68c6530edb68ffeae01ab65c169", null ],
+    [ "vdc_reset", "d7/d9e/vdc_8h.html#a428620ceb075b0554c6d6adc38995802", null ],
+    [ "vdc_resize", "d7/d9e/vdc_8h.html#ac7fbb04e2f8b9d85b6e76deac3165fb8", null ],
+    [ "vdc_resources_init", "d7/d9e/vdc_8h.html#a1efb0c53752668f17e69aca5e9f3c740", null ],
+    [ "vdc_screenshot", "d7/d9e/vdc_8h.html#aedd7afd149eea1dca69faec95cc4b515", null ],
+    [ "vdc_set_canvas_refresh", "d7/d9e/vdc_8h.html#aaf4545ad1efc57651239edc08dc00c70", null ],
+    [ "vdc_shutdown", "d7/d9e/vdc_8h.html#a5f8e2ed06d76bde7c2afec45316c145f", null ],
+    [ "vdc_trigger_light_pen", "d7/d9e/vdc_8h.html#a772dc164adc0e879ddddb13b7d8f65d5", null ],
+    [ "vdc_write_snapshot_module", "d7/d9e/vdc_8h.html#a78f46ed9d4e538ed1bbc7ac4832d2796", null ]
+];

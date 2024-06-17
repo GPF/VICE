@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['jam_5fdialog_0',['jam_dialog',['../dc/d33/jamdialog_8c.html#a5016aaea4ea6cb71618da46e86f4aebc',1,'jam_dialog(GtkWidget *parent, const char *msg):&#160;jamdialog.c'],['../d4/def/jamdialog_8h.html#a5016aaea4ea6cb71618da46e86f4aebc',1,'jam_dialog(GtkWidget *parent, const char *msg):&#160;jamdialog.c']]],
+  ['jiffy_5fswitch_5fcallback_1',['jiffy_switch_callback',['../d7/de0/settings__scpu64_8c.html#a65667bbcc5b6fbc67bf2bbef1419c4f9',1,'settings_scpu64.c']]],
+  ['joystick_5fautofire_5fwidget_5fcreate_2',['joystick_autofire_widget_create',['../dc/d87/joystickautofirewidget_8c.html#a143e195f02d826ef85c2a9f362a02f53',1,'joystick_autofire_widget_create(int joy, const char *title):&#160;joystickautofirewidget.c'],['../d8/d94/joystickautofirewidget_8h.html#a143e195f02d826ef85c2a9f362a02f53',1,'joystick_autofire_widget_create(int joy, const char *title):&#160;joystickautofirewidget.c']]],
+  ['joystick_5fcalibrate_3',['joystick_calibrate',['../de/df3/winjoy_8h.html#a0684bab499be37dc5bb53a3feb252ef3',1,'winjoy.h']]],
+  ['joystick_5fdevice_5fwidget_5fcreate_4',['joystick_device_widget_create',['../d5/dbb/joystickdevicewidget_8c.html#a6829cc0f58f3303a9aeda8b9535c5504',1,'joystick_device_widget_create(int device, const char *title):&#160;joystickdevicewidget.c'],['../d2/dc3/joystickdevicewidget_8h.html#a6829cc0f58f3303a9aeda8b9535c5504',1,'joystick_device_widget_create(int device, const char *title):&#160;joystickdevicewidget.c']]],
+  ['joystick_5fdevice_5fwidget_5fupdate_5',['joystick_device_widget_update',['../d5/dbb/joystickdevicewidget_8c.html#acf4631c9b98dd6823e6994e6380fdf8d',1,'joystick_device_widget_update(GtkWidget *widget, int id):&#160;joystickdevicewidget.c'],['../d2/dc3/joystickdevicewidget_8h.html#acf4631c9b98dd6823e6994e6380fdf8d',1,'joystick_device_widget_update(GtkWidget *widget, int id):&#160;joystickdevicewidget.c']]],
+  ['joystick_5fmenu_5fpopup_5fcreate_6',['joystick_menu_popup_create',['../d2/d03/joystickmenupopup_8c.html#ae957821bb003e9311f475b10cf745cf2',1,'joystick_menu_popup_create(void):&#160;joystickmenupopup.c'],['../dc/dfd/joystickmenupopup_8h.html#ae957821bb003e9311f475b10cf745cf2',1,'joystick_menu_popup_create(void):&#160;joystickmenupopup.c']]],
+  ['joystick_5fswap_5fpossible_7',['joystick_swap_possible',['../d2/d03/joystickmenupopup_8c.html#af8a6307abf1765e0ca0519c4a05ed101',1,'joystickmenupopup.c']]],
+  ['joystick_5fui_5fget_5fautofire_5faxes_8',['joystick_ui_get_autofire_axes',['../de/df3/winjoy_8h.html#a87a5653039e6b612723493ab76f666a7',1,'winjoy.h']]],
+  ['joystick_5fui_5fget_5fautofire_5fbuttons_9',['joystick_ui_get_autofire_buttons',['../de/df3/winjoy_8h.html#ac405d3d0a05c6e8d31a3b004d7a767c6',1,'winjoy.h']]],
+  ['joystick_5fui_5fget_5fdevice_5flist_10',['joystick_ui_get_device_list',['../de/df3/winjoy_8h.html#a231d7b3b3ae25c52b287c66fe81995e4',1,'winjoy.h']]]
+];

@@ -1,0 +1,26 @@
+var c64__256k_8h =
+[
+    [ "c64_256k_cia_set_vbank", "da/d25/c64__256k_8h.html#aa4192a4fa57128a83f17f743b4047b44", null ],
+    [ "c64_256k_cmdline_options_init", "da/d25/c64__256k_8h.html#a0645d2d5a8df7ed6283a36301e88a812", null ],
+    [ "c64_256k_init", "da/d25/c64__256k_8h.html#a03de8023cb79adcfa266ec8464bdf450", null ],
+    [ "c64_256k_ram_inject", "da/d25/c64__256k_8h.html#a919d29be8505aa9475ba7d949481a095", null ],
+    [ "c64_256k_ram_segment0_read", "da/d25/c64__256k_8h.html#ab1a3c3d097346a405ec558fd108e8ef2", null ],
+    [ "c64_256k_ram_segment0_store", "da/d25/c64__256k_8h.html#af198c8379eeadbd57a31c47835d33928", null ],
+    [ "c64_256k_ram_segment1_read", "da/d25/c64__256k_8h.html#ab01fd462c847ba4ce78fe1c645983ffc", null ],
+    [ "c64_256k_ram_segment1_store", "da/d25/c64__256k_8h.html#a1dbff422024eecbbbc3dc9c971caa23f", null ],
+    [ "c64_256k_ram_segment2_read", "da/d25/c64__256k_8h.html#af85ac1d9fbf9064f2ae22df06e541d43", null ],
+    [ "c64_256k_ram_segment2_store", "da/d25/c64__256k_8h.html#a0b9418278084f937692359d1f12db4c2", null ],
+    [ "c64_256k_ram_segment3_read", "da/d25/c64__256k_8h.html#a4f61454d4d0b2837151d13de6cc39d85", null ],
+    [ "c64_256k_ram_segment3_store", "da/d25/c64__256k_8h.html#a8aff81c808c33c9ad2dc589fe243c8ba", null ],
+    [ "c64_256k_read", "da/d25/c64__256k_8h.html#a3c91e3c466c4a69f7ae8ae5c18c9560f", null ],
+    [ "c64_256k_reset", "da/d25/c64__256k_8h.html#ae87bc883d23f2ad580c4ba5f28379d46", null ],
+    [ "c64_256k_resources_init", "da/d25/c64__256k_8h.html#ab81cb3dd184392120cce28639c006ae5", null ],
+    [ "c64_256k_resources_shutdown", "da/d25/c64__256k_8h.html#a710d7a6dd054e5e111d62500c25c118b", null ],
+    [ "c64_256k_shutdown", "da/d25/c64__256k_8h.html#adb23058620a4989a098f1621f21939e2", null ],
+    [ "c64_256k_snapshot_read", "da/d25/c64__256k_8h.html#ab9dd84eb89e3ef0dc50e6e1ffd91b9ae", null ],
+    [ "c64_256k_snapshot_write", "da/d25/c64__256k_8h.html#a00c043f80099a679a639fe87e7981c73", null ],
+    [ "c64_256k_store", "da/d25/c64__256k_8h.html#ad5ad11b441feacb120f703dfb6c4034e", null ],
+    [ "set_c64_256k_enabled", "da/d25/c64__256k_8h.html#a93ef29f7fbe3fb568133f7427aec8a1b", null ],
+    [ "c64_256k_enabled", "da/d25/c64__256k_8h.html#ae81f356d7d1796d13f9ac67921f100d9", null ],
+    [ "c64_256k_start", "da/d25/c64__256k_8h.html#aec1f4bb830df3d29c5c55cea6f224782", null ]
+];

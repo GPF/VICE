@@ -28,7 +28,7 @@
  *
  */
 
-/* #define SDL_DEBUG */
+#define SDL_DEBUG 1
 
 #include "vice.h"
 

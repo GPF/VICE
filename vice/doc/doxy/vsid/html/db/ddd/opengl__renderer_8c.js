@@ -1,0 +1,28 @@
+var opengl__renderer_8c =
+[
+    [ "CANVAS_LOCK", "db/ddd/opengl__renderer_8c.html#ada64bb4308439317b35db7e1f387f41c", null ],
+    [ "CANVAS_UNLOCK", "db/ddd/opengl__renderer_8c.html#ae5bc7cf98daae13fdcf04703c3d99526", null ],
+    [ "RENDER_LOCK", "db/ddd/opengl__renderer_8c.html#ad1c16474c162518bfa9b89e75abde7ec", null ],
+    [ "RENDER_UNLOCK", "db/ddd/opengl__renderer_8c.html#a1db869c32a573dba670bf7ed000dbbda", null ],
+    [ "context_t", "db/ddd/opengl__renderer_8c.html#a2249569b666a6a1be3aeab9ae7897af4", null ],
+    [ "create_shader", "db/ddd/opengl__renderer_8c.html#aad67a03e1b2fa5a3286855afe14bb47a", null ],
+    [ "create_shader_program", "db/ddd/opengl__renderer_8c.html#a6101bfea511fa3479a877719a605f754", null ],
+    [ "invoke_widget_layout", "db/ddd/opengl__renderer_8c.html#ab9598970131779e2ef8068bf1c291cee", null ],
+    [ "legacy_render", "db/ddd/opengl__renderer_8c.html#a6683c93676236a6cfdbb3da8c90fe538", null ],
+    [ "modern_render", "db/ddd/opengl__renderer_8c.html#a16af93ba9786a4f5389678df29065c86", null ],
+    [ "on_widget_monitors_changed", "db/ddd/opengl__renderer_8c.html#ab5681d80c7f9e4238420d8e52f6f1df6", null ],
+    [ "on_widget_realized", "db/ddd/opengl__renderer_8c.html#a0045a4189aadba9a9f1e0740c4caf0a7", null ],
+    [ "on_widget_resized", "db/ddd/opengl__renderer_8c.html#a94d80e5f4dfe14a13c8a304b2d44f6c0", null ],
+    [ "on_widget_resized", "db/ddd/opengl__renderer_8c.html#a2575c6e34cc109f24a88f370a9de0f00", null ],
+    [ "on_widget_unrealized", "db/ddd/opengl__renderer_8c.html#a27bcc1e520bd018f7cdbcecadba139e2", null ],
+    [ "render", "db/ddd/opengl__renderer_8c.html#ac1b2b521a36b80410ef4fd34d1af9260", null ],
+    [ "update_frame_textures", "db/ddd/opengl__renderer_8c.html#ae94003b894afe69a744b608317bb827c", null ],
+    [ "vice_opengl_destroy_context", "db/ddd/opengl__renderer_8c.html#ab473171e27e5af2bf92b76d897714131", null ],
+    [ "vice_opengl_initialise_canvas", "db/ddd/opengl__renderer_8c.html#a45e572dfb5327037426ee6264d257453", null ],
+    [ "vice_opengl_on_ui_frame_clock", "db/ddd/opengl__renderer_8c.html#ad4ef6c24f9b74bc8b3f90b502cf1d85a", null ],
+    [ "vice_opengl_refresh_rect", "db/ddd/opengl__renderer_8c.html#a4fd8fedc5c7a22cc0eb27be3b8a627d5", null ],
+    [ "vice_opengl_set_palette", "db/ddd/opengl__renderer_8c.html#ab522206b3334056e4ab63d89b02855e2", null ],
+    [ "vice_opengl_update_context", "db/ddd/opengl__renderer_8c.html#ad4755b5a0dcadce63d9419e8c20e68c9", null ],
+    [ "vertexData", "db/ddd/opengl__renderer_8c.html#a02322a353dad4e5adfef1830d760ae46", null ],
+    [ "vice_opengl_backend", "db/ddd/opengl__renderer_8c.html#a7ae22bc1d22b73ea25c9087338f4340b", null ]
+];

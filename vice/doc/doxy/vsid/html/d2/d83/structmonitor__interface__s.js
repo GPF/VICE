@@ -1,0 +1,28 @@
+var structmonitor__interface__s =
+[
+    [ "clk", "d2/d83/structmonitor__interface__s.html#a061340f808ffcc7fa5b3d1a0714ec3cb", null ],
+    [ "context", "d2/d83/structmonitor__interface__s.html#a3be0b6a0fd9f60ab7e0bbc3e6b46cb1f", null ],
+    [ "cpu_65816_regs", "d2/d83/structmonitor__interface__s.html#ac4cbc5e15c82e3dd7c2094b4b084d946", null ],
+    [ "cpu_R65C02_regs", "d2/d83/structmonitor__interface__s.html#a7ea4904942f5e31f332df67aff910ae6", null ],
+    [ "cpu_regs", "d2/d83/structmonitor__interface__s.html#a37c96a76a6924efe6b106eb141541501", null ],
+    [ "current_bank", "d2/d83/structmonitor__interface__s.html#abad48c969285cbd20dfaa9cc42ea8601", null ],
+    [ "current_bank_index", "d2/d83/structmonitor__interface__s.html#a85f6d98676c95e6b60413e9d4b818aa4", null ],
+    [ "dtv_cpu_regs", "d2/d83/structmonitor__interface__s.html#a9467c5a79431376f1c9461534b7d6705", null ],
+    [ "get_line_cycle", "d2/d83/structmonitor__interface__s.html#a9acbe69c49b2276325288d5cea739a01", null ],
+    [ "h6809_cpu_regs", "d2/d83/structmonitor__interface__s.html#aaebcf9af7db58d49a341f710c5895b6b", null ],
+    [ "int_status", "d2/d83/structmonitor__interface__s.html#accdea665879ecce3b7eaa36e0ba1aa01", null ],
+    [ "mem_bank_flags_from_bank", "d2/d83/structmonitor__interface__s.html#a9d7d6378230cfe276f933fd0de23fc8a", null ],
+    [ "mem_bank_from_name", "d2/d83/structmonitor__interface__s.html#a9a025f7b7e2d63e0ba7153d96b1dd700", null ],
+    [ "mem_bank_index_from_bank", "d2/d83/structmonitor__interface__s.html#aea9c85f28c766c03a449407697da8658", null ],
+    [ "mem_bank_list", "d2/d83/structmonitor__interface__s.html#a9405a5d774e56030a1dbff7da7e2c630", null ],
+    [ "mem_bank_list_nos", "d2/d83/structmonitor__interface__s.html#a1ad75a61b02453dda57a6f91a232c9e5", null ],
+    [ "mem_bank_peek", "d2/d83/structmonitor__interface__s.html#a75441e4577a573667803384bf1435d1e", null ],
+    [ "mem_bank_poke", "d2/d83/structmonitor__interface__s.html#a19bfa932eb6fb283e16ddcf0ddba2bd9", null ],
+    [ "mem_bank_read", "d2/d83/structmonitor__interface__s.html#a7c58347529f3e3c9fd6580158f33ab2b", null ],
+    [ "mem_bank_write", "d2/d83/structmonitor__interface__s.html#a16e54b2e1cc10867e9b1b1cc6dad0cd6", null ],
+    [ "mem_ioreg_list_get", "d2/d83/structmonitor__interface__s.html#a6f1e0b8ebe2afce69b050e455a093c04", null ],
+    [ "mem_peek_with_config", "d2/d83/structmonitor__interface__s.html#ae144ebd520acaebe45f1238c4a2d8435", null ],
+    [ "set_bank_base", "d2/d83/structmonitor__interface__s.html#a62622a33a467e24ad93c52ef0e44f73a", null ],
+    [ "toggle_watchpoints_func", "d2/d83/structmonitor__interface__s.html#ac92efc3769d66c3be33b78c77ea23f35", null ],
+    [ "z80_cpu_regs", "d2/d83/structmonitor__interface__s.html#a984b0e41c9cedb3d84ed47cdec73799d", null ]
+];

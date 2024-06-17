@@ -1,0 +1,26 @@
+var video_8c =
+[
+    [ "VICE_DEBUG_NATIVE_GTK3", "d7/d45/video_8c.html#ab7d3b273be07021dc160f074fbeacedd", null ],
+    [ "ui_set_aspect_mode", "d7/d45/video_8c.html#a37b95acdec1e61caeb6a0e1a9156ef8e", null ],
+    [ "ui_set_aspect_ratio", "d7/d45/video_8c.html#a78e99c57ac520a576b9a604236dea606", null ],
+    [ "ui_set_flipx", "d7/d45/video_8c.html#ad4506b24490e625a92dab374878fde1d", null ],
+    [ "ui_set_flipy", "d7/d45/video_8c.html#a9abf211c7c35c903fac204407294977b", null ],
+    [ "ui_set_glfilter", "d7/d45/video_8c.html#ae96eb7028fc0a30594fbbc1cf6bb59fc", null ],
+    [ "ui_set_rotate", "d7/d45/video_8c.html#a410f46c01df7dce22a4753a81ee308e6", null ],
+    [ "ui_set_vsync", "d7/d45/video_8c.html#a1ab671a127560f7bf70ecddc1b96d950", null ],
+    [ "video_arch_canvas_init", "d7/d45/video_8c.html#a55f6badbae44f8a93f121aea943c1a11", null ],
+    [ "video_arch_cmdline_options_init", "d7/d45/video_8c.html#afdf36228f18513b26a1f4c5adcf9270c", null ],
+    [ "video_arch_get_active_chip", "d7/d45/video_8c.html#a68350514fd8e8e56e7bf4bc46dc0fbe2", null ],
+    [ "video_arch_resources_init", "d7/d45/video_8c.html#a22d94782d4c60dd51e12e4afff482a96", null ],
+    [ "video_arch_resources_shutdown", "d7/d45/video_8c.html#a32b0d718623af7f61a6a93aa3a25b5d1", null ],
+    [ "video_canvas_adjust_aspect_ratio", "d7/d45/video_8c.html#abf77f8773b3a035acc62dc2df682c555", null ],
+    [ "video_canvas_can_resize", "d7/d45/video_8c.html#a45af68e3814a99acfd90c95a51c93639", null ],
+    [ "video_canvas_create", "d7/d45/video_8c.html#ab355342b37333b1848493707a8b956d2", null ],
+    [ "video_canvas_destroy", "d7/d45/video_8c.html#a3307d13b5610972d901f1cb957ee384d", null ],
+    [ "video_canvas_refresh", "d7/d45/video_8c.html#aebc9c52baf7a503ed7e69ea496043422", null ],
+    [ "video_canvas_resize", "d7/d45/video_8c.html#af8a4197ad5f3e95fa5c4b73be7fe2f31", null ],
+    [ "video_canvas_set_palette", "d7/d45/video_8c.html#ac30273f134b8dced2b4471b83e5f6e76", null ],
+    [ "video_init", "d7/d45/video_8c.html#a063a8db56368ef67241d30ffb15c26b1", null ],
+    [ "video_shutdown", "d7/d45/video_8c.html#ac14e1f0789a855291d2fcc5a8e35d4f3", null ],
+    [ "gtk3video_log", "d7/d45/video_8c.html#a1e1af9c5aa4fbdaeb817ad49d721cfce", null ]
+];

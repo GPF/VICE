@@ -1,0 +1,28 @@
+var sid_resources_8h =
+[
+    [ "sid_common_resources_init", "de/da8/sid-resources_8h.html#af12037a01c05c4612e008f1eef5ffb70", null ],
+    [ "sid_resources_init", "de/da8/sid-resources_8h.html#a8c5bf7c04f6facf78010875ad64aa267", null ],
+    [ "sid_set_sid2_address", "de/da8/sid-resources_8h.html#ade4f766a07b21fec212a647c7fd6a58f", null ],
+    [ "sid_set_sid3_address", "de/da8/sid-resources_8h.html#aa2aa48c7dcbc97788426f5e86d95e2e9", null ],
+    [ "sid_set_sid4_address", "de/da8/sid-resources_8h.html#ac27239aac34c46addd81401b95e21991", null ],
+    [ "sid_set_sid5_address", "de/da8/sid-resources_8h.html#ac650df3b605d98143224378ff7f04da8", null ],
+    [ "sid_set_sid6_address", "de/da8/sid-resources_8h.html#a303b2eb2b189feb8c8d672635b04e4cd", null ],
+    [ "sid_set_sid7_address", "de/da8/sid-resources_8h.html#a990c60e032478b4f00ecadce94bd05f7", null ],
+    [ "sid_set_sid8_address", "de/da8/sid-resources_8h.html#a4a77d2250b5663eda4cf57d1e3394f5c", null ],
+    [ "checking_sid_stereo", "de/da8/sid-resources_8h.html#a24ac9f6ca4cf8d4165a6fd6e7216319a", null ],
+    [ "sid2_address_end", "de/da8/sid-resources_8h.html#aeba667f9a236c3776b75f2b8e55a36cd", null ],
+    [ "sid2_address_start", "de/da8/sid-resources_8h.html#ad7d72a95bb71c2f79928bceca401d56f", null ],
+    [ "sid3_address_end", "de/da8/sid-resources_8h.html#a4214f5e26ca46790dbe31b80aa54917b", null ],
+    [ "sid3_address_start", "de/da8/sid-resources_8h.html#acf6663e0fb597abb09c8fa20ba3af184", null ],
+    [ "sid4_address_end", "de/da8/sid-resources_8h.html#a9f75d3183c355750933815f603866fe6", null ],
+    [ "sid4_address_start", "de/da8/sid-resources_8h.html#a45495908e446f4a1d9e7243e9c3352fe", null ],
+    [ "sid5_address_end", "de/da8/sid-resources_8h.html#af215b98360b60e012af01e930e851d6f", null ],
+    [ "sid5_address_start", "de/da8/sid-resources_8h.html#acaa33b645057a26dca703b53a562315e", null ],
+    [ "sid6_address_end", "de/da8/sid-resources_8h.html#a54c090e000aac96c934d9b1a62c0b7cf", null ],
+    [ "sid6_address_start", "de/da8/sid-resources_8h.html#a40571c2df636a6d04f994a1f5ea5f294", null ],
+    [ "sid7_address_end", "de/da8/sid-resources_8h.html#a5354e7381947c15c9031c83b406152b7", null ],
+    [ "sid7_address_start", "de/da8/sid-resources_8h.html#af0931d4a41add00e842cecd5c8403060", null ],
+    [ "sid8_address_end", "de/da8/sid-resources_8h.html#a81fc1dbfb65fdaa8e3dc19b85da4ac24", null ],
+    [ "sid8_address_start", "de/da8/sid-resources_8h.html#a26ad7677bac35cb367b462a88547279c", null ],
+    [ "sid_stereo", "de/da8/sid-resources_8h.html#a269d3a1fdaadca5fd91d98e4c41c3a08", null ]
+];

@@ -67,7 +67,7 @@ void archdep_create_user_cache_dir(void)
     errno = 0;
     lib_free(tmp);
 #endif
-
+#ifndef __DREAMCAST__
     if (archdep_mkdir(cache, 0755) == 0) {
         return;     /* we created the dir */
     } else if (errno != EEXIST) {
@@ -75,4 +75,7 @@ void archdep_create_user_cache_dir(void)
                 cache, errno, strerror(errno));
         archdep_vice_exit(1);
     }
+#else
+    return;
+#endif    
 }

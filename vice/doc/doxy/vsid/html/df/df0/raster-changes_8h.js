@@ -1,0 +1,37 @@
+var raster_changes_8h =
+[
+    [ "raster_changes_integer_action_value_s", "da/d7b/structraster__changes__integer__action__value__s.html", "da/d7b/structraster__changes__integer__action__value__s" ],
+    [ "raster_changes_ptr_action_value_s", "d3/dbe/structraster__changes__ptr__action__value__s.html", "d3/dbe/structraster__changes__ptr__action__value__s" ],
+    [ "raster_changes_action_value_s", "d9/d69/unionraster__changes__action__value__s.html", "d9/d69/unionraster__changes__action__value__s" ],
+    [ "raster_changes_action_s", "da/d1a/structraster__changes__action__s.html", "da/d1a/structraster__changes__action__s" ],
+    [ "raster_changes_s", "d3/d36/structraster__changes__s.html", "d3/d36/structraster__changes__s" ],
+    [ "raster_changes_all_s", "df/d14/structraster__changes__all__s.html", "df/d14/structraster__changes__all__s" ],
+    [ "RASTER_CHANGES_MAX", "df/df0/raster-changes_8h.html#a945d5f107552167fd5a4f3c1f7d32102", null ],
+    [ "raster_changes_action_t", "df/df0/raster-changes_8h.html#a4be6f2d9ae8832897f51fe6391cb71ba", null ],
+    [ "raster_changes_action_value_t", "df/df0/raster-changes_8h.html#ae1a897869264576b9592c62d362bf678", null ],
+    [ "raster_changes_all_t", "df/df0/raster-changes_8h.html#abb66fc0ba0fb8c354dab8f2ff7b0f739", null ],
+    [ "raster_changes_integer_action_value_t", "df/df0/raster-changes_8h.html#aae93af1c96fa738efbbe2909d0355571", null ],
+    [ "raster_changes_ptr_action_value_t", "df/df0/raster-changes_8h.html#a851a076fd32fb0012c4a8fed83882aef", null ],
+    [ "raster_changes_t", "df/df0/raster-changes_8h.html#af1ab9797cf9c3a503fa7e6661508d39e", null ],
+    [ "raster_changes_type_t", "df/df0/raster-changes_8h.html#a8ff901c04bd1d51a74c6b3109e7775d9", null ],
+    [ "raster_changes_type_s", "df/df0/raster-changes_8h.html#a173b77800a5c259d1bbc57032f97f023", [
+      [ "RASTER_CHANGES_TYPE_INT", "df/df0/raster-changes_8h.html#a173b77800a5c259d1bbc57032f97f023abba083f87fc336e5504f787fecd9b135", null ],
+      [ "RASTER_CHANGES_TYPE_PTR", "df/df0/raster-changes_8h.html#a173b77800a5c259d1bbc57032f97f023a43f14ca4a14df5b3ff329cf2aa249590", null ]
+    ] ],
+    [ "raster_changes_add_int", "df/df0/raster-changes_8h.html#a9a5cbcdd181d8efb5c866f12183a9350", null ],
+    [ "raster_changes_add_ptr", "df/df0/raster-changes_8h.html#a401252339174f728176f158efe1e63e2", null ],
+    [ "raster_changes_add_sorted_int", "df/df0/raster-changes_8h.html#a620efa1eed0e95c6051b2c24c2fa1e4e", null ],
+    [ "raster_changes_apply", "df/df0/raster-changes_8h.html#a5fc303a445e26953aa79cdcf14913d48", null ],
+    [ "raster_changes_apply_all", "df/df0/raster-changes_8h.html#aa9d294242f3ae6c621fb681bd4e7a355", null ],
+    [ "raster_changes_background_add_int", "df/df0/raster-changes_8h.html#afacdae7ff3978342ee2973df26d07a85", null ],
+    [ "raster_changes_background_add_ptr", "df/df0/raster-changes_8h.html#a6bc3afb5bf2f6dc87c5066457f79a767", null ],
+    [ "raster_changes_border_add_int", "df/df0/raster-changes_8h.html#a51cab97808bd6269508178974535fd4d", null ],
+    [ "raster_changes_foreground_add_int", "df/df0/raster-changes_8h.html#aac65ff7cc06634a607439318d6eb8f7f", null ],
+    [ "raster_changes_foreground_add_ptr", "df/df0/raster-changes_8h.html#ad7dd9ce44bad4e9fe665de4dfa7a5348", null ],
+    [ "raster_changes_init", "df/df0/raster-changes_8h.html#a2836cf956b4641bd7d27ba4920f4432f", null ],
+    [ "raster_changes_next_line_add_int", "df/df0/raster-changes_8h.html#a2bf4de08698e4e674d62fc54ad18aa17", null ],
+    [ "raster_changes_next_line_add_ptr", "df/df0/raster-changes_8h.html#a24e70c8e0c72fb70adf0af839fe3c8b9", null ],
+    [ "raster_changes_remove_all", "df/df0/raster-changes_8h.html#a2d71bf04f86076fde6fd1a0b65e22f35", null ],
+    [ "raster_changes_shutdown", "df/df0/raster-changes_8h.html#ae6ef509c6c21cf6873edec5c3d1c2de1", null ],
+    [ "raster_changes_sprites_add_int", "df/df0/raster-changes_8h.html#a792c2bbfd0c2222e60887c6cfd578e6e", null ]
+];

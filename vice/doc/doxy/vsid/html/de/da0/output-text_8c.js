@@ -1,0 +1,25 @@
+var output_text_8c =
+[
+    [ "DBG", "de/da0/output-text_8c.html#a32adf79142f0a426b5e782fb7cd4cad3", null ],
+    [ "fopen_or_pipe", "de/da0/output-text_8c.html#a802feb2b4471c8644b6a5bacd94ce915", null ],
+    [ "output_text_close", "de/da0/output-text_8c.html#a27921690372661aec921bebe474cdd90", null ],
+    [ "output_text_flush", "de/da0/output-text_8c.html#aa84165adbbd9826663ea94c20fe4301f", null ],
+    [ "output_text_formfeed", "de/da0/output-text_8c.html#ac8743d6ce10d69d61c14649ccc7cd0b2", null ],
+    [ "output_text_getc", "de/da0/output-text_8c.html#acde28a1ab11d3e6fe67cdc0639f43a4a", null ],
+    [ "output_text_init_cmdline_options", "de/da0/output-text_8c.html#a55bb5550e25481b890582ef0b0ec2a14", null ],
+    [ "output_text_init_resources", "de/da0/output-text_8c.html#a31e72690a4ef7fbad76eb77051d4b267", null ],
+    [ "output_text_open", "de/da0/output-text_8c.html#afea9b269480d181b4ada65e89dde462d", null ],
+    [ "output_text_putc", "de/da0/output-text_8c.html#af93f4a78883da6678e4bad67125dccf4", null ],
+    [ "output_text_shutdown_resources", "de/da0/output-text_8c.html#acdf0cd70de49dd9c4505b7b53e5f8910", null ],
+    [ "set_printer_device", "de/da0/output-text_8c.html#a7f7edca14c13dd43cdac20837eb08c0d", null ],
+    [ "set_printer_device_name", "de/da0/output-text_8c.html#a6d4f6c069221c5ffc3043fb2c0e591bd", null ],
+    [ "cmdline_options", "de/da0/output-text_8c.html#acb384e8d7e4286694fe468b5f6827ea5", null ],
+    [ "cmdline_options_userport", "de/da0/output-text_8c.html#aca07e768e611f08aca87351cbdfc524c", null ],
+    [ "output_fd", "de/da0/output-text_8c.html#a848bf7be9e607ac1c230c5698fe0153f", null ],
+    [ "output_pid", "de/da0/output-text_8c.html#a42c0672f033a9cc59fb9082c8c35ccfc", null ],
+    [ "printer_device", "de/da0/output-text_8c.html#a45b3b39b3e8fdc1ff4bda38b1ed440cd", null ],
+    [ "PrinterDev", "de/da0/output-text_8c.html#ac5b8a5dfcfe410d37645c3adc7327c6a", null ],
+    [ "resources_int", "de/da0/output-text_8c.html#a6c4f47d22bf26d4f052f20b35ce7c1dc", null ],
+    [ "resources_int_userport", "de/da0/output-text_8c.html#af478fbd0e46eb3f64b837e80c1c4f764", null ],
+    [ "resources_string", "de/da0/output-text_8c.html#a33dfcda7222c9ef008817fbc9e6f760c", null ]
+];

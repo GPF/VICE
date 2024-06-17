@@ -1,0 +1,25 @@
+var c64gluelogic_8c =
+[
+    [ "SNAP_MAJOR", "dc/d90/c64gluelogic_8c.html#ac7b800029ed52568ed4cbb68e5ed6b06", null ],
+    [ "SNAP_MINOR", "dc/d90/c64gluelogic_8c.html#a8ba83ebc6ed8afc1b57c26d1c2fd2a7c", null ],
+    [ "c64_glue_cmdline_options_init", "dc/d90/c64gluelogic_8c.html#a2599773ccbe925de9e7ece5d63683b2e", null ],
+    [ "c64_glue_init", "dc/d90/c64gluelogic_8c.html#ad9523a776b28c8bcd28fa531c856eb52", null ],
+    [ "c64_glue_reset", "dc/d90/c64gluelogic_8c.html#a52db0ca9dd865da67a7d065ac2d5b4de", null ],
+    [ "c64_glue_resources_init", "dc/d90/c64gluelogic_8c.html#ae930132e77ee2fade84d878caa069c1f", null ],
+    [ "c64_glue_set_vbank", "dc/d90/c64gluelogic_8c.html#aa994e9ecc9281532cb2ca98e334c9fc4", null ],
+    [ "c64_glue_snapshot_read_module", "dc/d90/c64gluelogic_8c.html#a8fb65a607f33fab4e7627d63a6ab4ab2", null ],
+    [ "c64_glue_snapshot_write_module", "dc/d90/c64gluelogic_8c.html#a085b07ee0738a1f606bc31124c0b3265", null ],
+    [ "c64_glue_undump", "dc/d90/c64gluelogic_8c.html#adfb986d6bf05d1b487a09ebac1f108e3", null ],
+    [ "glue_alarm_handler", "dc/d90/c64gluelogic_8c.html#a835becdedbdbf093c2cf2814539440c9", null ],
+    [ "glue_alarm_set", "dc/d90/c64gluelogic_8c.html#ad74feb24842fc96ef339c2abb1d160cc", null ],
+    [ "glue_alarm_unset", "dc/d90/c64gluelogic_8c.html#a5d74b63f99853f3af4073baccfdc0208", null ],
+    [ "perform_vbank_switch", "dc/d90/c64gluelogic_8c.html#a24944f3563fca1b6e62a296a79097d3d", null ],
+    [ "set_glue_type", "dc/d90/c64gluelogic_8c.html#a1ac8a86678ffef965e91b84c79246fa0", null ],
+    [ "cmdline_options", "dc/d90/c64gluelogic_8c.html#acb384e8d7e4286694fe468b5f6827ea5", null ],
+    [ "glue_alarm", "dc/d90/c64gluelogic_8c.html#ad56da5d0b7bd30f321de75138e868fd0", null ],
+    [ "glue_alarm_active", "dc/d90/c64gluelogic_8c.html#ac3667cc452ec40de8e9ce7f1a7ddf5f0", null ],
+    [ "glue_logic_type", "dc/d90/c64gluelogic_8c.html#a55b1631dfaa0e33338bce085f61dc0c2", null ],
+    [ "old_vbank", "dc/d90/c64gluelogic_8c.html#a5549357ff0063564a4988329653c50f8", null ],
+    [ "resources_int", "dc/d90/c64gluelogic_8c.html#a11e9f815cb08567a3fcde7c4eec414e7", null ],
+    [ "snap_module_name", "dc/d90/c64gluelogic_8c.html#a184fe14f8c1eb5b4864723dbdddaad3e", null ]
+];
