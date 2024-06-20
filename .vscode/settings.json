@@ -2,6 +2,31 @@
     "files.associations": {
         "archdep.h": "c",
         "stdlib.h": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "*.inc": "c",
+        "format": "c",
+        "internet": "c",
+        "regex": "c"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/toolchains/dc/kos/**",
+        "/opt/toolchains/dc/kos-ports/**"
+    ],
+    "C_Cpp.default.defines": [
+            "_arch_dreamcast"
+    ],
+    "C_Cpp.default.compilerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "",
+
+    "terminal.integrated.defaultProfile.linux": "kos-bash",
+    "terminal.integrated.profiles.linux": {
+        "kos-bash": {
+            "path": "/usr/bin/bash",
+            "args": ["--init-file", "${workspaceFolder}/.vscode/kos_environ.sh" ],
+            "overrideName": true
+        }
     }
 }

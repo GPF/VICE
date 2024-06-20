@@ -830,7 +830,7 @@ configure:14950: result: yes
 configure:15094: checking for SDL/SDL_main.h
 configure:15094: result: yes
 configure:15111: checking whether we can use the SDLmain library
-configure:15131: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-ports/lib -lSDL -lSDLmain -lSDL  >&5
+configure:15131: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH -lSDLmain -lSDL  >&5
 conftest.c:42:37: warning: no previous prototype for 'something_else' [-Wmissing-prototypes]
    42 |                        #define main something_else
       |                                     ^~~~~~~~~~~~~~
@@ -892,7 +892,7 @@ configure: failed program was:
 | }
 configure:15137: result: no
 configure:15174: checking whether we can use the SDLmain library when adding -lmingw32
-configure:15194: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-ports/lib -lSDL -lmingw32 -lSDLmain -lSDL >&5
+configure:15194: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH -lmingw32 -lSDLmain -lSDL >&5
 conftest.c:42:39: warning: no previous prototype for 'something_else' [-Wmissing-prototypes]
    42 |                          #define main something_else
       |                                       ^~~~~~~~~~~~~~
@@ -966,7 +966,7 @@ configure:15555: result: no
 configure:15572: checking for libiconv_open in -liconv
 configure:15605: result: no
 configure:15618: checking if the compiler accepts --param inline-unit-growth=60
-configure:15631: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g -Werror --param inline-unit-growth=60  conftest.c >&5
+configure:15631: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -Werror --param inline-unit-growth=60  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:42:5: error: unused variable 'test' [-Werror=unused-variable]
    42 | int test;
@@ -1021,7 +1021,7 @@ configure: failed program was:
 | }
 configure:15638: result: no
 configure:15649: checking if the compiler accepts --param max-inline-insns-single=600
-configure:15662: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g -Werror --param max-inline-insns-single=600  conftest.c >&5
+configure:15662: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -Werror --param max-inline-insns-single=600  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:42:5: error: unused variable 'test' [-Werror=unused-variable]
    42 | int test;
@@ -1208,7 +1208,7 @@ configure:18519: result: no
 configure:18525: checking for getrlimit
 configure:18525: result: no
 configure:18532: checking For socklen_t
-configure:18546: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  conftest.c >&5
+configure:18546: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:88:11: warning: variable 'foo' set but not used [-Wunused-but-set-variable]
    88 | socklen_t foo; foo = 1235;
@@ -1216,7 +1216,7 @@ conftest.c:88:11: warning: variable 'foo' set but not used [-Wunused-but-set-var
 configure:18546: $? = 0
 configure:18551: result: yes
 configure:18559: checking for in_addr_t
-configure:18575: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  conftest.c >&5
+configure:18575: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:91:11: warning: unused variable 'foo' [-Wunused-variable]
    91 | in_addr_t foo;
@@ -1224,7 +1224,7 @@ conftest.c:91:11: warning: unused variable 'foo' [-Wunused-variable]
 configure:18575: $? = 0
 configure:18580: result: yes
 configure:18588: checking for Unix domain sockets
-configure:18604: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  conftest.c >&5
+configure:18604: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -c -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include  conftest.c >&5
 conftest.c:86:32: fatal error: sys/un.h: No such file or directory
    86 |                       #include <sys/un.h>
       |                                ^~~~~~~~~~
@@ -1332,7 +1332,7 @@ configure:18915: result: "no"
 configure:18928: checking for FFMPEG support
 configure:19558: result: disabled
 configure:19563: checking if we are using glibc-2.20 and up
-configure:19585: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-ports/lib -lSDL >&5
+configure:19585: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -o conftest -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include   -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib conftest.c -lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH >&5
 conftest.c: In function 'main':
 conftest.c:98:5: warning: unused variable 'a' [-Wunused-variable]
    98 | int a=0
@@ -1442,323 +1442,324 @@ generated by GNU Autoconf 2.71.  Invocation command line was
 
 on GPF
 
-config.status:1308: creating Makefile
-config.status:1308: creating build/Makefile
-config.status:1308: creating build/beos/Makefile
-config.status:1308: creating data/Makefile
-config.status:1308: creating data/C128/Makefile
-config.status:1308: creating data/C64/Makefile
-config.status:1308: creating data/C64DTV/Makefile
-config.status:1308: creating data/CBM-II/Makefile
-config.status:1308: creating data/DRIVES/Makefile
-config.status:1308: creating data/PET/Makefile
-config.status:1308: creating data/PLUS4/Makefile
-config.status:1308: creating data/SCPU64/Makefile
-config.status:1308: creating data/PRINTER/Makefile
-config.status:1308: creating data/VIC20/Makefile
-config.status:1308: creating data/common/Makefile
-config.status:1308: creating data/GLSL/Makefile
-config.status:1308: creating data/hotkeys/Makefile
-config.status:1308: creating doc/Makefile
-config.status:1308: creating doc/building/Makefile
-config.status:1308: creating doc/html/Makefile
-config.status:1308: creating doc/readmes/Makefile
-config.status:1308: creating doc/vim/Makefile
-config.status:1308: creating doc/vim/ftdetect/Makefile
-config.status:1308: creating doc/vim/syntax/Makefile
-config.status:1308: creating src/Makefile
-config.status:1308: creating src/debug.h
-config.status:1308: creating src/arch/Makefile
-config.status:1308: creating src/arch/gtk3/Makefile
-config.status:1308: creating src/arch/gtk3/data/Makefile
-config.status:1308: creating src/arch/gtk3/data/macos/Makefile
-config.status:1308: creating src/arch/gtk3/data/unix/Makefile
-config.status:1308: creating src/arch/gtk3/data/win32/Makefile
-config.status:1308: creating src/arch/gtk3/joystickdrv/Makefile
-config.status:1308: creating src/arch/gtk3/novte/Makefile
-config.status:1308: creating src/arch/gtk3/widgets/Makefile
-config.status:1308: creating src/arch/gtk3/widgets/base/Makefile
-config.status:1308: creating src/arch/sdl/Makefile
-config.status:1308: creating src/arch/headless/Makefile
-config.status:1308: creating src/arch/shared/Makefile
-config.status:1308: creating src/arch/shared/hotkeys/Makefile
-config.status:1308: creating src/arch/shared/hwsiddrv/Makefile
-config.status:1308: creating src/arch/shared/mididrv/Makefile
-config.status:1308: creating src/arch/shared/socketdrv/Makefile
-config.status:1308: creating src/arch/shared/sounddrv/Makefile
-config.status:1308: creating src/buildtools/Makefile
-config.status:1308: creating src/c128/Makefile
-config.status:1308: creating src/c128/cart/Makefile
-config.status:1308: creating src/c64/Makefile
-config.status:1308: creating src/c64/cart/Makefile
-config.status:1308: creating src/c64dtv/Makefile
-config.status:1308: creating src/scpu64/Makefile
-config.status:1308: creating src/cbm2/Makefile
-config.status:1308: creating src/cbm2/cart/Makefile
-config.status:1308: creating src/core/Makefile
-config.status:1308: creating src/core/rtc/Makefile
-config.status:1308: creating src/crtc/Makefile
-config.status:1308: creating src/datasette/Makefile
-config.status:1308: creating src/diag/Makefile
-config.status:1308: creating src/diskimage/Makefile
-config.status:1308: creating src/drive/Makefile
-config.status:1308: creating src/drive/iec/Makefile
-config.status:1308: creating src/drive/iec/c64exp/Makefile
-config.status:1308: creating src/drive/iec/plus4exp/Makefile
-config.status:1308: creating src/drive/iec128dcr/Makefile
-config.status:1308: creating src/drive/iecieee/Makefile
-config.status:1308: creating src/drive/ieee/Makefile
-config.status:1308: creating src/drive/tcbm/Makefile
-config.status:1308: creating src/fileio/Makefile
-config.status:1308: creating src/fsdevice/Makefile
-config.status:1308: creating src/gfxoutputdrv/Makefile
-config.status:1308: creating src/hvsc/Makefile
-config.status:1308: creating src/iecbus/Makefile
-config.status:1308: creating src/imagecontents/Makefile
-config.status:1308: creating src/joyport/Makefile
-config.status:1308: creating src/lib/Makefile
-config.status:1308: creating src/lib/p64/Makefile
-config.status:1308: creating src/lib/linenoise-ng/Makefile
-config.status:1308: creating src/lib/libzmbv/Makefile
-config.status:1308: creating src/lib/md5/Makefile
-config.status:1308: creating src/monitor/Makefile
-config.status:1308: creating src/parallel/Makefile
-config.status:1308: creating src/pet/Makefile
-config.status:1308: creating src/plus4/Makefile
-config.status:1308: creating src/plus4/cart/Makefile
-config.status:1308: creating src/printerdrv/Makefile
-config.status:1308: creating src/raster/Makefile
-config.status:1308: creating src/rs232drv/Makefile
-config.status:1308: creating src/samplerdrv/Makefile
-config.status:1308: creating src/serial/Makefile
-config.status:1308: creating src/sid/Makefile
-config.status:1308: creating src/tape/Makefile
-config.status:1308: creating src/tapeport/Makefile
-config.status:1308: creating src/tools/Makefile
-config.status:1308: creating src/tools/cartconv/Makefile
-config.status:1308: creating src/tools/petcat/Makefile
-config.status:1308: creating src/userport/Makefile
-config.status:1308: creating src/vdc/Makefile
-config.status:1308: creating src/vdrive/Makefile
-config.status:1308: creating src/vic20/Makefile
-config.status:1308: creating src/vic20/cart/Makefile
-config.status:1308: creating src/vicii/Makefile
-config.status:1308: creating src/viciisc/Makefile
-config.status:1308: creating src/video/Makefile
-config.status:1308: creating src/version.h
-config.status:1308: creating src/vice-version.sh
-config.status:1308: creating src/config.h
-config.status:1537: executing depfiles commands
-config.status:1614: cd src       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1305: creating Makefile
+config.status:1305: creating build/Makefile
+config.status:1305: creating build/beos/Makefile
+config.status:1305: creating data/Makefile
+config.status:1305: creating data/C128/Makefile
+config.status:1305: creating data/C64/Makefile
+config.status:1305: creating data/C64DTV/Makefile
+config.status:1305: creating data/CBM-II/Makefile
+config.status:1305: creating data/DRIVES/Makefile
+config.status:1305: creating data/PET/Makefile
+config.status:1305: creating data/PLUS4/Makefile
+config.status:1305: creating data/SCPU64/Makefile
+config.status:1305: creating data/PRINTER/Makefile
+config.status:1305: creating data/VIC20/Makefile
+config.status:1305: creating data/common/Makefile
+config.status:1305: creating data/GLSL/Makefile
+config.status:1305: creating data/hotkeys/Makefile
+config.status:1305: creating doc/Makefile
+config.status:1305: creating doc/building/Makefile
+config.status:1305: creating doc/html/Makefile
+config.status:1305: creating doc/readmes/Makefile
+config.status:1305: creating doc/vim/Makefile
+config.status:1305: creating doc/vim/ftdetect/Makefile
+config.status:1305: creating doc/vim/syntax/Makefile
+config.status:1305: creating src/Makefile
+config.status:1305: creating src/debug.h
+config.status:1305: creating src/arch/Makefile
+config.status:1305: creating src/arch/gtk3/Makefile
+config.status:1305: creating src/arch/gtk3/data/Makefile
+config.status:1305: creating src/arch/gtk3/data/macos/Makefile
+config.status:1305: creating src/arch/gtk3/data/unix/Makefile
+config.status:1305: creating src/arch/gtk3/data/win32/Makefile
+config.status:1305: creating src/arch/gtk3/joystickdrv/Makefile
+config.status:1305: creating src/arch/gtk3/novte/Makefile
+config.status:1305: creating src/arch/gtk3/widgets/Makefile
+config.status:1305: creating src/arch/gtk3/widgets/base/Makefile
+config.status:1305: creating src/arch/sdl/Makefile
+config.status:1305: creating src/arch/headless/Makefile
+config.status:1305: creating src/arch/shared/Makefile
+config.status:1305: creating src/arch/shared/hotkeys/Makefile
+config.status:1305: creating src/arch/shared/hwsiddrv/Makefile
+config.status:1305: creating src/arch/shared/mididrv/Makefile
+config.status:1305: creating src/arch/shared/socketdrv/Makefile
+config.status:1305: creating src/arch/shared/sounddrv/Makefile
+config.status:1305: creating src/buildtools/Makefile
+config.status:1305: creating src/c128/Makefile
+config.status:1305: creating src/c128/cart/Makefile
+config.status:1305: creating src/c64/Makefile
+config.status:1305: creating src/c64/cart/Makefile
+config.status:1305: creating src/c64dtv/Makefile
+config.status:1305: creating src/scpu64/Makefile
+config.status:1305: creating src/cbm2/Makefile
+config.status:1305: creating src/cbm2/cart/Makefile
+config.status:1305: creating src/core/Makefile
+config.status:1305: creating src/core/rtc/Makefile
+config.status:1305: creating src/crtc/Makefile
+config.status:1305: creating src/datasette/Makefile
+config.status:1305: creating src/diag/Makefile
+config.status:1305: creating src/diskimage/Makefile
+config.status:1305: creating src/drive/Makefile
+config.status:1305: creating src/drive/iec/Makefile
+config.status:1305: creating src/drive/iec/c64exp/Makefile
+config.status:1305: creating src/drive/iec/plus4exp/Makefile
+config.status:1305: creating src/drive/iec128dcr/Makefile
+config.status:1305: creating src/drive/iecieee/Makefile
+config.status:1305: creating src/drive/ieee/Makefile
+config.status:1305: creating src/drive/tcbm/Makefile
+config.status:1305: creating src/fileio/Makefile
+config.status:1305: creating src/fsdevice/Makefile
+config.status:1305: creating src/gfxoutputdrv/Makefile
+config.status:1305: creating src/hvsc/Makefile
+config.status:1305: creating src/iecbus/Makefile
+config.status:1305: creating src/imagecontents/Makefile
+config.status:1305: creating src/joyport/Makefile
+config.status:1305: creating src/lib/Makefile
+config.status:1305: creating src/lib/p64/Makefile
+config.status:1305: creating src/lib/linenoise-ng/Makefile
+config.status:1305: creating src/lib/libzmbv/Makefile
+config.status:1305: creating src/lib/md5/Makefile
+config.status:1305: creating src/monitor/Makefile
+config.status:1305: creating src/parallel/Makefile
+config.status:1305: creating src/pet/Makefile
+config.status:1305: creating src/plus4/Makefile
+config.status:1305: creating src/plus4/cart/Makefile
+config.status:1305: creating src/printerdrv/Makefile
+config.status:1305: creating src/raster/Makefile
+config.status:1305: creating src/rs232drv/Makefile
+config.status:1305: creating src/samplerdrv/Makefile
+config.status:1305: creating src/serial/Makefile
+config.status:1305: creating src/sid/Makefile
+config.status:1305: creating src/tape/Makefile
+config.status:1305: creating src/tapeport/Makefile
+config.status:1305: creating src/tools/Makefile
+config.status:1305: creating src/tools/cartconv/Makefile
+config.status:1305: creating src/tools/petcat/Makefile
+config.status:1305: creating src/userport/Makefile
+config.status:1305: creating src/vdc/Makefile
+config.status:1305: creating src/vdrive/Makefile
+config.status:1305: creating src/vic20/Makefile
+config.status:1305: creating src/vic20/cart/Makefile
+config.status:1305: creating src/vicii/Makefile
+config.status:1305: creating src/viciisc/Makefile
+config.status:1305: creating src/video/Makefile
+config.status:1305: creating src/version.h
+config.status:1305: creating src/vice-version.sh
+config.status:1305: creating src/config.h
+config.status:1486: src/config.h is unchanged
+config.status:1534: executing depfiles commands
+config.status:1611: cd src       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/gtk3       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/gtk3       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/gtk3/joystickdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/gtk3/joystickdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/gtk3/novte       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/gtk3/novte       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/gtk3/widgets       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/gtk3/widgets       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/gtk3/widgets/base       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/gtk3/widgets/base       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/sdl       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/sdl       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/headless       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/headless       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared/hotkeys       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared/hotkeys       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared/hwsiddrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared/hwsiddrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared/mididrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared/mididrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared/socketdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared/socketdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/arch/shared/sounddrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/arch/shared/sounddrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/c128       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/c128       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/c128/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/c128/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/c64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/c64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/c64/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/c64/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/c64dtv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/c64dtv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/scpu64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/scpu64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/cbm2       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/cbm2       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/cbm2/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/cbm2/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/core       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/core       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/core/rtc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/core/rtc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/crtc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/crtc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/datasette       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/datasette       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/diag       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/diag       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/diskimage       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/diskimage       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/iec       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/iec       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/iec/c64exp       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/iec/c64exp       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/iec/plus4exp       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/iec/plus4exp       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/iec128dcr       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/iec128dcr       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/iecieee       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/iecieee       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/ieee       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/ieee       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/drive/tcbm       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/drive/tcbm       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/fileio       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/fileio       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/fsdevice       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/fsdevice       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/gfxoutputdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/gfxoutputdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/hvsc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/hvsc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/iecbus       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/iecbus       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/imagecontents       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/imagecontents       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/joyport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/joyport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/lib/p64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/lib/p64       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/lib/linenoise-ng       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/lib/linenoise-ng       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/lib/libzmbv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/lib/libzmbv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/lib/md5       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/lib/md5       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/monitor       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/monitor       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/parallel       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/parallel       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/pet       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/pet       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/plus4       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/plus4       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/plus4/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/plus4/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/printerdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/printerdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/raster       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/raster       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/rs232drv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/rs232drv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/samplerdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/samplerdrv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/serial       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/serial       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/sid       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/sid       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/tape       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/tape       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/tapeport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/tapeport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/tools/cartconv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/tools/cartconv       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/tools/petcat       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/tools/petcat       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/userport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/userport       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/vdc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/vdc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/vdrive       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/vdrive       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/vic20       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/vic20       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/vic20/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/vic20/cart       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/vicii       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/vicii       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/viciisc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/viciisc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
-config.status:1614: cd src/video       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1616: $? = 0
+config.status:1611: cd src/video       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
-config.status:1619: $? = 0
+config.status:1616: $? = 0
 configure:26027: WARNING: invalid option: --disable-portaudio
 configure:26027: WARNING: invalid option: --disable-ahi
 configure:26027: WARNING: invalid option: --disable-lame
@@ -2078,7 +2079,7 @@ CCAS='/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc'
 CCASDEPMODE='depmode=gcc3'
 CCASFLAGS=' -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g'
 CCDEPMODE='depmode=gcc3'
-CFLAGS='-g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g'
+CFLAGS='-g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include'
 CPP='/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -E'
 CPPFLAGS=''
 CROSS='true'
@@ -2089,7 +2090,7 @@ CTAGS='ctags'
 CXX='/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ -std=c++11'
 CXXCPP='/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ -std=c++11 -E'
 CXXDEPMODE='depmode=gcc3'
-CXXFLAGS='-g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g'
+CXXFLAGS='-g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include'
 CYGPATH_W='echo'
 DEBUGBUILD='0'
 DEFS='-DHAVE_CONFIG_H'
@@ -2180,7 +2181,7 @@ LEX='flex'
 LEXLIB=''
 LEX_OUTPUT_ROOT='lex.yy'
 LIBOBJS=''
-LIBS='-lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-ports/lib -lSDL'
+LIBS='-lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH'
 LINKCC='$(CXX)'
 LINUX_COMPILE_FALSE=''
 LINUX_COMPILE_TRUE='#'

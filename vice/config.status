@@ -933,10 +933,9 @@ S["am__fastdepCXX_FALSE"]=""
 S["am__fastdepCXX_TRUE"]="#"
 S["CXXDEPMODE"]="depmode=gcc3"
 S["ac_ct_CXX"]=""
-S["CXXFLAGS"]="-g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -I/opt/toolchains/dc/kos"\
-"-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sect"\
-"ions -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcas"\
-"t/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g"
+S["CXXFLAGS"]="-g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -D__DREAMCAST__ -I/opt/t"\
+"oolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../"\
+"kos-ports/include"
 S["CXX"]="/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ -std=c++11"
 S["CPP"]="/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -E"
 S["am__fastdepCC_FALSE"]="#"
@@ -959,10 +958,8 @@ S["LDFLAGS"]=" -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunct
 "st -L/opt/toolchains/dc/kos/../kos-ports/lib"
 S["CFLAGS"]="-g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitial"\
 "ized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-"\
-"ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O2 -f"\
-"omit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCA"\
-"ST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchai"\
-"ns/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g"
+"ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dre"\
+"amcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include"
 S["CC"]="/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc"
 S["host_os"]="elf"
 S["host_vendor"]="unknown"
@@ -1014,8 +1011,8 @@ S["INSTALL_PROGRAM"]="${INSTALL}"
 S["target_alias"]=""
 S["host_alias"]="sh-elf"
 S["build_alias"]=""
-S["LIBS"]="-lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-p"\
-"orts/lib -lSDL"
+S["LIBS"]="-lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/l"\
+"ib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH"
 S["ECHO_T"]=""
 S["ECHO_N"]="-n"
 S["ECHO_C"]=""

@@ -6,8 +6,8 @@ exec_prefix_set=no
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-cflags="-D_arch_dreamcast -I${includedir}/ -I${includedir}/SDL $KOS_CFLAGS"
-libs="$KOS_LIBS -L${libdir} -lSDL"
+cflags="-D_arch_dreamcast -D__DREAMCAST__ $KOS_INC_PATHS"
+libs="$KOS_LIBS $KOS_LIB_PATHS -lSDL_gl_1213DH"
 
 usage="\
 Usage: sdl-config [OPTIONS]
@@ -37,7 +37,7 @@ while test $# -gt 0; do
             echo $exec_prefix
             ;;
         --version)
-            echo "1.2.15" # or whatever version you're using
+            echo "1.2.13" # or whatever version you're using
             ;;
         --cflags)
             echo $cflags

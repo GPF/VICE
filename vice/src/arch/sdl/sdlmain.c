@@ -42,8 +42,8 @@
 int sdl_help_shutdown = 0;
 
 #ifdef __DREAMCAST__
-KOS_INIT_FLAGS(INIT_DEFAULT);
 #include <kos.h>
+#include <SDL/SDL_dreamcast.h>
 #endif
 
 #ifdef GEKKO
@@ -64,8 +64,9 @@ KOS_INIT_FLAGS(INIT_DEFAULT);
 int main(int argc, char **argv)
 {
 #ifdef __DREAMCAST__    
+printf("VICE DREAMCAST is starting\n");
 // char buffer[2048];
-    printf("VICE DREAMCAST is starting\n");
+    
 //     file_t fd;
 //     file_t d;
 //     dirent_t *de;
@@ -128,7 +129,7 @@ int main(int argc, char **argv)
     //     "-warp",
     //     "-speed", "200"
     // };
-    // int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
+
 
 //xplus4   
     // const char* newArgv[] = {
@@ -142,7 +143,7 @@ int main(int argc, char **argv)
     //     "-warp",
     //     "-speed", "200"
     // };
-    // int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
+
 //xpet4   
     // const char* newArgv[] = {
     //     "xpet.elf",                  // program name
@@ -155,11 +156,21 @@ int main(int argc, char **argv)
     //     "-warp",
     //     "-speed", "200"
     // };
-    // int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
+
 //xvic    
     // const char* newArgv[] = {
     //     "xvic.elf",                  // program name
     //     "+VICdsize",          // argument 1
+    //     "+VICdsize",          // argument 1
+    //     "+VICdscan",  
+    //     "-VICfilter","0",
+    //     "-VICfull",        
+    //     "-VICshowstatusbar",
+    //     "+mouse",
+    //     "-sdlbitdepth","32",           // argument 2
+    //     "-sdllimitmode","0",
+    //     "-sdlinitialw","640",
+    //     "-sdlinitialh","480",        
     //     // "-sounddev", "dummy",   // argument 3 (split into two parts)
     //     // "-soundrate", "22050",  // argument 4 (split into two parts)
     //     // "-soundbufsize", "1024", // argument 5 (split into two parts)
@@ -168,48 +179,52 @@ int main(int argc, char **argv)
     //     "-warp",
     //     "-speed", "200"
     // };
-    // int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
+
 
 //x64
-    // const char* newArgv[] = {
-    //     "x64.elf",                  // program name
-    //     "+VICIIdsize",          // argument 1
-    //     // "-VICIIfull",           // argument 2
-    //     // "-sounddev", "dummy",   // argument 3 (split into two parts)
-    //     // "-soundrate", "22050",  // argument 4 (split into two parts)
-    //     // "-soundbufsize", "1024", // argument 5 (split into two parts)
-    //     // "-cartcrt","/cd/Vice/carts/mule.crt",
-    //     "-autostart","/cd/Vice/disks/brucelee.d64",        
-    //     "-warp",
-    //     "-speed", "200"
-    // };
-    // int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
-    //  
-    // const char* newArgv[] = {
-    //     "x64", // program name
-    //     "-autostart",
-    //     "sd:/apps/Vice/share/vice/C64/brucelee.d64"
-    // };   
-    const char* newArgv[] = {
+    const char* GPFnewArgv[] = {
         "x64.elf",                  // program name 
-        "+VICIIdsize",          // argument 1
-        // "+minimized",           // argument 2
+        "-speed", "200",
+        "-autostart-warp",
+        "-warp",
+        "+drive8truedrive",        
+        "+VICIIdsize",          
+        "+VICIIdscan",  
+        "-VICIIfilter","0",
+        // "-VICIIfull",
+        "-sdlbitdepth","32",          
+        "-sdllimitmode","2",
+        "-sdlinitialw","512",
+        "-sdlinitialh","512",
+        // "-aspect","0",
+        // "SDLCustomWidth","640",
+        // "SDLCustomHeight","480",        
         "-VICIIshowstatusbar",
-        // "-sounddev", "dummy",   // argument 3 (split into two parts)
-        // "-soundrate", "22050",  // argument 4 (split into two parts)
-        // "-soundbufsize", "1024", // argument 5 (split into two parts)
-        // "-cartcrt","/cd/Vice/carts/mule.crt",
-        // "-autostart","/cd/Vice/disks/brucelee.d64",     
+        // "+mouse",
+        // "-sound",        
+        // "-sounddev", "sdl",   
+        // "-soundrate", "22050",  
+        // "-soundbufsize", "512", 
+        // "-soundfragsize","3",
+        // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
+        // "-autostart","/cd/Vice/tapes/STARWAR2.T64",
+        "-autostart","/cd/Vice/disks/brucelee.d64",    
+        // "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",       
+        // "-autostart","/cd/Vice/disks/M.U.L.E. - Slan.d64",               
+        // "-keybuf","\x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20"
+         
+    //    "-keybuf","10 print \x22 troy was here \x22 \x0a 20 goto 10\x0a run \x0a"
         // "-cartcrt","/cd/Vice/carts/gijoe.crt",  
-        "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",  
-                "-speed", "200",
-        "-warp"
+
+
+        // "/cd/Vice/snapshots/brucelee.vsf"
 
                 // "-features"
     };
-    int newArgc = sizeof(newArgv) / sizeof(newArgv[0]);
-  
-    return main_program(newArgc, (char **)newArgv);
+
+
+    int GPFnewArgc = sizeof(GPFnewArgv) / sizeof(GPFnewArgv[0]);
+    return main_program(GPFnewArgc, (char **)GPFnewArgv);
 #endif 
 #ifdef GEKKO    
 

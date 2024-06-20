@@ -76,8 +76,8 @@ static int sdl_limit_mode;
 static int sdl_ui_finalized;
 
 /* window size, used for free scaling */
-static int sdl_window_width = 640;
-static int sdl_window_height = 480;
+static int sdl_window_width = 512;
+static int sdl_window_height = 512;
 
 int sdl_active_canvas_num = 0;
 static int sdl_num_screens = 0;
@@ -524,44 +524,6 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
 #endif
 #endif
 
-// #ifdef __DREAMCAST__
-// #include "SDL_dreamcast.h"
-//     SDL_DC_ShowAskHz(SDL_FALSE);
-//     SDL_DC_Default60Hz(SDL_FALSE);
-//     SDL_DC_VerticalWait(SDL_FALSE);
-//     SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
-//     // SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
-//     // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
-
-//     SDL_DC_SetWindow(width,height);
-//   new_screen = SDL_SetVideoMode(640,480,16,SDL_DOUBLEBUF | SDL_SWSURFACE | SDL_OPENGL);
-//   hwscale = 1;
-//               new_width =640;
-//             new_height =480;
-//             actual_width = 640;
-//             actual_height =480;
-//     canvas->real_width = new_width;
-//     canvas->real_height = new_height;
-//     canvas->actual_width = actual_width;
-//     canvas->actual_height = actual_height;
-//     limit = SDL_LIMIT_MODE_FIXED;
-
-//     canvas->hwscale_screen = new_screen;
-//     new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, 640, 480, 16, rmask, gmask, bmask, amask);
-//     // sdl_gl_set_viewport(640, 480, 384, 272);
-
-//     lightpen_updated = 1;
-//   	glDisable(GL_DEPTH_TEST);
-//     glMatrixMode(GL_MODELVIEW);
-//     glLoadIdentity();
-//     glOrtho(0, 640, 0, 480, -100, 100);
-//     glMatrixMode(GL_PROJECTION);
-//     glLoadIdentity();
-//     glViewport(0, 0, 640, 480);  // Set viewport to cover entire window size
-// //   sdl_active_canvas = canvas;
-//       canvas->hwscale_screen = new_screen;
-// #endif   
-
     DBG(("%s: %i,%i (%i)", __func__, *width, *height, canvas->index));
 
     flags = SDL_SWSURFACE | SDL_RESIZABLE;
@@ -569,17 +531,11 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     new_width = *width;
     new_height = *height;
 
-#ifndef a__DREAMCAST__
     new_width *= canvas->videoconfig->scalex;
     new_height *= canvas->videoconfig->scaley;
-#else
-    new_width  = 640;
-    new_height = 480;        
-#endif
 
 #ifndef __DREAMCAST__
     sdl_ui_set_window_icon(NULL);
-#endif
     if ((canvas == sdl_active_canvas) && (canvas->fullscreenconfig->enable)) {
         fullscreen = 1;
     }
@@ -763,7 +719,12 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
             SDL_FreeSurface(canvas->screen);
         }
         log_message(sdlvideo_log, "SDL_CreateRGBSurface: SDL_SWSURFACE , width:%i , height:%i, sdl_bitdepth:%i , 0, 0, 0, 0", new_width, new_height, sdl_bitdepth);
-        new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, 0, 0, 0, 0);
+
+        const Uint32 rmask = 0;
+        const Uint32 gmask = 0;
+        const Uint32 bmask = 0;
+        const Uint32 amask = 0;
+        new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, rmask, gmask, bmask, amask);
     }
 
     if (!new_screen) {
@@ -810,6 +771,50 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     video_canvas_set_palette(canvas, canvas->palette);
 
     return canvas;
+#else // Dreamcast-specific code
+
+    // Set 8-bit color depth for Dreamcast
+    // sdl_bitdepth = 32;
+
+    // Calculate new dimensions (assuming calculations here)
+   new_width = 512;
+   new_height = 512;
+
+    // Create or resize SDL surface
+    // *new_screen = NULL;
+
+    if (canvas == sdl_active_canvas) {
+        SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE);
+        log_message(sdlvideo_log, "SDL_SetVideoMode: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
+        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE | SDL_RESIZABLE);
+        SDL_DC_SetWindow(width,height);
+        SDL_EventState(SDL_VIDEORESIZE, SDL_ENABLE);
+    } else {
+        // Assuming SDL_CreateRGBSurface is used for non-active canvas
+         log_message(sdlvideo_log, "SDL_CreateRGBSurface: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
+        new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, 0, 0, 0, 0);
+    }
+
+    if (!new_screen) {
+        log_error(sdlvideo_log, "SDL_SetVideoMode failed!");
+        return NULL;
+    }
+
+    // Update canvas properties
+    sdl_bitdepth = new_screen->format->BitsPerPixel;
+    canvas->depth = sdl_bitdepth;
+    canvas->width = new_width;
+    canvas->height = new_height;
+    canvas->screen = new_screen;
+    canvas->actual_width = new_width;
+    canvas->actual_height = new_height;
+
+   video_canvas_set_palette(canvas, canvas->palette);
+
+    return canvas;
+
+#endif // End of Dreamcast-specific code
+
 }
 
 /* ------------------------------------------------------------------------- */
@@ -824,6 +829,7 @@ video_canvas_t *video_canvas_create(video_canvas_t *canvas, unsigned int *width,
 
 void video_canvas_refresh(struct video_canvas_s *canvas, unsigned int xs, unsigned int ys, unsigned int xi, unsigned int yi, unsigned int w, unsigned int h)
 {
+#ifndef __DREAMCAST__    
     uint8_t *backup;
 
     if ((canvas == NULL) || (canvas->screen == NULL) || (canvas != sdl_active_canvas)) {
@@ -888,7 +894,7 @@ void video_canvas_refresh(struct video_canvas_s *canvas, unsigned int xs, unsign
         SDL_UnlockSurface(canvas->screen);
     }
 
-#if defined(HAVE_HWSCALE) //&& !defined(__DREAMCAST__)
+#if defined(HAVE_HWSCALE)
     {
         int sdl_gl_vertex_base = (canvas->videoconfig->flipx << 0) |
                                  (canvas->videoconfig->flipy << 1) |
@@ -955,105 +961,97 @@ void video_canvas_refresh(struct video_canvas_s *canvas, unsigned int xs, unsign
         SDL_GL_SwapBuffers();
     }
 #else
-#ifdef A__DR_EAMCAST__
-{
-    printf("Debug: Entering Dreamcast-specific rendering block\n");
-
-    int width = canvas->width;
-    int height = canvas->height;
-
-    printf("Debug: Original texture dimensions: width = %d, height = %d\n", width, height);
-
-    // Check if the dimensions are within the supported range
-    if (width > 1024 || height > 1024) {
-        printf("GL ERROR: Texture dimensions exceed the supported range (1024x1024)\n");
-        return;
-    }
-
-    // Ensure width and height are powers of two, reducing to max 512 for testing
-    width = (width > 512) ? 512 : (1 << (int)ceil(log2(width)));
-    height = (height > 512) ? 512 : (1 << (int)ceil(log2(height)));
-
-    printf("Debug: Adjusted texture dimensions to nearest power of two: width = %d, height = %d\n", width, height);
-
-    // Clear buffers
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    printf("Debug: glClear completed\n");
-
-    // Disable depth testing
-    glDisable(GL_DEPTH_TEST);
-    printf("Debug: glDisable(GL_DEPTH_TEST) completed\n");
-
-    // Enable 2D textures
-    glEnable(GL_TEXTURE_2D);
-    GLenum error = glGetError();
-    if (error != GL_NO_ERROR) {
-        printf("GL ERROR: glEnable(GL_TEXTURE_2D) failed with error code %d\n", error);
-        return;
-    }
-    printf("Debug: glEnable(GL_TEXTURE_2D) completed\n");
-
-    // Bind the texture
-    glBindTexture(GL_TEXTURE_2D, screen_texture);
-    error = glGetError();
-    if (error != GL_NO_ERROR) {
-        printf("GL ERROR: glBindTexture(GL_TEXTURE_2D, screen_texture) failed with error code %d\n", error);
-        return;
-    }
-    printf("Debug: glBindTexture(GL_TEXTURE_2D) completed\n");
-
-    // Set texture parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    printf("Debug: glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR) completed\n");
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    printf("Debug: glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR) completed\n");
-
-    // Upload texture data
-    printf("Debug: Calling glTexImage2D with width = %d, height = %d\n", width, height);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, canvas->screen->pixels);
-    error = glGetError();
-    if (error != GL_NO_ERROR) {
-        printf("GL ERROR: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, canvas->screen->pixels) failed with error code %d\n", error);
-        return;
-    }
-    printf("Debug: glTexImage2D(GL_TEXTURE_2D) completed\n");
-
-    // Begin drawing quads
-    glBegin(GL_QUADS);
-    error = glGetError();
-    if (error != GL_NO_ERROR) {
-        printf("GL ERROR: glBegin(GL_QUADS) failed with error code %d\n", error);
-        return;
-    }
-    printf("Debug: glBegin(GL_QUADS) completed\n");
-
-    // Define texture coordinates and vertices
-    glTexCoord2f(0.0f, 0.0f); glVertex3f(-1.0f, -1.0f, 0.0f);
-    glTexCoord2f(1.0f, 0.0f); glVertex3f( 1.0f, -1.0f, 0.0f);
-    glTexCoord2f(1.0f, 1.0f); glVertex3f( 1.0f,  1.0f, 0.0f);
-    glTexCoord2f(0.0f, 1.0f); glVertex3f(-1.0f,  1.0f, 0.0f);
-
-    // End drawing quads
-    glEnd();
-    printf("Debug: glEnd(GL_QUADS) completed\n");
-
-    // Swap buffers
-    SDL_GL_SwapBuffers();
-    error = glGetError();
-    if (error != GL_NO_ERROR) {
-        printf("GL ERROR: SDL_GL_SwapBuffers() failed with error code %d\n", error);
-        return;
-    }
-    printf("Debug: SDL_GL_SwapBuffers() completed\n");
-
-    printf("Debug: Exiting Dreamcast-specific rendering block\n");
-}
-#else
 SDL_UpdateRect(canvas->screen, xi, yi, w, h);
 #endif
-#endif
 ui_autohide_mouse_cursor();
+#else // Dreamcast-specific code
+
+    // All the non-HAVE_HWSCALE code from above goes here
+    uint8_t *backup;
+
+    if ((canvas == NULL) || (canvas->screen == NULL) || (canvas != sdl_active_canvas)) {
+        log_message(sdlvideo_log, "Canvas or screen not initialized, or canvas not active.");
+        return;
+    }
+
+    // log_message(sdlvideo_log, "Refreshing screen for canvas %p", canvas);
+
+    if (sdl_vsid_state & SDL_VSID_ACTIVE) {
+        log_message(sdlvideo_log, "Calling sdl_vsid_draw()");
+        sdl_vsid_draw();
+    }
+
+    if (sdl_vkbd_state & SDL_VKBD_ACTIVE) {
+        log_message(sdlvideo_log, "Calling sdl_vkbd_draw()");
+        sdl_vkbd_draw();
+    }
+
+    if (uistatusbar_state & UISTATUSBAR_ACTIVE) {
+        // log_message(sdlvideo_log, "Calling uistatusbar_draw()");
+        uistatusbar_draw();
+    }
+
+    xi *= canvas->videoconfig->scalex;
+    w *= canvas->videoconfig->scalex;
+
+    yi *= 1.766;//canvas->videoconfig->scaley;
+    h *= canvas->videoconfig->scaley;
+
+    w = MIN(w, canvas->width);
+    h = MIN(h, canvas->height);
+
+    // log_message(sdlvideo_log, "Adjusted coordinates: xi=%d, yi=%d, w=%d, h=%d", xi, yi, w, h);
+
+    /* FIXME attempt to draw outside canvas */
+    if ((xi + w > canvas->width) || (yi + h > canvas->height)) {
+        log_error(sdlvideo_log, "Attempting to draw outside canvas bounds. Returning.");
+        return;
+    }
+
+    if (SDL_MUSTLOCK(canvas->screen)) {
+        canvas->videoconfig->readable = 0;
+        if (SDL_LockSurface(canvas->screen) < 0) {
+            log_error(sdlvideo_log, "Failed to lock surface. Returning.");
+            return;
+        }
+    } else { /* no direct rendering, safe to read */
+        canvas->videoconfig->readable = !(canvas->screen->flags & SDL_HWSURFACE);
+    }
+
+    if (machine_class == VICE_MACHINE_VSID) {
+        canvas->draw_buffer_vsid->draw_buffer_width = canvas->draw_buffer->draw_buffer_width;
+        canvas->draw_buffer_vsid->draw_buffer_height = canvas->draw_buffer->draw_buffer_height;
+        canvas->draw_buffer_vsid->draw_buffer_pitch = canvas->draw_buffer->draw_buffer_pitch;
+        canvas->draw_buffer_vsid->canvas_physical_width = canvas->draw_buffer->canvas_physical_width;
+        canvas->draw_buffer_vsid->canvas_physical_height = canvas->draw_buffer->canvas_physical_height;
+        canvas->draw_buffer_vsid->canvas_width = canvas->draw_buffer->canvas_width;
+        canvas->draw_buffer_vsid->canvas_height = canvas->draw_buffer->canvas_height;
+        canvas->draw_buffer_vsid->visible_width = canvas->draw_buffer->visible_width;
+        canvas->draw_buffer_vsid->visible_height = canvas->draw_buffer->visible_height;
+
+        backup = canvas->draw_buffer->draw_buffer;
+        canvas->draw_buffer->draw_buffer = canvas->draw_buffer_vsid->draw_buffer;
+        log_message(sdlvideo_log, "Calling video_canvas_render for VSID machine");
+        video_canvas_render(canvas, (uint8_t *)canvas->screen->pixels, w, h, xs, ys, xi, yi, canvas->screen->pitch);
+        canvas->draw_buffer->draw_buffer = backup;
+    } else {
+        // log_message(sdlvideo_log, "Calling video_canvas_render for non-VSID machine");
+        video_canvas_render(canvas, (uint8_t *)canvas->screen->pixels, w, h, xs, ys, xi, yi, canvas->screen->pitch);
+    }
+
+    if (SDL_MUSTLOCK(canvas->screen)) {
+        SDL_UnlockSurface(canvas->screen);
+    }
+
+    // log_message(sdlvideo_log, "Calling SDL_UpdateRect: xi=%d, yi=%d, w=%d, h=%d", xi, yi, w, h);
+    SDL_UpdateRect(canvas->screen, xi, yi, w, h);
+    SDL_Flip(canvas->screen);
+
+    // log_message(sdlvideo_log, "Calling ui_autohide_mouse_cursor()");
+    ui_autohide_mouse_cursor();
+
+#endif // End of Dreamcast-specific code
+
 }
 
 int video_canvas_set_palette(struct video_canvas_s *canvas, struct palette_s *palette)
@@ -1123,8 +1121,8 @@ void video_canvas_resize(struct video_canvas_s *canvas, char resize_canvas)
                    nothing else relies on the broken behavior...
          */
 #if 0
-        sdl_window_width = 0; /* force recalculate */
-        sdl_window_height = 0;
+        sdl_window_width = 640; /* force recalculate */
+        sdl_window_height = 480;
 #endif
         sdl_canvas_create(canvas, &width, &height); /* set the real canvas size */
 

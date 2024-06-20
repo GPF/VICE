@@ -32,7 +32,7 @@
  */
 #if 1
 
-/* #define DEBUGPOINTER */
+#define DEBUGPOINTER 1
 
 #include "vice.h"
 

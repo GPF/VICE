@@ -75,6 +75,11 @@ static void archdep_shutdown_extra(void);
 #include <fcntl.h>
 #endif
 
+#ifdef __DREAMCAST__
+#include <kos.h>
+#include <SDL/SDL_dreamcast.h>
+#endif
+
 /* called from archdep.c:archdep_init */
 static int archdep_init_extra(int *argc, char **argv)
 {
@@ -101,10 +106,33 @@ int archdep_init(int *argc, char **argv)
     archdep_create_user_cache_dir();
     archdep_create_user_config_dir();
 
-    if (SDL_REALINIT(SDL_INIT_VIDEO | SDL_INIT_TIMER| SDL_INIT_JOYSTICK) < 0) {
+    if (SDL_REALINIT(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER | SDL_INIT_JOYSTICK) < 0) {
         fprintf(stderr, "SDL error: %s\n", SDL_GetError());
         return 1;
     }
+
+    KOS_INIT_FLAGS(INIT_DEFAULT);
+    SDL_DC_ShowAskHz(SDL_FALSE);
+    SDL_DC_Default60Hz(SDL_FALSE);
+    SDL_DC_VerticalWait(SDL_FALSE);
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
+    SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
+    // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
+    // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
+        SDL_JoystickEventState(SDL_ENABLE);
+        SDL_JoystickOpen(0);
+        SDL_ShowCursor(0);  
+    // SDL_DC_MapKey(0, SDL_DC_LEFT, SDLK_LEFT);
+    // SDL_DC_MapKey(0, SDL_DC_RIGHT, SDLK_RIGHT);
+    // SDL_DC_MapKey(0, SDL_DC_UP, SDLK_UP);
+    // SDL_DC_MapKey(0, SDL_DC_DOWN,  SDLK_DOWN);
+    // SDL_DC_MapKey(0, SDL_DC_A,  SDLK_RETURN);
+    // SDL_DC_MapKey(0, SDL_DC_B,  SDLK_s);
+    // SDL_DC_MapKey(0, SDL_DC_Y,  SDLK_g);
+    // SDL_DC_MapKey(0, SDL_DC_L,  SDLK_y);
+    // SDL_DC_MapKey(0, SDL_DC_R,  SDLK_ESCAPE);
+
     // int bpp = 0;
     // SDL_PixelFormat format;
     // SDL_VideoInfo *video_info = SDL_GetVideoInfo();

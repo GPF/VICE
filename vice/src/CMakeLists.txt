@@ -43,7 +43,7 @@ find_library(LIB_M m ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_KALLISTI kallisti ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_C c ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_GCC gcc ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
-find_library(LIB_SDL SDL ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
+find_library(LIB_SDL_GL_1213DH SDL_gl_1213DH ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 
 if(FIRST_RUN)
     set(CMAKE_XCODE_GENERATE_SCHEME ON)
@@ -56,7 +56,7 @@ endif()
 target_compile_definitions(
     x64
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -99,8 +99,8 @@ target_include_directories(
 target_compile_options(
     x64
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -298,7 +298,7 @@ target_sources(
 target_link_libraries(
     x64
     PRIVATE
-    	libarchdep libtapeport libc64 libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libiecbus libp64 libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libc64 libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libiecbus libp64 libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -312,7 +312,7 @@ endif()
 target_compile_definitions(
     x64sc
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -355,8 +355,8 @@ target_include_directories(
 target_compile_options(
     x64sc
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -554,7 +554,7 @@ target_sources(
 target_link_libraries(
     x64sc
     PRIVATE
-    	libarchdep libtapeport libc64sc libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64scstubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libc64sc libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64scstubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -568,7 +568,7 @@ endif()
 target_compile_definitions(
     x128
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -611,8 +611,8 @@ target_include_directories(
 target_compile_options(
     x128
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -810,7 +810,7 @@ target_sources(
 target_link_libraries(
     x128
     PRIVATE
-    	libarchdep libtapeport libc128 libc64cartsystem libc128cartsystem libc64cart libc64commoncart libc64c128 libdatasette libdriveiec libdriveiec128dcr libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libvdc libraster libdiag libuserport librtc libvideo libarch libimagecontents libc128stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libc128 libc64cartsystem libc128cartsystem libc64cart libc64commoncart libc64c128 libdatasette libdriveiec libdriveiec128dcr libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libvdc libraster libdiag libuserport librtc libvideo libarch libimagecontents libc128stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -824,7 +824,7 @@ endif()
 target_compile_definitions(
     x64dtv
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -867,8 +867,8 @@ target_include_directories(
 target_compile_options(
     x64dtv
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -1066,7 +1066,7 @@ target_sources(
 target_link_libraries(
     x64dtv
     PRIVATE
-    	libarchdep libc64dtv libc64c64dtv libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libdiag libvdrive libsid_dtv libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciidtv libraster libvideo libarch libimagecontents libc64dtvstubs libjoyport librtc libhvsc libhotkeys libzmbv libuserport libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libc64dtv libc64c64dtv libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libdiag libvdrive libsid_dtv libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciidtv libraster libvideo libarch libimagecontents libc64dtvstubs libjoyport librtc libhvsc libhotkeys libzmbv libuserport libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -1080,7 +1080,7 @@ endif()
 target_compile_definitions(
     xscpu64
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -1123,8 +1123,8 @@ target_include_directories(
 target_compile_options(
     xscpu64
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -1322,7 +1322,7 @@ target_sources(
 target_link_libraries(
     xscpu64
     PRIVATE
-    	libarchdep libscpu64 libc64cartsystem libc64cart libc64commoncart libscpu64stubs libc64scpu64 libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libscpu64 libc64cartsystem libc64cart libc64commoncart libscpu64stubs libc64scpu64 libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -1336,7 +1336,7 @@ endif()
 target_compile_definitions(
     xvic
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -1379,8 +1379,8 @@ target_include_directories(
 target_compile_options(
     xvic
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -1578,7 +1578,7 @@ target_sources(
 target_link_libraries(
     xvic
     PRIVATE
-    	libarchdep libtapeport libdatasette libvic20cart libvic20 libc64commoncart libmascuerade libdriveiec libdriveiecieee libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster libuserport libdiag librtc libvideo libarch libimagecontents libvic20stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng libmascuerade ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libdatasette libvic20cart libvic20 libc64commoncart libmascuerade libdriveiec libdriveiecieee libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster libuserport libdiag librtc libvideo libarch libimagecontents libvic20stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng libmascuerade ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -1592,7 +1592,7 @@ endif()
 target_compile_definitions(
     xpet
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -1635,8 +1635,8 @@ target_include_directories(
 target_compile_options(
     xpet
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -1833,7 +1833,7 @@ target_sources(
 target_link_libraries(
     xpet
     PRIVATE
-    	libarchdep libtapeport libdatasette libpet libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport librtc libhvsc libhotkeys libzmbv libpetstubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libdatasette libpet libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport librtc libhvsc libhotkeys libzmbv libpetstubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -1847,7 +1847,7 @@ endif()
 target_compile_definitions(
     xplus4
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -1890,8 +1890,8 @@ target_include_directories(
 target_compile_options(
     xplus4
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -2088,7 +2088,7 @@ target_sources(
 target_link_libraries(
     xplus4
     PRIVATE
-    	libarchdep libtapeport libdatasette libplus4 libplus4cart libdiag libdriveiec libdriveiecieee libdriveiecplus4exp libdrivetcbm libdrive libdriveieee libparallel libdriveieee libp64 libiecbus libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster librtc libvideo libarch libuserport libimagecontents libjoyport libhvsc libhotkeys libzmbv libplus4stubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libdatasette libplus4 libplus4cart libdiag libdriveiec libdriveiecieee libdriveiecplus4exp libdrivetcbm libdrive libdriveieee libparallel libdriveieee libp64 libiecbus libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster librtc libvideo libarch libuserport libimagecontents libjoyport libhvsc libhotkeys libzmbv libplus4stubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -2102,7 +2102,7 @@ endif()
 target_compile_definitions(
     xcbm2
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -2145,8 +2145,8 @@ target_include_directories(
 target_compile_options(
     xcbm2
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -2343,7 +2343,7 @@ target_sources(
 target_link_libraries(
     xcbm2
     PRIVATE
-    	libarchdep libtapeport libdatasette libcbm2 libcbm2cart libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport libcbm2stubs librtc libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libdatasette libcbm2 libcbm2cart libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport libcbm2stubs librtc libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -2357,7 +2357,7 @@ endif()
 target_compile_definitions(
     xcbm5x0
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -2400,8 +2400,8 @@ target_include_directories(
 target_compile_options(
     xcbm5x0
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -2598,7 +2598,7 @@ target_sources(
 target_link_libraries(
     xcbm5x0
     PRIVATE
-    	libarchdep libtapeport libcbm5x0 libcbm2cart libdatasette libdiag libdriveiecieee libdriveieee libdrive libdrivetcbm libdriveiec libp64 libparallel libvdrive libmonitor libcbm5x0 libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster librtc libvideo libarch libcbm5x0stubs libimagecontents libjoyport libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libtapeport libcbm5x0 libcbm2cart libdatasette libdiag libdriveiecieee libdriveieee libdrive libdrivetcbm libdriveiec libp64 libparallel libvdrive libmonitor libcbm5x0 libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster librtc libvideo libarch libcbm5x0stubs libimagecontents libjoyport libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -2612,7 +2612,7 @@ endif()
 target_compile_definitions(
     c1541
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -2655,8 +2655,8 @@ target_include_directories(
 target_compile_options(
     c1541
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -2816,7 +2816,7 @@ target_sources(
 target_link_libraries(
     c1541
     PRIVATE
-    	libtoolarch libp64 libvdrive libimagecontents libfileio libdiskimage libtape libserial libsocketdrv liblinenoiseng libarchdep ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libtoolarch libp64 libvdrive libimagecontents libfileio libdiskimage libtape libserial libsocketdrv liblinenoiseng libarchdep ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )
 
 if(FIRST_RUN)
@@ -2830,7 +2830,7 @@ endif()
 target_compile_definitions(
     vsid
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ _arch_dreamcast _arch_sub_pristine >
+        $<$<COMPILE_LANGUAGE:C>:HAVE_CONFIG_H NDEBUG _arch_dreamcast __DREAMCAST__ >
         $<$<COMPILE_LANGUAGE:CXX>:>
         $<$<COMPILE_LANGUAGE:OBJC>:>
     )
@@ -2873,8 +2873,8 @@ target_include_directories(
 target_compile_options(
     vsid
     PRIVATE
-        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
-        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g>
+        $<$<COMPILE_LANGUAGE:C>:-Wno-deprecated-declarations -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter>
+        $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter>
         $<$<COMPILE_LANGUAGE:OBJC>:-Wno-deprecated-declarations >
     )
 
@@ -3072,5 +3072,5 @@ target_sources(
 target_link_libraries(
     vsid
     PRIVATE
-    	libarchdep libvsid libsid libmonitor libsounddrv libmididrv libsocketdrv libhwsiddrv libserial libcore libvicii libraster libvideo libarch libjoyport libhvsc libdatasette libhotkeys libvsidstubs libmd5 libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
+    	libarchdep libvsid libsid libmonitor libsounddrv libmididrv libsocketdrv libhwsiddrv libserial libcore libvicii libraster libvideo libarch libjoyport libhvsc libdatasette libhotkeys libvsidstubs libmd5 libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
     )

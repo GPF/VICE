@@ -271,9 +271,9 @@ AWK = gawk
 CC = /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc
 CCAS = /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS =  -O3 -g -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g
+CCASFLAGS =  -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g
 CCDEPMODE = depmode=gcc3
-CFLAGS =  -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O3 -g -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g
+CFLAGS = -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include
 CPP = /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc -E
 CPPFLAGS = 
 CROSS = true
@@ -282,7 +282,7 @@ CTAGS = ctags
 CXX = /opt/toolchains/dc/sh-elf/bin/sh-elf-g++ -std=c++11
 CXXCPP = /opt/toolchains/dc/sh-elf/bin/sh-elf-g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS =  -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -I/opt/toolchains/dc/kos-ports/include/ -I/opt/toolchains/dc/kos-ports/include/SDL -O3 -g -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g
+CXXFLAGS = -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter   -D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include
 CYGPATH_W = echo
 DEBUGBUILD = 0
 DEFS = -DHAVE_CONFIG_H
@@ -294,7 +294,7 @@ ECHO_N = -n
 ECHO_T = 
 ENABLE_ARCH = yes
 ETAGS = etags
-EXEEXT = 
+EXEEXT = .elf
 FCCACHE = /usr/bin/fc-cache
 FFMPEG_AVRESAMPLE_CFLAGS = 
 FFMPEG_AVRESAMPLE_LIBS = 
@@ -329,12 +329,12 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 JOYSTICK_DRIVERS = 
 JOY_LIBS = 
-LDFLAGS =  -O3 -g -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+LDFLAGS =  -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -D__DREAMCAST__  -I/opt/toolchains/dc/kos/include -I/opt/toolchains/dc/kos/kernel/arch/dreamcast/include -I/opt/toolchains/dc/kos/addons/include -I/opt/toolchains/dc/kos/../kos-ports/include -D_arch_dreamcast -D_arch_sub_pristine -Wall -g  -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
 LEX = flex
 LEXLIB = 
 LEX_OUTPUT_ROOT = lex.yy
 LIBOBJS = 
-LIBS = -lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos-ports/lib -lSDL
+LIBS = -lm -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -Wl,--start-group -lkallisti -lm -lc -lgcc -Wl,--end-group -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -lSDL_gl_1213DH -lGL -lm
 LINKCC = $(CXX)
 LN_S = ln -s
 LTLIBOBJS = 
@@ -401,13 +401,13 @@ UNZIPBIN = no
 VERSION = 3.8
 VERSION_COMBINED = 198656
 VERSION_RC = 3,8,0,0
-VICE_CFLAGS =  -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter
+VICE_CFLAGS = -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter
 VICE_CPPFLAGS = -I$(top_srcdir)/src/arch/systemheaderoverride -DNDEBUG
-VICE_CXXFLAGS =  -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter  
+VICE_CXXFLAGS = -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter  
 VICE_DATADIR = ${datarootdir}/vice
 VICE_DOCDIR = ${datarootdir}/doc/${PACKAGE_TARNAME}
 VICE_LDFLAGS = 
-VICE_OBJCFLAGS = 
+VICE_OBJCFLAGS = -g -O3
 VICE_PDF_FILE_NAME = 
 VICE_VERSION = 3.8
 VICE_VERSION_BUILD = 0
@@ -512,8 +512,8 @@ AM_CPPFLAGS = \
 	-I$(top_srcdir)/src/tapeport \
 	-I$(top_srcdir)/src/core/rtc
 
-AM_CFLAGS =  -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter
-AM_CXXFLAGS =  -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter  
+AM_CFLAGS = -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code   -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter
+AM_CXXFLAGS = -g -O3 -Wall -Wformat -Wshadow -Wpointer-arith -Wuninitialized -Wunreachable-code -Wno-unused-parameter  
 AM_LDFLAGS = 
 noinst_LIBRARIES = libplus4.a libplus4stubs.a
 libplus4stubs_a_SOURCES = \

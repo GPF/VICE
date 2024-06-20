@@ -214,7 +214,7 @@
 #define HAVE_HTONS 1
 
 /* Enable arbitrary window scaling */
-/* #undef HAVE_HWSCALE */
+// #define HAVE_HWSCALE 1
 
 /* Define to 1 if you have the `i386_set_ioperm' function. */
 /* #undef HAVE_I386_SET_IOPERM */
