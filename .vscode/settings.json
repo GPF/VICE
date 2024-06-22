@@ -6,7 +6,9 @@
         "*.inc": "c",
         "format": "c",
         "internet": "c",
-        "regex": "c"
+        "regex": "c",
+        "vsidui_sdl.h": "c",
+        "vsync.h": "c"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",

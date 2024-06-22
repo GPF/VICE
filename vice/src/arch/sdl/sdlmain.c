@@ -64,7 +64,8 @@ int sdl_help_shutdown = 0;
 int main(int argc, char **argv)
 {
 #ifdef __DREAMCAST__    
-printf("VICE DREAMCAST is starting\n");
+ printf("VICE DREAMCAST is starting\n");
+//  gdb_init();
 // char buffer[2048];
     
 //     file_t fd;
@@ -182,6 +183,7 @@ printf("VICE DREAMCAST is starting\n");
 
 
 //x64
+
     const char* GPFnewArgv[] = {
         "x64.elf",                  // program name 
         "-speed", "200",
@@ -191,24 +193,25 @@ printf("VICE DREAMCAST is starting\n");
         "+VICIIdsize",          
         "+VICIIdscan",  
         "-VICIIfilter","0",
-        // "-VICIIfull",
-        "-sdlbitdepth","32",          
+        "-VICIIfull",
+        "-sdlbitdepth","16",          
         "-sdllimitmode","2",
-        "-sdlinitialw","512",
-        "-sdlinitialh","512",
-        // "-aspect","0",
+        "-sdlinitialw","640",
+        "-sdlinitialh","480",
+        "-VICIIborders","3",
         // "SDLCustomWidth","640",
         // "SDLCustomHeight","480",        
         "-VICIIshowstatusbar",
-        // "+mouse",
-        // "-sound",        
-        // "-sounddev", "sdl",   
-        // "-soundrate", "22050",  
-        // "-soundbufsize", "512", 
-        // "-soundfragsize","3",
+        "+mouse",
+        "-sound",        
+        "-sounddev", "sdl",   
+        "-soundrate", "22050",  
+        "-soundbufsize", "512", 
+        "-soundfragsize","3",
         // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
-        // "-autostart","/cd/Vice/tapes/STARWAR2.T64",
-        "-autostart","/cd/Vice/disks/brucelee.d64",    
+        // "-cartcrt","/cd/Vice/carts/mule.crt", // requires 32mb dc ram 
+        "-autostart","/cd/Vice/tapes/STARWAR2.T64",
+        // "-autostart","/cd/Vice/disks/brucelee.d64",    
         // "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",       
         // "-autostart","/cd/Vice/disks/M.U.L.E. - Slan.d64",               
         // "-keybuf","\x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20"

@@ -76,8 +76,8 @@ static int sdl_limit_mode;
 static int sdl_ui_finalized;
 
 /* window size, used for free scaling */
-static int sdl_window_width = 512;
-static int sdl_window_height = 512;
+static int sdl_window_width = 640;
+static int sdl_window_height = 480;
 
 int sdl_active_canvas_num = 0;
 static int sdl_num_screens = 0;
@@ -772,13 +772,12 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
 
     return canvas;
 #else // Dreamcast-specific code
-
     // Set 8-bit color depth for Dreamcast
     // sdl_bitdepth = 32;
 
     // Calculate new dimensions (assuming calculations here)
-   new_width = 512;
-   new_height = 512;
+   new_width =640;//width;
+   new_height =480;//height;
 
     // Create or resize SDL surface
     // *new_screen = NULL;
@@ -786,7 +785,7 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     if (canvas == sdl_active_canvas) {
         SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE);
         log_message(sdlvideo_log, "SDL_SetVideoMode: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
-        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE | SDL_RESIZABLE);
+        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE | SDL_FULLSCREEN |SDL_RESIZABLE);
         SDL_DC_SetWindow(width,height);
         SDL_EventState(SDL_VIDEORESIZE, SDL_ENABLE);
     } else {
@@ -994,7 +993,7 @@ ui_autohide_mouse_cursor();
     xi *= canvas->videoconfig->scalex;
     w *= canvas->videoconfig->scalex;
 
-    yi *= 1.766;//canvas->videoconfig->scaley;
+    yi *= canvas->videoconfig->scaley;
     h *= canvas->videoconfig->scaley;
 
     w = MIN(w, canvas->width);

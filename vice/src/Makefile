@@ -1307,7 +1307,7 @@ x64_libs = \
 
 x64_SOURCES = $(base_sources) $(midi_sources)
 x64_LDADD = $(x64_libs) $(emu_extlibs)   $(X64_RES)
-x64_DEPENDENCIES = $(x64_libs)
+x64_DEPENDENCIES = $(x64_libs) $(linenoise_ng_lib)
 
 # x64sc
 x64sc_libs = \

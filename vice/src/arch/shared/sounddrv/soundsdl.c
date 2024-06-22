@@ -97,7 +97,7 @@ static int sdl_init(const char *param, int *speed,
 
     memset(&spec, 0, sizeof(spec));
     spec.freq = *speed;
-    spec.format = AUDIO_S16SYS;
+    spec.format = AUDIO_S16LSB;
     spec.channels = (Uint8)*channels;
 #ifdef USE_SDL2UI
     spec.samples = (Uint16)(*fragsize * 2);

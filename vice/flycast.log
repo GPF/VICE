@@ -2811,3 +2811,2028 @@
 00:00:076 reios/reios.cpp:622 N[REIOS]: -----------------
 00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
 00:00:077 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:04:825 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:855 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:883 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:911 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:936 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:969 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:04:993 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:018 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:047 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:074 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:098 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:127 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:154 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:178 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:207 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:236 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:261 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:290 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:317 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:342 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:372 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:398 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:424 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:451 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:477 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:502 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:529 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:555 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:580 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:607 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:633 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:657 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:685 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:712 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:736 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:764 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:790 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:816 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:844 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:871 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:895 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:921 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:951 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:05:976 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:000 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:028 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:053 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:077 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:104 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:129 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:154 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:183 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:208 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:234 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:262 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:290 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:314 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:343 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:370 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:395 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:424 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:450 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:475 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:504 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:531 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:556 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:586 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:612 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:636 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:669 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:692 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:717 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:746 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:772 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:797 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:828 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:851 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:877 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:906 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:932 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:957 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:06:986 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:012 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:036 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:066 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:092 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:117 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:145 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:173 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:198 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:236 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:261 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:286 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:318 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:341 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:366 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:398 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:421 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:446 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:473 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:500 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:525 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:550 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:579 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:603 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:629 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:657 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:682 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:709 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:736 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:761 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:790 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:818 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:842 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:872 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:899 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:923 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:952 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:07:980 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:005 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:034 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:061 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:086 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:115 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:141 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:166 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:195 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:222 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:249 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:278 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:305 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:329 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:359 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:384 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:409 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:438 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:463 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:488 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:517 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:542 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:567 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:596 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:621 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:646 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:678 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:701 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:726 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:755 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:781 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:805 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:08:836 audio/audiostream.cpp:44 W[AUDIO]: WARNING: Audio backend "sdl2	" not found!
+00:13:912 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:13:925 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f588ef30000 RAM(16 MB) 0x7f589af30000 VRAM64(8 MB) 0x7f5892f30000 ARAM(2 MB) 0x7f58aef30000
+00:13:932 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:13:940 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f588ef30000 RAM(16 MB) 0x7f589af30000 VRAM64(8 MB) 0x7f5892f30000 ARAM(2 MB) 0x7f58aef30000
+00:13:944 emulator.cpp:56 N[BOOT]: Game ID is [IND-107681]
+00:13:948 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:13:948 emulator.cpp:56 N[BOOT]: Game ID is [IND-107681]
+00:13:980 reios/reios.cpp:622 N[REIOS]: -----------------
+00:13:980 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:13:980 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f84a6e10000 RAM(16 MB) 0x7f84b2e10000 VRAM64(8 MB) 0x7f84aae10000 ARAM(2 MB) 0x7f84c6e10000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f84a6e10000 RAM(16 MB) 0x7f84b2e10000 VRAM64(8 MB) 0x7f84aae10000 ARAM(2 MB) 0x7f84c6e10000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-169555]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-169555]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:015 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:017 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:017 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f55f1a90000 RAM(16 MB) 0x7f55fda90000 VRAM64(8 MB) 0x7f55f5a90000 ARAM(2 MB) 0x7f5611a90000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f55f1a90000 RAM(16 MB) 0x7f55fda90000 VRAM64(8 MB) 0x7f55f5a90000 ARAM(2 MB) 0x7f5611a90000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-418883]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-418883]
+00:00:132 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:132 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:132 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f798bae0000 RAM(16 MB) 0x7f7997ae0000 VRAM64(8 MB) 0x7f798fae0000 ARAM(2 MB) 0x7f79abae0000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f798bae0000 RAM(16 MB) 0x7f7997ae0000 VRAM64(8 MB) 0x7f798fae0000 ARAM(2 MB) 0x7f79abae0000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-418883]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-418883]
+00:00:104 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:104 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:105 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:041 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f58a0b10000 RAM(16 MB) 0x7f58acb10000 VRAM64(8 MB) 0x7f58a4b10000 ARAM(2 MB) 0x7f58c0b10000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f58a0b10000 RAM(16 MB) 0x7f58acb10000 VRAM64(8 MB) 0x7f58a4b10000 ARAM(2 MB) 0x7f58c0b10000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-754192]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-754192]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:077 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa6ae970000 RAM(16 MB) 0x7fa6ba970000 VRAM64(8 MB) 0x7fa6b2970000 ARAM(2 MB) 0x7fa6ce970000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa6ae970000 RAM(16 MB) 0x7fa6ba970000 VRAM64(8 MB) 0x7fa6b2970000 ARAM(2 MB) 0x7fa6ce970000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:078 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:078 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:078 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f16cb3c0000 RAM(16 MB) 0x7f16d73c0000 VRAM64(8 MB) 0x7f16cf3c0000 ARAM(2 MB) 0x7f16eb3c0000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f16cb3c0000 RAM(16 MB) 0x7f16d73c0000 VRAM64(8 MB) 0x7f16cf3c0000 ARAM(2 MB) 0x7f16eb3c0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:077 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:15:920 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:15:930 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdd646f0000 RAM(16 MB) 0x7fdd706f0000 VRAM64(8 MB) 0x7fdd686f0000 ARAM(2 MB) 0x7fdd846f0000
+00:15:937 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:15:944 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdd646f0000 RAM(16 MB) 0x7fdd706f0000 VRAM64(8 MB) 0x7fdd686f0000 ARAM(2 MB) 0x7fdd846f0000
+00:15:948 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:15:951 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:15:952 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:15:959 audio/audiobackend_alsa.cpp:72 E[AUDIO]: ALSA: unable to open PCM device pulse: No such file or directory
+00:15:959 audio/audiostream.cpp:80 W[AUDIO]: Audio driver alsa failed to initialize. Defaulting to 'auto'
+00:15:961 reios/reios.cpp:622 N[REIOS]: -----------------
+00:15:961 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:15:961 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc7f2a90000 RAM(16 MB) 0x7fc7fea90000 VRAM64(8 MB) 0x7fc7f6a90000 ARAM(2 MB) 0x7fc812a90000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc7f2a90000 RAM(16 MB) 0x7fc7fea90000 VRAM64(8 MB) 0x7fc7f6a90000 ARAM(2 MB) 0x7fc812a90000
+00:00:058 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:061 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:00:078 audio/audiobackend_alsa.cpp:72 E[AUDIO]: ALSA: unable to open PCM device pulse: No such file or directory
+00:00:078 audio/audiostream.cpp:80 W[AUDIO]: Audio driver alsa failed to initialize. Defaulting to 'auto'
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:11:247 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:11:256 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8bf1920000 RAM(16 MB) 0x7f8bfd920000 VRAM64(8 MB) 0x7f8bf5920000 ARAM(2 MB) 0x7f8c11920000
+00:11:263 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:11:269 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8bf1920000 RAM(16 MB) 0x7f8bfd920000 VRAM64(8 MB) 0x7f8bf5920000 ARAM(2 MB) 0x7f8c11920000
+00:11:273 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:11:277 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:11:277 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:11:284 audio/audiobackend_alsa.cpp:72 E[AUDIO]: ALSA: unable to open PCM device pulse: No such file or directory
+00:11:284 audio/audiostream.cpp:80 W[AUDIO]: Audio driver alsa failed to initialize. Defaulting to 'auto'
+00:11:285 reios/reios.cpp:622 N[REIOS]: -----------------
+00:11:285 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:11:286 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:10:902 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:10:912 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f26fe490000 RAM(16 MB) 0x7f270a490000 VRAM64(8 MB) 0x7f2702490000 ARAM(2 MB) 0x7f271e490000
+00:10:918 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:10:925 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f26fe490000 RAM(16 MB) 0x7f270a490000 VRAM64(8 MB) 0x7f2702490000 ARAM(2 MB) 0x7f271e490000
+00:10:929 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:10:932 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:10:932 emulator.cpp:56 N[BOOT]: Game ID is [IND-346866]
+00:10:940 reios/reios.cpp:622 N[REIOS]: -----------------
+00:10:940 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:10:940 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fabdab80000 RAM(16 MB) 0x7fabe6b80000 VRAM64(8 MB) 0x7fabdeb80000 ARAM(2 MB) 0x7fabfab80000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fabdab80000 RAM(16 MB) 0x7fabe6b80000 VRAM64(8 MB) 0x7fabdeb80000 ARAM(2 MB) 0x7fabfab80000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-754192]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-754192]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:023 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:041 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:053 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3b52690000 RAM(16 MB) 0x7f3b5e690000 VRAM64(8 MB) 0x7f3b56690000 ARAM(2 MB) 0x7f3b72690000
+00:00:059 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3b52690000 RAM(16 MB) 0x7f3b5e690000 VRAM64(8 MB) 0x7f3b56690000 ARAM(2 MB) 0x7f3b72690000
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-159874]
+00:00:074 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:074 emulator.cpp:56 N[BOOT]: Game ID is [IND-159874]
+00:00:095 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:095 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:095 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f67c63a0000 RAM(16 MB) 0x7f67d23a0000 VRAM64(8 MB) 0x7f67ca3a0000 ARAM(2 MB) 0x7f67e63a0000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f67c63a0000 RAM(16 MB) 0x7f67d23a0000 VRAM64(8 MB) 0x7f67ca3a0000 ARAM(2 MB) 0x7f67e63a0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:069 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:101 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:101 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:101 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f5c75760000 RAM(16 MB) 0x7f5c81760000 VRAM64(8 MB) 0x7f5c79760000 ARAM(2 MB) 0x7f5c95760000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f5c75760000 RAM(16 MB) 0x7f5c81760000 VRAM64(8 MB) 0x7f5c79760000 ARAM(2 MB) 0x7f5c95760000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:067 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2fbf260000 RAM(16 MB) 0x7f2fcb260000 VRAM64(8 MB) 0x7f2fc3260000 ARAM(2 MB) 0x7f2fdf260000
+00:00:072 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:078 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2fbf260000 RAM(16 MB) 0x7f2fcb260000 VRAM64(8 MB) 0x7f2fc3260000 ARAM(2 MB) 0x7f2fdf260000
+00:00:081 emulator.cpp:56 N[BOOT]: Game ID is [IND-159874]
+00:00:085 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:085 emulator.cpp:56 N[BOOT]: Game ID is [IND-159874]
+00:00:104 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:104 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:104 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:041 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f7cc6690000 RAM(16 MB) 0x7f7cd2690000 VRAM64(8 MB) 0x7f7cca690000 ARAM(2 MB) 0x7f7ce6690000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f7cc6690000 RAM(16 MB) 0x7f7cd2690000 VRAM64(8 MB) 0x7f7cca690000 ARAM(2 MB) 0x7f7ce6690000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-151989]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-151989]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:077 reios/reios.cpp:624 N[REIOS]: -----------------
+00:03:387 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Fatal: SH4 exception when blocked
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:10:429 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:10:455 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0471da0000 RAM(32 MB) 0x7f047dda0000 VRAM64(8 MB) 0x7f0475da0000 ARAM(2 MB) 0x7f0491da0000
+00:10:462 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:10:472 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0471da0000 RAM(32 MB) 0x7f047dda0000 VRAM64(8 MB) 0x7f0475da0000 ARAM(2 MB) 0x7f0491da0000
+00:10:478 emulator.cpp:56 N[BOOT]: Game ID is [IND-151989]
+00:10:483 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:10:483 emulator.cpp:56 N[BOOT]: Game ID is [IND-151989]
+00:10:489 reios/reios.cpp:622 N[REIOS]: -----------------
+00:10:489 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:10:489 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:055 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff3c8900000 RAM(32 MB) 0x7ff3d4900000 VRAM64(8 MB) 0x7ff3cc900000 ARAM(2 MB) 0x7ff3e8900000
+00:00:062 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:071 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff3c8900000 RAM(32 MB) 0x7ff3d4900000 VRAM64(8 MB) 0x7ff3cc900000 ARAM(2 MB) 0x7ff3e8900000
+00:00:076 emulator.cpp:56 N[BOOT]: Game ID is [IND-171850]
+00:00:081 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:081 emulator.cpp:56 N[BOOT]: Game ID is [IND-171850]
+00:00:087 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:087 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:087 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:032 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:033 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:033 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:02:665 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:02:677 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f91ee490000 RAM(16 MB) 0x7f91fa490000 VRAM64(8 MB) 0x7f91f2490000 ARAM(2 MB) 0x7f920e490000
+00:02:685 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:02:694 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f91ee490000 RAM(16 MB) 0x7f91fa490000 VRAM64(8 MB) 0x7f91f2490000 ARAM(2 MB) 0x7f920e490000
+00:02:697 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:02:700 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:02:700 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:02:721 reios/reios.cpp:622 N[REIOS]: -----------------
+00:02:721 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:02:721 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:039 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f84d3c20000 RAM(16 MB) 0x7f84dfc20000 VRAM64(8 MB) 0x7f84d7c20000 ARAM(2 MB) 0x7f84f3c20000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f84d3c20000 RAM(16 MB) 0x7f84dfc20000 VRAM64(8 MB) 0x7f84d7c20000 ARAM(2 MB) 0x7f84f3c20000
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-171850]
+00:00:061 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-171850]
+00:00:076 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:076 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:076 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:037 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f581def0000 RAM(16 MB) 0x7f5829ef0000 VRAM64(8 MB) 0x7f5821ef0000 ARAM(2 MB) 0x7f583def0000
+00:00:045 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:051 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f581def0000 RAM(16 MB) 0x7f5829ef0000 VRAM64(8 MB) 0x7f5821ef0000 ARAM(2 MB) 0x7f583def0000
+00:00:054 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:057 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-116454]
+00:00:074 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:074 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:074 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:041 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f880d180000 RAM(16 MB) 0x7f8819180000 VRAM64(8 MB) 0x7f8811180000 ARAM(2 MB) 0x7f882d180000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f880d180000 RAM(16 MB) 0x7f8819180000 VRAM64(8 MB) 0x7f8811180000 ARAM(2 MB) 0x7f882d180000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-152551]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-152551]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:077 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac46760000 RAM(16 MB) 0x7fac52760000 VRAM64(8 MB) 0x7fac4a760000 ARAM(2 MB) 0x7fac66760000
+00:00:061 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:067 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac46760000 RAM(16 MB) 0x7fac52760000 VRAM64(8 MB) 0x7fac4a760000 ARAM(2 MB) 0x7fac66760000
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-113857]
+00:00:075 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-113857]
+00:00:089 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:089 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:089 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb972000000 RAM(16 MB) 0x7fb97e000000 VRAM64(8 MB) 0x7fb976000000 ARAM(2 MB) 0x7fb992000000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb972000000 RAM(16 MB) 0x7fb97e000000 VRAM64(8 MB) 0x7fb976000000 ARAM(2 MB) 0x7fb992000000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-536736]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-536736]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6ed3400000 RAM(16 MB) 0x7f6edf400000 VRAM64(8 MB) 0x7f6ed7400000 ARAM(2 MB) 0x7f6ef3400000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6ed3400000 RAM(16 MB) 0x7f6edf400000 VRAM64(8 MB) 0x7f6ed7400000 ARAM(2 MB) 0x7f6ef3400000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-113934]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-113934]
+00:00:086 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:086 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:086 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:031 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:033 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:033 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:045 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:055 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6a6e210000 RAM(16 MB) 0x7f6a7a210000 VRAM64(8 MB) 0x7f6a72210000 ARAM(2 MB) 0x7f6a8e210000
+00:00:061 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:069 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6a6e210000 RAM(16 MB) 0x7f6a7a210000 VRAM64(8 MB) 0x7f6a72210000 ARAM(2 MB) 0x7f6a8e210000
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-122183]
+00:00:076 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:076 emulator.cpp:56 N[BOOT]: Game ID is [IND-122183]
+00:00:097 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:097 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:097 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:015 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:017 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:017 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f255d7b0000 RAM(16 MB) 0x7f25697b0000 VRAM64(8 MB) 0x7f25617b0000 ARAM(2 MB) 0x7f257d7b0000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f255d7b0000 RAM(16 MB) 0x7f25697b0000 VRAM64(8 MB) 0x7f25617b0000 ARAM(2 MB) 0x7f257d7b0000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-107440]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-107440]
+00:00:147 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:147 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:147 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa1ce1e0000 RAM(16 MB) 0x7fa1da1e0000 VRAM64(8 MB) 0x7fa1d21e0000 ARAM(2 MB) 0x7fa1ee1e0000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:065 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa1ce1e0000 RAM(16 MB) 0x7fa1da1e0000 VRAM64(8 MB) 0x7fa1d21e0000 ARAM(2 MB) 0x7fa1ee1e0000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-158517]
+00:00:073 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-158517]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fd87f680000 RAM(16 MB) 0x7fd88b680000 VRAM64(8 MB) 0x7fd883680000 ARAM(2 MB) 0x7fd89f680000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fd87f680000 RAM(16 MB) 0x7fd88b680000 VRAM64(8 MB) 0x7fd883680000 ARAM(2 MB) 0x7fd89f680000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-158517]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-158517]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f55d09a0000 RAM(16 MB) 0x7f55dc9a0000 VRAM64(8 MB) 0x7f55d49a0000 ARAM(2 MB) 0x7f55f09a0000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:065 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f55d09a0000 RAM(16 MB) 0x7f55dc9a0000 VRAM64(8 MB) 0x7f55d49a0000 ARAM(2 MB) 0x7f55f09a0000
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-586064]
+00:00:074 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-586064]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb10f850000 RAM(16 MB) 0x7fb11b850000 VRAM64(8 MB) 0x7fb113850000 ARAM(2 MB) 0x7fb12f850000
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb10f850000 RAM(16 MB) 0x7fb11b850000 VRAM64(8 MB) 0x7fb113850000 ARAM(2 MB) 0x7fb12f850000
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-939482]
+00:00:075 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-939482]
+00:00:089 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:089 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:089 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4b1d940000 RAM(16 MB) 0x7f4b29940000 VRAM64(8 MB) 0x7f4b21940000 ARAM(2 MB) 0x7f4b3d940000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4b1d940000 RAM(16 MB) 0x7f4b29940000 VRAM64(8 MB) 0x7f4b21940000 ARAM(2 MB) 0x7f4b3d940000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-990233]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-990233]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:024 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:025 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:025 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:042 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:053 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f563a5a0000 RAM(16 MB) 0x7f56465a0000 VRAM64(8 MB) 0x7f563e5a0000 ARAM(2 MB) 0x7f565a5a0000
+00:00:060 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f563a5a0000 RAM(16 MB) 0x7f56465a0000 VRAM64(8 MB) 0x7f563e5a0000 ARAM(2 MB) 0x7f565a5a0000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-586064]
+00:00:072 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-586064]
+00:00:269 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:269 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:269 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:038 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1234b10000 RAM(16 MB) 0x7f1240b10000 VRAM64(8 MB) 0x7f1238b10000 ARAM(2 MB) 0x7f1254b10000
+00:00:046 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:052 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1234b10000 RAM(16 MB) 0x7f1240b10000 VRAM64(8 MB) 0x7f1238b10000 ARAM(2 MB) 0x7f1254b10000
+00:00:056 emulator.cpp:56 N[BOOT]: Game ID is [IND-547640]
+00:00:059 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-547640]
+00:00:073 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:074 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:074 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1b88670000 RAM(16 MB) 0x7f1b94670000 VRAM64(8 MB) 0x7f1b8c670000 ARAM(2 MB) 0x7f1ba8670000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1b88670000 RAM(16 MB) 0x7f1b94670000 VRAM64(8 MB) 0x7f1b8c670000 ARAM(2 MB) 0x7f1ba8670000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-108856]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-108856]
+00:00:091 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:091 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:091 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efcb0570000 RAM(16 MB) 0x7efcbc570000 VRAM64(8 MB) 0x7efcb4570000 ARAM(2 MB) 0x7efcd0570000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efcb0570000 RAM(16 MB) 0x7efcbc570000 VRAM64(8 MB) 0x7efcb4570000 ARAM(2 MB) 0x7efcd0570000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-547640]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-547640]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fbebe430000 RAM(16 MB) 0x7fbeca430000 VRAM64(8 MB) 0x7fbec2430000 ARAM(2 MB) 0x7fbede430000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fbebe430000 RAM(16 MB) 0x7fbeca430000 VRAM64(8 MB) 0x7fbec2430000 ARAM(2 MB) 0x7fbede430000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-437507]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-437507]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efcbed70000 RAM(16 MB) 0x7efccad70000 VRAM64(8 MB) 0x7efcc2d70000 ARAM(2 MB) 0x7efcded70000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efcbed70000 RAM(16 MB) 0x7efccad70000 VRAM64(8 MB) 0x7efcc2d70000 ARAM(2 MB) 0x7efcded70000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-299690]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-299690]
+00:00:097 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:097 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:097 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa100f40000 RAM(16 MB) 0x7fa10cf40000 VRAM64(8 MB) 0x7fa104f40000 ARAM(2 MB) 0x7fa120f40000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:055 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa100f40000 RAM(16 MB) 0x7fa10cf40000 VRAM64(8 MB) 0x7fa104f40000 ARAM(2 MB) 0x7fa120f40000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-175412]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-175412]
+00:00:098 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:098 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:098 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc43e300000 RAM(16 MB) 0x7fc44a300000 VRAM64(8 MB) 0x7fc442300000 ARAM(2 MB) 0x7fc45e300000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc43e300000 RAM(16 MB) 0x7fc44a300000 VRAM64(8 MB) 0x7fc442300000 ARAM(2 MB) 0x7fc45e300000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-923345]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-923345]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:036 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc75fc10000 RAM(16 MB) 0x7fc76bc10000 VRAM64(8 MB) 0x7fc763c10000 ARAM(2 MB) 0x7fc77fc10000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc75fc10000 RAM(16 MB) 0x7fc76bc10000 VRAM64(8 MB) 0x7fc763c10000 ARAM(2 MB) 0x7fc77fc10000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-928238]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-928238]
+00:00:083 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:083 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:083 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac7b0d0000 RAM(16 MB) 0x7fac870d0000 VRAM64(8 MB) 0x7fac7f0d0000 ARAM(2 MB) 0x7fac9b0d0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac7b0d0000 RAM(16 MB) 0x7fac870d0000 VRAM64(8 MB) 0x7fac7f0d0000 ARAM(2 MB) 0x7fac9b0d0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-841172]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-841172]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:27:108 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:27:119 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe2373d0000 RAM(16 MB) 0x7fe2433d0000 VRAM64(8 MB) 0x7fe23b3d0000 ARAM(2 MB) 0x7fe2573d0000
+00:27:128 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:27:135 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe2373d0000 RAM(16 MB) 0x7fe2433d0000 VRAM64(8 MB) 0x7fe23b3d0000 ARAM(2 MB) 0x7fe2573d0000
+00:27:139 emulator.cpp:56 N[BOOT]: Game ID is [IND-841172]
+00:27:139 emulator.cpp:56 N[BOOT]: Game ID is [IND-841172]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0e93960000 RAM(16 MB) 0x7f0e9f960000 VRAM64(8 MB) 0x7f0e97960000 ARAM(2 MB) 0x7f0eb3960000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0e93960000 RAM(16 MB) 0x7f0e9f960000 VRAM64(8 MB) 0x7f0e97960000 ARAM(2 MB) 0x7f0eb3960000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-108979]
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-108979]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa381ee0000 RAM(16 MB) 0x7fa38dee0000 VRAM64(8 MB) 0x7fa385ee0000 ARAM(2 MB) 0x7fa3a1ee0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa381ee0000 RAM(16 MB) 0x7fa38dee0000 VRAM64(8 MB) 0x7fa385ee0000 ARAM(2 MB) 0x7fa3a1ee0000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-151433]
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-151433]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efee31b0000 RAM(16 MB) 0x7efeef1b0000 VRAM64(8 MB) 0x7efee71b0000 ARAM(2 MB) 0x7eff031b0000
+00:00:057 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efee31b0000 RAM(16 MB) 0x7efeef1b0000 VRAM64(8 MB) 0x7efee71b0000 ARAM(2 MB) 0x7eff031b0000
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:036 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4f72290000 RAM(16 MB) 0x7f4f7e290000 VRAM64(8 MB) 0x7f4f76290000 ARAM(2 MB) 0x7f4f92290000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:064 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4f72290000 RAM(16 MB) 0x7f4f7e290000 VRAM64(8 MB) 0x7f4f76290000 ARAM(2 MB) 0x7f4f92290000
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-877995]
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-877995]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:022 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:024 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:024 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:037 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f46f7490000 RAM(16 MB) 0x7f4703490000 VRAM64(8 MB) 0x7f46fb490000 ARAM(2 MB) 0x7f4717490000
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f46f7490000 RAM(16 MB) 0x7f4703490000 VRAM64(8 MB) 0x7f46fb490000 ARAM(2 MB) 0x7f4717490000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-175680]
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-175680]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa7a9000000 RAM(16 MB) 0x7fa7b5000000 VRAM64(8 MB) 0x7fa7ad000000 ARAM(2 MB) 0x7fa7c9000000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa7a9000000 RAM(16 MB) 0x7fa7b5000000 VRAM64(8 MB) 0x7fa7ad000000 ARAM(2 MB) 0x7fa7c9000000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f97be340000 RAM(16 MB) 0x7f97ca340000 VRAM64(8 MB) 0x7f97c2340000 ARAM(2 MB) 0x7f97de340000
+00:00:057 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:067 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f97be340000 RAM(16 MB) 0x7f97ca340000 VRAM64(8 MB) 0x7f97c2340000 ARAM(2 MB) 0x7f97de340000
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-125344]
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-125344]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1f24860000 RAM(16 MB) 0x7f1f30860000 VRAM64(8 MB) 0x7f1f28860000 ARAM(2 MB) 0x7f1f44860000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1f24860000 RAM(16 MB) 0x7f1f30860000 VRAM64(8 MB) 0x7f1f28860000 ARAM(2 MB) 0x7f1f44860000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-646771]
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-646771]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efc6f1b0000 RAM(16 MB) 0x7efc7b1b0000 VRAM64(8 MB) 0x7efc731b0000 ARAM(2 MB) 0x7efc8f1b0000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efc6f1b0000 RAM(16 MB) 0x7efc7b1b0000 VRAM64(8 MB) 0x7efc731b0000 ARAM(2 MB) 0x7efc8f1b0000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f73814e0000 RAM(16 MB) 0x7f738d4e0000 VRAM64(8 MB) 0x7f73854e0000 ARAM(2 MB) 0x7f73a14e0000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f73814e0000 RAM(16 MB) 0x7f738d4e0000 VRAM64(8 MB) 0x7f73854e0000 ARAM(2 MB) 0x7f73a14e0000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efe0a450000 RAM(16 MB) 0x7efe16450000 VRAM64(8 MB) 0x7efe0e450000 ARAM(2 MB) 0x7efe2a450000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7efe0a450000 RAM(16 MB) 0x7efe16450000 VRAM64(8 MB) 0x7efe0e450000 ARAM(2 MB) 0x7efe2a450000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-401757]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc4f8a50000 RAM(16 MB) 0x7fc504a50000 VRAM64(8 MB) 0x7fc4fca50000 ARAM(2 MB) 0x7fc518a50000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc4f8a50000 RAM(16 MB) 0x7fc504a50000 VRAM64(8 MB) 0x7fc4fca50000 ARAM(2 MB) 0x7fc518a50000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-697221]
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-697221]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f61586d0000 RAM(16 MB) 0x7f61646d0000 VRAM64(8 MB) 0x7f615c6d0000 ARAM(2 MB) 0x7f61786d0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f61586d0000 RAM(16 MB) 0x7f61646d0000 VRAM64(8 MB) 0x7f615c6d0000 ARAM(2 MB) 0x7f61786d0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-120432]
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-120432]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff3bddb0000 RAM(16 MB) 0x7ff3c9db0000 VRAM64(8 MB) 0x7ff3c1db0000 ARAM(2 MB) 0x7ff3dddb0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff3bddb0000 RAM(16 MB) 0x7ff3c9db0000 VRAM64(8 MB) 0x7ff3c1db0000 ARAM(2 MB) 0x7ff3dddb0000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-173389]
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-173389]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8c920e0000 RAM(16 MB) 0x7f8c9e0e0000 VRAM64(8 MB) 0x7f8c960e0000 ARAM(2 MB) 0x7f8cb20e0000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8c920e0000 RAM(16 MB) 0x7f8c9e0e0000 VRAM64(8 MB) 0x7f8c960e0000 ARAM(2 MB) 0x7f8cb20e0000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-860152]
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-860152]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f33e6850000 RAM(16 MB) 0x7f33f2850000 VRAM64(8 MB) 0x7f33ea850000 ARAM(2 MB) 0x7f3406850000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:064 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f33e6850000 RAM(16 MB) 0x7f33f2850000 VRAM64(8 MB) 0x7f33ea850000 ARAM(2 MB) 0x7f3406850000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-297920]
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-297920]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:022 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:023 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:036 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3dea290000 RAM(16 MB) 0x7f3df6290000 VRAM64(8 MB) 0x7f3dee290000 ARAM(2 MB) 0x7f3e0a290000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3dea290000 RAM(16 MB) 0x7f3df6290000 VRAM64(8 MB) 0x7f3dee290000 ARAM(2 MB) 0x7f3e0a290000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3df48f0000 RAM(16 MB) 0x7f3e008f0000 VRAM64(8 MB) 0x7f3df88f0000 ARAM(2 MB) 0x7f3e148f0000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3df48f0000 RAM(16 MB) 0x7f3e008f0000 VRAM64(8 MB) 0x7f3df88f0000 ARAM(2 MB) 0x7f3e148f0000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f17571f0000 RAM(16 MB) 0x7f17631f0000 VRAM64(8 MB) 0x7f175b1f0000 ARAM(2 MB) 0x7f17771f0000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:064 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f17571f0000 RAM(16 MB) 0x7f17631f0000 VRAM64(8 MB) 0x7f175b1f0000 ARAM(2 MB) 0x7f17771f0000
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:07:482 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:07:491 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff4e8c90000 RAM(16 MB) 0x7ff4f4c90000 VRAM64(8 MB) 0x7ff4ecc90000 ARAM(2 MB) 0x7ff508c90000
+00:07:498 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:07:505 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff4e8c90000 RAM(16 MB) 0x7ff4f4c90000 VRAM64(8 MB) 0x7ff4ecc90000 ARAM(2 MB) 0x7ff508c90000
+00:07:510 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:07:513 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:07:514 emulator.cpp:56 N[BOOT]: Game ID is [IND-946487]
+00:07:537 reios/reios.cpp:622 N[REIOS]: -----------------
+00:07:537 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:07:537 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff822740000 RAM(16 MB) 0x7ff82e740000 VRAM64(8 MB) 0x7ff826740000 ARAM(2 MB) 0x7ff842740000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff822740000 RAM(16 MB) 0x7ff82e740000 VRAM64(8 MB) 0x7ff826740000 ARAM(2 MB) 0x7ff842740000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-108250]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-108250]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2e72a20000 RAM(16 MB) 0x7f2e7ea20000 VRAM64(8 MB) 0x7f2e76a20000 ARAM(2 MB) 0x7f2e92a20000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2e72a20000 RAM(16 MB) 0x7f2e7ea20000 VRAM64(8 MB) 0x7f2e76a20000 ARAM(2 MB) 0x7f2e92a20000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-456764]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-456764]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f98f2100000 RAM(16 MB) 0x7f98fe100000 VRAM64(8 MB) 0x7f98f6100000 ARAM(2 MB) 0x7f9912100000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f98f2100000 RAM(16 MB) 0x7f98fe100000 VRAM64(8 MB) 0x7f98f6100000 ARAM(2 MB) 0x7f9912100000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-842569]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-842569]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9ce6bb0000 RAM(16 MB) 0x7f9cf2bb0000 VRAM64(8 MB) 0x7f9ceabb0000 ARAM(2 MB) 0x7f9d06bb0000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9ce6bb0000 RAM(16 MB) 0x7f9cf2bb0000 VRAM64(8 MB) 0x7f9ceabb0000 ARAM(2 MB) 0x7f9d06bb0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-171009]
+00:00:069 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-171009]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6b46780000 RAM(16 MB) 0x7f6b52780000 VRAM64(8 MB) 0x7f6b4a780000 ARAM(2 MB) 0x7f6b66780000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f6b46780000 RAM(16 MB) 0x7f6b52780000 VRAM64(8 MB) 0x7f6b4a780000 ARAM(2 MB) 0x7f6b66780000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-702957]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-702957]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff272db0000 RAM(16 MB) 0x7ff27edb0000 VRAM64(8 MB) 0x7ff276db0000 ARAM(2 MB) 0x7ff292db0000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff272db0000 RAM(16 MB) 0x7ff27edb0000 VRAM64(8 MB) 0x7ff276db0000 ARAM(2 MB) 0x7ff292db0000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-296727]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-296727]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fad09d40000 RAM(16 MB) 0x7fad15d40000 VRAM64(8 MB) 0x7fad0dd40000 ARAM(2 MB) 0x7fad29d40000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fad09d40000 RAM(16 MB) 0x7fad15d40000 VRAM64(8 MB) 0x7fad0dd40000 ARAM(2 MB) 0x7fad29d40000
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-147738]
+00:00:072 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-147738]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:050 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1962440000 RAM(16 MB) 0x7f196e440000 VRAM64(8 MB) 0x7f1966440000 ARAM(2 MB) 0x7f1982440000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1962440000 RAM(16 MB) 0x7f196e440000 VRAM64(8 MB) 0x7f1966440000 ARAM(2 MB) 0x7f1982440000
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-120432]
+00:00:075 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-120432]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f64d8570000 RAM(16 MB) 0x7f64e4570000 VRAM64(8 MB) 0x7f64dc570000 ARAM(2 MB) 0x7f64f8570000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f64d8570000 RAM(16 MB) 0x7f64e4570000 VRAM64(8 MB) 0x7f64dc570000 ARAM(2 MB) 0x7f64f8570000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-297346]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-297346]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff286210000 RAM(16 MB) 0x7ff292210000 VRAM64(8 MB) 0x7ff28a210000 ARAM(2 MB) 0x7ff2a6210000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff286210000 RAM(16 MB) 0x7ff292210000 VRAM64(8 MB) 0x7ff28a210000 ARAM(2 MB) 0x7ff2a6210000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-473303]
+00:00:069 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-473303]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f09966e0000 RAM(16 MB) 0x7f09a26e0000 VRAM64(8 MB) 0x7f099a6e0000 ARAM(2 MB) 0x7f09b66e0000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f09966e0000 RAM(16 MB) 0x7f09a26e0000 VRAM64(8 MB) 0x7f099a6e0000 ARAM(2 MB) 0x7f09b66e0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-335749]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-335749]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:041 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac2edb0000 RAM(16 MB) 0x7fac3adb0000 VRAM64(8 MB) 0x7fac32db0000 ARAM(2 MB) 0x7fac4edb0000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fac2edb0000 RAM(16 MB) 0x7fac3adb0000 VRAM64(8 MB) 0x7fac32db0000 ARAM(2 MB) 0x7fac4edb0000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+00:00:062 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ffa55e60000 RAM(16 MB) 0x7ffa61e60000 VRAM64(8 MB) 0x7ffa59e60000 ARAM(2 MB) 0x7ffa75e60000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ffa55e60000 RAM(16 MB) 0x7ffa61e60000 VRAM64(8 MB) 0x7ffa59e60000 ARAM(2 MB) 0x7ffa75e60000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+01:00:853 debug/gdb_server.cpp:201 N[NETWORK]: gdb: client connection
+01:00:900 debug/gdb_server.cpp:664 W[COMMON]: unknown v packet: vMustReplyEmpty
+01:24:771 reios/reios.cpp:622 N[REIOS]: -----------------
+01:24:771 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+01:24:771 reios/reios.cpp:624 N[REIOS]: -----------------
+01:56:044 debug/gdb_server.cpp:326 E[COMMON]: gdb: I/O error
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f847ff70000 RAM(16 MB) 0x7f848bf70000 VRAM64(8 MB) 0x7f8483f70000 ARAM(2 MB) 0x7f849ff70000
+00:00:057 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f847ff70000 RAM(16 MB) 0x7f848bf70000 VRAM64(8 MB) 0x7f8483f70000 ARAM(2 MB) 0x7f849ff70000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+00:00:072 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-101608]
+00:00:091 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:091 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:091 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc412a60000 RAM(16 MB) 0x7fc41ea60000 VRAM64(8 MB) 0x7fc416a60000 ARAM(2 MB) 0x7fc432a60000
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:066 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc412a60000 RAM(16 MB) 0x7fc41ea60000 VRAM64(8 MB) 0x7fc416a60000 ARAM(2 MB) 0x7fc432a60000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:073 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:086 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:086 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:086 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f00b6a70000 RAM(16 MB) 0x7f00c2a70000 VRAM64(8 MB) 0x7f00baa70000 ARAM(2 MB) 0x7f00d6a70000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f00b6a70000 RAM(16 MB) 0x7f00c2a70000 VRAM64(8 MB) 0x7f00baa70000 ARAM(2 MB) 0x7f00d6a70000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-840234]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-840234]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9995ce0000 RAM(16 MB) 0x7f99a1ce0000 VRAM64(8 MB) 0x7f9999ce0000 ARAM(2 MB) 0x7f99b5ce0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9995ce0000 RAM(16 MB) 0x7f99a1ce0000 VRAM64(8 MB) 0x7f9999ce0000 ARAM(2 MB) 0x7f99b5ce0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8f17640000 RAM(16 MB) 0x7f8f23640000 VRAM64(8 MB) 0x7f8f1b640000 ARAM(2 MB) 0x7f8f37640000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8f17640000 RAM(16 MB) 0x7f8f23640000 VRAM64(8 MB) 0x7f8f1b640000 ARAM(2 MB) 0x7f8f37640000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-177477]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-177477]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc8e5dc0000 RAM(16 MB) 0x7fc8f1dc0000 VRAM64(8 MB) 0x7fc8e9dc0000 ARAM(2 MB) 0x7fc905dc0000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc8e5dc0000 RAM(16 MB) 0x7fc8f1dc0000 VRAM64(8 MB) 0x7fc8e9dc0000 ARAM(2 MB) 0x7fc905dc0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-101428]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:078 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:078 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:039 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0ba42e0000 RAM(16 MB) 0x7f0bb02e0000 VRAM64(8 MB) 0x7f0ba82e0000 ARAM(2 MB) 0x7f0bc42e0000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0ba42e0000 RAM(16 MB) 0x7f0bb02e0000 VRAM64(8 MB) 0x7f0ba82e0000 ARAM(2 MB) 0x7f0bc42e0000
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-197401]
+00:00:061 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-197401]
+00:00:075 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:075 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:075 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc4f0840000 RAM(16 MB) 0x7fc4fc840000 VRAM64(8 MB) 0x7fc4f4840000 ARAM(2 MB) 0x7fc510840000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc4f0840000 RAM(16 MB) 0x7fc4fc840000 VRAM64(8 MB) 0x7fc4f4840000 ARAM(2 MB) 0x7fc510840000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f61fee30000 RAM(16 MB) 0x7f620ae30000 VRAM64(8 MB) 0x7f6202e30000 ARAM(2 MB) 0x7f621ee30000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:055 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f61fee30000 RAM(16 MB) 0x7f620ae30000 VRAM64(8 MB) 0x7f6202e30000 ARAM(2 MB) 0x7f621ee30000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:00:062 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:09:807 debug/gdb_server.cpp:201 N[NETWORK]: gdb: client connection
+00:09:855 debug/gdb_server.cpp:664 W[COMMON]: unknown v packet: vMustReplyEmpty
+00:11:896 reios/reios.cpp:622 N[REIOS]: -----------------
+00:11:896 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:11:896 reios/reios.cpp:624 N[REIOS]: -----------------
+01:12:399 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+01:21:127 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+01:42:776 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+01:43:239 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+01:57:806 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+02:18:036 hw/sh4/interpr/sh4_opcodes.cpp:935 W[INTERPRETER]: TRAP #8
+06:59:106 ui/gui.cpp:3633 E[COMMON]: Verify Failed  : state == Loaded
+ in start -> /home/gpf/code/dreamcast/flycast/core/emulator.cpp : 852
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:017 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:017 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff24ebb0000 RAM(16 MB) 0x7ff25abb0000 VRAM64(8 MB) 0x7ff252bb0000 ARAM(2 MB) 0x7ff26ebb0000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff24ebb0000 RAM(16 MB) 0x7ff25abb0000 VRAM64(8 MB) 0x7ff252bb0000 ARAM(2 MB) 0x7ff26ebb0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-995902]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8781c90000 RAM(16 MB) 0x7f878dc90000 VRAM64(8 MB) 0x7f8785c90000 ARAM(2 MB) 0x7f87a1c90000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8781c90000 RAM(16 MB) 0x7f878dc90000 VRAM64(8 MB) 0x7f8785c90000 ARAM(2 MB) 0x7f87a1c90000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-913723]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-913723]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:02:630 reios/reios.cpp:622 N[REIOS]: -----------------
+00:02:630 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:02:630 reios/reios.cpp:624 N[REIOS]: -----------------
+00:05:218 reios/reios.cpp:622 N[REIOS]: -----------------
+00:05:218 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:05:218 reios/reios.cpp:624 N[REIOS]: -----------------
+00:07:793 reios/reios.cpp:622 N[REIOS]: -----------------
+00:07:794 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:07:794 reios/reios.cpp:624 N[REIOS]: -----------------
+00:10:385 reios/reios.cpp:622 N[REIOS]: -----------------
+00:10:385 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:10:385 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc1ae600000 RAM(16 MB) 0x7fc1ba600000 VRAM64(8 MB) 0x7fc1b2600000 ARAM(2 MB) 0x7fc1ce600000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc1ae600000 RAM(16 MB) 0x7fc1ba600000 VRAM64(8 MB) 0x7fc1b2600000 ARAM(2 MB) 0x7fc1ce600000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb038490000 RAM(16 MB) 0x7fb044490000 VRAM64(8 MB) 0x7fb03c490000 ARAM(2 MB) 0x7fb058490000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fb038490000 RAM(16 MB) 0x7fb044490000 VRAM64(8 MB) 0x7fb03c490000 ARAM(2 MB) 0x7fb058490000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-373144]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-373144]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8decb40000 RAM(16 MB) 0x7f8df8b40000 VRAM64(8 MB) 0x7f8df0b40000 ARAM(2 MB) 0x7f8e0cb40000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f8decb40000 RAM(16 MB) 0x7f8df8b40000 VRAM64(8 MB) 0x7f8df0b40000 ARAM(2 MB) 0x7f8e0cb40000
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-142499]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-142499]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f780b560000 RAM(16 MB) 0x7f7817560000 VRAM64(8 MB) 0x7f780f560000 ARAM(2 MB) 0x7f782b560000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f780b560000 RAM(16 MB) 0x7f7817560000 VRAM64(8 MB) 0x7f780f560000 ARAM(2 MB) 0x7f782b560000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-632639]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-632639]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:077 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:078 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:049 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3d43080000 RAM(16 MB) 0x7f3d4f080000 VRAM64(8 MB) 0x7f3d47080000 ARAM(2 MB) 0x7f3d63080000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:064 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3d43080000 RAM(16 MB) 0x7f3d4f080000 VRAM64(8 MB) 0x7f3d47080000 ARAM(2 MB) 0x7f3d63080000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-131975]
+00:00:073 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-131975]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:037 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f95dbda0000 RAM(16 MB) 0x7f95e7da0000 VRAM64(8 MB) 0x7f95dfda0000 ARAM(2 MB) 0x7f95fbda0000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f95dbda0000 RAM(16 MB) 0x7f95e7da0000 VRAM64(8 MB) 0x7f95dfda0000 ARAM(2 MB) 0x7f95fbda0000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-134555]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-134555]
+00:00:086 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:086 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:086 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa5892d0000 RAM(16 MB) 0x7fa5952d0000 VRAM64(8 MB) 0x7fa58d2d0000 ARAM(2 MB) 0x7fa5a92d0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa5892d0000 RAM(16 MB) 0x7fa5952d0000 VRAM64(8 MB) 0x7fa58d2d0000 ARAM(2 MB) 0x7fa5a92d0000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-110653]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-110653]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:023 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:026 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:026 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:045 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:055 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f03aa220000 RAM(16 MB) 0x7f03b6220000 VRAM64(8 MB) 0x7f03ae220000 ARAM(2 MB) 0x7f03ca220000
+00:00:063 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:070 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f03aa220000 RAM(16 MB) 0x7f03b6220000 VRAM64(8 MB) 0x7f03ae220000 ARAM(2 MB) 0x7f03ca220000
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-196069]
+00:00:078 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:078 emulator.cpp:56 N[BOOT]: Game ID is [IND-196069]
+00:00:096 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:096 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:096 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc923c90000 RAM(16 MB) 0x7fc92fc90000 VRAM64(8 MB) 0x7fc927c90000 ARAM(2 MB) 0x7fc943c90000
+00:00:088 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:101 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc923c90000 RAM(16 MB) 0x7fc92fc90000 VRAM64(8 MB) 0x7fc927c90000 ARAM(2 MB) 0x7fc943c90000
+00:00:114 emulator.cpp:56 N[BOOT]: Game ID is [IND-838330]
+00:00:118 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:118 emulator.cpp:56 N[BOOT]: Game ID is [IND-838330]
+00:00:149 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:150 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:150 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:024 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:026 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:026 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:044 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa4ab140000 RAM(16 MB) 0x7fa4b7140000 VRAM64(8 MB) 0x7fa4af140000 ARAM(2 MB) 0x7fa4cb140000
+00:00:061 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:068 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fa4ab140000 RAM(16 MB) 0x7fa4b7140000 VRAM64(8 MB) 0x7fa4af140000 ARAM(2 MB) 0x7fa4cb140000
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-182367]
+00:00:075 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:075 emulator.cpp:56 N[BOOT]: Game ID is [IND-182367]
+00:00:093 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:093 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:093 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2719a10000 RAM(16 MB) 0x7f2725a10000 VRAM64(8 MB) 0x7f271da10000 ARAM(2 MB) 0x7f2739a10000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2719a10000 RAM(16 MB) 0x7f2725a10000 VRAM64(8 MB) 0x7f271da10000 ARAM(2 MB) 0x7f2739a10000
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-115896]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-115896]
+00:00:083 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:083 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:083 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:047 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0dad020000 RAM(16 MB) 0x7f0db9020000 VRAM64(8 MB) 0x7f0db1020000 ARAM(2 MB) 0x7f0dcd020000
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:069 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0dad020000 RAM(16 MB) 0x7f0db9020000 VRAM64(8 MB) 0x7f0db1020000 ARAM(2 MB) 0x7f0dcd020000
+00:00:074 emulator.cpp:56 N[BOOT]: Game ID is [IND-216006]
+00:00:079 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:079 emulator.cpp:56 N[BOOT]: Game ID is [IND-216006]
+00:00:141 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:141 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:141 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f598de50000 RAM(16 MB) 0x7f5999e50000 VRAM64(8 MB) 0x7f5991e50000 ARAM(2 MB) 0x7f59ade50000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f598de50000 RAM(16 MB) 0x7f5999e50000 VRAM64(8 MB) 0x7f5991e50000 ARAM(2 MB) 0x7f59ade50000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:083 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:083 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:083 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff0a6320000 RAM(16 MB) 0x7ff0b2320000 VRAM64(8 MB) 0x7ff0aa320000 ARAM(2 MB) 0x7ff0c6320000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7ff0a6320000 RAM(16 MB) 0x7ff0b2320000 VRAM64(8 MB) 0x7ff0aa320000 ARAM(2 MB) 0x7ff0c6320000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-141505]
+00:00:083 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:083 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:083 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9bb1c60000 RAM(16 MB) 0x7f9bbdc60000 VRAM64(8 MB) 0x7f9bb5c60000 ARAM(2 MB) 0x7f9bd1c60000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9bb1c60000 RAM(16 MB) 0x7f9bbdc60000 VRAM64(8 MB) 0x7f9bb5c60000 ARAM(2 MB) 0x7f9bd1c60000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-179883]
+00:00:070 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:070 emulator.cpp:56 N[BOOT]: Game ID is [IND-179883]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f79bd630000 RAM(16 MB) 0x7f79c9630000 VRAM64(8 MB) 0x7f79c1630000 ARAM(2 MB) 0x7f79dd630000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f79bd630000 RAM(16 MB) 0x7f79c9630000 VRAM64(8 MB) 0x7f79c1630000 ARAM(2 MB) 0x7f79dd630000
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-164197]
+00:00:072 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-164197]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe7ea000000 RAM(16 MB) 0x7fe7f6000000 VRAM64(8 MB) 0x7fe7ee000000 ARAM(2 MB) 0x7fe80a000000
+00:00:055 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:063 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe7ea000000 RAM(16 MB) 0x7fe7f6000000 VRAM64(8 MB) 0x7fe7ee000000 ARAM(2 MB) 0x7fe80a000000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-477719]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-477719]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:014 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:015 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:015 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:024 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:038 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9e99b40000 RAM(16 MB) 0x7f9ea5b40000 VRAM64(8 MB) 0x7f9e9db40000 ARAM(2 MB) 0x7f9eb9b40000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9e99b40000 RAM(16 MB) 0x7f9ea5b40000 VRAM64(8 MB) 0x7f9e9db40000 ARAM(2 MB) 0x7f9eb9b40000
+00:00:058 emulator.cpp:56 N[BOOT]: Game ID is [IND-474834]
+00:00:062 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-474834]
+00:02:228 reios/reios.cpp:622 N[REIOS]: -----------------
+00:02:228 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:02:228 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0a8be60000 RAM(16 MB) 0x7f0a97e60000 VRAM64(8 MB) 0x7f0a8fe60000 ARAM(2 MB) 0x7f0aabe60000
+00:00:056 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:064 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0a8be60000 RAM(16 MB) 0x7f0a97e60000 VRAM64(8 MB) 0x7f0a8fe60000 ARAM(2 MB) 0x7f0aabe60000
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-474834]
+00:00:071 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:071 emulator.cpp:56 N[BOOT]: Game ID is [IND-474834]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:083 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:083 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:037 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f7964220000 RAM(16 MB) 0x7f7970220000 VRAM64(8 MB) 0x7f7968220000 ARAM(2 MB) 0x7f7984220000
+00:00:043 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:050 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f7964220000 RAM(16 MB) 0x7f7970220000 VRAM64(8 MB) 0x7f7968220000 ARAM(2 MB) 0x7f7984220000
+00:00:053 emulator.cpp:56 N[BOOT]: Game ID is [IND-854972]
+00:00:057 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-854972]
+00:00:072 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:073 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:073 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:050 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f59d8130000 RAM(16 MB) 0x7f59e4130000 VRAM64(8 MB) 0x7f59dc130000 ARAM(2 MB) 0x7f59f8130000
+00:00:059 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:067 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f59d8130000 RAM(16 MB) 0x7f59e4130000 VRAM64(8 MB) 0x7f59dc130000 ARAM(2 MB) 0x7f59f8130000
+00:00:072 emulator.cpp:56 N[BOOT]: Game ID is [IND-880136]
+00:00:076 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:077 emulator.cpp:56 N[BOOT]: Game ID is [IND-880136]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:086 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:086 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:023 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:036 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2264c70000 RAM(16 MB) 0x7f2270c70000 VRAM64(8 MB) 0x7f2268c70000 ARAM(2 MB) 0x7f2284c70000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2264c70000 RAM(16 MB) 0x7f2270c70000 VRAM64(8 MB) 0x7f2268c70000 ARAM(2 MB) 0x7f2284c70000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-368301]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-368301]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe5a2640000 RAM(16 MB) 0x7fe5ae640000 VRAM64(8 MB) 0x7fe5a6640000 ARAM(2 MB) 0x7fe5c2640000
+00:00:066 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:073 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe5a2640000 RAM(16 MB) 0x7fe5ae640000 VRAM64(8 MB) 0x7fe5a6640000 ARAM(2 MB) 0x7fe5c2640000
+00:00:077 emulator.cpp:56 N[BOOT]: Game ID is [IND-498896]
+00:00:081 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:081 emulator.cpp:56 N[BOOT]: Game ID is [IND-498896]
+00:00:098 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:098 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:098 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:050 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f393d780000 RAM(16 MB) 0x7f3949780000 VRAM64(8 MB) 0x7f3941780000 ARAM(2 MB) 0x7f395d780000
+00:00:060 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:068 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f393d780000 RAM(16 MB) 0x7f3949780000 VRAM64(8 MB) 0x7f3941780000 ARAM(2 MB) 0x7f395d780000
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-923109]
+00:00:077 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:078 emulator.cpp:56 N[BOOT]: Game ID is [IND-923109]
+00:00:088 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:088 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:088 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f35c8fd0000 RAM(16 MB) 0x7f35d4fd0000 VRAM64(8 MB) 0x7f35ccfd0000 ARAM(2 MB) 0x7f35e8fd0000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f35c8fd0000 RAM(16 MB) 0x7f35d4fd0000 VRAM64(8 MB) 0x7f35ccfd0000 ARAM(2 MB) 0x7f35e8fd0000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-172511]
+00:00:068 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:068 emulator.cpp:56 N[BOOT]: Game ID is [IND-172511]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:017 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:017 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdd97980000 RAM(16 MB) 0x7fdda3980000 VRAM64(8 MB) 0x7fdd9b980000 ARAM(2 MB) 0x7fddb7980000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdd97980000 RAM(16 MB) 0x7fdda3980000 VRAM64(8 MB) 0x7fdd9b980000 ARAM(2 MB) 0x7fddb7980000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-498896]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-498896]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:039 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fcc2cc90000 RAM(16 MB) 0x7fcc38c90000 VRAM64(8 MB) 0x7fcc30c90000 ARAM(2 MB) 0x7fcc4cc90000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fcc2cc90000 RAM(16 MB) 0x7fcc38c90000 VRAM64(8 MB) 0x7fcc30c90000 ARAM(2 MB) 0x7fcc4cc90000
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-145806]
+00:00:060 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-145806]
+00:00:075 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:075 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:075 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe181090000 RAM(16 MB) 0x7fe18d090000 VRAM64(8 MB) 0x7fe185090000 ARAM(2 MB) 0x7fe1a1090000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fe181090000 RAM(16 MB) 0x7fe18d090000 VRAM64(8 MB) 0x7fe185090000 ARAM(2 MB) 0x7fe1a1090000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-175345]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-175345]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdf972e0000 RAM(16 MB) 0x7fdfa32e0000 VRAM64(8 MB) 0x7fdf9b2e0000 ARAM(2 MB) 0x7fdfb72e0000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:058 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fdf972e0000 RAM(16 MB) 0x7fdfa32e0000 VRAM64(8 MB) 0x7fdf9b2e0000 ARAM(2 MB) 0x7fdfb72e0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-738815]
+00:00:065 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-738815]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:039 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4d7bb60000 RAM(16 MB) 0x7f4d87b60000 VRAM64(8 MB) 0x7f4d7fb60000 ARAM(2 MB) 0x7f4d9bb60000
+00:00:045 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:052 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4d7bb60000 RAM(16 MB) 0x7f4d87b60000 VRAM64(8 MB) 0x7f4d7fb60000 ARAM(2 MB) 0x7f4d9bb60000
+00:00:056 emulator.cpp:56 N[BOOT]: Game ID is [IND-145165]
+00:00:059 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:059 emulator.cpp:56 N[BOOT]: Game ID is [IND-145165]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:035 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1d3bed0000 RAM(16 MB) 0x7f1d47ed0000 VRAM64(8 MB) 0x7f1d3fed0000 ARAM(2 MB) 0x7f1d5bed0000
+00:00:057 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:065 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1d3bed0000 RAM(16 MB) 0x7f1d47ed0000 VRAM64(8 MB) 0x7f1d3fed0000 ARAM(2 MB) 0x7f1d5bed0000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-139750]
+00:00:072 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-139750]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:021 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:023 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f33fda30000 RAM(16 MB) 0x7f3409a30000 VRAM64(8 MB) 0x7f3401a30000 ARAM(2 MB) 0x7f341da30000
+00:00:047 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f33fda30000 RAM(16 MB) 0x7f3409a30000 VRAM64(8 MB) 0x7f3401a30000 ARAM(2 MB) 0x7f341da30000
+00:00:057 emulator.cpp:56 N[BOOT]: Game ID is [IND-576990]
+00:00:060 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-576990]
+00:00:077 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:078 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:078 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:043 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3ee47e0000 RAM(16 MB) 0x7f3ef07e0000 VRAM64(8 MB) 0x7f3ee87e0000 ARAM(2 MB) 0x7f3f047e0000
+00:00:052 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f3ee47e0000 RAM(16 MB) 0x7f3ef07e0000 VRAM64(8 MB) 0x7f3ee87e0000 ARAM(2 MB) 0x7f3f047e0000
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:088 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:088 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:088 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:038 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:039 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:039 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4eff510000 RAM(16 MB) 0x7f4f0b510000 VRAM64(8 MB) 0x7f4f03510000 ARAM(2 MB) 0x7f4f1f510000
+00:00:066 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:073 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4eff510000 RAM(16 MB) 0x7f4f0b510000 VRAM64(8 MB) 0x7f4f03510000 ARAM(2 MB) 0x7f4f1f510000
+00:00:077 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:080 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:080 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:096 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:096 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:096 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2e24610000 RAM(16 MB) 0x7f2e30610000 VRAM64(8 MB) 0x7f2e28610000 ARAM(2 MB) 0x7f2e44610000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f2e24610000 RAM(16 MB) 0x7f2e30610000 VRAM64(8 MB) 0x7f2e28610000 ARAM(2 MB) 0x7f2e44610000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-479237]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-479237]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:023 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:025 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:025 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4d01d20000 RAM(16 MB) 0x7f4d0dd20000 VRAM64(8 MB) 0x7f4d05d20000 ARAM(2 MB) 0x7f4d21d20000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:059 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4d01d20000 RAM(16 MB) 0x7f4d0dd20000 VRAM64(8 MB) 0x7f4d05d20000 ARAM(2 MB) 0x7f4d21d20000
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-939260]
+00:00:066 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:066 emulator.cpp:56 N[BOOT]: Game ID is [IND-939260]
+00:00:084 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:084 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:084 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9ee6d00000 RAM(16 MB) 0x7f9ef2d00000 VRAM64(8 MB) 0x7f9eead00000 ARAM(2 MB) 0x7f9f06d00000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:061 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9ee6d00000 RAM(16 MB) 0x7f9ef2d00000 VRAM64(8 MB) 0x7f9eead00000 ARAM(2 MB) 0x7f9f06d00000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-420267]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-420267]
+00:00:080 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:080 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:080 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4741640000 RAM(16 MB) 0x7f474d640000 VRAM64(8 MB) 0x7f4745640000 ARAM(2 MB) 0x7f4761640000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4741640000 RAM(16 MB) 0x7f474d640000 VRAM64(8 MB) 0x7f4745640000 ARAM(2 MB) 0x7f4761640000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-123339]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-123339]
+00:00:078 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:078 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:078 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:045 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f017efe0000 RAM(16 MB) 0x7f018afe0000 VRAM64(8 MB) 0x7f0182fe0000 ARAM(2 MB) 0x7f019efe0000
+00:00:054 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f017efe0000 RAM(16 MB) 0x7f018afe0000 VRAM64(8 MB) 0x7f0182fe0000 ARAM(2 MB) 0x7f019efe0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-123339]
+00:00:069 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-123339]
+00:00:082 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:082 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:082 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:033 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:046 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0bbbdd0000 RAM(16 MB) 0x7f0bc7dd0000 VRAM64(8 MB) 0x7f0bbfdd0000 ARAM(2 MB) 0x7f0bdbdd0000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:062 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f0bbbdd0000 RAM(16 MB) 0x7f0bc7dd0000 VRAM64(8 MB) 0x7f0bbfdd0000 ARAM(2 MB) 0x7f0bdbdd0000
+00:00:065 emulator.cpp:56 N[BOOT]: Game ID is [IND-939260]
+00:00:069 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-939260]
+00:00:081 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:081 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:081 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 2548 x 1407. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:034 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:048 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f98fda40000 RAM(16 MB) 0x7f9909a40000 VRAM64(8 MB) 0x7f9901a40000 ARAM(2 MB) 0x7f991da40000
+00:00:058 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:065 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f98fda40000 RAM(16 MB) 0x7f9909a40000 VRAM64(8 MB) 0x7f9901a40000 ARAM(2 MB) 0x7f991da40000
+00:00:069 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:073 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:073 emulator.cpp:56 N[BOOT]: Game ID is [IND-329968]
+00:00:085 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:085 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:085 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:017 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:017 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f9edc340000 RAM(16 MB) 0x7f9ee8340000 VRAM64(8 MB) 0x7f9ee0340000 ARAM(2 MB) 0x7f9efc340000
+00:00:071 ui/gui.cpp:3402 E[BOOT]: Cannot stat /vice/vice.cdi
+00:00:071 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Cannot stat /vice/vice.cdi
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:029 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f03896d0000 RAM(16 MB) 0x7f03956d0000 VRAM64(8 MB) 0x7f038d6d0000 ARAM(2 MB) 0x7f03a96d0000
+00:00:071 ui/gui.cpp:3402 E[BOOT]: Cannot stat /vice.cdi
+00:00:071 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Cannot stat /vice.cdi
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:016 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:028 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:040 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fbf58b70000 RAM(16 MB) 0x7fbf64b70000 VRAM64(8 MB) 0x7fbf5cb70000 ARAM(2 MB) 0x7fbf78b70000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fbf58b70000 RAM(16 MB) 0x7fbf64b70000 VRAM64(8 MB) 0x7fbf5cb70000 ARAM(2 MB) 0x7fbf78b70000
+00:00:058 emulator.cpp:56 N[BOOT]: Game ID is [IND-350975]
+00:00:062 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:062 emulator.cpp:56 N[BOOT]: Game ID is [IND-350975]
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:017 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:018 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:018 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:027 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:038 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f7a44d50000 RAM(16 MB) 0x7f7a50d50000 VRAM64(8 MB) 0x7f7a48d50000 ARAM(2 MB) 0x7f7a64d50000
+00:00:068 ui/gui.cpp:3402 E[BOOT]: Cannot stat /home/troy/code/dreamcast/VICE/vice/vice.cdi
+00:00:069 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Cannot stat /home/troy/code/dreamcast/VICE/vice/vice.cdi
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:030 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1494a40000 RAM(16 MB) 0x7f14a0a40000 VRAM64(8 MB) 0x7f1498a40000 ARAM(2 MB) 0x7f14b4a40000
+00:00:051 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f1494a40000 RAM(16 MB) 0x7f14a0a40000 VRAM64(8 MB) 0x7f1498a40000 ARAM(2 MB) 0x7f14b4a40000
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-350975]
+00:00:064 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-350975]
+00:33:245 debug/gdb_server.cpp:201 N[NETWORK]: gdb: client connection
+00:33:286 debug/gdb_server.cpp:664 W[COMMON]: unknown v packet: vMustReplyEmpty
+01:04:328 reios/reios.cpp:622 N[REIOS]: -----------------
+01:04:328 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+01:04:328 reios/reios.cpp:624 N[REIOS]: -----------------
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:018 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:019 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:019 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f53eb7e0000 RAM(16 MB) 0x7f53f77e0000 VRAM64(8 MB) 0x7f53ef7e0000 ARAM(2 MB) 0x7f540b7e0000
+00:00:053 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:060 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f53eb7e0000 RAM(16 MB) 0x7f53f77e0000 VRAM64(8 MB) 0x7f53ef7e0000 ARAM(2 MB) 0x7f540b7e0000
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:00:067 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:067 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:05:295 debug/gdb_server.cpp:201 N[NETWORK]: gdb: client connection
+00:05:344 debug/gdb_server.cpp:664 W[COMMON]: unknown v packet: vMustReplyEmpty
+00:18:655 reios/reios.cpp:622 N[REIOS]: -----------------
+00:18:655 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:18:655 reios/reios.cpp:624 N[REIOS]: -----------------
+00:56:314 debug/gdb_server.cpp:326 E[COMMON]: gdb: I/O error
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:021 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:021 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:042 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc043230000 RAM(16 MB) 0x7fc04f230000 VRAM64(8 MB) 0x7fc047230000 ARAM(2 MB) 0x7fc063230000
+00:00:049 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:057 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7fc043230000 RAM(16 MB) 0x7fc04f230000 VRAM64(8 MB) 0x7fc047230000 ARAM(2 MB) 0x7fc063230000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:064 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:02:484 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Fatal: SH4 exception when blocked
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:020 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:022 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:022 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:031 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:041 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f923d290000 RAM(16 MB) 0x7f9249290000 VRAM64(8 MB) 0x7f9241290000 ARAM(2 MB) 0x7f925d290000
+00:00:048 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:054 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f923d290000 RAM(16 MB) 0x7f9249290000 VRAM64(8 MB) 0x7f9241290000 ARAM(2 MB) 0x7f925d290000
+00:00:058 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:00:061 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:061 emulator.cpp:56 N[BOOT]: Game ID is [IND-182480]
+00:00:079 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:079 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:079 reios/reios.cpp:624 N[REIOS]: -----------------
+00:02:502 ui/gui.cpp:579 E[COMMON]: Flycast has stopped: Fatal: SH4 exception when blocked
+00:00:000 sdl/sdl.cpp:722 N[RENDERER]: Monitor refresh rate: 60 Hz (2560 x 1440)
+00:00:019 ui/gui.cpp:331 N[RENDERER]: Screen DPI is 96, size 640 x 416. Scaling by 1.00
+00:00:020 rend/gles/gles.cpp:637 N[RENDERER]: OpenGL version 4.2
+00:00:020 rend/gles/gles.cpp:638 N[RENDERER]: Vendor 'Microsoft Corporation' Renderer 'D3D12 (AMD Radeon RX 6700 XT)' Version '4.2 (Compatibility Profile) Mesa 22.3.6'
+00:00:032 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:044 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4792720000 RAM(16 MB) 0x7f479e720000 VRAM64(8 MB) 0x7f4796720000 ARAM(2 MB) 0x7f47b2720000
+00:00:050 hw/mem/addrspace.cpp:431 N[VMEM]: Info: nvmem is enabled
+00:00:056 hw/mem/addrspace.cpp:463 N[VMEM]: BASE 0x7f4792720000 RAM(16 MB) 0x7f479e720000 VRAM64(8 MB) 0x7f4796720000 ARAM(2 MB) 0x7f47b2720000
+00:00:060 emulator.cpp:56 N[BOOT]: Game ID is [IND-131548]
+00:00:063 emulator.cpp:513 N[BOOT]: Did not load BIOS, using reios
+00:00:063 emulator.cpp:56 N[BOOT]: Game ID is [IND-131548]
+00:00:114 reios/reios.cpp:622 N[REIOS]: -----------------
+00:00:114 reios/reios.cpp:623 N[REIOS]: REIOS: Booting up
+00:00:114 reios/reios.cpp:624 N[REIOS]: -----------------

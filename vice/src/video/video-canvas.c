@@ -110,7 +110,7 @@ void video_canvas_shutdown(video_canvas_t *canvas)
         lib_free(canvas);
     }
 }
-
+#define VIDEO_SCALE_SOURCE 1
 void video_canvas_render(video_canvas_t *canvas, uint8_t *trg, int width,
                          int height, int xs, int ys, int xt, int yt,
                          int pitcht)

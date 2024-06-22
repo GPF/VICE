@@ -111,12 +111,13 @@ int archdep_init(int *argc, char **argv)
         return 1;
     }
 
+#ifdef __DREAMCAST
     KOS_INIT_FLAGS(INIT_DEFAULT);
     SDL_DC_ShowAskHz(SDL_FALSE);
     SDL_DC_Default60Hz(SDL_FALSE);
     SDL_DC_VerticalWait(SDL_FALSE);
-    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
+    // SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    // SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
     SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
     // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
     // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
@@ -132,7 +133,7 @@ int archdep_init(int *argc, char **argv)
     // SDL_DC_MapKey(0, SDL_DC_Y,  SDLK_g);
     // SDL_DC_MapKey(0, SDL_DC_L,  SDLK_y);
     // SDL_DC_MapKey(0, SDL_DC_R,  SDLK_ESCAPE);
-
+#endif
     // int bpp = 0;
     // SDL_PixelFormat format;
     // SDL_VideoInfo *video_info = SDL_GetVideoInfo();

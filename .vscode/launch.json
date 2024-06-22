@@ -1,6 +1,44 @@
 {
     "version": "0.2.0",
+// "logging": {
+//     "trace": true,
+//     "traceFile": "${workspaceFolder}/vslivestream-trace.txt"
+// },
     "configurations": [
+
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${workspaceFolderBasename}.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
+            "setupCommands": [{
+                "text": "set architecture sh",
+                "description": "Set GDB Arch to SuperH",
+                "ignoreFailures" : false,
+            }],
+            "miDebuggerServerAddress": ":9999",
+            "debugServerPath": "/home/gpf/code/dreamcast/lxdream-nitro/builddir/lxdream-nitro",
+            "debugServerArgs": "--gdb-sh4=9999 -A null ${workspaceRoot}/vice/vice.cdi -n",
+            "filterStdout": true,
+            "filterStderr": true,
+            // run on connect
+            "stopAtConnect": false,
+            // stop at main
+            "stopAtEntry": true,
+            "externalConsole": false,
+            "avoidWindowsConsoleRedirection": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchCompleteCommand": "exec-run",
+            "serverStarted": "SH4 GDB server running on port",
+            "useExtendedRemote": true
+        },
         {
             "name": "BBA_LAN",
             "type": "cppdbg",
@@ -43,9 +81,9 @@
             "name": "LXDream",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "Build",
+            // "preLaunchTask": "Build",
             "cwd": "${workspaceRoot}",
-            "program": "${workspaceFolder}/${workspaceFolderBasename}.elf",
+            "program": "${workspaceFolder}/vice/src/x64.elf",
             //"program": "${workspaceFolder}/2ndmix.elf",
             "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
             "setupCommands": [{
@@ -54,11 +92,8 @@
                 "ignoreFailures" : false,
             }],
             "miDebuggerServerAddress": ":9999",
-            // path to lxdream-nitro
-            "debugServerPath": "PATH_TO_LXDREAM",
-            // lxdream-nitro flags
-            "debugServerArgs": "--log=DEBUG --gdb-sh4=9999 -A null -e ${workspaceRoot}/${workspaceFolderBasename}.elf -n",
-            //"debugServerArgs": "--log=DEBUG --gdb-sh4=9999 -A null -e ${workspaceRoot}/2ndmix.elf -n",
+            "debugServerPath": "/home/gpf/code/dreamcast/lxdream-nitro/builddir/lxdream-nitro",
+            "debugServerArgs": "--gdb-sh4=9999 -A null ${workspaceRoot}/vice/vice.cdi -n",
             "filterStdout": true,
             "filterStderr": true,
             // run on connect
@@ -79,6 +114,7 @@
             "preLaunchTask": "VICE Build",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/vice/src/x64.elf",
+            "MIMode": "gdb",
             "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
             "setupCommands": [{
                 "text": "set architecture sh",
@@ -87,7 +123,7 @@
             }],
             "miDebuggerServerAddress": ":9999",
             "debugServerPath": "/home/gpf/code/dreamcast/lxdream-nitro/builddir/lxdream-nitro",
-            "debugServerArgs": "--gdb-sh4=9999 -A null ${workspaceRoot}/vice/vice.cdi -n",
+            "debugServerArgs": "--gdb-sh4=9999 -A VICE ${workspaceRoot}/vice/vice.cdi -n",
             "filterStdout": true,
             "filterStderr": true,
             "stopAtConnect": true,
@@ -105,30 +141,63 @@
             "name": "VICE x64 debug on flycast",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "VICE Build",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/vice/src/x64.elf",
+            "MIMode": "gdb",
             "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
-            "setupCommands": [{
-                "text": "set architecture sh",
-                "description": "Set GDB Arch to SuperH",
-                "ignoreFailures" : false
-            }],
+            "setupCommands": [
+                {
+                    "text": "set architecture sh",
+                    "description": "Set GDB Arch to SuperH",
+                    "ignoreFailures": false
+                }
+            ],
             "miDebuggerServerAddress": ":3263",
             "debugServerPath": "/home/gpf/code/dreamcast/flycast/build/flycast",
-            "debugServerArgs": "-config config:Debug.GDBEnabled=yes -config config:Debug.GDBPort=3263 -config config:Debug.GDBWaitForConnection=yes -config window:maximized=no ${workspaceRoot}/vice/vice.cdi",
+            "debugServerArgs": "-config config:Debug.GDBEnabled=yes -config config:Debug.GDBPort=3263 -config config:Debug.GDBWaitForConnection=yes -config window:maximized=no /home/gpf/code/dreamcast/VICE/vice/vice.cdi",
             "filterStdout": true,
             "filterStderr": true,
             "stopAtConnect": true,
             "stopAtEntry": true,
-            "externalConsole": false,
+            "externalConsole": true,
             "avoidWindowsConsoleRedirection": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchCompleteCommand": "exec-run",
             "serverStarted": "SH4 GDB server running on port",
             "useExtendedRemote": true,
             "enableJustMyCode": true,
-            "loadAllModules": false
-        }      
+            "logging": {
+                "engineLogging": true,
+                "trace": true,
+                "traceResponse": true
+            }
+        },
+        {
+            "name": "Connect to GDB Server",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/vice/src/x64.elf",
+            "cwd": "${workspaceRoot}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
+            "miDebuggerServerAddress": "localhost:3263",
+            "setupCommands": [
+                {
+                    "text": "set architecture sh",
+                    "description": "Set GDB Arch to SuperH",
+                    "ignoreFailures": false
+                }
+            ],
+            "externalConsole": true,
+            "stopAtConnect": true,
+            "stopAtEntry": true,
+            "logging": {
+                "engineLogging": true,
+                "trace": true,
+                "traceResponse": true
+            }
+        }
+        
+            
     ]
 }
