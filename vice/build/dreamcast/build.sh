@@ -1,0 +1,2 @@
+cmake ../..
+make x64

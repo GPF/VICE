@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libsid_dtv.a CMakeFiles/libsid_dtv.dir/catweaselmkiii.c.o CMakeFiles/libsid_dtv.dir/fastsid.c.o CMakeFiles/libsid_dtv.dir/hardsid.c.o CMakeFiles/libsid_dtv.dir/parsid.c.o "CMakeFiles/libsid_dtv.dir/sid-cmdline-options.c.o" "CMakeFiles/libsid_dtv.dir/sid-resources.c.o" "CMakeFiles/libsid_dtv.dir/sid-snapshot.c.o" CMakeFiles/libsid_dtv.dir/sid.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libsid_dtv.a

@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libhwsiddrv.a "CMakeFiles/libhwsiddrv.dir/hardsid-unix-drv.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libhwsiddrv.a

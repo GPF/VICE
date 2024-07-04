@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libsocketdrv.a CMakeFiles/libsocketdrv.dir/socketdrv.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libsocketdrv.a

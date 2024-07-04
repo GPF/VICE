@@ -782,7 +782,7 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     new_width = 640; 
     new_height = 480;
   
-    flags = SDL_HWSURFACE|SDL_DOUBLEBUF;
+    flags = SDL_HWSURFACE;
     // new_width *= canvas->videoconfig->scalex;
     // new_height *= canvas->videoconfig->scaley; 
     // List available modes

@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc librs232drv.a CMakeFiles/librs232drv.dir/rs232.c.o CMakeFiles/librs232drv.dir/rs232drv.c.o CMakeFiles/librs232drv.dir/rs232net.c.o CMakeFiles/librs232drv.dir/rsuser.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib librs232drv.a

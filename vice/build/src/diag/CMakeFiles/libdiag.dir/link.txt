@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdiag.a CMakeFiles/libdiag.dir/c64_diag_586220_harness.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdiag.a

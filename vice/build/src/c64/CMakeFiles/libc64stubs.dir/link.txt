@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc64stubs.a "CMakeFiles/libc64stubs.dir/c64-stubs.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc64stubs.a

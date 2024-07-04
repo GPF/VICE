@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc128stubs.a "CMakeFiles/libc128stubs.dir/c128-stubs.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc128stubs.a

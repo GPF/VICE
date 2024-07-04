@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libhotkeys.a CMakeFiles/libhotkeys.dir/boolexpr.c.o CMakeFiles/libhotkeys.dir/ifstack.c.o CMakeFiles/libhotkeys.dir/parser.c.o CMakeFiles/libhotkeys.dir/symtab.c.o CMakeFiles/libhotkeys.dir/textfilereader.c.o CMakeFiles/libhotkeys.dir/vhkdebug.c.o CMakeFiles/libhotkeys.dir/vhkkeysyms.c.o CMakeFiles/libhotkeys.dir/uihotkeys.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libhotkeys.a

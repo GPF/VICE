@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libcbm2stubs.a "CMakeFiles/libcbm2stubs.dir/cbm2-stubs.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libcbm2stubs.a

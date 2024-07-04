@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libscpu64stubs.a "CMakeFiles/libscpu64stubs.dir/scpu64-stubs.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libscpu64stubs.a

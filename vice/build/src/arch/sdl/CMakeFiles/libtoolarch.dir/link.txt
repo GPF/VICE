@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libtoolarch.a CMakeFiles/libtoolarch.dir/archdep.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libtoolarch.a

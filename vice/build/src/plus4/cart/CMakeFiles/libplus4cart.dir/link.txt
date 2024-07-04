@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libplus4cart.a CMakeFiles/libplus4cart.dir/plus4cart.c.o CMakeFiles/libplus4cart.dir/debugcart.c.o CMakeFiles/libplus4cart.dir/digiblaster.c.o "CMakeFiles/libplus4cart.dir/plus4-generic.c.o" "CMakeFiles/libplus4cart.dir/plus4-sidcart.c.o" CMakeFiles/libplus4cart.dir/jacint1mb.c.o CMakeFiles/libplus4cart.dir/magiccart.c.o CMakeFiles/libplus4cart.dir/multicart.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libplus4cart.a

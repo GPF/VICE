@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libp64.a CMakeFiles/libp64.dir/p64.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libp64.a

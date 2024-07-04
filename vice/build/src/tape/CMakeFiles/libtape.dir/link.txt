@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libtape.a CMakeFiles/libtape.dir/t64.c.o CMakeFiles/libtape.dir/tap.c.o "CMakeFiles/libtape.dir/tape-internal.c.o" "CMakeFiles/libtape.dir/tape-snapshot.c.o" CMakeFiles/libtape.dir/tape.c.o CMakeFiles/libtape.dir/tapeimage.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libtape.a

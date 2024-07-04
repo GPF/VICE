@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdriveiec128dcr.a "CMakeFiles/libdriveiec128dcr.dir/iec128dcr-cmdline-options.c.o" "CMakeFiles/libdriveiec128dcr.dir/iec128dcr-resources.c.o" CMakeFiles/libdriveiec128dcr.dir/iec128dcr.c.o CMakeFiles/libdriveiec128dcr.dir/iec128dcrrom.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdriveiec128dcr.a

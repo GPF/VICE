@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libfileio.a CMakeFiles/libfileio.dir/cbmfile.c.o CMakeFiles/libfileio.dir/fileio.c.o CMakeFiles/libfileio.dir/p00.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libfileio.a

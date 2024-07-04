@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libimagecontents.a "CMakeFiles/libimagecontents.dir/diskcontents-block.c.o" "CMakeFiles/libimagecontents.dir/diskcontents-iec.c.o" CMakeFiles/libimagecontents.dir/diskcontents.c.o CMakeFiles/libimagecontents.dir/imagecontents.c.o CMakeFiles/libimagecontents.dir/tapecontents.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libimagecontents.a

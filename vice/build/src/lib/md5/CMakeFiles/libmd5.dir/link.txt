@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libmd5.a CMakeFiles/libmd5.dir/md5.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libmd5.a

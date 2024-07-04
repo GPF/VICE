@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libmididrv.a "CMakeFiles/libmididrv.dir/midi-osx-drv.c.o" "CMakeFiles/libmididrv.dir/midi-unix-drv.c.o" "CMakeFiles/libmididrv.dir/midi-win32-drv.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libmididrv.a

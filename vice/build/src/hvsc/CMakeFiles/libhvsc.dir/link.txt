@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libhvsc.a CMakeFiles/libhvsc.dir/base.c.o CMakeFiles/libhvsc.dir/bugs.c.o CMakeFiles/libhvsc.dir/main.c.o CMakeFiles/libhvsc.dir/psid.c.o CMakeFiles/libhvsc.dir/sldb.c.o CMakeFiles/libhvsc.dir/stil.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libhvsc.a

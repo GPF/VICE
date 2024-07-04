@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libsamplerdrv.a CMakeFiles/libsamplerdrv.dir/file_drv.c.o CMakeFiles/libsamplerdrv.dir/portaudio_drv.c.o CMakeFiles/libsamplerdrv.dir/sampler.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libsamplerdrv.a

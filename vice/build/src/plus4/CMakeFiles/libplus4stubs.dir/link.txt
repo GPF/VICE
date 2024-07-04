@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libplus4stubs.a "CMakeFiles/libplus4stubs.dir/plus4-stubs.c.o"
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libplus4stubs.a

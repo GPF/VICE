@@ -1,2 +1,0 @@
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdriveieee.a CMakeFiles/libdriveieee.dir/fdc.c.o "CMakeFiles/libdriveieee.dir/ieee-cmdline-options.c.o" "CMakeFiles/libdriveieee.dir/ieee-resources.c.o" CMakeFiles/libdriveieee.dir/ieee.c.o CMakeFiles/libdriveieee.dir/ieeerom.c.o CMakeFiles/libdriveieee.dir/memieee.c.o CMakeFiles/libdriveieee.dir/riot1d.c.o CMakeFiles/libdriveieee.dir/riot2d.c.o CMakeFiles/libdriveieee.dir/via1d2031.c.o
-/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdriveieee.a
