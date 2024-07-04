@@ -335,8 +335,8 @@ static const char * const vname_chip_fullscreen_size[] = {
     "FullscreenCustomHeight",
     NULL };
 
-#define FULLSCREENCUSTOMWIDTH_DEFAULT   640
-#define FULLSCREENCUSTOMHEIGHT_DEFAULT  480
+#define FULLSCREENCUSTOMWIDTH_DEFAULT   512
+#define FULLSCREENCUSTOMHEIGHT_DEFAULT  256
 
 static resource_int_t resources_chip_fullscreen_size[] =
 {

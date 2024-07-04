@@ -112,7 +112,9 @@ int archdep_init(int *argc, char **argv)
     }
 
 #ifdef __DREAMCAST
-    KOS_INIT_FLAGS(INIT_DEFAULT);
+        SDL_JoystickEventState(SDL_ENABLE);
+        SDL_JoystickOpen(0);
+        SDL_ShowCursor(0);  
 #endif
     // int bpp = 0;
     // SDL_PixelFormat format;

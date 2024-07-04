@@ -779,8 +779,8 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     // sdl_bitdepth = 32;
 
     // Calculate new dimensions (assuming calculations here)
-    new_width = 640; 
-    new_height = 480;
+    new_width = 512; 
+    new_height = 256;
   
     flags = SDL_HWSURFACE;
     // new_width *= canvas->videoconfig->scalex;
@@ -809,16 +809,16 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     if (canvas == sdl_active_canvas) {   
         // SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE); 
         log_message(sdlvideo_log, "SDL_SetVideoMode: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
-            // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO); 
-        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE|SDL_DOUBLEBUF); 
-                // SDL_DC_SetWindow(*width,*height);  
+            SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO); 
+        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE); 
+                SDL_DC_SetWindow(*width,*height);  
         log_message(sdlvideo_log, "SDL_DC_SetWindow: width:%i , height:%i, sdl_bitdepth:%i", *width, *height, sdl_bitdepth); 
         // SDL_EventState(SDL_VIDEORESIZE, SDL_ENABLE);
     } else {
         // Assuming SDL_CreateRGBSurface is used for non-active canvas 
             // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
-         log_message(sdlvideo_log, "SDL_CreateRGBSurface: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
-        new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, 0, 0, 0, 0);
+         log_message(sdlvideo_log, "SDL_CreateRGBSurface: actual_width:%i , actual_height:%i, sdl_bitdepth:%i", actual_width, actual_height, sdl_bitdepth);
+        new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, actual_width, actual_height, sdl_bitdepth, 0, 0, 0, 0);
     }
 
     if (!new_screen) {

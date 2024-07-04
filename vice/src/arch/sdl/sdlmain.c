@@ -60,23 +60,26 @@ int sdl_help_shutdown = 0;
 #include <sys/stat.h>
 #include <unistd.h>
 
+#ifdef __DREAMCAST
+    KOS_INIT_FLAGS(INIT_DEFAULT);
+#endif
 
 int main(int argc, char **argv)
 {
 #ifdef __DREAMCAST__    
  printf("VICE DREAMCAST is starting\n");
+ 
 //  gdb_init();
     SDL_DC_ShowAskHz(SDL_FALSE);
     SDL_DC_Default60Hz(SDL_FALSE);
     SDL_DC_VerticalWait(SDL_FALSE);
+    // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO); 
     // SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     // SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
     // SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
     // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
 
-        SDL_JoystickEventState(SDL_ENABLE);
-        SDL_JoystickOpen(0);
-        SDL_ShowCursor(0);  
+
     // SDL_DC_MapKey(0, SDL_DC_LEFT, SDLK_LEFT);
     // SDL_DC_MapKey(0, SDL_DC_RIGHT, SDLK_RIGHT);
     // SDL_DC_MapKey(0, SDL_DC_UP, SDLK_UP);
@@ -123,10 +126,10 @@ int main(int argc, char **argv)
         "+VICIIdscan",  
         "-VICIIfilter","0",
         "-VICIIfull",
-        "-sdlbitdepth","16",          
+        "-sdlbitdepth","32",          
         "-sdllimitmode","2",
-        "-sdlinitialw","640",
-        "-sdlinitialh","480", 
+        "-sdlinitialw","512",
+        "-sdlinitialh","256", 
         "-VICIIborders","3",
         // "SDLCustomWidth","640",
         // "SDLCustomHeight","480",        
