@@ -16,7 +16,9 @@ The DCSetup.sh script runs the autogen.sh and then the dreamcast cmdline to the 
 I made a copy of the config.h and configure script that were generated and hacked. wrote some fake pkg-config and sdl-config scripts to feed the configure scripts :)
 
 Thanks,
-GPF (troy davis)
+GPF (Troy Davis)
+![image](https://github.com/GPF/VICE/assets/1866144/b2773f76-7c88-496b-b266-615580fe72dd)
+![image](https://github.com/GPF/VICE/assets/1866144/4fa8e1e8-bf4b-47b0-96b5-a2be5ce0e380)
 
 ![image](https://github.com/GPF/VICE/assets/1866144/535dc3aa-f3de-4ea4-b7a8-854a598e589d)
 ![image](https://github.com/GPF/VICE/assets/1866144/134ae2a2-1649-435e-9c70-9d3d0a2782dd)
