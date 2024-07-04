@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc64commoncart.a CMakeFiles/libc64commoncart.dir/c64acia1.c.o CMakeFiles/libc64commoncart.dir/cs8900io.c.o CMakeFiles/libc64commoncart.dir/digimax.c.o CMakeFiles/libc64commoncart.dir/ds12c887rtc.c.o CMakeFiles/libc64commoncart.dir/ethernetcart.c.o CMakeFiles/libc64commoncart.dir/georam.c.o CMakeFiles/libc64commoncart.dir/sfx_soundexpander.c.o CMakeFiles/libc64commoncart.dir/sfx_soundsampler.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc64commoncart.a

@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libsid.a CMakeFiles/libsid.dir/catweaselmkiii.c.o CMakeFiles/libsid.dir/fastsid.c.o CMakeFiles/libsid.dir/hardsid.c.o CMakeFiles/libsid.dir/parsid.c.o "CMakeFiles/libsid.dir/sid-cmdline-options.c.o" "CMakeFiles/libsid.dir/sid-resources.c.o" "CMakeFiles/libsid.dir/sid-snapshot.c.o" CMakeFiles/libsid.dir/sid.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libsid.a

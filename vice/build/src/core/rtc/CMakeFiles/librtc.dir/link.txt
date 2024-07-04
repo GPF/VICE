@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc librtc.a CMakeFiles/librtc.dir/bq4830y.c.o CMakeFiles/librtc.dir/ds12c887.c.o CMakeFiles/librtc.dir/ds1202_1302.c.o CMakeFiles/librtc.dir/ds1216e.c.o CMakeFiles/librtc.dir/ds1307.c.o CMakeFiles/librtc.dir/ds1602.c.o CMakeFiles/librtc.dir/pcf8583.c.o CMakeFiles/librtc.dir/rtc.c.o "CMakeFiles/librtc.dir/rtc-58321a.c.o" "CMakeFiles/librtc.dir/rtc-72421.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib librtc.a

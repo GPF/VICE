@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libvic20stubs.a "CMakeFiles/libvic20stubs.dir/vic20-stubs.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libvic20stubs.a

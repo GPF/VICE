@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/c1541.dir/c1541-stubs.c.o"
+  "CMakeFiles/c1541.dir/c1541-stubs.c.o.d"
+  "CMakeFiles/c1541.dir/c1541.c.o"
+  "CMakeFiles/c1541.dir/c1541.c.o.d"
+  "CMakeFiles/c1541.dir/cbmdos.c.o"
+  "CMakeFiles/c1541.dir/cbmdos.c.o.d"
+  "CMakeFiles/c1541.dir/cbmimage.c.o"
+  "CMakeFiles/c1541.dir/cbmimage.c.o.d"
+  "CMakeFiles/c1541.dir/charset.c.o"
+  "CMakeFiles/c1541.dir/charset.c.o.d"
+  "CMakeFiles/c1541.dir/findpath.c.o"
+  "CMakeFiles/c1541.dir/findpath.c.o.d"
+  "CMakeFiles/c1541.dir/gcr.c.o"
+  "CMakeFiles/c1541.dir/gcr.c.o.d"
+  "CMakeFiles/c1541.dir/info.c.o"
+  "CMakeFiles/c1541.dir/info.c.o.d"
+  "CMakeFiles/c1541.dir/lib.c.o"
+  "CMakeFiles/c1541.dir/lib.c.o.d"
+  "CMakeFiles/c1541.dir/log.c.o"
+  "CMakeFiles/c1541.dir/log.c.o.d"
+  "CMakeFiles/c1541.dir/opencbmlib.c.o"
+  "CMakeFiles/c1541.dir/opencbmlib.c.o.d"
+  "CMakeFiles/c1541.dir/rawfile.c.o"
+  "CMakeFiles/c1541.dir/rawfile.c.o.d"
+  "CMakeFiles/c1541.dir/resources.c.o"
+  "CMakeFiles/c1541.dir/resources.c.o.d"
+  "CMakeFiles/c1541.dir/util.c.o"
+  "CMakeFiles/c1541.dir/util.c.o.d"
+  "CMakeFiles/c1541.dir/zfile.c.o"
+  "CMakeFiles/c1541.dir/zfile.c.o.d"
+  "CMakeFiles/c1541.dir/zipcode.c.o"
+  "CMakeFiles/c1541.dir/zipcode.c.o.d"
+  "c1541"
+  "c1541.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/c1541.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libparallel.a "CMakeFiles/libparallel.dir/parallel-trap.c.o" CMakeFiles/libparallel.dir/parallel.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libparallel.a

@@ -76,15 +76,18 @@ static int sdl_limit_mode;
 static int sdl_ui_finalized;
 
 /* window size, used for free scaling */
-static int sdl_window_width = 640;
-static int sdl_window_height = 480;
+static int sdl_window_width = 512;
+static int sdl_window_height = 512;
 
 int sdl_active_canvas_num = 0;
 static int sdl_num_screens = 0;
 static video_canvas_t *sdl_canvaslist[MAX_CANVAS_NUM];
 video_canvas_t *sdl_active_canvas = NULL;
 
-#ifdef __DREAMCAST__
+
+#ifdef __DREAMCAST__ 
+#include <kos.h>  
+#include <SDL/SDL_dreamcast.h> 
 // #undef HAVE_HWSCALE 
 int ui_set_aspect_ratio(double aspect_ratio, void *canvas){ return 0;}
 int ui_set_vsync(int val, void *canvas){ return 0;}
@@ -771,25 +774,49 @@ static video_canvas_t *sdl_canvas_create(video_canvas_t *canvas, unsigned int *w
     video_canvas_set_palette(canvas, canvas->palette);
 
     return canvas;
-#else // Dreamcast-specific code
+#else // Dreamcast-specific code  
     // Set 8-bit color depth for Dreamcast
     // sdl_bitdepth = 32;
 
     // Calculate new dimensions (assuming calculations here)
-   new_width =640;//width;
-   new_height =480;//height;
+    new_width = 640; 
+    new_height = 480;
+  
+    flags = SDL_HWSURFACE|SDL_DOUBLEBUF;
+    // new_width *= canvas->videoconfig->scalex;
+    // new_height *= canvas->videoconfig->scaley; 
+    // List available modes
+    // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);           
+    SDL_Rect **modes;  
+    SDL_PixelFormat pixel_format;
+    pixel_format.BitsPerPixel = 16;  // Request 32-bit color depth
+    modes = SDL_ListModes(&pixel_format, flags);    
 
-    // Create or resize SDL surface
-    // *new_screen = NULL;
-
-    if (canvas == sdl_active_canvas) {
-        SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE);
-        log_message(sdlvideo_log, "SDL_SetVideoMode: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
-        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE | SDL_FULLSCREEN |SDL_RESIZABLE);
-        SDL_DC_SetWindow(width,height);
-        SDL_EventState(SDL_VIDEORESIZE, SDL_ENABLE);
+    if (modes == (SDL_Rect **)0) {  
+        printf("No modes available!\n");
+    } else if (modes == (SDL_Rect **)-1) {
+        printf("All resolutions are available.\n");
     } else {
-        // Assuming SDL_CreateRGBSurface is used for non-active canvas
+        printf("Available modes:\n");
+        for (int i = 0; modes[i]; ++i) {
+            printf("  %dx%d\n", modes[i]->w, modes[i]->h);     
+        }
+    }
+
+    // Create or resize SDL surface       
+    // *new_screen = NULL; 
+ 
+    if (canvas == sdl_active_canvas) {   
+        // SDL_EventState(SDL_VIDEORESIZE, SDL_IGNORE); 
+        log_message(sdlvideo_log, "SDL_SetVideoMode: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
+            // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO); 
+        new_screen = SDL_SetVideoMode(new_width, new_height, sdl_bitdepth, SDL_HWSURFACE|SDL_DOUBLEBUF); 
+                // SDL_DC_SetWindow(*width,*height);  
+        log_message(sdlvideo_log, "SDL_DC_SetWindow: width:%i , height:%i, sdl_bitdepth:%i", *width, *height, sdl_bitdepth); 
+        // SDL_EventState(SDL_VIDEORESIZE, SDL_ENABLE);
+    } else {
+        // Assuming SDL_CreateRGBSurface is used for non-active canvas 
+            // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
          log_message(sdlvideo_log, "SDL_CreateRGBSurface: new_width:%i , new_height:%i, sdl_bitdepth:%i", new_width, new_height, sdl_bitdepth);
         new_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, new_width, new_height, sdl_bitdepth, 0, 0, 0, 0);
     }
@@ -990,6 +1017,9 @@ ui_autohide_mouse_cursor();
         uistatusbar_draw();
     }
 
+    // canvas->videoconfig->scalex =1.667;
+    // canvas->videoconfig->scaley=1.766
+
     xi *= canvas->videoconfig->scalex;
     w *= canvas->videoconfig->scalex;
 
@@ -1017,7 +1047,8 @@ ui_autohide_mouse_cursor();
         canvas->videoconfig->readable = !(canvas->screen->flags & SDL_HWSURFACE);
     }
 
-    if (machine_class == VICE_MACHINE_VSID) {
+    if (machine_class == VICE_MACHINE_VSID) 
+    {
         canvas->draw_buffer_vsid->draw_buffer_width = canvas->draw_buffer->draw_buffer_width;
         canvas->draw_buffer_vsid->draw_buffer_height = canvas->draw_buffer->draw_buffer_height;
         canvas->draw_buffer_vsid->draw_buffer_pitch = canvas->draw_buffer->draw_buffer_pitch;
@@ -1036,6 +1067,7 @@ ui_autohide_mouse_cursor();
     } else {
         // log_message(sdlvideo_log, "Calling video_canvas_render for non-VSID machine");
         video_canvas_render(canvas, (uint8_t *)canvas->screen->pixels, w, h, xs, ys, xi, yi, canvas->screen->pitch);
+        // log_message(sdlvideo_log, "Calling video_canvas_render: xi=%d, yi=%d, w=%d, h=%d , xs=%d, ys=%d, pitch=%d", xi, yi, w, h, xs, ys, canvas->screen->pitch);
     }
 
     if (SDL_MUSTLOCK(canvas->screen)) {
@@ -1047,7 +1079,7 @@ ui_autohide_mouse_cursor();
     SDL_Flip(canvas->screen);
 
     // log_message(sdlvideo_log, "Calling ui_autohide_mouse_cursor()");
-    ui_autohide_mouse_cursor();
+    ui_autohide_mouse_cursor();  
 
 #endif // End of Dreamcast-specific code
 

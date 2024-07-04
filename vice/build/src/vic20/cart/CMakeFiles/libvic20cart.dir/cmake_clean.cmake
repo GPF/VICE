@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/libvic20cart.dir/behrbonz.c.o"
+  "CMakeFiles/libvic20cart.dir/behrbonz.c.o.d"
+  "CMakeFiles/libvic20cart.dir/debugcart.c.o"
+  "CMakeFiles/libvic20cart.dir/debugcart.c.o.d"
+  "CMakeFiles/libvic20cart.dir/finalexpansion.c.o"
+  "CMakeFiles/libvic20cart.dir/finalexpansion.c.o.d"
+  "CMakeFiles/libvic20cart.dir/ioramcart.c.o"
+  "CMakeFiles/libvic20cart.dir/ioramcart.c.o.d"
+  "CMakeFiles/libvic20cart.dir/megacart.c.o"
+  "CMakeFiles/libvic20cart.dir/megacart.c.o.d"
+  "CMakeFiles/libvic20cart.dir/mikroassembler.c.o"
+  "CMakeFiles/libvic20cart.dir/mikroassembler.c.o.d"
+  "CMakeFiles/libvic20cart.dir/rabbit.c.o"
+  "CMakeFiles/libvic20cart.dir/rabbit.c.o.d"
+  "CMakeFiles/libvic20cart.dir/superexpander.c.o"
+  "CMakeFiles/libvic20cart.dir/superexpander.c.o.d"
+  "CMakeFiles/libvic20cart.dir/ultimem.c.o"
+  "CMakeFiles/libvic20cart.dir/ultimem.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic-fp.c.o"
+  "CMakeFiles/libvic20cart.dir/vic-fp.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20-generic.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20-generic.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20-ieee488.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20-ieee488.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20-midi.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20-midi.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20-sidcart.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20-sidcart.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20cart.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20cart.c.o.d"
+  "CMakeFiles/libvic20cart.dir/vic20cartmem.c.o"
+  "CMakeFiles/libvic20cart.dir/vic20cartmem.c.o.d"
+  "libvic20cart.a"
+  "libvic20cart.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/libvic20cart.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

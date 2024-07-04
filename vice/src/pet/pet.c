@@ -798,7 +798,11 @@ int machine_specific_init(void)
 
 #ifdef HAVE_MOUSE
     /* Initialize mouse support (if present).  */
-    mouse_init();
+#ifndef __DREAMCAST__
+mouse_init();
+#else
+dc_mouse_init();
+#endif    
 #endif
 
     machine_drive_stub();
@@ -854,7 +858,11 @@ void machine_specific_shutdown(void)
     petreu_shutdown();
 
 #ifdef HAVE_MOUSE
-    mouse_shutdown();
+#ifndef __DREAMCAST__
+mouse_shutdown();
+#else
+dc_mouse_shutdown();
+#endif  
 #endif
 
     sidcart_cmdline_options_shutdown();

@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libiecbus.a CMakeFiles/libiecbus.dir/iecbus.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libiecbus.a

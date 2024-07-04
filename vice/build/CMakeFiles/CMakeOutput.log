@@ -1,0 +1,371 @@
+The system is: Linux - 5.15.146.1-microsoft-standard-WSL2 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc 
+Build flags: ;-D_arch_dreamcast;-D__DREAMCAST__;-D_arch_dreamcast;-D__DREAMCAST__;-D_arch_dreamcast;-D__DREAMCAST__
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/toolchains/dc/sh-elf/bin/sh-elf-g++ 
+Build flags: ;-D_arch_dreamcast;-D__DREAMCAST__;-D_arch_dreamcast;-D__DREAMCAST__;-D_arch_dreamcast;-D__DREAMCAST__
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/3.25.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-DnUVro
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e902/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e902.dir/build.make CMakeFiles/cmTC_2e902.dir/build
+gmake[1]: Entering directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-DnUVro'
+Building C object CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc --sysroot=/opt/toolchains/dc/sh-elf   -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -v -o CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc
+Target: sh-elf
+Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++
+Thread model: kos
+Supported LTO compression algorithms: zlib
+gcc version 13.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/'
+ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/cc1 -quiet -v -isysroot /opt/toolchains/dc/sh-elf -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e902.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/cclWXMES.s
+GNU C17 (GCC) version 13.2.0 (sh-elf)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/sys-include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include
+End of search list.
+Compiler executable checksum: 751a47f91bf508367bf8ef5636047c49
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/'
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/as -v -little -o CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o /tmp/cclWXMES.s
+GNU assembler version 2.41 (sh-elf) using BFD version (GNU Binutils) 2.41
+COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/
+LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_2e902
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e902.dir/link.txt --verbose=1
+/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc --sysroot=/opt/toolchains/dc/sh-elf  -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/  -lSDL_1213DH -lstdc++ -lc -lgcc -v CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -o cmTC_2e902 
+Using built-in specs.
+COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc
+COLLECT_LTO_WRAPPER=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper
+Target: sh-elf
+Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++
+Thread model: kos
+Supported LTO compression algorithms: zlib
+gcc version 13.2.0 (GCC) 
+COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/
+LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_2e902' '-dumpdir' 'cmTC_2e902.'
+ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2 -plugin /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so -plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfjHKKU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 --sysroot=/opt/toolchains/dc/sh-elf -m shlelf -o cmTC_2e902 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/ -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0 -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib -L/opt/toolchains/dc/sh-elf/lib -lSDL_1213DH -lstdc++ -lc -lgcc CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -lgcc -lgcc-Os-4-200 -lc -lgcc -lgcc-Os-4-200 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_2e902' '-dumpdir' 'cmTC_2e902.'
+gmake[1]: Leaving directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-DnUVro'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include]
+  end of search list found
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include] ==> [/opt/toolchains/dc/sh-elf/sh-elf/include]
+  implicit include dirs: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed;/opt/toolchains/dc/sh-elf/sh-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(sh-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-DnUVro]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e902/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e902.dir/build.make CMakeFiles/cmTC_2e902.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-DnUVro']
+  ignore line: [Building C object CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc --sysroot=/opt/toolchains/dc/sh-elf   -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -v -o CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc]
+  ignore line: [Target: sh-elf]
+  ignore line: [Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++]
+  ignore line: [Thread model: kos]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/']
+  ignore line: [ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/cc1 -quiet -v -isysroot /opt/toolchains/dc/sh-elf -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e902.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/cclWXMES.s]
+  ignore line: [GNU C17 (GCC) version 13.2.0 (sh-elf)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/sys-include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: 751a47f91bf508367bf8ef5636047c49]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/']
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/as -v -little -o CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o /tmp/cclWXMES.s]
+  ignore line: [GNU assembler version 2.41 (sh-elf) using BFD version (GNU Binutils) 2.41]
+  ignore line: [COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-o' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_2e902]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e902.dir/link.txt --verbose=1]
+  ignore line: [/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc --sysroot=/opt/toolchains/dc/sh-elf  -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/  -lSDL_1213DH -lstdc++ -lc -lgcc -v CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -o cmTC_2e902 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper]
+  ignore line: [Target: sh-elf]
+  ignore line: [Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++]
+  ignore line: [Thread model: kos]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_2e902' '-dumpdir' 'cmTC_2e902.']
+  link line: [ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2 -plugin /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so -plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfjHKKU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 --sysroot=/opt/toolchains/dc/sh-elf -m shlelf -o cmTC_2e902 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/ -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0 -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib -L/opt/toolchains/dc/sh-elf/lib -lSDL_1213DH -lstdc++ -lc -lgcc CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o -lgcc -lgcc-Os-4-200 -lc -lgcc -lgcc-Os-4-200 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+    arg [/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccfjHKKU.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc-Os-4-200] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc-Os-4-200] ==> ignore
+    arg [--sysroot=/opt/toolchains/dc/sh-elf] ==> ignore
+    arg [-m] ==> ignore
+    arg [shlelf] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2e902] ==> ignore
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o]
+    arg [-L/opt/toolchains/dc/sh-elf/sh-elf/lib/] ==> dir [/opt/toolchains/dc/sh-elf/sh-elf/lib/]
+    arg [-L/opt/toolchains/dc/kos/addons/lib/dreamcast/] ==> dir [/opt/toolchains/dc/kos/addons/lib/dreamcast/]
+    arg [-L/opt/toolchains/dc/kos/lib/dreamcast/] ==> dir [/opt/toolchains/dc/kos/lib/dreamcast/]
+    arg [-L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0] ==> dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0]
+    arg [-L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib] ==> dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib]
+    arg [-L/opt/toolchains/dc/sh-elf/lib] ==> dir [/opt/toolchains/dc/sh-elf/lib]
+    arg [-lSDL_1213DH] ==> lib [SDL_1213DH]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [CMakeFiles/cmTC_2e902.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc-Os-4-200] ==> lib [gcc-Os-4-200]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc-Os-4-200] ==> lib [gcc-Os-4-200]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+  collapse library dir [/opt/toolchains/dc/sh-elf/sh-elf/lib/] ==> [/opt/toolchains/dc/sh-elf/sh-elf/lib]
+  collapse library dir [/opt/toolchains/dc/kos/addons/lib/dreamcast/] ==> [/opt/toolchains/dc/kos/addons/lib/dreamcast]
+  collapse library dir [/opt/toolchains/dc/kos/lib/dreamcast/] ==> [/opt/toolchains/dc/kos/lib/dreamcast]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib] ==> [/opt/toolchains/dc/sh-elf/sh-elf/lib]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib] ==> [/opt/toolchains/dc/sh-elf/lib]
+  implicit libs: [SDL_1213DH;stdc++;c;gcc;gcc;gcc-Os-4-200;c;gcc;gcc-Os-4-200]
+  implicit objs: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+  implicit dirs: [/opt/toolchains/dc/sh-elf/sh-elf/lib;/opt/toolchains/dc/kos/addons/lib/dreamcast;/opt/toolchains/dc/kos/lib/dreamcast;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0;/opt/toolchains/dc/sh-elf/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-1BO5Kc
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cbb1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cbb1d.dir/build.make CMakeFiles/cmTC_cbb1d.dir/build
+gmake[1]: Entering directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-1BO5Kc'
+Building CXX object CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ --sysroot=/opt/toolchains/dc/sh-elf   -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -v -std=gnu++11 -o CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-g++
+Target: sh-elf
+Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++
+Thread model: kos
+Supported LTO compression algorithms: zlib
+gcc version 13.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/'
+ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/cc1plus -quiet -v -isysroot /opt/toolchains/dc/sh-elf -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbb1d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -std=gnu++11 -version -o /tmp/cc9vxZti.s
+GNU C++11 (GCC) version 13.2.0 (sh-elf)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/sys-include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/sh-elf
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/backward
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include
+End of search list.
+Compiler executable checksum: f491d5a1f71d412f8ff4b2b7b3d9cca9
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/'
+ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/as -v -little -o CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9vxZti.s
+GNU assembler version 2.41 (sh-elf) using BFD version (GNU Binutils) 2.41
+COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/
+LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_cbb1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbb1d.dir/link.txt --verbose=1
+/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ --sysroot=/opt/toolchains/dc/sh-elf  -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/  -lSDL_1213DH -lstdc++ -lc -lgcc -v CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cbb1d 
+Using built-in specs.
+COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-g++
+COLLECT_LTO_WRAPPER=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper
+Target: sh-elf
+Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++
+Thread model: kos
+Supported LTO compression algorithms: zlib
+gcc version 13.2.0 (GCC) 
+COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/
+LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_cbb1d' '-dumpdir' 'cmTC_cbb1d.'
+ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2 -plugin /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so -plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckpty6S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 --sysroot=/opt/toolchains/dc/sh-elf -m shlelf -o cmTC_cbb1d /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/ -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0 -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib -L/opt/toolchains/dc/sh-elf/lib -lSDL_1213DH -lstdc++ -lgcc CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lc -lgcc -lgcc-Os-4-200 -lc -lgcc -lgcc-Os-4-200 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_cbb1d' '-dumpdir' 'cmTC_cbb1d.'
+gmake[1]: Leaving directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-1BO5Kc'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/sh-elf]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/backward]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+    add: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include]
+  end of search list found
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0] ==> [/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/sh-elf] ==> [/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0/sh-elf]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/backward] ==> [/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0/backward]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+  collapse include dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include] ==> [/opt/toolchains/dc/sh-elf/sh-elf/include]
+  implicit include dirs: [/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0;/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0/sh-elf;/opt/toolchains/dc/sh-elf/sh-elf/include/c++/13.2.0/backward;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed;/opt/toolchains/dc/sh-elf/sh-elf/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(sh-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-1BO5Kc]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cbb1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cbb1d.dir/build.make CMakeFiles/cmTC_cbb1d.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/gpf/code/dreamcast/VICE/vice/build/CMakeFiles/CMakeScratch/TryCompile-1BO5Kc']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ --sysroot=/opt/toolchains/dc/sh-elf   -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -v -std=gnu++11 -o CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-g++]
+  ignore line: [Target: sh-elf]
+  ignore line: [Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++]
+  ignore line: [Thread model: kos]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/']
+  ignore line: [ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/cc1plus -quiet -v -isysroot /opt/toolchains/dc/sh-elf -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ -D _arch_dreamcast -D __DREAMCAST__ /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbb1d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -std=gnu++11 -version -o /tmp/cc9vxZti.s]
+  ignore line: [GNU C++11 (GCC) version 13.2.0 (sh-elf)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/sys-include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/sh-elf]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include/c++/13.2.0/backward]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include-fixed]
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: f491d5a1f71d412f8ff4b2b7b3d9cca9]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/']
+  ignore line: [ /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/as -v -little -o CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9vxZti.s]
+  ignore line: [GNU assembler version 2.41 (sh-elf) using BFD version (GNU Binutils) 2.41]
+  ignore line: [COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_cbb1d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbb1d.dir/link.txt --verbose=1]
+  ignore line: [/opt/toolchains/dc/sh-elf/bin/sh-elf-g++ --sysroot=/opt/toolchains/dc/sh-elf  -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__ -D_arch_dreamcast -D__DREAMCAST__    -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/  -lSDL_1213DH -lstdc++ -lc -lgcc -v CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cbb1d ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/toolchains/dc/sh-elf/bin/sh-elf-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper]
+  ignore line: [Target: sh-elf]
+  ignore line: [Configured with: ../gcc-13.2.0/configure --target=sh-elf --prefix=/opt/toolchains/dc/sh-elf --with-gnu-as --with-gnu-ld --with-newlib --disable-libssp --enable-threads=kos --enable-languages=c,c++,objc,obj-c++ --enable-checking=release --with-multilib-list=m4-single-only,m4-single --with-endian=little --with-cpu=m4-single-only MAKEINFO=missing CC=cc CXX=g++]
+  ignore line: [Thread model: kos]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/:/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib/:/opt/toolchains/dc/sh-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/toolchains/dc/sh-elf' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-D' '_arch_dreamcast' '-D' '__DREAMCAST__' '-L/opt/toolchains/dc/sh-elf/sh-elf/lib/' '-L/opt/toolchains/dc/kos/addons/lib/dreamcast/' '-L/opt/toolchains/dc/kos/lib/dreamcast/' '-v' '-o' 'cmTC_cbb1d' '-dumpdir' 'cmTC_cbb1d.']
+  link line: [ /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2 -plugin /opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so -plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckpty6S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc-Os-4-200 --sysroot=/opt/toolchains/dc/sh-elf -m shlelf -o cmTC_cbb1d /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/ -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0 -L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib -L/opt/toolchains/dc/sh-elf/lib -lSDL_1213DH -lstdc++ -lgcc CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lc -lgcc -lgcc-Os-4-200 -lc -lgcc -lgcc-Os-4-200 /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o /opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+    arg [/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/toolchains/dc/sh-elf/libexec/gcc/sh-elf/13.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckpty6S.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc-Os-4-200] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc-Os-4-200] ==> ignore
+    arg [--sysroot=/opt/toolchains/dc/sh-elf] ==> ignore
+    arg [-m] ==> ignore
+    arg [shlelf] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cbb1d] ==> ignore
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o]
+    arg [-L/opt/toolchains/dc/sh-elf/sh-elf/lib/] ==> dir [/opt/toolchains/dc/sh-elf/sh-elf/lib/]
+    arg [-L/opt/toolchains/dc/kos/addons/lib/dreamcast/] ==> dir [/opt/toolchains/dc/kos/addons/lib/dreamcast/]
+    arg [-L/opt/toolchains/dc/kos/lib/dreamcast/] ==> dir [/opt/toolchains/dc/kos/lib/dreamcast/]
+    arg [-L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0] ==> dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0]
+    arg [-L/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib] ==> dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib]
+    arg [-L/opt/toolchains/dc/sh-elf/lib] ==> dir [/opt/toolchains/dc/sh-elf/lib]
+    arg [-lSDL_1213DH] ==> lib [SDL_1213DH]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lgcc] ==> lib [gcc]
+    arg [CMakeFiles/cmTC_cbb1d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc-Os-4-200] ==> lib [gcc-Os-4-200]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc-Os-4-200] ==> lib [gcc-Os-4-200]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o]
+    arg [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o] ==> obj [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+  collapse library dir [/opt/toolchains/dc/sh-elf/sh-elf/lib/] ==> [/opt/toolchains/dc/sh-elf/sh-elf/lib]
+  collapse library dir [/opt/toolchains/dc/kos/addons/lib/dreamcast/] ==> [/opt/toolchains/dc/kos/addons/lib/dreamcast]
+  collapse library dir [/opt/toolchains/dc/kos/lib/dreamcast/] ==> [/opt/toolchains/dc/kos/lib/dreamcast]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0] ==> [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/../../../../sh-elf/lib] ==> [/opt/toolchains/dc/sh-elf/sh-elf/lib]
+  collapse library dir [/opt/toolchains/dc/sh-elf/lib] ==> [/opt/toolchains/dc/sh-elf/lib]
+  implicit libs: [SDL_1213DH;stdc++;gcc;stdc++;m;c;gcc;gcc-Os-4-200;c;gcc;gcc-Os-4-200]
+  implicit objs: [/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crt1.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crti.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtbegin.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtend.o;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/crtn.o]
+  implicit dirs: [/opt/toolchains/dc/sh-elf/sh-elf/lib;/opt/toolchains/dc/kos/addons/lib/dreamcast;/opt/toolchains/dc/kos/lib/dreamcast;/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0;/opt/toolchains/dc/sh-elf/lib]
+  implicit fwks: []
+
+

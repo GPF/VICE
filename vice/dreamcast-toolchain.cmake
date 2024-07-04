@@ -1,24 +1,32 @@
 # dreamcast-toolchain.cmake
 
-set(CMAKE_SYSTEM_NAME Generic)
-set(CMAKE_SYSTEM_PROCESSOR sh4)
-
 # Specify the cross compiler paths
-set(CMAKE_C_COMPILER /path/to/sh-elf-gcc)
-set(CMAKE_CXX_COMPILER /path/to/sh-elf-g++)
-
-# Specify the target sysroot
+set(CMAKE_C_COMPILER /opt/toolchains/dc/sh-elf/bin/sh-elf-gcc)
+set(CMAKE_CXX_COMPILER /opt/toolchains/dc/sh-elf/bin/sh-elf-g++)
 set(CMAKE_SYSROOT /opt/toolchains/dc/sh-elf)
 
-# Specify the paths to search for libraries and headers
-set(CMAKE_FIND_ROOT_PATH /opt/toolchains/dc/sh-elf)
-
-# Adjust the default behavior of FIND_XXX() commands to search for the target programs and libraries
-set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-
 # Set additional flags
-set(CMAKE_C_FLAGS "${KOS_CFLAGS}")
-set(CMAKE_CXX_FLAGS "${KOS_CFLAGS}")
-set(CMAKE_EXE_LINKER_FLAGS "${KOS_LDFLAGS}")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_arch_dreamcast -D__DREAMCAST__")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_arch_dreamcast -D__DREAMCAST__")
+
+
+set(CMAKE_EXE_LINKER_FLAGS "${KOS_LDFLAGS} ${KOS_LIB_PATHS} -L/opt/toolchains/dc/sh-elf/sh-elf/lib/ -L/opt/toolchains/dc/kos/addons/lib/dreamcast/ -L/opt/toolchains/dc/kos/lib/dreamcast/ ${KOS_LIBS} -lSDL_1213DH -lstdc++ -lc -lgcc")
+
+
+
+# Set the path to the KallistiOS include directories
+include_directories(
+    "/opt/toolchains/dc/kos/include"
+    "/opt/toolchains/dc/kos/kernel/arch/dreamcast/include"
+    "/opt/toolchains/dc/kos/addons/include"
+    "/opt/toolchains/dc/kos/../kos-ports/include"
+    "/opt/toolchains/dc/kos/addons/include/SDL"
+)
+
+# Set the path to the SDL library compiled for KallistiOS
+#set(LIB_SDL_GL_1213DH "/opt/toolchains/dc/kos/addons/lib/dreamcast/libSDL_1213DH.a  /opt/toolchains/dc/sh-elf/sh-elf/lib/libm.a")
+
+# Set the path to the KallistiOS library
+set(LIB_KALLISTI "${KOS_LDFLAGS};${KOS_LIB_PATHS};kallisti;c;gcc;SDL_1213DH;stdc++")
+
+# Optionally, set any other specific configuration needed for your project

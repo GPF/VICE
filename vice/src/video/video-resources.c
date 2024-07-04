@@ -488,7 +488,7 @@ static const char * const vname_chip_gloptions_int[] = {
  */
 static resource_int_t resources_chip_gloptions_int[] =
 {
-    { NULL, VIDEO_ASPECT_MODE_NONE, RES_EVENT_NO, NULL, NULL, set_aspect_mode, NULL },
+    { NULL, VIDEO_ASPECT_MODE_TRUE, RES_EVENT_NO, NULL, NULL, set_aspect_mode, NULL },
     { NULL, VIDEO_GLFILTER_BICUBIC, RES_EVENT_NO, NULL, NULL, set_glfilter, NULL },
     { NULL, 0                     , RES_EVENT_NO, NULL, NULL, set_flipx, NULL },
     { NULL, 0                     , RES_EVENT_NO, NULL, NULL, set_flipy, NULL },

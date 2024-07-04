@@ -350,7 +350,11 @@ void mouse_reset(void)
     mouse_latest_os_timestamp = 0;
 }
 
+#ifndef __DREAMCAST__
 void mouse_init(void)
+#else
+void dc_mouse_init(void)
+#endif    
 {
     /* FIXME: some of these can perhaps be moved into individual devices */
     emu_units_per_os_units = (float)(machine_get_cycles_per_second() / tick_per_second());
@@ -367,7 +371,11 @@ void mouse_init(void)
     mouse_reset();
 }
 
+#ifndef __DREAMCAST__
 void mouse_shutdown(void)
+#else
+void dc_mouse_shutdown(void)
+#endif   
 {
     smart_mouse_shutdown();
 }

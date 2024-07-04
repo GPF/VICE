@@ -180,11 +180,21 @@
             "cwd": "${workspaceRoot}",
             "MIMode": "gdb",
             "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",
-            "miDebuggerServerAddress": "localhost:3263",
+            "miDebuggerServerAddress": "localhost:9999",
             "setupCommands": [
                 {
                     "text": "set architecture sh",
                     "description": "Set GDB Arch to SuperH",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "directory /opt/toolchains/dc/kos/addons/SDL-dreamhal--GLDC/src",
+                    "description": "Set SDL src directory",
+                    "ignoreFailures": false
+                },
+                {
+                    "text": "directory /opt/toolchains/dc/kos/addons/SDL-dreamhal--GLDC/include",
+                    "description": "Set SDL include directory",
                     "ignoreFailures": false
                 }
             ],

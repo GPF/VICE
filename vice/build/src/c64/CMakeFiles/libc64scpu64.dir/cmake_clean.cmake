@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/libc64scpu64.dir/c64bus.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64bus.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64cia1.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64cia1.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64cia2.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64cia2.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64datasette.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64datasette.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64drive.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64drive.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64export.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64export.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64fastiec.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64fastiec.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64iec.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64iec.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64io.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64io.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64keyboard.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64keyboard.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64memsnapshot.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64memsnapshot.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64parallel.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64parallel.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64printer.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64printer.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64romset.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64romset.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64rsuser.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64rsuser.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64sound.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64sound.c.o.d"
+  "CMakeFiles/libc64scpu64.dir/c64video.c.o"
+  "CMakeFiles/libc64scpu64.dir/c64video.c.o.d"
+  "libc64scpu64.a"
+  "libc64scpu64.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/libc64scpu64.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

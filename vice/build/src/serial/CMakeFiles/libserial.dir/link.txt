@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libserial.a CMakeFiles/libserial.dir/fsdrive.c.o "CMakeFiles/libserial.dir/serial-device.c.o" "CMakeFiles/libserial.dir/serial-iec-bus.c.o" "CMakeFiles/libserial.dir/serial-iec-device.c.o" "CMakeFiles/libserial.dir/serial-iec-lib.c.o" "CMakeFiles/libserial.dir/serial-iec.c.o" "CMakeFiles/libserial.dir/serial-realdevice.c.o" "CMakeFiles/libserial.dir/serial-trap.c.o" CMakeFiles/libserial.dir/serial.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libserial.a

@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libcbm5x0stubs.a "CMakeFiles/libcbm5x0stubs.dir/cbm5x0-stubs.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libcbm5x0stubs.a

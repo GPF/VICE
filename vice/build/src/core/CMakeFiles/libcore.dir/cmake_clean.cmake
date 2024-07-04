@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/libcore.dir/ata.c.o"
+  "CMakeFiles/libcore.dir/ata.c.o.d"
+  "CMakeFiles/libcore.dir/ciacore.c.o"
+  "CMakeFiles/libcore.dir/ciacore.c.o.d"
+  "CMakeFiles/libcore.dir/ciatimer.c.o"
+  "CMakeFiles/libcore.dir/ciatimer.c.o.d"
+  "CMakeFiles/libcore.dir/cs8900.c.o"
+  "CMakeFiles/libcore.dir/cs8900.c.o.d"
+  "CMakeFiles/libcore.dir/flash040core.c.o"
+  "CMakeFiles/libcore.dir/flash040core.c.o.d"
+  "CMakeFiles/libcore.dir/fmopl.c.o"
+  "CMakeFiles/libcore.dir/fmopl.c.o.d"
+  "CMakeFiles/libcore.dir/i8255a.c.o"
+  "CMakeFiles/libcore.dir/i8255a.c.o.d"
+  "CMakeFiles/libcore.dir/m93c86.c.o"
+  "CMakeFiles/libcore.dir/m93c86.c.o.d"
+  "CMakeFiles/libcore.dir/mc6821core.c.o"
+  "CMakeFiles/libcore.dir/mc6821core.c.o.d"
+  "CMakeFiles/libcore.dir/riotcore.c.o"
+  "CMakeFiles/libcore.dir/riotcore.c.o.d"
+  "CMakeFiles/libcore.dir/scsi.c.o"
+  "CMakeFiles/libcore.dir/scsi.c.o.d"
+  "CMakeFiles/libcore.dir/ser-eeprom.c.o"
+  "CMakeFiles/libcore.dir/ser-eeprom.c.o.d"
+  "CMakeFiles/libcore.dir/spi-flash.c.o"
+  "CMakeFiles/libcore.dir/spi-flash.c.o.d"
+  "CMakeFiles/libcore.dir/spi-sdcard.c.o"
+  "CMakeFiles/libcore.dir/spi-sdcard.c.o.d"
+  "CMakeFiles/libcore.dir/t6721.c.o"
+  "CMakeFiles/libcore.dir/t6721.c.o.d"
+  "CMakeFiles/libcore.dir/tpicore.c.o"
+  "CMakeFiles/libcore.dir/tpicore.c.o.d"
+  "CMakeFiles/libcore.dir/viacore.c.o"
+  "CMakeFiles/libcore.dir/viacore.c.o.d"
+  "libcore.a"
+  "libcore.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/libcore.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

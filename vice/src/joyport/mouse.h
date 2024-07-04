@@ -43,9 +43,14 @@ typedef struct mouse_func_s {
 
 int mouse_resources_init(void);
 int mouse_cmdline_options_init(void);
+#ifndef __DREAMCAST__
 void mouse_init(void);
-void mouse_reset(void);
 void mouse_shutdown(void);
+#else
+void dc_mouse_init(void);
+void dc_mouse_shutdown(void);
+#endif
+void mouse_reset(void);
 
 extern int _mouse_enabled;
 extern int mouse_type;

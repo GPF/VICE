@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc64cartsystem.a CMakeFiles/libc64cartsystem.dir/c64cart.c.o CMakeFiles/libc64cartsystem.dir/c64carthooks.c.o CMakeFiles/libc64cartsystem.dir/c64cartmem.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc64cartsystem.a

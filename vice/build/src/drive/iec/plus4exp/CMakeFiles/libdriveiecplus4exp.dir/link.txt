@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdriveiecplus4exp.a "CMakeFiles/libdriveiecplus4exp.dir/iec-plus4exp.c.o" "CMakeFiles/libdriveiecplus4exp.dir/plus4exp-cmdline-options.c.o" "CMakeFiles/libdriveiecplus4exp.dir/plus4exp-resources.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdriveiecplus4exp.a

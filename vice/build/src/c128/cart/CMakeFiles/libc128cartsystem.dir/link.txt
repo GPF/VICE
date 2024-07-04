@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc128cartsystem.a CMakeFiles/libc128cartsystem.dir/c128cart.c.o CMakeFiles/libc128cartsystem.dir/comal80.c.o CMakeFiles/libc128cartsystem.dir/generic.c.o CMakeFiles/libc128cartsystem.dir/gmod2c128.c.o CMakeFiles/libc128cartsystem.dir/magicdesk128.c.o CMakeFiles/libc128cartsystem.dir/partner128.c.o CMakeFiles/libc128cartsystem.dir/warpspeed128.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc128cartsystem.a

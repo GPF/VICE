@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libc64c64dtv.a CMakeFiles/libc64c64dtv.dir/c64bus.c.o CMakeFiles/libc64c64dtv.dir/c64drive.c.o CMakeFiles/libc64c64dtv.dir/c64fastiec.c.o CMakeFiles/libc64c64dtv.dir/c64keyboard.c.o CMakeFiles/libc64c64dtv.dir/c64parallel.c.o CMakeFiles/libc64c64dtv.dir/c64rom.c.o CMakeFiles/libc64c64dtv.dir/c64romset.c.o CMakeFiles/libc64c64dtv.dir/c64rsuser.c.o CMakeFiles/libc64c64dtv.dir/c64video.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libc64c64dtv.a

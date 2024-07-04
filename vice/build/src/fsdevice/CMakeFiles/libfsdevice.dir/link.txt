@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libfsdevice.a "CMakeFiles/libfsdevice.dir/fsdevice-close.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-cmdline-options.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-flush.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-filename.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-open.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-read.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-resources.c.o" "CMakeFiles/libfsdevice.dir/fsdevice-write.c.o" CMakeFiles/libfsdevice.dir/fsdevice.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libfsdevice.a

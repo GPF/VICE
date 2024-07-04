@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libpetstubs.a "CMakeFiles/libpetstubs.dir/pet-stubs.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libpetstubs.a

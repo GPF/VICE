@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libtapeport.a "CMakeFiles/libtapeport.dir/cp-clockf83.c.o" "CMakeFiles/libtapeport.dir/dtl-basic-dongle.c.o" "CMakeFiles/libtapeport.dir/sense-dongle.c.o" CMakeFiles/libtapeport.dir/tape_diag_586220_harness.c.o CMakeFiles/libtapeport.dir/tapecart.c.o CMakeFiles/libtapeport.dir/tapeport.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libtapeport.a

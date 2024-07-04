@@ -8,12 +8,15 @@
         "internet": "c",
         "regex": "c",
         "vsidui_sdl.h": "c",
-        "vsync.h": "c"
+        "vsync.h": "c",
+        "sdl_dreamcast.h": "c"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
-        "/opt/toolchains/dc/kos/**",
-        "/opt/toolchains/dc/kos-ports/**"
+        "/opt/toolchains/dc/kos/include/",
+        "/opt/toolchains/dc/kos/addons/include/",
+        "/opt/toolchains/dc/kos-ports/include/",
+        "/opt/toolchains/dc/sh-elf/sh-elf/include/"
     ],
     "C_Cpp.default.defines": [
             "_arch_dreamcast"

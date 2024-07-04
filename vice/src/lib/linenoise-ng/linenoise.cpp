@@ -184,7 +184,9 @@ static char *ln_strdup(const char *s)
 #if defined(GEKKO) || defined(__DREAMCAST__)
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
+#ifndef __DREAMCAST__
 char *strdup(const char *src) {
     size_t len = strlen(src) + 1; // +1 for null terminator
     char *dest = (char *)malloc(len);
@@ -193,9 +195,6 @@ char *strdup(const char *src) {
     }
     return dest;
 }
-
-#include <ctype.h>
-
 int strcasecmp(const char *s1, const char *s2) {
     while (*s1 && *s2) {
         int diff = tolower(*s1) - tolower(*s2);
@@ -207,6 +206,7 @@ int strcasecmp(const char *s1, const char *s2) {
     }
     return tolower(*s1) - tolower(*s2);
 }
+#endif
 
 #include <errno.h>
 typedef unsigned int speed_t;

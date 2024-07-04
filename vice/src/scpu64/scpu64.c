@@ -1016,7 +1016,11 @@ int machine_specific_init(void)
 
 #ifdef HAVE_MOUSE
     /* Initialize mouse support (if present).  */
-    mouse_init();
+#ifndef __DREAMCAST__
+mouse_init();
+#else
+dc_mouse_init();
+#endif    
 
 #ifdef HAVE_LIGHTPEN
     /* Initialize lightpen support and register VICII callbacks */
@@ -1096,7 +1100,11 @@ void machine_specific_shutdown(void)
     cartridge_shutdown();
 
 #ifdef HAVE_MOUSE
-    mouse_shutdown();
+#ifndef __DREAMCAST__
+mouse_shutdown();
+#else
+dc_mouse_shutdown();
+#endif  
 #endif
 
     sid_cmdline_options_shutdown();

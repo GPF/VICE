@@ -113,26 +113,6 @@ int archdep_init(int *argc, char **argv)
 
 #ifdef __DREAMCAST
     KOS_INIT_FLAGS(INIT_DEFAULT);
-    SDL_DC_ShowAskHz(SDL_FALSE);
-    SDL_DC_Default60Hz(SDL_FALSE);
-    SDL_DC_VerticalWait(SDL_FALSE);
-    // SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-    // SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
-    SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
-    // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
-    // SDL_DC_SetVideoDriver(SDL_DC_TEXTURED_VIDEO);
-        SDL_JoystickEventState(SDL_ENABLE);
-        SDL_JoystickOpen(0);
-        SDL_ShowCursor(0);  
-    // SDL_DC_MapKey(0, SDL_DC_LEFT, SDLK_LEFT);
-    // SDL_DC_MapKey(0, SDL_DC_RIGHT, SDLK_RIGHT);
-    // SDL_DC_MapKey(0, SDL_DC_UP, SDLK_UP);
-    // SDL_DC_MapKey(0, SDL_DC_DOWN,  SDLK_DOWN);
-    // SDL_DC_MapKey(0, SDL_DC_A,  SDLK_RETURN);
-    // SDL_DC_MapKey(0, SDL_DC_B,  SDLK_s);
-    // SDL_DC_MapKey(0, SDL_DC_Y,  SDLK_g);
-    // SDL_DC_MapKey(0, SDL_DC_L,  SDLK_y);
-    // SDL_DC_MapKey(0, SDL_DC_R,  SDLK_ESCAPE);
 #endif
     // int bpp = 0;
     // SDL_PixelFormat format;

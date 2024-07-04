@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdiskimage.a CMakeFiles/libdiskimage.dir/diskimage.c.o "CMakeFiles/libdiskimage.dir/fsimage-check.c.o" "CMakeFiles/libdiskimage.dir/fsimage-create.c.o" "CMakeFiles/libdiskimage.dir/fsimage-dxx.c.o" "CMakeFiles/libdiskimage.dir/fsimage-gcr.c.o" "CMakeFiles/libdiskimage.dir/fsimage-p64.c.o" "CMakeFiles/libdiskimage.dir/fsimage-probe.c.o" CMakeFiles/libdiskimage.dir/fsimage.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdiskimage.a

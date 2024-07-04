@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libdatasette.a CMakeFiles/libdatasette.dir/datasette.c.o "CMakeFiles/libdatasette.dir/datasette-sound.c.o"
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libdatasette.a

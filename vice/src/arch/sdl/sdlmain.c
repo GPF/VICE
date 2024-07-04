@@ -66,6 +66,96 @@ int main(int argc, char **argv)
 #ifdef __DREAMCAST__    
  printf("VICE DREAMCAST is starting\n");
 //  gdb_init();
+    SDL_DC_ShowAskHz(SDL_FALSE);
+    SDL_DC_Default60Hz(SDL_FALSE);
+    SDL_DC_VerticalWait(SDL_FALSE);
+    // SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    // SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 1);    
+    // SDL_DC_SetVideoDriver(SDL_DC_DIRECT_VIDEO);
+    // SDL_DC_SetVideoDriver(SDL_DC_DMA_VIDEO);
+
+        SDL_JoystickEventState(SDL_ENABLE);
+        SDL_JoystickOpen(0);
+        SDL_ShowCursor(0);  
+    // SDL_DC_MapKey(0, SDL_DC_LEFT, SDLK_LEFT);
+    // SDL_DC_MapKey(0, SDL_DC_RIGHT, SDLK_RIGHT);
+    // SDL_DC_MapKey(0, SDL_DC_UP, SDLK_UP);
+    // SDL_DC_MapKey(0, SDL_DC_DOWN,  SDLK_DOWN);
+    // SDL_DC_MapKey(0, SDL_DC_A,  SDLK_RETURN);
+    // SDL_DC_MapKey(0, SDL_DC_B,  SDLK_s);
+    // SDL_DC_MapKey(0, SDL_DC_Y,  SDLK_g);
+    // SDL_DC_MapKey(0, SDL_DC_L,  SDLK_y);
+    // SDL_DC_MapKey(0, SDL_DC_R,  SDLK_ESCAPE);
+//xvic    
+    // const char* GPFnewArgv[] = {
+    //     "xvic.elf",                  // program name
+    //     "+VICdsize",          // argument 1
+    //     "+VICdsize",          // argument 1
+    //     "+VICdscan",  
+    //     "-VICfilter","0",
+    //     "-VICborders","3",
+    //     "-VICfull",        
+    //     "+VICshowstatusbar",
+    //     "-speed", "200",
+    //     "-autostart-warp",
+    //     "-warp",        
+    //     // "+mouse",
+    //     "-sdlbitdepth","16",          
+    //     "-sdllimitmode","2",
+    //     "-sdlinitialw","640",
+    //     "-sdlinitialh","480",     
+    //     "-sound",        
+    //     "-sounddev", "sdl",   
+    //     "-soundrate", "22050",  
+    //     "-soundbufsize", "512", 
+    //     "-soundfragsize","3",
+    //       "-autostart","/cd/Vice/tapes/Mega Vault (1984)(Imagine).tap",        
+    //     };
+//x64
+
+    const char* GPFnewArgv[] = {
+        "x64.elf",                  // program name 
+        "-speed", "200",
+        "-autostart-warp",
+        "-warp",
+        "+drive8truedrive",        
+        "+VICIIdsize",          
+        "+VICIIdscan",  
+        "-VICIIfilter","0",
+        "-VICIIfull",
+        "-sdlbitdepth","16",          
+        "-sdllimitmode","2",
+        "-sdlinitialw","640",
+        "-sdlinitialh","480", 
+        "-VICIIborders","3",
+        // "SDLCustomWidth","640",
+        // "SDLCustomHeight","480",        
+        "+VICIIshowstatusbar",   
+        "+mouse",
+        // "-ntsc", 
+        "-sound",        
+        "-sounddev", "sdl",   
+        "-soundrate", "22050",  
+        "-soundbufsize", "512", 
+        "-soundfragsize","3",
+        // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
+        // "-cartcrt","/cd/Vice/carts/mule.crt", // requires 32mb dc ram 
+        "-autostart","/cd/Vice/tapes/STARWAR2.T64",
+        // "-autostart","/cd/Vice/disks/The Great Gianna Sisters.d64", 
+        // "-autostart","/cd/Vice/disks/brucelee.d64",    
+        // "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",       
+        // "-autostart","/cd/Vice/disks/M.U.L.E. - Slan.d64",               
+        // "-keybuf","\x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20"
+         
+    //    "-keybuf","10 print \x22 troy was here \x22 \x0a 20 goto 10\x0a run \x0a"
+        // "-cartcrt","/cd/Vice/carts/gijoe.crt",  
+
+
+        // "/cd/Vice/snapshots/brucelee.vsf"
+
+                // "-features"
+    };
+
 // char buffer[2048];
     
 //     file_t fd;
@@ -158,72 +248,6 @@ int main(int argc, char **argv)
     //     "-speed", "200"
     // };
 
-//xvic    
-    // const char* newArgv[] = {
-    //     "xvic.elf",                  // program name
-    //     "+VICdsize",          // argument 1
-    //     "+VICdsize",          // argument 1
-    //     "+VICdscan",  
-    //     "-VICfilter","0",
-    //     "-VICfull",        
-    //     "-VICshowstatusbar",
-    //     "+mouse",
-    //     "-sdlbitdepth","32",           // argument 2
-    //     "-sdllimitmode","0",
-    //     "-sdlinitialw","640",
-    //     "-sdlinitialh","480",        
-    //     // "-sounddev", "dummy",   // argument 3 (split into two parts)
-    //     // "-soundrate", "22050",  // argument 4 (split into two parts)
-    //     // "-soundbufsize", "1024", // argument 5 (split into two parts)
-    //     // "-cartcrt","/cd/Vice/carts/mule.crt",
-    //     "-autostart","/cd/Vice/tapes/Mega Vault (1984)(Imagine).tap",        
-    //     "-warp",
-    //     "-speed", "200"
-    // };
-
-
-//x64
-
-    const char* GPFnewArgv[] = {
-        "x64.elf",                  // program name 
-        "-speed", "200",
-        "-autostart-warp",
-        "-warp",
-        "+drive8truedrive",        
-        "+VICIIdsize",          
-        "+VICIIdscan",  
-        "-VICIIfilter","0",
-        "-VICIIfull",
-        "-sdlbitdepth","16",          
-        "-sdllimitmode","2",
-        "-sdlinitialw","640",
-        "-sdlinitialh","480",
-        "-VICIIborders","3",
-        // "SDLCustomWidth","640",
-        // "SDLCustomHeight","480",        
-        "-VICIIshowstatusbar",
-        "+mouse",
-        "-sound",        
-        "-sounddev", "sdl",   
-        "-soundrate", "22050",  
-        "-soundbufsize", "512", 
-        "-soundfragsize","3",
-        // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
-        // "-cartcrt","/cd/Vice/carts/mule.crt", // requires 32mb dc ram 
-        "-autostart","/cd/Vice/tapes/STARWAR2.T64",
-        // "-autostart","/cd/Vice/disks/brucelee.d64",    
-        // "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",       
-        // "-autostart","/cd/Vice/disks/M.U.L.E. - Slan.d64",               
-        // "-keybuf","\x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20 \x20"
-         
-    //    "-keybuf","10 print \x22 troy was here \x22 \x0a 20 goto 10\x0a run \x0a"
-        // "-cartcrt","/cd/Vice/carts/gijoe.crt",  
-
-
-        // "/cd/Vice/snapshots/brucelee.vsf"
-
-                // "-features"
-    };
 
 
     int GPFnewArgc = sizeof(GPFnewArgv) / sizeof(GPFnewArgv[0]);

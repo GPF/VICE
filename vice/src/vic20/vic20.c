@@ -1092,7 +1092,11 @@ int machine_specific_init(void)
     cartridge_init();
 
 #ifdef HAVE_MOUSE
-    mouse_init();
+#ifndef __DREAMCAST__
+mouse_init();
+#else
+dc_mouse_init();
+#endif    
 
 #ifdef HAVE_LIGHTPEN
     /* Initialize lightpen support and register VIC-I callbacks */
@@ -1171,7 +1175,11 @@ void machine_specific_shutdown(void)
     viacore_shutdown(machine_context.ieeevia2);
 
 #ifdef HAVE_MOUSE
-    mouse_shutdown();
+#ifndef __DREAMCAST__
+mouse_shutdown();
+#else
+dc_mouse_shutdown();
+#endif  
 #endif
 
     /* close the video chip(s) */

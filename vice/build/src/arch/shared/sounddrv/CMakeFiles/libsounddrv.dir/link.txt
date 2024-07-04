@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libsounddrv.a CMakeFiles/libsounddrv.dir/soundaiff.c.o CMakeFiles/libsounddrv.dir/sounddummy.c.o CMakeFiles/libsounddrv.dir/sounddump.c.o CMakeFiles/libsounddrv.dir/soundfs.c.o CMakeFiles/libsounddrv.dir/soundiff.c.o CMakeFiles/libsounddrv.dir/soundmovie.c.o CMakeFiles/libsounddrv.dir/soundvoc.c.o CMakeFiles/libsounddrv.dir/soundwav.c.o CMakeFiles/libsounddrv.dir/soundsdl.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libsounddrv.a

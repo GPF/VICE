@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libvdc.a "CMakeFiles/libvdc.dir/vdc-cmdline-options.c.o" "CMakeFiles/libvdc.dir/vdc-color.c.o" "CMakeFiles/libvdc.dir/vdc-draw.c.o" "CMakeFiles/libvdc.dir/vdc-mem.c.o" "CMakeFiles/libvdc.dir/vdc-resources.c.o" "CMakeFiles/libvdc.dir/vdc-snapshot.c.o" CMakeFiles/libvdc.dir/vdc.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libvdc.a

@@ -1,0 +1,2 @@
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ar qc libcrtc.a "CMakeFiles/libcrtc.dir/crtc-cmdline-options.c.o" "CMakeFiles/libcrtc.dir/crtc-color.c.o" "CMakeFiles/libcrtc.dir/crtc-draw.c.o" "CMakeFiles/libcrtc.dir/crtc-mem.c.o" "CMakeFiles/libcrtc.dir/crtc-resources.c.o" "CMakeFiles/libcrtc.dir/crtc-snapshot.c.o" CMakeFiles/libcrtc.dir/crtc.c.o
+/opt/toolchains/dc/sh-elf/bin/sh-elf-ranlib libcrtc.a
