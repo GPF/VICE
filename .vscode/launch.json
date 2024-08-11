@@ -176,7 +176,7 @@
             "name": "Connect to GDB Server",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/vice/src/x64.elf",
+            "program": "${workspaceRoot}/vice/build/dreamcast/src/x64",
             "cwd": "${workspaceRoot}",
             "MIMode": "gdb",
             "miDebuggerPath": "/opt/toolchains/dc/sh-elf/bin/sh-elf-gdb",

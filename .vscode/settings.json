@@ -9,7 +9,11 @@
         "regex": "c",
         "vsidui_sdl.h": "c",
         "vsync.h": "c",
-        "sdl_dreamcast.h": "c"
+        "sdl_dreamcast.h": "c",
+        "types.h": "c",
+        "uimenu.h": "c",
+        "compare": "c",
+        "cstdint": "c"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
