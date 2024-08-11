@@ -69,8 +69,11 @@ static void sdl_callback(void *userdata, Uint8 *stream, int len)
             memset(stream + total * (int)sizeof(int16_t), 0, (size_t)(len - total) * sizeof(int16_t));
             return;
         }
-
+#ifdef __arch_dreamcast__        
+        SDL_DC_SetSoundBuffer(sdl_buf + sdl_outptr);
+#else        
         memcpy(stream + total * (int)sizeof(int16_t), sdl_buf + sdl_outptr, (size_t)amount * sizeof(int16_t));
+#endif        
         total += amount;
         sdl_outptr += amount;
 
