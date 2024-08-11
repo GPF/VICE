@@ -89,7 +89,7 @@ static int midi_driver_num = MIDI_DRIVER_ALSA;
 static int midi_driver_num = MIDI_DRIVER_OSS;
 #endif
 
-static log_t mididrv_log = LOG_ERR;
+static log_t mididrv_log = LOG_DEFAULT;
 
 /* ------------------------------------------------------------------------- */
 /* OSS driver */
@@ -441,6 +441,9 @@ static int mididrv_alsa_in(uint8_t *b)
 /** a function to destroy ALSA MIDI objects */
 static void mididrv_alsa_shutdown(void)
 {
+    if (mididrv_log == LOG_DEFAULT) {
+        mididrv_log = log_open("ALSA MIDI");
+    }
 #if 0
 #ifdef DEBUG_MIDI
     log_message(mididrv_log, "alsa_shutdown");
@@ -470,6 +473,10 @@ static void mididrv_alsa_shutdown(void)
 static void mididrv_alsa_init(void)
 {
     int alsa_err;
+
+    if (mididrv_log == LOG_DEFAULT) {
+        mididrv_log = log_open("ALSA MIDI");
+    }
 
 #ifdef DEBUG_MIDI
     log_message(mididrv_log, "alsa_init");
@@ -558,7 +565,7 @@ static midi_driver_t midi_drivers[] = {
 
 void mididrv_init(void)
 {
-    if (mididrv_log == LOG_ERR) {
+    if (mididrv_log == LOG_DEFAULT) {
         mididrv_log = log_open("MIDIdrv");
     }
 

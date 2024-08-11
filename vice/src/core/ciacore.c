@@ -33,7 +33,7 @@
 /* #define DEBUG_CIA */
 
 #ifdef DEBUG_CIA
-#define DBG(_x_)        log_debug _x_
+#define DBG(_x_) log_printf  _x_
 #else
 #define DBG(_x_)
 #endif
@@ -2015,7 +2015,7 @@ static void ciacore_inttod_entry(CLOCK offset, void *data)
 
 void ciacore_setup_context(cia_context_t *cia_context)
 {
-    cia_context->log = LOG_ERR;
+    cia_context->log = LOG_DEFAULT;
     cia_context->read_clk = 0;
     cia_context->read_offset = 0;
     cia_context->last_read = 0;
@@ -2576,7 +2576,7 @@ int ciacore_dump(cia_context_t *cia_context)
     mon_out("\nTimer A IRQ: %s  running: %s  mode: %s\n",
             (cia_context->c_cia[CIA_ICR] & 1) ? "on" : "off",
             ciacore_peek(cia_context, 0x0e) & 1 ? "yes" : "no",
-            ciacore_peek(cia_context, 0x0e) & (1 << 3) ? "one-shot" : "continues");
+            ciacore_peek(cia_context, 0x0e) & (1 << 3) ? "one-shot" : "continuous");
     mon_out("Timer A counts: %s  PB6 output: %s (%s)\n",
             ciacore_peek(cia_context, 0x0e) & (1 << 5) ? "CNT transitions" : "System clock",
             ciacore_peek(cia_context, 0x0e) & (1 << 1) ? "yes" : "no",
@@ -2588,7 +2588,7 @@ int ciacore_dump(cia_context_t *cia_context)
     mon_out("Timer B IRQ: %s  running: %s  mode: %s\n",
             (cia_context->c_cia[CIA_ICR] & (1 << 1)) ? "on" : "off",
             ciacore_peek(cia_context, 0x0f) & 1 ? "yes" : "no",
-            ciacore_peek(cia_context, 0x0f) & (1 << 3) ? "one-shot" : "continues");
+            ciacore_peek(cia_context, 0x0f) & (1 << 3) ? "one-shot" : "continuous");
     switch (ciacore_peek(cia_context, 0x0f) & (3 << 5)) {
         default:
         case (0 << 5): s = "System clock"; break;

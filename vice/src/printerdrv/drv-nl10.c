@@ -46,7 +46,7 @@
 #include "userport.h"
 
 #ifdef DEBUG_PRINTER
-#define DBG(x)  log_debug x
+#define DBG(x) log_printf  x
 #else
 #define DBG(x)
 #endif
@@ -112,7 +112,7 @@ typedef struct nl10_s {
 static palette_t *palette = NULL;
 
 /* Logging goes here.  */
-static log_t drvnl10_log = LOG_ERR;
+static log_t drvnl10_log = LOG_DEFAULT;
 
 static uint8_t drv_nl10_rom[NL10_ROM_SIZE];
 

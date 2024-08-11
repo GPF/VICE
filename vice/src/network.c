@@ -60,13 +60,13 @@
 #include "vsyncapi.h"
 
 #ifdef NETWORK_DEBUG
-#define DBG(x)  log_debug x
+#define DBG(x) log_printf  x
 #else
 #define DBG(x)
 #endif
 
 #ifdef NETWORK_TRAFFIC_DEBUG
-#define DBGT(x)  log_debug x
+#define DBGT(x) log_printf  x
 #else
 #define DBGT(x)
 #endif
@@ -361,12 +361,12 @@ static event_list_state_t *network_create_event_list(uint8_t *remote_event_buffe
     return list;
 }
 
-static int network_recv_buffer(vice_network_socket_t * s, uint8_t *buf, int len)
+static ssize_t network_recv_buffer(vice_network_socket_t * s, uint8_t *buf, ssize_t len)
 {
-    int t;
-    int received_total = 0;
+    ssize_t t;
+    ssize_t received_total = 0;
 
-    DBGT(("network_recv_buffer len: %d", len));
+    DBGT(("network_recv_buffer len: %"PRI_SSIZE_T, len));
     while (received_total < len) {
         t = vice_network_receive(s, buf, len - received_total, 0);
 
@@ -386,12 +386,12 @@ static int network_recv_buffer(vice_network_socket_t * s, uint8_t *buf, int len)
 #define SEND_FLAGS 0
 #endif
 
-static int network_send_buffer(vice_network_socket_t * s, const uint8_t *buf, int len)
+static ssize_t network_send_buffer(vice_network_socket_t * s, const uint8_t *buf, ssize_t len)
 {
-    int t;
-    int sent_total = 0;
+    ssize_t t;
+    ssize_t sent_total = 0;
 
-    DBGT(("network_send_buffer len: %d", len));
+    DBGT(("network_send_buffer len: %"PRI_SSIZE_T, len));
     while (sent_total < len) {
         t = vice_network_send(s, buf, len - sent_total, SEND_FLAGS);
 
@@ -481,7 +481,7 @@ exiterror:
     frame_delta = new_frame_delta;
     network_init_frame_event_list();
     sprintf(st, "Using %d frames delay.", frame_delta);
-    log_debug("netplay connected with %d frames delta.", frame_delta);
+    log_debug(LOG_DEFAULT, "netplay connected with %d frames delta.", frame_delta);
     ui_display_statustext(st, true);
     return ret;
 }
@@ -493,7 +493,7 @@ static void network_server_connect_trap(uint16_t addr, void *data)
     uint8_t *buf;
     off_t buf_size;
     uint8_t send_size4[4];
-    int i;
+    ssize_t i;
     event_list_state_t settings_list;
 
     DBG(("network_server_connect_trap"));
@@ -513,7 +513,7 @@ static void network_server_connect_trap(uint16_t addr, void *data)
         buf_size = archdep_file_size(f);
         buf = lib_malloc((size_t)buf_size);
         if (fread(buf, 1, (size_t)buf_size, f) == 0) {
-            log_debug("network_server_connect_trap read failed.");
+            log_debug(LOG_DEFAULT, "network_server_connect_trap read failed.");
         }
         fclose(f);
 
@@ -813,7 +813,7 @@ int network_connect_client(void)
     }
 
     if (fwrite(buf, 1, buf_size, f) == 0) {
-        log_debug("network_connect_client write failed.");
+        log_debug(LOG_DEFAULT, "network_connect_client write failed.");
     }
     fclose(f);
     lib_free(buf);

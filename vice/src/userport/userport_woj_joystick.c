@@ -26,6 +26,17 @@
 
 /* WOJ userport joystick adapter (C64/C128/CBM2/PET/PLUS4/VIC20)
 
+https://github.com/SukkoPera/WheelOfJoy
+
+FIXME: The original pinout of this device was not compatible as-is with the Plus4
+       userport. However, the hardware designer adapted the "re-wiring" that resulted
+       from the VICE internal "re-wiring" to make the real device work with a real
+       Plus4.
+
+       As a consequence, when the userport system will be fixed to no more rely
+       on such "internal adapter", the code must be changed accordingly to use
+       a different pinout for Plus4.
+
 C64/C128 | CBM2 | PET | PLUS4 | VIC20 | I/O | NOTES
 ---------------------------------------------------
     C    |  14  |  C  |   B   |   C   |  I  | PB0 <- JOY1/2/3 UP
@@ -67,7 +78,7 @@ static int userport_joystick_woj_read_snapshot_module(snapshot_t *s);
 static int userport_joystick_woj_enable(int value);
 
 static userport_device_t woj_device = {
-    "WOJ userport joy adapter",                  /* device name */
+    "WheelOfJoy userport joy adapter",           /* device name */
     JOYSTICK_ADAPTER_ID_GENERIC_USERPORT,        /* this is a joystick adapter */
     USERPORT_DEVICE_TYPE_JOYSTICK_ADAPTER,       /* device is a joystick adapter */
     userport_joystick_woj_enable,                /* enable function */

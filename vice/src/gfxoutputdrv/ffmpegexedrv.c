@@ -86,13 +86,13 @@
 /* #define VICE_IS_SERVER */
 
 #ifdef DEBUG_FFMPEG
-#define DBG(x) log_debug x
+#define DBG(x) log_printf  x
 #else
 #define DBG(x)
 #endif
 
 #ifdef DEBUG_FFMPEG_FRAMES
-#define DBGFRAMES(x) log_debug x
+#define DBGFRAMES(x) log_printf  x
 #else
 #define DBGFRAMES(x)
 #endif
@@ -483,15 +483,16 @@ static void log_resource_values(const char *func)
     DBG(("%s FFMPEGVideoHalveFramerate:%d", func, video_halve_framerate));
 }
 
-static int write_video_frame(VIDEOFrame *pic)
+static ssize_t write_video_frame(VIDEOFrame *pic)
 {
-    size_t len = INPUT_VIDEO_BPP * video_height * video_width;
+    ssize_t len = INPUT_VIDEO_BPP * video_height * video_width;
+
     if ((video_has_codec > 0) && (video_codec != AV_CODEC_ID_NONE)) {
         if (ffmpeg_video_socket == 0) {
             log_error(LOG_DEFAULT, "FFMPEG: write_video_frame ffmpeg_video_socket is 0 (framecount:%"PRIu64")\n", framecounter);
             return 0;
         }
-        return (int)len - vice_network_send(ffmpeg_video_socket, pic->data, len, 0 /* flags */);
+        return len - vice_network_send(ffmpeg_video_socket, pic->data, len, 0 /* flags */);
     }
     return 0;
 }
@@ -511,15 +512,16 @@ static void write_initial_video_frames(void)
 
 static int write_initial_audio_frames(void)
 {
-    int len;
+    ssize_t len;
     int frm;
-    int res;
+    ssize_t res;
+
     /* clear frame */
     len = (sizeof(uint16_t) * audio_input_sample_rate) / fps;
     if (video_halve_framerate) {
         len /= 2;
     }
-    DBG(("audio len:%d (%d)", len, len * DUMMY_FRAMES_AUDIO));
+    DBG(("audio len:%zd (%zd)", len, len * DUMMY_FRAMES_AUDIO));
     memset(ffmpegexedrv_audio_in.buffer, 0, len);
     for (frm = 0; frm < DUMMY_FRAMES_AUDIO; frm++) {
         res = vice_network_send(ffmpeg_audio_socket, ffmpegexedrv_audio_in.buffer, len, 0 /* flags */);
@@ -934,7 +936,7 @@ static int ffmpegexe_soundmovie_init(int speed, int channels, soundmovie_buffer_
 /* triggered by soundffmpegaudio->write */
 static int ffmpegexe_soundmovie_encode(soundmovie_buffer_t *audio_in)
 {
-    int res;
+    ssize_t res;
 #ifdef DEBUG_FFMPEG_FRAMES
     double frametime = (double)framecounter / fps;
     double audiotime = (double)audio_input_counter / (double)audio_input_sample_rate;
@@ -1035,7 +1037,7 @@ static VIDEOFrame* video_alloc_picture(int bpp, int width, int height)
     picture->data = lib_malloc(bpp * width * height);
     if (!picture->data) {
         lib_free(picture);
-        log_debug("ffmpegexedrv: Could not allocate frame data");
+        log_debug(LOG_DEFAULT, "ffmpegexedrv: Could not allocate frame data");
         return NULL;
     }
 
@@ -1059,7 +1061,7 @@ static int ffmpegexedrv_open_video(void)
     /* allocate the encoded raw picture */
     video_st_frame = video_alloc_picture(INPUT_VIDEO_BPP, video_width, video_height);
     if (!video_st_frame) {
-        log_debug("ffmpegexedrv: could not allocate picture");
+        log_debug(LOG_DEFAULT, "ffmpegexedrv: could not allocate picture");
         return -1;
     }
 
@@ -1133,7 +1135,7 @@ static int ffmpegexedrv_init_file(void)
         return -1;
     }
 
-    log_debug("ffmpegexedrv: Initialized file successfully");
+    log_debug(LOG_DEFAULT, "ffmpegexedrv: Initialized file successfully");
 
     /*start_ffmpeg_executable();*/
 
@@ -1199,7 +1201,7 @@ static int ffmpegexedrv_close(screenshot_t *screenshot)
     /* free the streams */
     close_stream();
 
-    log_debug("ffmpegexedrv: Closed successfully");
+    log_debug(LOG_DEFAULT, "ffmpegexedrv: Closed successfully");
 
     file_init_done = 0;
 

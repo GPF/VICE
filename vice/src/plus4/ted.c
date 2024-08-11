@@ -102,7 +102,7 @@ void ted_delay_clk(void)
 {
     CLOCK diff;
 
-    /*log_debug("MCLK %d OMCLK %d", maincpu_clk, old_maincpu_clk);*/
+    /*log_debug(LOG_DEFAULT, "MCLK %d OMCLK %d", maincpu_clk, old_maincpu_clk);*/
 
     if (ted.fastmode == 0) {
         diff = maincpu_clk - old_maincpu_clk - ((old_cycle & 1) ^ 1);
@@ -502,12 +502,19 @@ void ted_update_memory_ptrs(unsigned int cycle)
     screen_addr = ((ted.regs[0x14] & 0xf8) << 8) | 0x400;
     screen_base = mem_get_tedmem_base((screen_addr >> 14) | cpu_romsel)
                   + (screen_addr & 0x3fff);
-
+#if 0
+    if (cpu_romsel && (screen_addr < 0x8000)) {
+        screen_base = mem_get_open_space();
+    }
+#endif
     TED_DEBUG_REGISTER(("\tVideo memory at $%04X", screen_addr));
 
     bitmap_addr = (ted.regs[0x12] & 0x38) << 10;
     bitmap_base = mem_get_tedmem_base((bitmap_addr >> 14) | video_romsel)
                   + (bitmap_addr & 0x3fff);
+    if (video_romsel && (bitmap_addr < 0x8000)) {
+        bitmap_base = mem_get_open_space();
+    }
 
     TED_DEBUG_REGISTER(("\tBitmap memory at $%04X", bitmap_addr));
 
@@ -515,15 +522,21 @@ void ted_update_memory_ptrs(unsigned int cycle)
                                     | (ted.regs[0x07] & 0x80)) ? 0xf8 : 0xfc)) << 8;
     char_base = mem_get_tedmem_base((char_addr >> 14) | video_romsel)
                 + (char_addr & 0x3fff);
+    if (video_romsel && (char_addr < 0x8000)) {
+        char_base = mem_get_open_space();
+    }
 
     TED_DEBUG_REGISTER(("\tUser-defined character set at $%04X", char_addr));
 
     color_addr = ((ted.regs[0x14] & 0xf8) << 8);
     color_base = mem_get_tedmem_base((color_addr >> 14) | cpu_romsel)
                  + (color_addr & 0x3fff);
-
+#if 0
+    if (cpu_romsel && (color_addr < 0x8000)) {
+        color_base = mem_get_open_space();
+    }
+#endif
     TED_DEBUG_REGISTER(("\tColor memory at $%04X", color_addr));
-
 
     tmp = TED_RASTER_CHAR(cycle);
 
@@ -715,7 +728,7 @@ void ted_raster_draw_alarm_handler(CLOCK offset, void *data)
     if (ted.tv_current_line < ted.screen_height) {
         raster_line_emulate(&ted.raster);
     } else {
-        log_debug("Skip line %u %u", ted.tv_current_line, ted.screen_height);
+        log_debug(LOG_DEFAULT, "Skip line %u %u", ted.tv_current_line, ted.screen_height);
     }
 
     if (ted.ted_raster_counter == ted.last_dma_line) {
@@ -772,7 +785,7 @@ void ted_raster_draw_alarm_handler(CLOCK offset, void *data)
             raster_canvas_handle_end_of_frame(&ted.raster);
         }
 
-        /*log_debug("Vsync %d %d",ted.tv_current_line, ted.ted_raster_counter);*/
+        /*log_debug(LOG_DEFAULT, "Vsync %d %d",ted.tv_current_line, ted.ted_raster_counter);*/
 
         vsync_do_vsync(ted.raster.canvas);
 
@@ -785,7 +798,7 @@ void ted_raster_draw_alarm_handler(CLOCK offset, void *data)
     }
 
     if (in_visible_area) {
-/*        log_debug("Idle state %03x, %03x, %d",ted.ted_raster_counter, ted.idle_state, ted.raster.ycounter);*/
+/*        log_debug(LOG_DEFAULT, "Idle state %03x, %03x, %d",ted.ted_raster_counter, ted.idle_state, ted.raster.ycounter);*/
         if (!ted.idle_state) {
             ted.mem_counter = (ted.mem_counter + ted.mem_counter_inc) & 0x3ff;
             ted.chr_pos_count = (ted.chr_pos_count + ted.mem_counter_inc) & 0x3ff;

@@ -38,7 +38,7 @@
 /* #define DEBUG_MOUSE */
 
 #ifdef DEBUG_MOUSE
-#define DBG(_x_)  log_debug _x_
+#define DBG(_x_) log_printf  _x_
 #else
 #define DBG(_x_)
 #endif
@@ -66,7 +66,7 @@
 
 /* Log descriptor.  */
 #ifdef DEBUG_MOUSE
-static log_t mouse_log = LOG_ERR;
+static log_t mouse_log = LOG_DEFAULT;
 #endif
 
 /* Weird trial and error based number here :( larger causes mouse jumps. */
@@ -427,10 +427,6 @@ static void mouse_button_right(int pressed)
         case MOUSE_TYPE_NEOS:
             mouse_neos_button_right(pressed);
             break;
-        case MOUSE_TYPE_AMIGA:
-        case MOUSE_TYPE_ST:
-            mouse_amiga_st_button_right(pressed);
-            break;
         default:
             break;
     }
@@ -441,10 +437,6 @@ static void mouse_button_middle(int pressed)
     switch (mouse_type) {
         case MOUSE_TYPE_MICROMYS:
             micromys_mouse_button_middle(pressed);
-            break;
-        case MOUSE_TYPE_AMIGA:
-        case MOUSE_TYPE_ST:
-            mouse_amiga_st_button_right(pressed);
             break;
         default:
             break;

@@ -952,7 +952,7 @@ int resources_set_defaults(void)
     unsigned int i;
 
     log_message(LOG_DEFAULT, "%s", ""); /* ugly hack to produce a blank log line, but not trigger a warning */
-    log_message(LOG_DEFAULT, "Initializing resources...");
+    log_message(LOG_DEFAULT, "Setting resources to default...");
 
     /* the cartridge system uses internal state variables so the default cartridge
        can be unset without changing the attached cartridge and/or attach another
@@ -977,7 +977,7 @@ int resources_set_defaults(void)
             case RES_INTEGER:
                 if ((*resources[i].set_func_int)(vice_ptr_to_int(resources[i].factory_value),
                                                  resources[i].param) < 0) {
-                    log_verbose("Cannot set int resource '%s' to default '%d'",
+                    log_verbose(LOG_DEFAULT, "Cannot set int resource '%s' to default '%d'",
                                 resources[i].name, vice_ptr_to_int(resources[i].factory_value));
                     /*return -1;*/
                 }
@@ -985,7 +985,7 @@ int resources_set_defaults(void)
             case RES_STRING:
                 if ((*resources[i].set_func_string)((const char *)(resources[i].factory_value),
                                                     resources[i].param) < 0) {
-                    log_verbose("Cannot set string resource '%s' to default '%s'",
+                    log_verbose(LOG_DEFAULT, "Cannot set string resource '%s' to default '%s'",
                                 resources[i].name, (const char *)(resources[i].factory_value));
                     /*return -1;*/
                 }
@@ -998,6 +998,7 @@ int resources_set_defaults(void)
     if (resource_modified_callback != NULL) {
         resources_exec_callback_chain(resource_modified_callback, NULL);
     }
+    log_verbose(LOG_DEFAULT, "Done setting resources to default.");
 
     return 0;
 }
@@ -1678,7 +1679,7 @@ void resources_log_active(void)
             char *line = string_resource_item(i, "");
             if (line != NULL) {
                 if (n == 0) {
-                    log_message(LOG_DEFAULT, "\nResources with non default values:");
+                    log_message(LOG_DEFAULT, "\n" LOG_COL_LWHITE "Resources with non default values" LOG_COL_OFF ":");
                     n++;
                 }
                 log_message(LOG_DEFAULT, "%s", line);

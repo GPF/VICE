@@ -126,7 +126,7 @@ static void machine_vsync_hook(void);
 
 #define C500_POWERLINE_CYCLES_PER_IRQ (C500_PAL_CYCLES_PER_RFSH)
 
-static log_t cbm2_log = LOG_ERR;
+static log_t cbm2_log = LOG_DEFAULT;
 static machine_timing_t machine_timing;
 
 /* FIXME: add different keyboard types */
@@ -357,12 +357,9 @@ int machine_resources_init(void)
         init_resource_fail("rs232drv");
         return -1;
     }
+    /* CAUTION: must come after userport and serial */
     if (printer_resources_init() < 0) {
         init_resource_fail("printer");
-        return -1;
-    }
-    if (printer_userport_resources_init() < 0) {
-        init_resource_fail("userport printer");
         return -1;
     }
     if (init_joyport_ports() < 0) {
@@ -496,10 +493,6 @@ int machine_cmdline_options_init(void)
     }
     if (printer_cmdline_options_init() < 0) {
         init_cmdline_options_fail("printer");
-        return -1;
-    }
-    if (printer_userport_cmdline_options_init() < 0) {
-        init_cmdline_options_fail("userport printer");
         return -1;
     }
     if (joyport_cmdline_options_init() < 0) {

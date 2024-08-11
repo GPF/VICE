@@ -46,7 +46,7 @@
 /* #define DEBUG_PRINTER */
 
 #ifdef DEBUG_PRINTER
-#define DBG(x)  log_debug x
+#define DBG(x) log_printf  x
 #else
 #define DBG(x)
 #endif
@@ -122,7 +122,7 @@ static void output_graphics_line_data(screenshot_t *screenshot, uint8_t *data,
             }
             break;
         default:
-            log_error(LOG_ERR, "Invalid mode %u.", mode);
+            log_error(LOG_DEFAULT, "Invalid mode %u.", mode);
     }
 }
 

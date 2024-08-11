@@ -521,7 +521,9 @@ C64 keyboard).  Likewise, pressing @key{'} on the same U.S. keyboard
 without any shift key will cause the combination @kbd{Shift-7} to be
 pressed in the emulated C64.  This way, it becomes quite obvious what
 keys should be typed to obtain all the symbols. @dfn{The key printed on the 
-host keyboard will be pressed in the emulator}. 
+host keyboard will be pressed in the emulator}. (A not so obvious exception to
+this rule are keypads attached to the joystick port - since various different
+devices with different layouts exist, these are always mapped "positional".)
  
  Note that while these mappings will allow easier typing if you are used
  to your host keymap, it might cause various problems in the emulation and not all
@@ -590,6 +592,13 @@ correct positions. On the other hand it can be quite confusing if you are not
 very familiar with the original emulated keyboards. Also not all keys can be
 mapped exactly this way either, which means some of them still need to be
 mapped to other keys (see further down).
+
+One perhaps not so obvious exception to the above is the mapping of the cursor-up
+(mapped to arrow-up) and cursor-left (mapped to arrow-left) keys. These are still
+mapped "symbolic" - which means the virtual shift might lead to odd unexpected
+behaviour. Because of this, if you require the shift keys to work exactly like
+on the real hardware, please use shift+arrow-down and shift+arrow-right - just
+like you would do on the real thing.
 
 Like with symbolic mapping, some keys really need to be mapped specially
 regardless (eg @key{RUN/STOP}). The exact mapping depends on your host layout,
@@ -1230,13 +1239,39 @@ settings tree (see src/arch/gtk3/uisettings.c).
 Specify log file name
 (@code{LogFileName}).
 
+@findex -logtofile, +logtofile
+@item -logtofile
+@itemx +logtofile
+Enable/disable logging to the log file.
+(@code{LogToFile=1}, @code{LogToFile=0}).
+
+@findex -logtostdout, +logtostdout
+@item -logtostdout
+@itemx +logtostdout
+Enable/disable logging to stdout.
+(@code{LogToStdout=1}, @code{LogToStdout=0}).
+
+@findex -logtomonitor, +logtomonitor
+@item -logtomonitor
+@itemx +logtomonitor
+Enable/disable logging to the monitor.
+(@code{LogToMonitor=1}, @code{LogToMonitor=0}).
+
+@findex -logcolorize, +logcolorize
+@item -logcolorize
+@itemx +logcolorize
+Enable/disable colorizing the log output.
+(@code{LogColorize=1}, @code{LogColorize=0}).
+
 @findex -verbose
 @item -verbose
 Enable verbose log output.
+(@code{LogLimit}).
 
 @findex -silent
 @item -silent
 Disable all log output (except errors).
+(@code{LogLimit}).
 
 @findex -no-redirect-streams
 @item -no-redirect-streams
@@ -1251,7 +1286,8 @@ Set the random seed (for debugging).
 
 @findex -keybuf
 @item -keybuf <string>
-Put the specified string into the keyboard buffer.
+Put the specified string into the keyboard buffer. Note that you can specify
+specific keycodes by using C-style escaped hexcodes ("\x0a").
 
 @findex -console
 @item -console
@@ -6099,6 +6135,11 @@ the 'file' method/device.
 @item Sound
 Boolean specifying whether audio emulation is turned on.
 
+@vindex SoundEmulateOnWarp
+@item SoundEmulateOnWarp
+Boolean specifying whether sound chips should be emulated in warp mode.
+(0: do not emulate sound chips in warp mode, 1: emulate sound chips also in warp mode)
+
 @vindex SoundSampleRate
 @item SoundSampleRate
 Integer specifying the sampling frequency in Hz
@@ -6258,6 +6299,12 @@ source for the 'file' sampler device.
 @itemx +sound
 Enable/disable sound emulation
 (@code{Sound=1}, @code{Sound=0}).
+
+@findex -soundwarpmode
+@item -soundwarpmode <mode>
+Specify if sound chips should be emulated in warp mode.
+(@code{SoundEmulateOnWarp}).
+(0: do not emulate sound chips in warp mode, 1: emulate sound chips also in warp mode)
 
 @findex -soundrate
 @item -soundrate <value>
@@ -8572,13 +8619,13 @@ Set the device attached to the userport (see table below):
 @tab x64, x64sc, x128, xscpu64, xvic, xpet, xcbm2
 @item 4
 @tab PET userport joy adapter
-@tab x64, x64sc, x128, xscpu64, xvic, xplus4, xpet, xcbm2
+@tab x64, x64sc, x128, xscpu64, xvic, xpet, xcbm2
 @item 5
 @tab Hummer userport joy adapter
-@tab x64, x64sc, x128, xscpu64, x64dtv, xvic, xplus4, xpet, xcbm2
+@tab x64dtv
 @item 6
 @tab OEM userport joy adapter
-@tab x64, x64sc, x128, xscpu64, xvic, xplus4, xpet, xcbm2
+@tab x64, x64sc, x128, xscpu64, xvic, xpet, xcbm2
 @item 7
 @tab HIT userport joy adapter
 @tab x64, x64sc, x128, xscpu64
@@ -8590,13 +8637,13 @@ Set the device attached to the userport (see table below):
 @tab x64, x64sc, x128, xscpu64
 @item 10
 @tab Synergy userport joy adapter
-@tab x64, x64sc, x128, xscpu64, xvic, xplus4, xpet, xcbm2
+@tab xplus4
 @item 11
 @tab Wheel of joystick 8-joy userport joy adapter
 @tab x64, x64sc, x128, xscpu64, xvic, xplus4, xpet, xcbm2
 @item 12
 @tab Userport DAC
-@tab x64, x64sc, x128, xscpu64, xvic, xplus4, xpet, xcbm2
+@tab x64, x64sc, x128, xscpu64, xvic, xpet, xcbm2
 @item 13
 @tab Userport DigiMAX
 @tab x64, x64sc, x128, xscpu64, xcbm2
@@ -8636,6 +8683,9 @@ Set the device attached to the userport (see table below):
 @item 25
 @tab Userport Stupid Pet Tricks joystick adapter
 @tab x64, x64sc, x128, xscpu64, xcbm2, xpet, xvic
+@item 26
+@tab PET Userport diagnostic pin
+@tab xpet
 @end multitable
 
 @table @code
@@ -8696,11 +8746,6 @@ Integer number of lines to hexdump, 0: unlimited
 @vindex WIC64RemoteTimeout
 @item WIC64RemoteTimeout
 Integer, 1-255: Timeout to wait for URLs in seconds
-(vic20, x64, x64sc, xscpu64 and x128 only).
-
-@vindex WIC64ColorizeLog
-@item WIC64ColorizeLog
-Integer, 1: WiC64 tracing using ANSI colorizing, 0: no colorizing
 (vic20, x64, x64sc, xscpu64 and x128 only).
 
 @vindex WIC64LogLevel
@@ -8768,13 +8813,6 @@ Integer to specify number of lines to hexdump, 0: unlimited,
 @findex -wic64remotetimeout
 @item -wic64remotetimeout <value>
 Timeout to wait for URLs in seconds, 1 - 255
-(vic20, x64, x64sc, xscpu64 and x128 only).
-
-@findex -wic64colorizetrace
-@item -wic64colorizetrace
-@itemx +wic64colorizetrace
-Enable/disable ANSI color codes for terminals to colorize the WiC64 log for
-better readability
 (vic20, x64, x64sc, xscpu64 and x128 only).
 
 @end table
@@ -9154,7 +9192,21 @@ Set the chance of any bit to randomly toggle (0-4096)
 @item DebugCartEnable
 Boolean specifying whether the debug "cartridge" used for the test suite is enabled.
 
+@vindex LogLevelANE
+@item LogLevelANE
+Integer specifying the log mode (0=none 1=only unstable 2=all)
+(x64sc, xvic).
+
+@vindex LogLevelLXA
+@item LogLevelLXA
+Integer specifying the log mode (0=none 1=only unstable 2=all)
+(x64sc, xvic).
+
+@end table
+
 @b{The following are only available when the emulators were compiled in DEBUG mode:}
+
+@table @code
 
 @vindex TraceMode
 @item TraceMode
@@ -9210,7 +9262,23 @@ Disable/enable calling of the exception handler
 @itemx +debugcart
 Enable/disable the debug "cartridge" used for the test suite.
 
+@findex -aneloglevel
+@item -aneloglevel <mode>
+Set the log mode (0=none 1=only unstable 2=all)
+(@code{LogLevelANE})
+(x64sc, xvic).
+
+@findex -lxaloglevel
+@item -lxaloglevel <mode>
+Set the log mode (0=none 1=only unstable 2=all)
+(@code{LogLevelLXA})
+(x64sc, xvic).
+
+@end table
+
 @b{The following are only available when the emulators were compiled in DEBUG mode:}
+
+@table @code
 
 @findex -trace_maincpu, +trace_maincpu
 @item -trace_maincpu
@@ -15810,7 +15878,7 @@ Integer specifying the size of the memory in KiB.
 @vindex MemoryHack
 @item MemoryHack
 Integer specifying what memory expansion hack is active.
-(0: None, 1: C256K, 2: H256K, 3: H1024K, 4: H4096K)
+(0: None, 1: C256K, 2: H256K, 3: H1024K)
 
 @vindex Acia1Enable
 @item Acia1Enable
@@ -15851,7 +15919,7 @@ Specify size of RAM installed in KiB
 @item -memoryexphack <device>
 Set active memory expansion hack
 (@code{MemoryHack}).
-(0: None, 1: C256K, 2: H256K, 3: H1024K, 4: H4096K)
+(0: None, 1: C256K, 2: H256K, 3: H1024K)
 
 @findex -acia, +acia
 @item -acia
@@ -17465,6 +17533,27 @@ Boolean specifying whether the emulator should dump core when it gets a signal
 @vindex LogFileName
 @item LogFileName
 String specifying the filename of the current log file.
+
+@vindex LogLimit
+@item LogLimit
+Integer specifying the "verbosity" of the log output. Higher numbers mean more
+verbosity (0: no log, 255: all messages)
+
+@vindex LogToFile
+@item LogToFile
+Boolean that specifies whether the log should go to the log file.
+
+@vindex LogToStdout
+@item LogToStdout
+Boolean that specifies whether the log should go stdout (usually the launching terminal).
+
+@vindex LogToMonitor
+@item LogToMonitor
+Boolean that specifies whether the log should go to the monitor console.
+
+@vindex LogColorize
+@item LogColorize
+Boolean that specifies whether the log in the terminal should be colorized.
 
 @vindex ExitScreenshotName
 @item ExitScreenshotName
@@ -20185,9 +20274,7 @@ the respective register at the time it is used, and thus can not be used as
 a regular label.
 
 @item prompt
-The prompt has the format [x:y].  If x is -, memory reads from the
-monitor do not have side effects.  Otherwise, x is S.  The second part
-of the prompt, y, shows the default address space.
+The prompt has the format (address space:current address).
 
 @item checkpoint
 The monitor has the ability to setup triggers that perform an action
@@ -23271,46 +23358,46 @@ derived from the given computer platform and video standard, as in the following
 @tab @b{Timer clock speed}
 @item 0 = C64
 @tab 0 = PAL
-@tab 985248 kHz
+@tab 985248 Hz
 @item
 @tab 1 = NTSC
-@tab 1022730 kHz
+@tab 1022730 Hz
 @item
 @tab 2 = OLD NTSC
-@tab 1022730 kHz
+@tab 1022730 Hz
 @item
 @tab 3 = PAL N
-@tab 1023440 kHz
+@tab 1023440 Hz
 @item 1 = VIC-20
 @tab 0 = PAL
-@tab 1108405 kHz
+@tab 1108405 Hz
 @item
 @tab 1 = NTSC
-@tab 1022727 kHz
+@tab 1022727 Hz
 @item 2 = C16 / Plus4 (*)
 @tab 0 = PAL
-@tab 886724 kHz
+@tab 886724 Hz
 @item
 @tab 1 = NTSC
-@tab 894886 kHz
+@tab 894886 Hz
 @item 3 = PET
 @tab 0 = PAL
-@tab 1000000 kHz
+@tab 1000000 Hz
 @item
 @tab 1 = NTSC
-@tab 1000000 kHz
+@tab 1000000 Hz
 @item 4 = C5x0
 @tab 0 = PAL
-@tab 985248 kHz
+@tab 985248 Hz
 @item
 @tab 1 = NTSC
-@tab 1022730 kHz
+@tab 1022730 Hz
 @item 5 = C6x0 / C7x0
 @tab 0 = PAL
-@tab 2000000 kHz
+@tab 2000000 Hz
 @item
 @tab 1 = NTSC
-@tab 2000000 kHz
+@tab 2000000 Hz
 @end multitable
 
 (*) The TED timers always run with the slower clock rate (886724 Hz for PAL
