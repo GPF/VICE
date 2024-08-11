@@ -104,6 +104,7 @@ target_sources(
         menu_jam.c
         menu_joyport.c
         menu_joystick.c
+        menu_log.c
         menu_media.c
         menu_midi.c
         menu_monitor.c

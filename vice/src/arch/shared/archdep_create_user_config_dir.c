@@ -76,7 +76,7 @@ void archdep_create_user_config_dir(void)
         archdep_vice_exit(1);
     }
 #else
-    log_error(LOG_ERR, "failed to create user config dir '%s'.",cfg);
+    log_error(LOG_DEFAULT, "failed to create user config dir '%s'.",cfg);
     return;
 #endif    
 }
