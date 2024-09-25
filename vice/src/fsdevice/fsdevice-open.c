@@ -78,10 +78,10 @@ static uint8_t *makeshortheader(uint8_t *p)
     }
     n = strlen((char*)p);
     if (!longnames && (n > 16)) {
-        d = p + (n - 1);
+        d = p + (n - 1); /* point to last char */
         /* scan backwards until path seperator */
         while (d != p) {
-            if (*d == '/') { /* FIXME: use macro */
+            if (*d == ARCHDEP_DIR_SEP_CHR) {
                 d++; n = 0;
                 /* copy last part to the beginning */
                 while (d) {
@@ -97,6 +97,8 @@ static uint8_t *makeshortheader(uint8_t *p)
             }
             d--;
         }
+        /* if for some reason the above fails, hard-limit to 16 chars */
+        p[16] = 0;
     }
     return p;
 }
@@ -158,18 +160,19 @@ static int fsdevice_open_directory(vdrive_t *vdrive, unsigned int secondary,
     }
     strcpy(bufinfo[secondary].dir, cmd_parse->parsecmd);
     /*
-     * Start Address, Line Link and Line number 0
+     * Start Address, Line Link and Line number 1 (=partition 1)
      */
 
     p = bufinfo[secondary].name;
-
+    /* start address = 0x0401 */
     *p++ = 1;
     *p++ = 4;
-
+    /* who knows why this is 0x0101 ? */
     *p++ = 1;
     *p++ = 1;
-
-    *p++ = 0;
+    /* CMD puts the partition number here, it shouldn't be 0 (like on 1541) so
+       programs that expect a CMD device are happy with it */
+    *p++ = 1;
     *p++ = 0;
 
     *p++ = (uint8_t)0x12;     /* Reverse on */
