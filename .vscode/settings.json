@@ -13,7 +13,11 @@
         "types.h": "c",
         "uimenu.h": "c",
         "compare": "c",
-        "cstdint": "c"
+        "cstdint": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "span": "c"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
