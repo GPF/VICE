@@ -37,6 +37,10 @@
 #include <unistd.h>
 #endif
 
+#ifdef __DREAMCAST__
+void SDL_DC_SetSoundBuffer(void *buffer);
+#endif
+
 #include "lib.h"
 #include "log.h"
 #include "sound.h"
@@ -69,7 +73,7 @@ static void sdl_callback(void *userdata, Uint8 *stream, int len)
             memset(stream + total * (int)sizeof(int16_t), 0, (size_t)(len - total) * sizeof(int16_t));
             return;
         }
-#ifdef __arch_dreamcast__        
+#ifdef __DREAMCAST__        
         SDL_DC_SetSoundBuffer(sdl_buf + sdl_outptr);
 #else        
         memcpy(stream + total * (int)sizeof(int16_t), sdl_buf + sdl_outptr, (size_t)amount * sizeof(int16_t));

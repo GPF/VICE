@@ -1201,7 +1201,7 @@ int sfx_soundexpander_snapshot_write_module(snapshot_t *s)
                 || SMW_DW(m, (uint32_t)chip->P_CH[x].SLOT[y].Cnt) < 0
                 || SMW_DW(m, (uint32_t)chip->P_CH[x].SLOT[y].Incr) < 0
                 || SMW_B(m, (uint8_t)chip->P_CH[x].SLOT[y].FB) < 0
-                || SMW_DW(m, (uint32_t)connect1_is_output0(chip->P_CH[x].SLOT[y].connect1)) < 0
+                || SMW_DW(m, (uint32_t)connect1_is_output0((int *)chip->P_CH[x].SLOT[y].connect1)) < 0
                 || SMW_DW(m, (uint32_t)chip->P_CH[x].SLOT[y].op1_out[0]) < 0
                 || SMW_DW(m, (uint32_t)chip->P_CH[x].SLOT[y].op1_out[1]) < 0
                 || SMW_B(m, (uint8_t)chip->P_CH[x].SLOT[y].CON) < 0
@@ -1329,34 +1329,34 @@ int sfx_soundexpander_snapshot_read_module(snapshot_t *s)
     for (x = 0; x < 9; x++) {
         for (y = 0; y < 2; y++) {
             if (0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].ar) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].dr) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].rr) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].ar) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].dr) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].rr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].KSR) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].ksl) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].ksr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].mul) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].Cnt) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].Incr) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].Cnt) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].Incr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].FB) < 0
                 || SMR_DW_INT(m, &temp_connect1) < 0
-                || SMR_DW_INT(m, &chip->P_CH[x].SLOT[y].op1_out[0]) < 0
-                || SMR_DW_INT(m, &chip->P_CH[x].SLOT[y].op1_out[1]) < 0
+                || SMR_DW_INT(m, (int *)&chip->P_CH[x].SLOT[y].op1_out[0]) < 0
+                || SMR_DW_INT(m, (int *)&chip->P_CH[x].SLOT[y].op1_out[1]) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].CON) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_type) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].state) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].TL) < 0
-                || SMR_DW_INT(m, &chip->P_CH[x].SLOT[y].TLL) < 0
-                || SMR_DW_INT(m, &chip->P_CH[x].SLOT[y].volume) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].sl) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].TL) < 0
+                || SMR_DW_INT(m, (int *)&chip->P_CH[x].SLOT[y].TLL) < 0
+                || SMR_DW_INT(m, (int *)&chip->P_CH[x].SLOT[y].volume) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].sl) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sh_ar) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sel_ar) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sh_dr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sel_dr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sh_rr) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].eg_sel_rr) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].key) < 0
-                || SMR_DW_UINT(m, &chip->P_CH[x].SLOT[y].AMmask) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].key) < 0
+                || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].SLOT[y].AMmask) < 0
                 || SMR_B(m, &chip->P_CH[x].SLOT[y].vib) < 0
                 || SMR_W(m, &chip->P_CH[x].SLOT[y].wavetable) < 0) {
                 goto fail;
@@ -1364,39 +1364,39 @@ int sfx_soundexpander_snapshot_read_module(snapshot_t *s)
             set_connect1(chip, x, y, temp_connect1);
         }
         if (0
-            || SMR_DW_UINT(m, &chip->P_CH[x].block_fnum) < 0
-            || SMR_DW_UINT(m, &chip->P_CH[x].fc) < 0
-            || SMR_DW_UINT(m, &chip->P_CH[x].ksl_base) < 0
+            || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].block_fnum) < 0
+            || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].fc) < 0
+            || SMR_DW_UINT(m, (unsigned int *)&chip->P_CH[x].ksl_base) < 0
             || SMR_B(m, &chip->P_CH[x].kcode) < 0) {
             goto fail;
         }
     }
     if (0
-        || SMR_DW_UINT(m, &chip->eg_cnt) < 0
-        || SMR_DW_UINT(m, &chip->eg_timer) < 0
-        || SMR_DW_UINT(m, &chip->eg_timer_add) < 0
-        || SMR_DW_UINT(m, &chip->eg_timer_overflow) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->eg_cnt) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->eg_timer) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->eg_timer_add) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->eg_timer_overflow) < 0
         || SMR_B(m, &chip->rhythm) < 0) {
         goto fail;
     }
     for (x = 0; x < 1024; x++) {
-        if (SMR_DW_UINT(m, &chip->fn_tab[x]) < 0) {
+        if (SMR_DW_UINT(m, (unsigned int *)&chip->fn_tab[x]) < 0) {
             goto fail;
         }
     }
     if (0
         || SMR_B(m, &chip->lfo_am_depth) < 0
         || SMR_B(m, &chip->lfo_pm_depth_range) < 0
-        || SMR_DW_UINT(m, &chip->lfo_am_cnt) < 0
-        || SMR_DW_UINT(m, &chip->lfo_am_inc) < 0
-        || SMR_DW_UINT(m, &chip->lfo_pm_cnt) < 0
-        || SMR_DW_UINT(m, &chip->lfo_pm_inc) < 0
-        || SMR_DW_UINT(m, &chip->noise_rng) < 0
-        || SMR_DW_UINT(m, &chip->noise_p) < 0
-        || SMR_DW_UINT(m, &chip->noise_f) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->lfo_am_cnt) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->lfo_am_inc) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->lfo_pm_cnt) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->lfo_pm_inc) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->noise_rng) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->noise_p) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->noise_f) < 0
         || SMR_B(m, &chip->wavesel) < 0
-        || SMR_DW_UINT(m, &chip->T[0]) < 0
-        || SMR_DW_UINT(m, &chip->T[1]) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->T[0]) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->T[1]) < 0
         || SMR_B(m, &chip->st[0]) < 0
         || SMR_B(m, &chip->st[1]) < 0
         || SMR_B(m, &chip->type) < 0
@@ -1404,8 +1404,8 @@ int sfx_soundexpander_snapshot_read_module(snapshot_t *s)
         || SMR_B(m, &chip->status) < 0
         || SMR_B(m, &chip->statusmask) < 0
         || SMR_B(m, &chip->mode) < 0
-        || SMR_DW_UINT(m, &chip->clock) < 0
-        || SMR_DW_UINT(m, &chip->rate) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->clock) < 0
+        || SMR_DW_UINT(m, (unsigned int *)&chip->rate) < 0
         || SMR_DB(m, &chip->freqbase) < 0) {
         goto fail;
     }

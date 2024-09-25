@@ -144,7 +144,7 @@ static int set_double_size_enabled(int double_size, video_canvas_t *canvas)
 static resource_int_t resources_chip_double_size[] =
 {
     { NULL, 0, RES_EVENT_NO, NULL,
-      NULL, set_double_size_enabled, NULL },
+      NULL, (int (*)(int, void*)) set_double_size_enabled, NULL },
     RESOURCE_INT_LIST_END
 };
 

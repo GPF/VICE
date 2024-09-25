@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 {
 #ifdef __DREAMCAST__    
  printf("VICE DREAMCAST is starting\n");
- 
+    fs_chdir("/cd/Vice/");
 //  gdb_init();
     SDL_DC_ShowAskHz(SDL_FALSE);
     SDL_DC_Default60Hz(SDL_FALSE);
@@ -132,18 +132,19 @@ int main(int argc, char **argv)
         "-sdlinitialh","256", 
         "-VICIIborders","3",
         // "SDLCustomWidth","640",
-        // "SDLCustomHeight","480",        
+        // "SDLCustomHeight","480",         
         "+VICIIshowstatusbar",   
         "+mouse",
         // "-ntsc", 
         "-sound",        
         "-sounddev", "sdl",   
-        "-soundrate", "22050",  
+        "-soundrate", "22050",   
         "-soundbufsize", "512", 
         "-soundfragsize","3",
         // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
         // "-cartcrt","/cd/Vice/carts/mule.crt", // requires 32mb dc ram 
-        "-autostart","/cd/Vice/tapes/STARWAR2.T64",
+        "-autostart","/cd/Vice/tapes/STARWAR2.T64", 
+        // "-autostart","/cd/Vice/disks/Sams_journey_plus9_TRIAD_disk01.d64",
         // "-autostart","/cd/Vice/disks/The Great Gianna Sisters.d64", 
         // "-autostart","/cd/Vice/disks/brucelee.d64",    
         // "-autostart","/cd/Vice/disks/Jumpman (1983)(Epyx)[cr REM][t +3 REM].d64",       

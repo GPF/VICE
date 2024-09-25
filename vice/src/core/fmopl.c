@@ -1415,7 +1415,7 @@ static void OPLWriteReg(FM_OPL *OPL, int r, int v)
             CH = &OPL->P_CH[r & 0x0f];
             CH->SLOT[SLOT1].FB = (v >> 1) & 7 ? ((v >> 1) & 7) + 7 : 0;
             CH->SLOT[SLOT1].CON = v & 1;
-            CH->SLOT[SLOT1].connect1 = CH->SLOT[SLOT1].CON ? &output[0] : &phase_modulation;
+            CH->SLOT[SLOT1].connect1 = CH->SLOT[SLOT1].CON ? (INT32 *)&output[0] : (INT32 *)&phase_modulation;
             break;
         case 0xe0: /* waveform select */
             /* simply ignore write to the waveform select register if selecting not enabled in test register */
@@ -1496,7 +1496,7 @@ static void OPLResetChip(FM_OPL *OPL)
             CH->SLOT[s].wavetable = 0;
             CH->SLOT[s].state = EG_OFF;
             CH->SLOT[s].volume = MAX_ATT_INDEX;
-            CH->SLOT[s].connect1 = &output[0];
+            CH->SLOT[s].connect1 = (INT32 *)&output[0];
         }
     }
 
@@ -1644,9 +1644,9 @@ int connect1_is_output0(int *connect)
 void set_connect1(FM_OPL *chip, int x, int y, int output0)
 {
     if (output0) {
-        chip->P_CH[x].SLOT[y].connect1 = &output[0];
+        chip->P_CH[x].SLOT[y].connect1 = (INT32 *)&output[0];
     } else {
-        chip->P_CH[x].SLOT[y].connect1 = &phase_modulation;
+        chip->P_CH[x].SLOT[y].connect1 = (INT32 *)&phase_modulation;
     }
 }
 

@@ -82,10 +82,10 @@ int raster_snapshot_read(snapshot_module_t *m, raster_t *raster)
     struct draw_buffer_s *draw_buffer = raster->canvas->draw_buffer;
 
     if (0
-        || SMR_DW(m, &raster->current_line) < 0
-        || SMR_DW(m, &draw_buffer->draw_buffer_width) < 0
-        || SMR_DW(m, &draw_buffer->draw_buffer_height) < 0
-        || SMR_DW(m, &draw_buffer->draw_buffer_pitch) < 0
+        || SMR_DW(m, (uint32_t *)&raster->current_line) < 0
+        || SMR_DW(m, (uint32_t *)&draw_buffer->draw_buffer_width) < 0
+        || SMR_DW(m, (uint32_t *)&draw_buffer->draw_buffer_height) < 0
+        || SMR_DW(m, (uint32_t *)&draw_buffer->draw_buffer_pitch) < 0
         ) {
         return -1;
     }
