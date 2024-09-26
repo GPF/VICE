@@ -178,6 +178,8 @@ target_sources(
         supersnapshot.c
         supersnapshot4.c
         turtlegraphics.c
+        uc1.c
+        uc2.c
         warpspeed.c
         westermann.c
         zaxxon.c
@@ -271,6 +273,8 @@ target_sources(
         supersnapshot.h
         supersnapshot4.h
         turtlegraphics.h
+        uc1.h
+        uc2.h
         warpspeed.h
         westermann.h
         zaxxon.h

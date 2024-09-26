@@ -29,7 +29,7 @@
 
 #include "vice.h"
 
-#if defined HAVE_NETWORK || defined(GEKKO)
+#if defined HAVE_NETWORK || defined(GEKKO) || defined(__DREAMCAST__)
 
 #include <assert.h>
 #include <stdio.h>
@@ -62,13 +62,13 @@
 #ifdef NETWORK_DEBUG
 #define DBG(x) log_printf  x
 #else
-#define DBG(x)
+#define DBG(x) do { /* nothing */ } while (0)
 #endif
 
 #ifdef NETWORK_TRAFFIC_DEBUG
 #define DBGT(x) log_printf  x
 #else
-#define DBGT(x)
+#define DBGT(x) do { /* nothing */ } while (0)
 #endif
 
 static network_mode_t network_mode = NETWORK_IDLE;

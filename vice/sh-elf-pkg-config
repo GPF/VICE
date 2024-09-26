@@ -6,7 +6,7 @@ export PKG_CONFIG_PATH=
 export PKG_CONFIG_SYSROOT_DIR=
 PKG_CONFIG_LIBDIR=""
 
-KOS_PORT_INCLUDE_DIR="/opt/toolchains/dc/kos-ports/include/"
+KOS_PORT_INCLUDE_DIR="/opt/toolchains/dc/kos/addons/include"
 
 case "$1" in
     --cflags)
@@ -18,7 +18,7 @@ case "$1" in
         ;;
     --libs)
         if [[ "$2" == "SDL_image >= 1.2.0" ]]; then
-            echo "$KOS_LIBS -L/opt/toolchains/dc/kos-ports/lib -lSDL -lSDL_image"
+            echo "$KOS_LIBS -L/opt/toolchains/dc/kos/addons/lib/dreamcast -lSDL -lSDL_image"
         else
             echo "$KOS_LIBS"
         fi
@@ -27,7 +27,7 @@ case "$1" in
         echo "-D_arch_dreamcast $KOS_CFLAGS"
         ;;
     --sdllibs)
-        echo "$KOS_LIBS -L/opt/toolchains/dc/kos-ports/lib -lSDL"
+        echo "$KOS_LIBS -L/opt/toolchains/dc/kos/addons/lib/dreamcast -lSDL"
         ;;
     --exists)
         if [[ "$2" == "SDL_image >= 1.2.0" ]]; then

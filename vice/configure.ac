@@ -1658,7 +1658,7 @@ if test x"$check_sdl1" = "xyes"; then
         if test x"$have_sdl_image" = "xyes"; then
           LIBS="$LIBS -lSDL_image"
         else
-          AC_MSG_ERROR([SDL_image1.2-dev is required.])
+          AC_MSG_RESULT([SDL_image1.2-dev is required.])
         fi
 
         dnl now that the SDL1 UI support has been detected, define enable_sdl1ui and undefine the others to prevent checks

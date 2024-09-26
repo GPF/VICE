@@ -136,13 +136,13 @@ am__libarch_a_SOURCES_DIST = actions-cartridge.c actions-cartridge.h \
 	menu_ethernetcart.c menu_ethernetcart.h menu_ffmpeg.c \
 	menu_ffmpeg.h menu_help.c menu_help.h menu_jam.c menu_jam.h \
 	menu_joyport.c menu_joyport.h menu_joystick.c menu_joystick.h \
-	menu_media.c menu_media.h menu_midi.c menu_midi.h \
-	menu_monitor.c menu_monitor.h menu_mouse.c menu_mouse.h \
-	menu_network.c menu_network.h menu_petcart.c menu_petcart.h \
-	menu_pethw.c menu_pethw.h menu_plus4cart.c menu_plus4cart.h \
-	menu_plus4hw.c menu_plus4hw.h menu_printer.c menu_printer.h \
-	menu_ram.c menu_ram.h menu_reset.c menu_reset.h menu_rom.c \
-	menu_rom.h menu_rs232.c menu_rs232.h menu_sampler.c \
+	menu_log.c menu_log.h menu_media.c menu_media.h menu_midi.c \
+	menu_midi.h menu_monitor.c menu_monitor.h menu_mouse.c \
+	menu_mouse.h menu_network.c menu_network.h menu_petcart.c \
+	menu_petcart.h menu_pethw.c menu_pethw.h menu_plus4cart.c \
+	menu_plus4cart.h menu_plus4hw.c menu_plus4hw.h menu_printer.c \
+	menu_printer.h menu_ram.c menu_ram.h menu_reset.c menu_reset.h \
+	menu_rom.c menu_rom.h menu_rs232.c menu_rs232.h menu_sampler.c \
 	menu_sampler.h menu_scpu64hw.c menu_scpu64hw.h \
 	menu_screenshot.c menu_screenshot.h menu_settings.c \
 	menu_settings.h menu_sid.c menu_sid.h menu_snapshot.c \
@@ -181,7 +181,7 @@ am_libarch_a_OBJECTS = actions-cartridge.$(OBJEXT) \
 	menu_ethernet.$(OBJEXT) menu_ethernetcart.$(OBJEXT) \
 	menu_ffmpeg.$(OBJEXT) menu_help.$(OBJEXT) menu_jam.$(OBJEXT) \
 	menu_joyport.$(OBJEXT) menu_joystick.$(OBJEXT) \
-	menu_media.$(OBJEXT) menu_midi.$(OBJEXT) \
+	menu_log.$(OBJEXT) menu_media.$(OBJEXT) menu_midi.$(OBJEXT) \
 	menu_monitor.$(OBJEXT) menu_mouse.$(OBJEXT) \
 	menu_network.$(OBJEXT) menu_petcart.$(OBJEXT) \
 	menu_pethw.$(OBJEXT) menu_plus4cart.$(OBJEXT) \
@@ -247,34 +247,35 @@ am__depfiles_remade = ./$(DEPDIR)/actions-cartridge.Po \
 	./$(DEPDIR)/menu_ethernetcart.Po ./$(DEPDIR)/menu_ffmpeg.Po \
 	./$(DEPDIR)/menu_help.Po ./$(DEPDIR)/menu_jam.Po \
 	./$(DEPDIR)/menu_joyport.Po ./$(DEPDIR)/menu_joystick.Po \
-	./$(DEPDIR)/menu_media.Po ./$(DEPDIR)/menu_midi.Po \
-	./$(DEPDIR)/menu_monitor.Po ./$(DEPDIR)/menu_mouse.Po \
-	./$(DEPDIR)/menu_network.Po ./$(DEPDIR)/menu_petcart.Po \
-	./$(DEPDIR)/menu_pethw.Po ./$(DEPDIR)/menu_plus4cart.Po \
-	./$(DEPDIR)/menu_plus4hw.Po ./$(DEPDIR)/menu_printer.Po \
-	./$(DEPDIR)/menu_ram.Po ./$(DEPDIR)/menu_reset.Po \
-	./$(DEPDIR)/menu_rom.Po ./$(DEPDIR)/menu_rs232.Po \
-	./$(DEPDIR)/menu_sampler.Po ./$(DEPDIR)/menu_scpu64hw.Po \
-	./$(DEPDIR)/menu_screenshot.Po ./$(DEPDIR)/menu_settings.Po \
-	./$(DEPDIR)/menu_sid.Po ./$(DEPDIR)/menu_snapshot.Po \
-	./$(DEPDIR)/menu_sound.Po ./$(DEPDIR)/menu_speed.Po \
-	./$(DEPDIR)/menu_tape.Po ./$(DEPDIR)/menu_userport.Po \
-	./$(DEPDIR)/menu_vic20cart.Po ./$(DEPDIR)/menu_vic20hw.Po \
-	./$(DEPDIR)/menu_video.Po ./$(DEPDIR)/menu_wic64.Po \
-	./$(DEPDIR)/mousedrv.Po ./$(DEPDIR)/sdlmain.Po \
-	./$(DEPDIR)/ui.Po ./$(DEPDIR)/uifilereq.Po \
-	./$(DEPDIR)/uifonts.Po ./$(DEPDIR)/uihotkey.Po \
-	./$(DEPDIR)/uiimagefilereq.Po ./$(DEPDIR)/uimenu.Po \
-	./$(DEPDIR)/uimon.Po ./$(DEPDIR)/uimsgbox.Po \
-	./$(DEPDIR)/uipause.Po ./$(DEPDIR)/uipoll.Po \
-	./$(DEPDIR)/uistatusbar.Po ./$(DEPDIR)/video_sdl1.Po \
-	./$(DEPDIR)/video_sdl2.Po ./$(DEPDIR)/vkbd.Po \
-	./$(DEPDIR)/vsidui.Po ./$(DEPDIR)/vsyncarch.Po \
-	./$(DEPDIR)/x128_ui.Po ./$(DEPDIR)/x64_ui.Po \
-	./$(DEPDIR)/x64dtv_ui.Po ./$(DEPDIR)/x64sc_ui.Po \
-	./$(DEPDIR)/xcbm2_ui.Po ./$(DEPDIR)/xcbm5x0_ui.Po \
-	./$(DEPDIR)/xpet_ui.Po ./$(DEPDIR)/xplus4_ui.Po \
-	./$(DEPDIR)/xscpu64_ui.Po ./$(DEPDIR)/xvic_ui.Po
+	./$(DEPDIR)/menu_log.Po ./$(DEPDIR)/menu_media.Po \
+	./$(DEPDIR)/menu_midi.Po ./$(DEPDIR)/menu_monitor.Po \
+	./$(DEPDIR)/menu_mouse.Po ./$(DEPDIR)/menu_network.Po \
+	./$(DEPDIR)/menu_petcart.Po ./$(DEPDIR)/menu_pethw.Po \
+	./$(DEPDIR)/menu_plus4cart.Po ./$(DEPDIR)/menu_plus4hw.Po \
+	./$(DEPDIR)/menu_printer.Po ./$(DEPDIR)/menu_ram.Po \
+	./$(DEPDIR)/menu_reset.Po ./$(DEPDIR)/menu_rom.Po \
+	./$(DEPDIR)/menu_rs232.Po ./$(DEPDIR)/menu_sampler.Po \
+	./$(DEPDIR)/menu_scpu64hw.Po ./$(DEPDIR)/menu_screenshot.Po \
+	./$(DEPDIR)/menu_settings.Po ./$(DEPDIR)/menu_sid.Po \
+	./$(DEPDIR)/menu_snapshot.Po ./$(DEPDIR)/menu_sound.Po \
+	./$(DEPDIR)/menu_speed.Po ./$(DEPDIR)/menu_tape.Po \
+	./$(DEPDIR)/menu_userport.Po ./$(DEPDIR)/menu_vic20cart.Po \
+	./$(DEPDIR)/menu_vic20hw.Po ./$(DEPDIR)/menu_video.Po \
+	./$(DEPDIR)/menu_wic64.Po ./$(DEPDIR)/mousedrv.Po \
+	./$(DEPDIR)/sdlmain.Po ./$(DEPDIR)/ui.Po \
+	./$(DEPDIR)/uifilereq.Po ./$(DEPDIR)/uifonts.Po \
+	./$(DEPDIR)/uihotkey.Po ./$(DEPDIR)/uiimagefilereq.Po \
+	./$(DEPDIR)/uimenu.Po ./$(DEPDIR)/uimon.Po \
+	./$(DEPDIR)/uimsgbox.Po ./$(DEPDIR)/uipause.Po \
+	./$(DEPDIR)/uipoll.Po ./$(DEPDIR)/uistatusbar.Po \
+	./$(DEPDIR)/video_sdl1.Po ./$(DEPDIR)/video_sdl2.Po \
+	./$(DEPDIR)/vkbd.Po ./$(DEPDIR)/vsidui.Po \
+	./$(DEPDIR)/vsyncarch.Po ./$(DEPDIR)/x128_ui.Po \
+	./$(DEPDIR)/x64_ui.Po ./$(DEPDIR)/x64dtv_ui.Po \
+	./$(DEPDIR)/x64sc_ui.Po ./$(DEPDIR)/xcbm2_ui.Po \
+	./$(DEPDIR)/xcbm5x0_ui.Po ./$(DEPDIR)/xpet_ui.Po \
+	./$(DEPDIR)/xplus4_ui.Po ./$(DEPDIR)/xscpu64_ui.Po \
+	./$(DEPDIR)/xvic_ui.Po
 am__mv = mv -f
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
@@ -689,6 +690,8 @@ libarch_a_SOURCES = \
 	menu_joyport.h \
 	menu_joystick.c \
 	menu_joystick.h \
+	menu_log.c \
+	menu_log.h \
 	menu_media.c \
 	menu_media.h \
 	menu_midi.c \
@@ -896,6 +899,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_jam.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_joyport.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_joystick.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_log.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_media.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_midi.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/menu_monitor.Po@am__quote@ # am--include-marker
@@ -1140,6 +1144,7 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/menu_jam.Po
 	-rm -f ./$(DEPDIR)/menu_joyport.Po
 	-rm -f ./$(DEPDIR)/menu_joystick.Po
+	-rm -f ./$(DEPDIR)/menu_log.Po
 	-rm -f ./$(DEPDIR)/menu_media.Po
 	-rm -f ./$(DEPDIR)/menu_midi.Po
 	-rm -f ./$(DEPDIR)/menu_monitor.Po
@@ -1285,6 +1290,7 @@ maintainer-clean: maintainer-clean-am
 	-rm -f ./$(DEPDIR)/menu_jam.Po
 	-rm -f ./$(DEPDIR)/menu_joyport.Po
 	-rm -f ./$(DEPDIR)/menu_joystick.Po
+	-rm -f ./$(DEPDIR)/menu_log.Po
 	-rm -f ./$(DEPDIR)/menu_media.Po
 	-rm -f ./$(DEPDIR)/menu_midi.Po
 	-rm -f ./$(DEPDIR)/menu_monitor.Po

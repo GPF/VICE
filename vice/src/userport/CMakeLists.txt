@@ -23,12 +23,11 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src/joyport
         ${CMAKE_SOURCE_DIR}/src/samplerdrv
         ${CMAKE_SOURCE_DIR}/src/diag
-        ${CMAKE_SOURCE_DIR}/src/drive
         ${CMAKE_SOURCE_DIR}/src/printerdrv
         ${CMAKE_SOURCE_DIR}/src/rs232drv
         ${CMAKE_SOURCE_DIR}/src/c64
         ${CMAKE_SOURCE_DIR}/src/plus4
-        
+        ${CMAKE_SOURCE_DIR}/src/drive
     )
 
 target_compile_options(
@@ -66,6 +65,7 @@ target_sources(
         userport_8bss.h
         userport_dac.h
         userport_diag_586220_harness.h
+        userport_diag_pin.h
         userport_digimax.h
         userport_hks_joystick.h
         userport_hummer_joystick.h

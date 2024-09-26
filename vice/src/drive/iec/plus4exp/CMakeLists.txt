@@ -19,6 +19,7 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/src/drive
         ${CMAKE_SOURCE_DIR}/src/drive/iec
+        ${CMAKE_SOURCE_DIR}/src/userport
         ${CMAKE_SOURCE_DIR}/src/lib/p64
         ${CMAKE_SOURCE_DIR}/src/core/rtc
     )

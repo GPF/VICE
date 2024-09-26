@@ -660,6 +660,7 @@ bool vsync_should_skip_frame(struct video_canvas_s *canvas)
     return false;
 }
 
+void monitor_vsync_hook(void);
 /* This is called at the end of each screen frame. */
 void vsync_do_vsync(struct video_canvas_s *c)
 {

@@ -17,7 +17,10 @@
         "array": "c",
         "string_view": "c",
         "initializer_list": "c",
-        "span": "c"
+        "span": "c",
+        "vice.h": "c",
+        "strings.h": "c",
+        "socketimpl.h": "c"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",

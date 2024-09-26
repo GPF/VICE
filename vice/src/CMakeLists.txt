@@ -39,11 +39,11 @@ add_subdirectory(hvsc)
 add_subdirectory(datasette)
 add_subdirectory(tools)
 
+find_library(LIB_SDL SDL ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
+find_library(LIB_KALLISTI kallisti ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_M m ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
-# find_library(LIB_KALLISTI kallisti ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_C c ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 find_library(LIB_GCC gcc ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
-#find_library(LIB_SDL_GL_1213DH SDL_gl_1213DH ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} )
 
 if(FIRST_RUN)
     set(CMAKE_XCODE_GENERATE_SCHEME ON)
@@ -107,7 +107,7 @@ target_compile_options(
 target_link_options(
     x64
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -298,7 +298,7 @@ target_sources(
 target_link_libraries(
     x64
     PRIVATE
-    	libarchdep libtapeport libc64 libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libiecbus libp64 libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libc64 libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libiecbus libp64 libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -363,7 +363,7 @@ target_compile_options(
 target_link_options(
     x64sc
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -554,7 +554,7 @@ target_sources(
 target_link_libraries(
     x64sc
     PRIVATE
-    	libarchdep libtapeport libc64sc libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64scstubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libc64sc libc64cartsystem libc64cart libc64commoncart libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libc64scstubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -619,7 +619,7 @@ target_compile_options(
 target_link_options(
     x128
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -810,7 +810,7 @@ target_sources(
 target_link_libraries(
     x128
     PRIVATE
-    	libarchdep libtapeport libc128 libc64cartsystem libc128cartsystem libc64cart libc64commoncart libc64c128 libdatasette libdriveiec libdriveiec128dcr libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libvdc libraster libdiag libuserport librtc libvideo libarch libimagecontents libc128stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libc128 libc64cartsystem libc128cartsystem libc64cart libc64commoncart libc64c128 libdatasette libdriveiec libdriveiec128dcr libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libvdc libraster libdiag libuserport librtc libvideo libarch libimagecontents libc128stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -875,7 +875,7 @@ target_compile_options(
 target_link_options(
     x64dtv
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -1066,7 +1066,7 @@ target_sources(
 target_link_libraries(
     x64dtv
     PRIVATE
-    	libarchdep libc64dtv libc64c64dtv libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libdiag libvdrive libsid_dtv libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciidtv libraster libvideo libarch libimagecontents libc64dtvstubs libjoyport librtc libhvsc libhotkeys libzmbv libuserport libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libc64dtv libc64c64dtv libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid_dtv libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciidtv libraster libvideo libarch libimagecontents libuserport libc64dtvstubs libdiag libjoyport librtc libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -1131,7 +1131,7 @@ target_compile_options(
 target_link_options(
     xscpu64
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -1322,7 +1322,7 @@ target_sources(
 target_link_libraries(
     xscpu64
     PRIVATE
-    	libarchdep libscpu64 libc64cartsystem libc64cart libc64commoncart libscpu64stubs libc64scpu64 libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libscpu64 libc64cartsystem libc64cart libc64commoncart libscpu64stubs libc64scpu64 libdatasette libdriveiec libdriveiecieee libdriveiecc64exp libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libsid libmonitor libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libviciisc libraster libuserport libdiag librtc libvideo libarch libimagecontents libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -1387,7 +1387,7 @@ target_compile_options(
 target_link_options(
     xvic
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -1578,7 +1578,7 @@ target_sources(
 target_link_libraries(
     xvic
     PRIVATE
-    	libarchdep libtapeport libdatasette libvic20cart libvic20 libc64commoncart libmascuerade libdriveiec libdriveiecieee libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster libuserport libdiag librtc libvideo libarch libimagecontents libvic20stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng libmascuerade ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libdatasette libvic20cart libvic20 libc64commoncart libmascuerade libdriveiec libdriveiecieee libdriveieee libdrive libdrivetcbm libp64 libiecbus libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster libuserport libdiag librtc libvideo libarch libimagecontents libvic20stubs libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng libmascuerade ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -1643,7 +1643,7 @@ target_compile_options(
 target_link_options(
     xpet
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -1833,7 +1833,7 @@ target_sources(
 target_link_libraries(
     xpet
     PRIVATE
-    	libarchdep libtapeport libdatasette libpet libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport librtc libhvsc libhotkeys libzmbv libpetstubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libdatasette libpet libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport librtc libhvsc libhotkeys libzmbv libpetstubs libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -1898,7 +1898,7 @@ target_compile_options(
 target_link_options(
     xplus4
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -2088,7 +2088,7 @@ target_sources(
 target_link_libraries(
     xplus4
     PRIVATE
-    	libarchdep libtapeport libdatasette libplus4 libplus4cart libdiag libdriveiec libdriveiecieee libdriveiecplus4exp libdrivetcbm libdrive libdriveieee libparallel libdriveieee libp64 libiecbus libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster librtc libvideo libarch libuserport libimagecontents libjoyport libhvsc libhotkeys libzmbv libplus4stubs libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libdatasette libplus4 libplus4cart libdiag libuserport libdriveiec libdriveiecieee libdriveiecplus4exp libdrivetcbm libdrive libdriveieee libparallel libdriveieee libp64 libiecbus libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libraster librtc libvideo libarch libimagecontents libjoyport libhvsc libhotkeys libzmbv libplus4stubs libplus4 libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -2153,7 +2153,7 @@ target_compile_options(
 target_link_options(
     xcbm2
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -2343,7 +2343,7 @@ target_sources(
 target_link_libraries(
     xcbm2
     PRIVATE
-    	libarchdep libtapeport libdatasette libcbm2 libcbm2cart libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport libcbm2stubs librtc libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libdatasette libcbm2 libcbm2cart libdiag libdriveiecieee libdriveieee libdrive libdriveiec libdrivetcbm libp64 libparallel libvdrive libmonitor libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libcrtc libraster libvideo libarch libuserport libimagecontents libjoyport libcbm2stubs librtc libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -2408,7 +2408,7 @@ target_compile_options(
 target_link_options(
     xcbm5x0
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -2598,7 +2598,7 @@ target_sources(
 target_link_libraries(
     xcbm5x0
     PRIVATE
-    	libarchdep libtapeport libcbm5x0 libcbm2cart libdatasette libdiag libdriveiecieee libdriveieee libdrive libdrivetcbm libdriveiec libp64 libparallel libvdrive libmonitor libcbm5x0 libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster librtc libvideo libarch libcbm5x0stubs libimagecontents libjoyport libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libtapeport libcbm5x0 libcbm2cart libdatasette libdiag libdriveiecieee libdriveieee libdrive libdrivetcbm libdriveiec libp64 libparallel libvdrive libmonitor libcbm5x0 libsid libjoyport libsamplerdrv libsounddrv libmididrv libsocketdrv libhwsiddrv libgfxoutputdrv libprinterdrv librs232drv libdiskimage libfsdevice libtape libfileio libserial libcore libvicii libraster librtc libvideo libarch libcbm5x0stubs libimagecontents libjoyport libhvsc libhotkeys libzmbv libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -2663,7 +2663,7 @@ target_compile_options(
 target_link_options(
     c1541
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -2816,7 +2816,7 @@ target_sources(
 target_link_libraries(
     c1541
     PRIVATE
-    	libtoolarch libp64 libvdrive libimagecontents libfileio libdiskimage libtape libserial libsocketdrv liblinenoiseng libarchdep ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libtoolarch libp64 libvdrive libimagecontents libfileio libdiskimage libtape libserial libsocketdrv liblinenoiseng libarchdep ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )
 
 if(FIRST_RUN)
@@ -2881,7 +2881,7 @@ target_compile_options(
 target_link_options(
     vsid
     PRIVATE
-        -Wno-deprecated-declarations -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib -O2 -fomit-frame-pointer -fno-builtin -m4-single-only -ml -ffunction-sections -fdata-sections -matomic-model=soft-imask -ftls-model=local-exec -Wall -g -m4-single-only -ml -Wl,-Ttext=0x8c010000 -Wl,--gc-sections -T/opt/toolchains/dc/kos/utils/ldscripts/shlelf.xc -nodefaultlibs -L/opt/toolchains/dc/kos/lib/dreamcast -L/opt/toolchains/dc/kos/addons/lib/dreamcast -L/opt/toolchains/dc/kos/../kos-ports/lib
+        -Wno-deprecated-declarations 
     )
 
 target_sources(
@@ -3072,5 +3072,5 @@ target_sources(
 target_link_libraries(
     vsid
     PRIVATE
-    	libarchdep libvsid libsid libmonitor libsounddrv libmididrv libsocketdrv libhwsiddrv libserial libcore libvicii libraster libvideo libarch libjoyport libhvsc libdatasette libhotkeys libvsidstubs libmd5 libarch libarchdep liblinenoiseng ${LIB_M} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL_GL_1213DH}
+    	libarchdep libvsid libsid libmonitor libsounddrv libmididrv libsocketdrv libhwsiddrv libserial libcore libvicii libraster libvideo libarch libjoyport libhvsc libdatasette libhotkeys libvsidstubs libmd5 libarch libarchdep liblinenoiseng ${LIB_SDL} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_KALLISTI} ${LIB_M} ${LIB_C} ${LIB_GCC} ${LIB_SDL}
     )

@@ -10014,7 +10014,8 @@ rm -f conftest.l $LEX_OUTPUT_ROOT.c
 fi
 if test x"$LEX" = "x:"
 then :
-  as_fn_error $? "Could not find either flex or lex!" "$LINENO" 5
+  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: Could not find either flex or lex!" >&5
+printf "%s\n" "$as_me: WARNING: Could not find either flex or lex!" >&2;}
 fi
 
 
@@ -15314,8 +15315,8 @@ fi
         if test x"$have_sdl_image" = "xyes"; then
           LIBS="$LIBS -lSDL_image"
         else
-  #          as_fn_error $? "SDL_image1.2-dev is required." "$LINENO" 5
-            echo "Warning: SDL_image1.2-dev is recommended but not found."
+          { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: SDL_image1.2-dev is required." >&5
+printf "%s\n" "SDL_image1.2-dev is required." >&6; }
         fi
 
                 if test x"$check_sdlaudio_only" != "xyes"; then

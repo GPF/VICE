@@ -142,8 +142,9 @@ am_libc64cart_a_OBJECTS = actionreplay2.$(OBJEXT) \
 	simonsbasic.$(OBJEXT) snapshot64.$(OBJEXT) stardos.$(OBJEXT) \
 	stb.$(OBJEXT) superexplode5.$(OBJEXT) supergames.$(OBJEXT) \
 	supersnapshot.$(OBJEXT) supersnapshot4.$(OBJEXT) \
-	turtlegraphics.$(OBJEXT) warpspeed.$(OBJEXT) \
-	westermann.$(OBJEXT) zaxxon.$(OBJEXT) zippcode48.$(OBJEXT)
+	turtlegraphics.$(OBJEXT) uc1.$(OBJEXT) uc2.$(OBJEXT) \
+	warpspeed.$(OBJEXT) westermann.$(OBJEXT) zaxxon.$(OBJEXT) \
+	zippcode48.$(OBJEXT)
 libc64cart_a_OBJECTS = $(am_libc64cart_a_OBJECTS)
 libc64cartsystem_a_AR = $(AR) $(ARFLAGS)
 libc64cartsystem_a_LIBADD =
@@ -222,8 +223,9 @@ am__depfiles_remade = ./$(DEPDIR)/actionreplay.Po \
 	./$(DEPDIR)/stb.Po ./$(DEPDIR)/superexplode5.Po \
 	./$(DEPDIR)/supergames.Po ./$(DEPDIR)/supersnapshot.Po \
 	./$(DEPDIR)/supersnapshot4.Po ./$(DEPDIR)/turtlegraphics.Po \
-	./$(DEPDIR)/warpspeed.Po ./$(DEPDIR)/westermann.Po \
-	./$(DEPDIR)/zaxxon.Po ./$(DEPDIR)/zippcode48.Po
+	./$(DEPDIR)/uc1.Po ./$(DEPDIR)/uc2.Po ./$(DEPDIR)/warpspeed.Po \
+	./$(DEPDIR)/westermann.Po ./$(DEPDIR)/zaxxon.Po \
+	./$(DEPDIR)/zippcode48.Po
 am__mv = mv -f
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
@@ -709,6 +711,10 @@ libc64cart_a_SOURCES = \
 	supersnapshot4.h \
 	turtlegraphics.c \
 	turtlegraphics.h \
+	uc1.c \
+	uc1.h \
+	uc2.c \
+	uc2.h \
 	warpspeed.c \
 	warpspeed.h \
 	westermann.c \
@@ -894,6 +900,8 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/supersnapshot.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/supersnapshot4.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/turtlegraphics.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/uc1.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/uc2.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/warpspeed.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/westermann.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/zaxxon.Po@am__quote@ # am--include-marker
@@ -1142,6 +1150,8 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/supersnapshot.Po
 	-rm -f ./$(DEPDIR)/supersnapshot4.Po
 	-rm -f ./$(DEPDIR)/turtlegraphics.Po
+	-rm -f ./$(DEPDIR)/uc1.Po
+	-rm -f ./$(DEPDIR)/uc2.Po
 	-rm -f ./$(DEPDIR)/warpspeed.Po
 	-rm -f ./$(DEPDIR)/westermann.Po
 	-rm -f ./$(DEPDIR)/zaxxon.Po
@@ -1291,6 +1301,8 @@ maintainer-clean: maintainer-clean-am
 	-rm -f ./$(DEPDIR)/supersnapshot.Po
 	-rm -f ./$(DEPDIR)/supersnapshot4.Po
 	-rm -f ./$(DEPDIR)/turtlegraphics.Po
+	-rm -f ./$(DEPDIR)/uc1.Po
+	-rm -f ./$(DEPDIR)/uc2.Po
 	-rm -f ./$(DEPDIR)/warpspeed.Po
 	-rm -f ./$(DEPDIR)/westermann.Po
 	-rm -f ./$(DEPDIR)/zaxxon.Po

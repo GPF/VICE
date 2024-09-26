@@ -33,6 +33,7 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src/joyport
         ${CMAKE_SOURCE_DIR}/src/samplerdrv
         ${CMAKE_SOURCE_DIR}/src/rs232drv
+        ${CMAKE_SOURCE_DIR}/src/datasette
         ${CMAKE_SOURCE_DIR}/src/tapeport
     )
 
@@ -105,6 +106,7 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src/joyport
         ${CMAKE_SOURCE_DIR}/src/samplerdrv
         ${CMAKE_SOURCE_DIR}/src/rs232drv
+        ${CMAKE_SOURCE_DIR}/src/datasette
         ${CMAKE_SOURCE_DIR}/src/tapeport
     )
 

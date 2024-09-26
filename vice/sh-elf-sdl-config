@@ -6,8 +6,8 @@ exec_prefix_set=no
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-cflags="-D_arch_dreamcast -D__DREAMCAST__ $KOS_INC_PATHS"
-libs="$KOS_LIBS $KOS_LIB_PATHS -lSDL_gl_1213DH"
+cflags="-D_arch_dreamcast -D__DREAMCAST__ -I/opt/toolchains/dc/kos/addons/include/ -I/opt/toolchains/dc/kos/addons/include/SDL"
+libs="$KOS_LIBS -L/opt/toolchains/dc/kos/addons/lib/dreamcast -lSDL"
 
 usage="\
 Usage: sdl-config [OPTIONS]

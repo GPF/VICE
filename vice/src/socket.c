@@ -33,8 +33,7 @@
 
 #include "vice.h"
 
-#if defined(HAVE_NETWORK) || defined(GEKKO)
-
+#if defined(HAVE_NETWORK) || defined(GEKKO) || defined(__DREAMCAST__)
 #include <assert.h>
 #include <errno.h>
 #include <stdlib.h>
@@ -50,12 +49,26 @@
 #endif
 #endif
 
-#ifdef GEKKO
+#if defined(GEKKO) 
 #include <network.h>
 #define SOCKET int
 #define INVALID_SOCKET	(~0)
 #define INADDR_NONE 0xffffffff
 typedef struct timeval TIMEVAL;
+#endif
+
+#if defined(__DREAMCAST__)
+#include <sys/socket.h>
+#include <netinet/in.h>
+#define HAVE_SOCKLEN_T 1
+#define SOCKET int
+#define INVALID_SOCKET	(~0)
+typedef struct timeval TIMEVAL;
+#define closesocket(s) shutdown(s, SHUT_RDWR)
+#define HAVE_HTONL 1
+#define HAVE_HTONS 1
+#define IPPROTO_TCP     6
+#define INADDR_ANY       0x00000000
 #endif
 
 #ifdef HAVE_STRINGS_H
@@ -443,7 +456,7 @@ static vice_network_socket_address_t * vice_network_alloc_new_socket_address(voi
      socket to be used (IPv4, IPv6, Unix Domain Socket, ...)
      Thus, server_address must not be NULL.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
     vice_network_socket_t *vice_network_server(
             const vice_network_socket_address_t * server_address)
     {
@@ -584,7 +597,7 @@ vice_network_socket_t *vice_network_server(const vice_network_socket_address_t *
      The server_address variable determines the type of
      socket to be used (IPv4, IPv6, Unix Domain Socket, ...)
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 vice_network_socket_t * vice_network_client(const vice_network_socket_address_t * server_address)
 {
     int sockfd = INVALID_SOCKET;
@@ -746,9 +759,12 @@ static int vice_network_address_generate_ipv4(
                 break;
             }
 
-#ifdef GEKKO
+#if defined(GEKKO)
 #include <network.h>
     host_entry = net_gethostbyname(address_part);
+#elif defined(__DREAMCAST__)
+#include <netdb.h>
+    host_entry = gethostbyname(address_part);
 #else
     host_entry = gethostbyname(address_part);
 #endif
@@ -1072,7 +1088,7 @@ void vice_network_address_close(vice_network_socket_address_t * address)
   \return
      A new socket that can be used for transmission on this this connection.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 vice_network_socket_t * vice_network_accept(vice_network_socket_t * sockfd)
 {
     SOCKET newsocket = INVALID_SOCKET;
@@ -1107,7 +1123,7 @@ vice_network_socket_t *vice_network_accept(vice_network_socket_t *sockfd)
   \return
      0 on success, else an error occurred.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 int vice_network_socket_close(vice_network_socket_t * sockfd)
 {
     SOCKET localsockfd = INVALID_SOCKET;
@@ -1174,7 +1190,7 @@ int vice_network_socket_close(vice_network_socket_t * sockfd)
   \note Amazing there's docs on this, but send() returns size_t, not int, so
         properly checking the return type could fail.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 ssize_t vice_network_send(vice_network_socket_t *sockfd,
                           const void            *buffer,
                           size_t                 buffer_length,
@@ -1237,7 +1253,7 @@ int vice_network_send(vice_network_socket_t *sockfd, const void *buffer,
 
      In case of an error, -1 is returned.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 ssize_t vice_network_receive(vice_network_socket_t * sockfd, void * buffer, size_t buffer_length, int flags)
 {
     ssize_t ret;
@@ -1271,7 +1287,7 @@ int vice_network_receive(vice_network_socket_t *sockfd, void *buffer, size_t buf
      1 if the specified socket has data; 0 if it does not contain
      any data, and -1 in case of an error.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 int vice_network_select_poll_one(vice_network_socket_t * readsockfd)
 {
     TIMEVAL timeout = { 0, 0 };
@@ -1309,7 +1325,7 @@ int vice_network_select_poll_one(vice_network_socket_t *readsockfd)
      1 if the specified socket has data; 0 if it does not contain
      any data, and -1 in case of an error.
 */
-#ifndef GEKKO
+#if !defined(GEKKO) || !defined(__DREAMCAST__)
 int vice_network_select_multiple(vice_network_socket_t ** readsockfd)
 {
     fd_set fdsockset;

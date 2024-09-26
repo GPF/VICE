@@ -204,6 +204,7 @@ target_sources(
         menu_jam.h
         menu_joyport.h
         menu_joystick.h
+        menu_log.h
         menu_media.h
         menu_midi.h
         menu_monitor.h

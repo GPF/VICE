@@ -31,6 +31,7 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src/c64
         ${CMAKE_SOURCE_DIR}/src/rs232drv
         ${CMAKE_SOURCE_DIR}/src/tapeport
+        ${CMAKE_SOURCE_DIR}/src/datasette
         ${CMAKE_SOURCE_DIR}/src/core/rtc
     )
 
@@ -117,6 +118,7 @@ target_include_directories(
         ${CMAKE_SOURCE_DIR}/src/c64
         ${CMAKE_SOURCE_DIR}/src/rs232drv
         ${CMAKE_SOURCE_DIR}/src/tapeport
+        ${CMAKE_SOURCE_DIR}/src/datasette
         ${CMAKE_SOURCE_DIR}/src/core/rtc
     )
 
