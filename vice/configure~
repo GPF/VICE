@@ -10014,12 +10014,11 @@ rm -f conftest.l $LEX_OUTPUT_ROOT.c
 fi
 if test x"$LEX" = "x:"
 then :
-  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: Could not find either flex or lex!" >&5
-printf "%s\n" "$as_me: WARNING: Could not find either flex or lex!" >&2;}
+  as_fn_warn $? "Could not find either flex or lex!" "$LINENO" 5
 fi
 
 
-# Check whether --with-gnu-ld was given.
+# Check whether   was given.
 if test ${with_gnu_ld+y}
 then :
   withval=$with_gnu_ld; test "$withval" = no || with_gnu_ld=yes

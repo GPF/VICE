@@ -140,7 +140,8 @@ int main(int argc, char **argv)
         "-sounddev", "sdl",   
         "-soundrate", "22050",   
         "-soundbufsize", "512", 
-        "-soundfragsize","3",
+        "-soundfragsize","3", 
+        "-soundoutput","2",
         // "-cartcrt","/cd/Vice/carts/Jumpman Junior.crt",
         // "-cartcrt","/cd/Vice/carts/mule.crt", // requires 32mb dc ram 
         "-autostart","/cd/Vice/tapes/STARWAR2.T64", 
